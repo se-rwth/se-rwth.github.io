@@ -3,9 +3,9 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: You
+first_name: Unde
 middle_name: R.
-last_name: Name
+last_name: Construction
 email: you@example.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -16,7 +16,7 @@ footer_text: >
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🔥 # the emoji used as the favicon
-url: https://alshedivat.github.io # the base hostname & protocol for your site
+url: https://se-rwth.github.io/ # the base hostname & protocol for your site
 baseurl: /al-folio # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -72,7 +72,7 @@ rss_icon: true
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
 
-google_analytics: UA-XXXXXXXXX # out your google-analytics code
+google_analytics: UA-215544380-2 # out your google-analytics code
 panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 
 # -----------------------------------------------------------------------------
