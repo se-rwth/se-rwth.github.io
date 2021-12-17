@@ -16,8 +16,8 @@
     {% if entry.type == "thesis" %}
       {{reference}}
     {% else %}
-      <div class="title">{{entry.title}}</div>
-      <div class="author">
+
+      <div class="author">[{{entry.key}}] 
         {% for author in entry.author_array %}
           {% assign author_is_self = false %}
           {% if author.last == site.scholar.last_name%}
@@ -66,6 +66,8 @@
           {% endif %}
         {% endfor %}
       </div>
+
+      <div class="title"><a href="{{entry.url}}">{{entry.title}}</a></div>
 
       <div class="periodical">
       {% if entry.type == "article" %}

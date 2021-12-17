@@ -1,24 +1,17 @@
 ---
-layout: about
-title: about
-permalink: /
-description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
-
-profile:
-  align: right
-  image: prof_pic.jpg
-  address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
-news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+layout: page
+title: About us
+permalink: /about/
+description: 
+order: 1
+nav: true
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+The Software Engineering group concentrates on innovative and practically useful concepts, methods, and tools for the development of complex business and software-intensive embedded systems on a sound and reliable scientific and engineering basis. In the current age of digitalisation it is important to develop at high speed and deliver good quality.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+In recent years, software engineering has significantly extended and consolidated its portfolio of methods, techniques, and tools to support development of highly critical, reliable, or functionally complex systems within the predefined time and a given budget while meeting the required quality [[BEP+00]](https://www.se-rwth.de/research). It is our mission to transfer this knowledge and the accompanying tools into industry as well as to customize and apply them to project and company specific needs.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+#### Our mission
+"To define, improve, and industrially apply *techniques, concepts* and *methods* for innovative and *efficient development* of software and digitalisation-based systems, such that *high-quality* products can be developed in a *shorter period of time* and with flexible integration of *changing requirements*."
+
+[More about us](https://www.se-rwth.de/aboutus/)
