@@ -1,9 +1,13 @@
 ---
 layout: page
-permalink: /research/
 title: Research
-description: 
 order: 3
 nav: true
+dropdown: true
+children: 
+    - title: Topics
+      permalink: /topics/
+    - title: divider
+    - title: Projects
+      permalink: /projects/
 ---
-[Software Engineering Research](https://www.se-rwth.de/research/)
