@@ -290,7 +290,7 @@ MontiCore is a language workbench for an efficient development of domain-specifi
 - MontiTrans - Generator and Infrastructure for domain-specific transformation languages
 - GUIDSL - DSL to describe the layout of websites
 - A language to model restrictions in television broadcasts
-- Java, Class Diagrams, Feature Diagrams, JSON, XML, OCL/P, Object Diagrams, Statecharts, and m[any more](http://www.monticore.de/languages)
+- Java, Class Diagrams, Feature Diagrams, JSON, XML, OCL/P, Object Diagrams, Statecharts, and [many more](http://www.monticore.de/languages)
 
 There are many publications about MontiCore (see e.g. [here](https://www.se-rwth.de/publications/)). Especially the [MontiCore Handbook](http://monticore.de/handbook.pdf) contains a good summary of how to use [MontiCore](http://monticore.de/).
 
@@ -319,10 +319,7 @@ The generated parts include:
 In: Bonnie Anderson, Jason Thatcher, Rayman Meservy, editors, 25th Americas Conference on Information Systems (AMCIS 2020), AIS Electronic Library (AISeL), pages 1-10, August, 2020, Association for Information Systems (AIS).
 - [AMN+20a] K. Adam, J. Michael, L. Netz, B. Rumpe, and S. Varga.:
 [Enterprise Information Systems in Academia and Practice: Lessons learned from a MBSE Project.](http://www.se-rwth.de/publications/Enterprise-Information-Systems-in-Academia-and-Practice-Lessons-learned-from-a-MBSE-Project.pdf)
-In: 40 Years EMISA: Digital Ecosystems of the Future: Methodology, Techniques and Applications (EMISA'19), LNI P-304, pages 59-66, May, 2020, Gesellschaft für Informatik e.V..
-- [GHK+20] A. Gerasimov, P. Heuser, H. Ketteniß, P. Letmathe, J. Michael, L. Netz, B. Rumpe, and S. Varga:
-[Generated Enterprise Information Systems: MDSE for Maintainable Co-Development of Frontend and Backend.](http://www.se-rwth.de/publications/Generated-Enterprise-Information-Systems-MDSE-for-Maintainable-Co-Development-of-Frontend-and-Backend.pdf)
-In: Judith Michael, Dominik Bork, editors, Companion Proceedings of Modellierung 2020 Short, Workshop and Tools & Demo Papers, pages 22-30, February, 2020, CEUR Workshop Proceedings.
+In: 40 Years EMISA: Digital Ecosystems of the Future: Methodology, Techniques and Applications (EMISA'19), LNI P-304, pages 59-66, May, 2020, Gesellschaft für Informatik e.V.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
