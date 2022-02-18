@@ -75,14 +75,37 @@
         <em>In: {{entry.booktitle}},</em>
       {% elsif entry.type == "inbook" %}
         <em>In: {{entry.booktitle}},</em>
-        {% elsif entry.type == "book" %}
-        <em>{{entry.booktitle}},</em>
+      {% elsif entry.type == "book" %}
+        {% if entry.editor %}
+          In:
+           {% for editor in entry.editor_array %}
+          {% if forloop.length == 1 %}
+              {{editor.first | slice:0}}. {{editor.last}}
+          {% else %}
+            {% unless forloop.last %}
+                  {{editor.first| slice:0}}. {{editor.last}},
+            {% else %}
+                  and {{editor.first| slice:0}}. {{editor.last}},
+            {% endunless %}
+          {% endif %}
+        {% endfor %}
+          editors,
+        {% endif %}
+        {% if entry.booktitle %}
+          <em>{{entry.booktitle}}<em>,
+        {% endif %}
+        {% if entry.series %}
+          In: {{entry.series}},
+        {% endif %}
+        {% if entry.isbn %}
+          ISBN {{entry.isbn}}.
+        {% endif %}
       {% endif %}
         {% if entry.pages %}
-        {{entry.pages}},
+          {{entry.pages}},
         {% endif %}
         {% if entry.publisher %}
-        {{entry.publisher}},
+          {{entry.publisher}},
         {% endif %}
       {% if entry.month %}
         {{entry.month | capitalize}}.

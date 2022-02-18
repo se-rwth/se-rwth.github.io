@@ -2,7 +2,7 @@
 layout: page
 title: Agile Model-Based Software Engineering
 description: 
-img: assets/img/12.jpg
+img: 
 importance: 1
 ---
 
