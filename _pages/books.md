@@ -10,6 +10,9 @@ horizontal: false
 
 <div class="publications">
   {% for y in page.years %}
+    <p>
+      <img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt="" title="Trennlinie">
+    </p>
     <h2 class="year">{{y}}</h2>
     {% bibliography -f all-software-engineering-rwth-references -q @book[year={{y}}]* %}
   {% endfor %}
