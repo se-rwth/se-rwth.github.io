@@ -7,12 +7,22 @@ years2: [2008, 2007, 2006, 2004]
 years3: [2003, 2002, 2001, 1999, 1998, 1997, 1996, 1995, 1994]
 order: 4
 nav: true
+dropdown: true
+children: 
+    - title: All Publications
+      permalink: /publications/
+    - title: divider
+    - title: Books
+      permalink: /books/
+    - title: divider
+    - title: Ph.D. Theses
+      permalink: /phdtheses/
 ---
+For download: [Bibtex file with most papers](https://se-rwth.github.io/_bibliography/all-software-engineering-rwth-references.bib)
 
-- [Books](https://www.se-rwth.de/books)
-- [Publications 2009 - now (@RWTH)](#part1)
-- [Publications 2004 - 2008 (@TU Braunschweig)](#part2)
-- [Publications before 2004 (@TU Munich)](#part3)
+- [Part 1: Publications since 2009 (@RWTH Aachen)](#part1)
+- [Part 2: Publications 2004 - 2008 (@TU Braunschweig)](#part2)
+- [Part 3: Publications before 2004 (@TU Munich)](#part3)
 - [SoSyM Editorials](http://www.sosym.org/editorials/)
 
 <a name="part1"></a>
