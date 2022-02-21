@@ -193,7 +193,7 @@ scholar:
   style: ieee # apa
   locale: en
 
-  source: /_bibliography/
+  source: /assets/bibliography/ # /_bibliography/
   bibliography: all-software-engineering-rwth-references.bib # papers.bib
   bibliography_template: bib
   # Note: if you have latex math in your bibtex, the latex filter
