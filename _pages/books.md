@@ -8,6 +8,39 @@ nav: false
 horizontal: false
 ---
 
+<div class="row mt-3">
+  <div class="col-sm-2 mt-3 mt-md-0">
+    <cite>
+      <a href="#FHK+21"><img src="/assets/img/covers/Ernst-Denert-Award-for-Software-Engineering-2020.jpg" width="100%"></a>
+    </cite>
+  </div>
+  <div class="col-sm-2 mt-3 mt-md-0">
+    <cite>
+      <a href="#HKR21"><img src="/assets/img/covers/handbook2021.cover.png" width="100%"></a>
+    </cite>
+  </div>
+  <div class="col-sm-2 mt-3 mt-md-0">
+    <cite>
+      <a href="#BBK+21"><img src="/assets/img/covers/crest.jpg" width="100%"></a>
+    </cite>
+  </div>
+  <div class="col-sm-2 mt-3 mt-md-0">
+    <cite>
+      <a href="#FHK+20"><img src="/assets/img/covers/denert20.jpg" width="100%"></a>
+    </cite>
+  </div>
+  <div class="col-sm-2 mt-3 mt-md-0">
+    <cite>
+      <a href="#BKR+20"><img src="/assets/img/covers/montibelle.cover.gif" width="100%"></a>
+    </cite>
+  </div>
+  <div class="col-sm-2 mt-3 mt-md-0">
+    <cite>
+      <a href="#Nag19"><img src="/assets/img/covers/gotik.jpg" width="100%"></a>
+    </cite>
+  </div>
+</div>
+
 <div class="publications">
   {% for y in page.years %}
     <p>
