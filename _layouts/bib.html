@@ -18,6 +18,16 @@
           {% endunless %}
         {% endif %}
       {% endfor %}
+
+      {% unless entry.author %}
+        {% for editor in entry.editor_array %}
+            {% unless forloop.last %}
+                  {{editor.first| slice:0}}. {{editor.last}},
+            {% else %}
+                  {{editor.first| slice:0}}. {{editor.last}} (Eds.):
+            {% endunless %}
+        {% endfor %}
+      {% endunless %}
     </div>
 
     <!-- Title -->
@@ -25,19 +35,15 @@
     
     <div class="periodical" style="display: inline">
       In:
-      {% if entry.editor %}
-        {% for editor in entry.editor_array %}
-          {% if forloop.length == 1 %}
-            {{editor.first | slice:0}}. {{editor.last}}, editor,
-          {% else %}
-            {% unless forloop.last %}
-                  {{editor.first| slice:0}}. {{editor.last}},
-            {% else %}
-                  {{editor.first| slice:0}}. {{editor.last}}, editors,
-            {% endunless %}
-          {% endif %}
-        {% endfor %}
-      {% endif %}
+        {% if entry.author and entry.editor %}
+          {% for editor in entry.editor_array %}
+              {% unless forloop.last %}
+                    {{editor.first| slice:0}}. {{editor.last}},
+              {% else %}
+                    {{editor.first| slice:0}}. {{editor.last}} (Eds.):
+              {% endunless %}
+          {% endfor %}
+        {% endif %}
 
       {% if entry.journal %}
         {{entry.journal}},
@@ -76,7 +82,7 @@
         {{entry.address}},
       {% endif %}
       {% if entry.month %}
-        {{entry.month | capitalize}}.
+        {{entry.month | capitalize }}{% unless entry.month == "may" %}.{% endunless %}
       {% endif %}
       {% if entry.year %}
         {{entry.year}}.
