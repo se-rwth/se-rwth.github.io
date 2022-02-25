@@ -4,49 +4,36 @@ title: Books
 permalink: /books/
 description: 
 years: [2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010, 2001, 1996]
+keys: [
+        FHK+21, HKR21, BBK+21, FHK+20, BKR+20, Nag19, 
+        HR17, GHR17, ABH+17, CMR17, Rum17, CFJ+16, 
+        Rum16, BCR15, CCF+15a, CR15, RRW14a, KRR14, 
+        KR13, Rum12, RL12, JRS12, Rum11, GKLRS10, 
+        GR10, LMPPR10, Rum04, Rum04a, RH04, FPR03b, 
+        FPR03, BR01, EFMR01, BEPRT00, BR00, RF99, 
+        KRS99, BR98, BR97, Rum96
+      ]
 nav: false
 horizontal: false
 ---
 
-<div class="row mt-3">
-  <div class="col-sm-2 mt-3 mt-md-0">
-    <cite>
-      <a href="#FHK+21"><img src="/assets/img/covers/Ernst-Denert-Award-for-Software-Engineering-2020.jpg" width="100%"></a>
-    </cite>
+
+{% for i in (0..7)%}
+  <div class="row mt-3">
+    {% for k in page.keys limit:6 offset:continue %}
+      <div class="col-sm-2 mt-3 mt-md-0">
+        <cite>
+          <a href="#{{k}}"><img class="cover" src="/assets/img/covers/{{k}}.png" width="100%"></a>
+        </cite>
+      </div>
+    {% endfor %}
   </div>
-  <div class="col-sm-2 mt-3 mt-md-0">
-    <cite>
-      <a href="#HKR21"><img src="/assets/img/covers/handbook2021.cover.png" width="100%"></a>
-    </cite>
-  </div>
-  <div class="col-sm-2 mt-3 mt-md-0">
-    <cite>
-      <a href="#BBK+21"><img src="/assets/img/covers/crest.jpg" width="100%"></a>
-    </cite>
-  </div>
-  <div class="col-sm-2 mt-3 mt-md-0">
-    <cite>
-      <a href="#FHK+20"><img src="/assets/img/covers/denert20.jpg" width="100%"></a>
-    </cite>
-  </div>
-  <div class="col-sm-2 mt-3 mt-md-0">
-    <cite>
-      <a href="#BKR+20"><img src="/assets/img/covers/montibelle.cover.gif" width="100%"></a>
-    </cite>
-  </div>
-  <div class="col-sm-2 mt-3 mt-md-0">
-    <cite>
-      <a href="#Nag19"><img src="/assets/img/covers/gotik.jpg" width="100%"></a>
-    </cite>
-  </div>
-</div>
+{% endfor %}
+
+<p><img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt="" title="Trennlinie"></p>
 
 <div class="publications">
-  {% for y in page.years %}
-    <p>
-      <img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt="" title="Trennlinie">
-    </p>
-    <h2 class="year">{{y}}</h2>
-    {% bibliography -f all-software-engineering-rwth-references -q @book[year={{y}}]* %}
+  {% for k in page.keys %}
+    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
   {% endfor %}
 </div>
