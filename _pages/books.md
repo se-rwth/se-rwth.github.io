@@ -3,7 +3,6 @@ layout: page
 title: Books
 permalink: /books/
 description: 
-years: [2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010, 2001, 1996]
 keys: [
         FHK+21, HKR21, BBK+21, FHK+20, BKR+20, Nag19, 
         HR17, GHR17, ABH+17, CMR17, Rum17, CFJ+16, 
@@ -16,8 +15,6 @@ keys: [
 nav: false
 horizontal: false
 ---
-
-
 {% for i in (0..7)%}
   <div class="row mt-3">
     {% for k in page.keys limit:6 offset:continue %}
