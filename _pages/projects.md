@@ -3,7 +3,8 @@ layout: page
 title: Projects
 permalink: /projects/
 description: 
-nav: false
+order: 4
+nav: true
 ---
 The explanations below will give you an overview over some major research projects our chair is or has been part of.
 - [Agile Data Development](#ADD)
@@ -26,7 +27,7 @@ The explanations below will give you an overview over some major research projec
 - [SysML Workbench for the SPES Method (SpesML)](#SpesML)
 - [MontiBelle - Intelligent Verification](#MontiBelle)
 
-<hr>
+<p><img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt="" title="Trennlinie"></p>
 <a name="ADD"></a>
 
 ## Agile Data Development
@@ -39,7 +40,7 @@ This approach is thus intended to increase the overall profitability of the wind
 - Creation of transparency through a linked, providing cross-company of development-relevant data.
 - Dynamic design of requirements management across the entire development process and adaptation of the development process, the development tools, and the downstream validation and certification strategy.
 
-<hr>
+<p><img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt="" title="Trennlinie"></p>
 <a name="AutoKnigge"></a>
 
 ## AutoKnigge
@@ -56,7 +57,7 @@ In: L. O’Conner, editor, ASE’19. Software Engineering Intelligence Workshop 
 [Simulation of Model Execution for Embedded Systems.](https://se-rwth.de/publications/Simulation-of-Model-Execution-for-Embedded-Systems.pdf)
 In: L. Burgueño, A. Pretschner, S. Voss, M. Chaudron, J. Kienzle, M. Völter, S. Gérard, M. Zahedi, E. Bousse, A. Rensink, F. Polack, G. Engels, G.Kappel, editors, Proceedings of MODELS 2019. Workshop MLE, Munich, pp. 331-338, IEEE, Sep. 2019.
 
-<hr>
+<p><img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt="" title="Trennlinie"></p>
 <a name="BestEnergy"></a>
 
 ## BEST Energy
@@ -70,7 +71,7 @@ The [Synavision GmbH](https://www.synavision.de/) is an offspring of these activ
     </div>
 </div>
 
-<hr>
+<p><img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt="" title="Trennlinie"></p>
 <a name="CarOLO"></a>
 
 ## The CarOLO Project on Autonomous Driving
@@ -93,7 +94,7 @@ In: C. Rouff, M. Hinchey (Eds.). Experience from the DARPA Urban Challenge. Spri
     </div>
 </div>
 
-<hr>
+<p><img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt="" title="Trennlinie"></p>
 <a name="CrESt"></a>
 
 ## Collaborative Embedded Systems (CrESt)
@@ -119,7 +120,7 @@ In: Software Technologies: Applications and Foundations, pg. 146-153, LNCS 10748
     </div>
 </div>
 
-<hr>
+<p><img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt="" title="Trennlinie"></p>
 <a name="EMA"></a>
 
 ## EmbeddedMontiArc
@@ -150,7 +151,7 @@ In: International Conference on Intelligent Transportation Systems (ITSC'18), pg
     </div>
 </div>
 
-<hr>
+<p><img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt="" title="Trennlinie"></p>
 <a name="HBP"></a>
 
 ## Human Brain Project (HBP)
@@ -173,7 +174,7 @@ In: Modellierung 2016 Conference, LNI P-254, pp. 93-108. Bonner Köllen Verlag, 
     </div>
 </div>
 
-<hr>
+<p><img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt="" title="Trennlinie"></p>
 <a name="iserveU"></a>
 
 ## Intelligente modulare Serviceroboter-Funktionalitäten im menschlichen Umfeld am Beispiel von Krankenhäusern (iserveU)
@@ -196,7 +197,7 @@ In: Proceedings of MODELS 2017. Workshop EXE, Austin, CEUR 2019, Sept. 2017.
     </div>
 </div>
 
-<hr>
+<p><img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt="" title="Trennlinie"></p>
 <a name="InviDas"></a>
 
 ## Interaktive, visuelle Datenräume zur souveränen, datenschutzrechtlichen Entscheidungsfindung (InviDas)
@@ -212,7 +213,7 @@ The InviDas project is jointly realized by the [Gesellschaft für Informatik e.V
     </div>
 </div>
 
-<hr>
+<p><img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt="" title="Trennlinie"></p>
 <a name="IoP"></a>
 
 ## Internet of Production (IoP)
@@ -238,7 +239,7 @@ In: S. Dustdar, E. Yu, C. Salinesi, D. Rieu, V. Pant, editors, International Con
     </div>
 </div>
 
-<hr>
+<p><img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt="" title="Trennlinie"></p>
 <a name="MaCoCo"></a>
 
 ## Management Cockpit for University Chair Controlling (MaCoCo)
@@ -259,13 +260,13 @@ In: J. Michael, D. Bork, editors, Companion Proceedings of Modellierung 2020, Vi
     </div>
 </div>
 
-<hr>
+<p><img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt="" title="Trennlinie"></p>
 <a name="ModelPlex"></a>
 
 ## Modelling Solution for Complex Software Systems (ModelPlex)
 The three major objectives of [ModelPlex](http://cordis.europa.eu/project/rcn/79760_en.html) are to develop an open solution for complex systems engineering improving quality and productivity, lead its industrialisation and ensure its successful adoption by the industry.
 
-<hr>
+<p><img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt="" title="Trennlinie"></p>
 <a name="MontiCore"></a>
 
 ## The MontiCore Language Workbench
@@ -300,7 +301,7 @@ There are many publications about MontiCore (see e.g. [here](https://www.se-rwth
     </div>
 </div>
 
-<hr>
+<p><img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt="" title="Trennlinie"></p>
 <a name="MontiGem"></a>
 
 ## MontiCore-based Generator framework for Enterprise Management (MontiGem)
@@ -327,7 +328,7 @@ In: 40 Years EMISA: Digital Ecosystems of the Future: Methodology, Techniques an
     </div>
 </div>
 
-<hr>
+<p><img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt="" title="Trennlinie"></p>
 <a name="SemanticDiff"></a>
 
 ## A Semantic Approach to Evolution Analysis in Model-Based Software Development (Semantic Diff)
@@ -370,7 +371,7 @@ In: Proceedings Int. Workshop on Models and Evolution (ME'10), co-located with M
     </div>
 </div>
 
-<hr>
+<p><img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt="" title="Trennlinie"></p>
 <a name="SensorCloud"></a>
 
 ## SensorCloud, a BMBF Trusted Cloud Computing project
@@ -393,7 +394,7 @@ In: Workshop Wissenschaftliche Ergebnisse der Trusted Cloud Initiative, pp. 125-
     </div>
 </div>
 
-<hr>
+<p><img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt="" title="Trennlinie"></p>
 <a name="SPES"></a>
 
 ## Software Plattform Embedded Systems (SPES 2020 / SPES XT)
@@ -416,7 +417,7 @@ In: Softwaretechnik-Trends, 36(2), May 2016.
     </div>
 </div>
 
-<hr>
+<p><img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt="" title="Trennlinie"></p>
 <a name="SpesML"></a>
 
 ## SysML Workbench for the SPES Method (SpesML)
@@ -424,7 +425,7 @@ The [Systems Modeling Language (SysML)](https://www.omgsysml.org/SysML-2.htm) is
 
 This project aims to develop a SysML workbench for the SPES methodology and make it available for practical use. This workbench will support the SPES methods and models continuously to ensure the dissemination of MBSE, especially among small and medium-sized enterprises. Thus, the widely used modeling language SysML will be semantically and methodically substantiated and will pave the way to a comprehensive MBSE approach, especially for industry.
 
-<hr>
+<p><img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt="" title="Trennlinie"></p>
 <a name="MontiBelle"></a>
 
 ## MontiBelle - Intelligent Verification
