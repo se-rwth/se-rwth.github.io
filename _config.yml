@@ -207,6 +207,8 @@ scholar:
 
   query: "@*"
 
+  sort_by: year, month 
+
 
 # -----------------------------------------------------------------------------
 # Jekyll Responsive Images

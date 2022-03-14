@@ -31,6 +31,6 @@ horizontal: false
 
 <div class="publications">
   {% for k in page.keys %}
-    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+    {% bibliography -f all-software-engineering-rwth-references -f books -q @*[key={{k}}]* %}
   {% endfor %}
 </div>
