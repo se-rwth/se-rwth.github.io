@@ -61,9 +61,9 @@ We assume that the use of **models at runtime** will become a pretty agile and e
 4. Executable UML/P is an extension of UML with Java, implemented using the MontiCore language workbench.
 
 ## Related Topics
-- [volution & Transformation of Models](https://www.se-rwth.de/topics/Evolution.php)
-- [Generative Software Engineering](https://www.se-rwth.de/topics/Generative-SE.php)
-- [MontiCore - Language Workbench](https://www.se-rwth.de/topics/MontiCore.php)
-- [UML/P](https://www.se-rwth.de/topics/UML-P.php)
-- [Unified Modeling Language (UML)](https://www.se-rwth.de/topics/Unified-Modeling-Language.php)
-- [Variability & Software Product Lines (SPL)](https://www.se-rwth.de/topics/Variability.php)
+- [volution & Transformation of Models](/topics/Evolution)
+- [Generative Software Engineering](/topics/Generative-SE)
+- [MontiCore - Language Workbench](/topics/MontiCore)
+- [UML/P](/topics/UML-P)
+- [Unified Modeling Language (UML)](/topics/Unified-Modeling-Language)
+- [Variability & Software Product Lines (SPL)](/topics/Variability)
