@@ -52,7 +52,7 @@ When models are the central notation, **model quality** becomes an important iss
 
 We assume that the use of **models at runtime** will become a pretty agile and efficient development technique. It allows developers to delay design decisions to runtime adaptation and configuration of systems. However, reliability then becomes an issue. In [[CEG+14]](https://www.se-rwth.de/publications/Using-Models-at-Runtime-to-Address-Assurance-for-Self-Adaptive-Systems.pdf) we have therefore discussed how to improve reliability while retaining adaptivity.
 
-<hr>
+<img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt="" title="Trennlinie">
 
 ## Summary
 1. Model-based development becomes interesting, when the model language is the central notation and thus replacing the programming language.
@@ -61,7 +61,7 @@ We assume that the use of **models at runtime** will become a pretty agile and e
 4. Executable UML/P is an extension of UML with Java, implemented using the MontiCore language workbench.
 
 ## Related Topics
-- [volution & Transformation of Models](/topics/Evolution)
+- [Evolution & Transformation of Models](/topics/Evolution)
 - [Generative Software Engineering](/topics/Generative-SE)
 - [MontiCore - Language Workbench](/topics/MontiCore)
 - [UML/P](/topics/UML-P)
