@@ -37,6 +37,8 @@ We are interested in quite a number of foundational and applied topics. Below we
 - [UML/P - Executable Modeling with UML](/topics/UML-P)
 - [MontiArc - Architectural Modeling](/topics/Software-Architecture)
 
+<p><img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt="" title="Trennlinie"></p>
+
 ## Current and Fresh Research Topics
 Fresh research topics not necessarily already come with published articles. We assume results will be published soon:
 - Digital Twins and Digital Shadows in Engineering and Production
