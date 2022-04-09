@@ -29,5 +29,4 @@ requirements</span>.
 Bernhard Rumpe, Chair of Software Engineering, RWTH Aachen
 
 
-Bernhard Rumpe, Chair of Software Engineering, RWTH Aachen
 
