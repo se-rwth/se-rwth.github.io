@@ -20,6 +20,8 @@ For download: [Bibtex file with most papers](/assets/bibliography/all-software-e
 
 [SoSyM Editorials](http://www.sosym.org/editorials/)
 
+Selected publications: (a complete list can be found [here](https://www.se-rwth.de/publications/))
+
 <div class="publications">
   {% for y in page.years %}
     <p>
