@@ -63,3 +63,5 @@ articles. We assume results will be published soon:
 - SysML 2.0
 - Modelling in Production (fitting to the RWTH Internet of Production Excellence 
 Cluster, IOP) 
+
+Bernhard Rumpe, Chair of Software Engineering, RWTH Aachen

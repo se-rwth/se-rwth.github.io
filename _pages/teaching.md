@@ -102,3 +102,6 @@ terms. Furthermore, lecturers from industry discuss current
 developments that are advancing the digitalization of their economic 
 sector and provide practical examples. This includes domains such as 
 automotive, automation, health, production or public Infrastructure. 
+
+
+Bernhard Rumpe, Chair of Software Engineering, RWTH Aachen
