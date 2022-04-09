@@ -14,10 +14,8 @@ main research topics, application domains, and tools. Each topic page
 describes the our contributions to this topic in a consolidated, 
 compact form. 
 
-<p align="center">
-   <img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = 
-   "100%" alt="" title="Trennlinie">
-</p>
+<p><img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = 
+"100%" alt="" title="Trennlinie"></p>
 
 ## Foundations of Model-Based Software Engineering
 - [Agile Model-Based Software Engineering](/topics/Agile-MBSE)
@@ -36,6 +34,9 @@ Engineering](/topics/Artificial-Intelligence-in-Software-Engineering)
 - [Unified Modeling Language (UML)](/topics/Unified-Modeling-Language)
 - [Modeling Software Architecture](/topics/Software-Architecture)
 
+<p><img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = 
+"100%" alt="" title="Trennlinie"></p>
+
 ## Application Domains
 - [Robotics](/topics/Robotics)
 - [Automotive](/topics/Automotive)
@@ -43,6 +44,9 @@ Engineering](/topics/Artificial-Intelligence-in-Software-Engineering)
 Assistance](/topics/Autonomic-Driving)
 - [Energy Management](/topics/Energy-Management)
 - [Cloud Computing & Enterprise Information Systems](/topics/Cloud)
+
+<p><img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = 
+"100%" alt="" title="Trennlinie"></p>
 
 ## Our Most Important Software Tools
 - [MontiCore - Language Workbench for DSLs](/topics/MontiCore)
