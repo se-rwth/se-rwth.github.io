@@ -90,7 +90,7 @@ Artificial Intelligence, Smart Verification of UML and SysML Models.
    <img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt="" title="Trennlinie">
 </p>
 
-#### Digitalization (Judith Michael, Bernhard Rumpe 
+#### Digitalization (Judith Michael, Bernhard Rumpe) 
 
 The lecture "Digitalization" explores and discusses digitalisation from 
 different perspectives of informatics: We investigate fundamentals of 
