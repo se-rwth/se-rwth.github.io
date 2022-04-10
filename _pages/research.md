@@ -57,8 +57,10 @@ Assistance](/topics/Autonomic-Driving)
 "100%" alt="" title="Trennlinie"></p>
 
 ## Current and Fresh Research Topics
+
 Fresh research topics not necessarily already come with published 
 articles. We assume results will be published soon:
+
 - Digital Twins and Digital Shadows in Engineering and Production
 - SysML 2.0
 - Modelling in Production (fitting to the RWTH Internet of Production Excellence 
