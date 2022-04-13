@@ -1,9 +1,11 @@
 ---
 layout: page
 title: Artifacts in Complex Development Projects
+permalink: /topics/Artifacts/
 description: 
 img: 
 importance: 1
+keys: [Gre19, BHR+18, BGRW18, GHR17, BGRW17]
 ---
 ## Summary of Selected Papers
 Developing modern software solutions has become an increasingly complex and time 
@@ -161,3 +163,10 @@ Assistance](/topics/Autonomic-Driving)
 - [MontiArc - Architectural Modeling](/topics/Software-Architecture)
 - [Robotics](/topics/Robotics)
 - [Unified Modeling Language (UML)](/topics/Unified-Modeling-Language)
+
+## Selected Related Publications
+<div class="publications">
+  {% for k in page.keys %}
+    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+  {% endfor %}
+</div>

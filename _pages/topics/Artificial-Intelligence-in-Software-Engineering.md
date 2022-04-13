@@ -1,9 +1,11 @@
 ---
 layout: page
 title: Artificial Intelligence in Software Engineering
+permalink: /topics/Artificial-Intelligence-in-Software-Engineering/
 description: 
 img: 
 importance: 1
+keys: [KPRS19, DKMR19, EJK+19, KNP+19, BKRW19, DEKR19, DGH+19, KRRS19, RW18, KR18a, DGH+18, KMS+18, BKRW17, GLPR15, KLPR12, MRR11g, MRR11d, MRR11b, RR11, FLP+11, BR07]
 ---
 
 ## Summary of Selected Papers
@@ -193,3 +195,10 @@ learning supports the analysis with various methods.
 - [Modeling Software Architecture & the MontiArc 
 Tool](/topics/Software-Architecture)
 - [Automotive](/topics/Automotive)
+
+## Selected Related Publications
+<div class="publications">
+  {% for k in page.keys %}
+    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+  {% endfor %}
+</div>

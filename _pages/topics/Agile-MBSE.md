@@ -1,9 +1,11 @@
 ---
 layout: page
 title: Agile Model-Based Software Engineering
+permalink: /topics/Agile-MBSE/
 description: 
 img: 
 importance: 1
+keys: [Rum17, Rum16, CEG+14, Rum12, Sch12, Rum11, Kra10, LRS+10, MRR10, HKR+09, FHR08, KRV06, GKR+06a, GKR+06b, Rum04c, Rum03, PR03, Rum02]
 ---
 
 ## Summary of Selected Papers
@@ -160,3 +162,14 @@ MontiCore language workbench.
 - [UML/P](/topics/UML-P)
 - [Unified Modeling Language (UML)](/topics/Unified-Modeling-Language)
 - [Variability & Software Product Lines (SPL)](/topics/Variability)
+
+<img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt="" 
+title="Trennlinie">
+
+## Selected Related Publications
+
+<div class="publications">
+  {% for k in page.keys %}
+    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+  {% endfor %}
+</div>
