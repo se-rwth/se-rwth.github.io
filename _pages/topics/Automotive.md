@@ -1,9 +1,12 @@
 ---
 layout: page
 title: Automotive
+permalink: /topics/Automotive/
 description: 
 img: 
 importance: 1
+keys: [GRJA12,BR12b,BR12,BBR07,GHK+07,GHK+08,HKM+13,HRRW12,RSW+15]
+
 ---
 
 ## Summary of Selected Papers
@@ -89,3 +92,14 @@ assured using automatic simulations.
 - [Modeling Software Architecture](/topics/Software-Architecture)
 - [Robotics](/topics/Robotics)
 - [Variability & Software Product Lines (SPL)](/topics/Variability)
+
+<img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt=""
+  title="Trennlinie">
+
+## Selected Related Publications
+
+<div class="publications">
+  {% for k in page.keys %}
+    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+  {% endfor %}
+</div>

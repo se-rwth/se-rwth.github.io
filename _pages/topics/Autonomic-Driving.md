@@ -1,9 +1,11 @@
 ---
 layout: page
 title: Autonomous Driving and Driver Intelligence
-description: 
-img: 
+permalink: /topics/Autonomic-Driving/
+description:
+img:
 importance: 1
+keys: [R+10,BR12,BBR07,BR12b,BBH+13,MMR10,HKR12]
 ---
 
 ## Summary of Selected Papers
@@ -96,3 +98,14 @@ methods.
 - [Final Event Highlights](https://www.youtube.com/watch?v=aHYRtOvSx-M)
 - [Mo-re videos of the Darpa Urban Challenge 
 2007](https://www.youtube.com/results?search_query=Darpa%20Urban%20Challenge&sm=3) 
+
+<img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt=""
+title="Trennlinie">
+
+## Selected Related Publications
+
+<div class="publications">
+  {% for k in page.keys %}
+    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+  {% endfor %}
+</div>

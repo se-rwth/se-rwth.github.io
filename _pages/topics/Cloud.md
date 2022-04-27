@@ -1,9 +1,11 @@
 ---
 layout: page
 title: Cloud Computing & Enterprise Information Systems
-description: 
-img: 
+permalink: /topics/Cloud/
+description:
+img:
 importance: 1
+keys: [KRR14,HHK+14,KRS12,HHK+15a,PR13,HKR12,FPPR12,KPR12]
 ---
 
 ## Summary of Selected Papers
@@ -91,3 +93,14 @@ interesting to use configurable model-based technology.
 - [Modeling Software Architecture](/topics/Software-Architecture)
 - [Unified Modeling Language (UML)](/topics/Unified-Modeling-Language)
 - [UML/P](/topics/UML-P)
+
+<img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt=""
+title="Trennlinie">
+
+## Selected Related Publications
+
+<div class="publications">
+  {% for k in page.keys %}
+    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+  {% endfor %}
+</div>
