@@ -1,9 +1,11 @@
 ---
 layout: page
 title: Software Language Engineering (SLE)
+permalink: /topics/Language-Engineering/
 description: 
 img: 
 importance: 1
+keys: [Rum16,Rum17,KRV07b,Kra10,KRV10,CFJ+16,CBCR15,CCF+15a,SRV+10,BEK+18a,BEK+18b,BEK+19,KRV10,Voe11,KRV08,HMSNRW16,RRRW15b,HRW15,Wei12,GLRR15,HHK+15,HHK+13]
 ---
 ## Summary of Selected Papers
 Identifying or engineering appropriate languages for the various activities in 
@@ -85,9 +87,10 @@ e.g., is able to decompose the frontend language processing along the
 decomposition of the language itself 
 [[KRV10]](https://www.se-rwth.de/publications/MontiCore-a-Framework-for-Compositional-Development-of-Domain-Specific-Languages.pdf), 
 [[Voe11]](https://www.se-rwth.de/phdtheses/Diss-Voelkel-Kompositionale-Entwicklung-domaenenspezifischer-Sprachen.pdf), 
-[[KRV08]](), [HMSNRW16]. MontiCore also assists modular decomposition of the 
+[[KRV08]](https://www.se-rwth.de/staff/rumpe/publications20042008/MontiCore-Modular-Development-of-Textual-Domain-Specific-Languages.pdf),
+[[HMSNRW16]](https://www.se-rwth.de/publications/Compositional-Language-Engineering-using-Generated-Extensible-Static-Type-Safe-Visitors.pdf). MontiCore also assists modular decomposition of the 
 backend code generation based on different targets and different sublanguages 
-[RRRW15b].
+[[RRRW15b]](https://www.se-rwth.de/publications/Language-and-Code-Generator-Composition-for-Model-Driven-Engineering-of-Robotics-Component-and-Connector-Systems.pdf).
 In a second dimension, we want to decompose the tooling along the activities 
 (frontend: model processing, context conditions, internal transformations, 
 backend: printing) and decompose each of these activities along the individual 
@@ -209,3 +212,14 @@ base languages.
 - [State-Based Modeling (Automata)](/topics/State-Based-Modeling)
 - [Unified Modeling Language (UML)](/topics/Unified-Modeling-Language)
 - [Variability & Software Product Lines (SPL)](/topics/Variability)
+
+<img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt=""
+title="Trennlinie">
+
+## Selected Related Publications
+
+<div class="publications">
+  {% for k in page.keys %}
+    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+  {% endfor %}
+</div>

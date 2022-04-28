@@ -1,9 +1,11 @@
 ---
 layout: page
 title: Smart Energy Management
+permalink: /topics/Energy-Management/
 description: 
 img: 
 importance: 1
+keys: [FPPR12,KPR12,FLP+11b,KLPR12]
 ---
 ## Summary of Selected Papers
 In the past years it became more and more evident that saving energy and 
@@ -95,3 +97,14 @@ based on generative technologies from the MontiCore Language Workbench.
 - [Software Language Engineering (SLE)](/topics/Language-Engineering)
 - [MontiCore - Language Workbench](/topics/MontiCore)
 - [Modeling Software Architecture](/topics/Software-Architecture)
+
+<img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt=""
+title="Trennlinie">
+
+## Selected Related Publications
+
+<div class="publications">
+  {% for k in page.keys %}
+    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+  {% endfor %}
+</div>

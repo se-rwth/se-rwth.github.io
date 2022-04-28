@@ -1,9 +1,11 @@
 ---
 layout: page
 title: Semantics of Modeling Languages
+permalink: /topics/Semantics/
 description: 
 img: 
 importance: 1
+keys: [KRV10,HR04,BKR95,BHP+98,GKR96,BKR96,BCGR09a,BCGR09,BCR07,BCR07b,CGR08,MRR10,MRR11d,MRR11a,MRR11f,BR07,EFL+99,BGH+97,BGH+98,GR11,CGR09,GRR10,Rum17,Rum12,LRS+10,Rum96]
 ---
 
 ## Summary of Selected Papers
@@ -220,3 +222,14 @@ checks etc.
 - [Variability & Software Product Lines (SPL)](/topics/Variability)
 - [State-Based Modeling (Automata)](/topics/State-Based-Modeling)
 - [Unified Modeling Language (UML)](/topics/Unified-Modeling-Language)
+
+<img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt=""
+title="Trennlinie">
+
+## Selected Related Publications
+
+<div class="publications">
+  {% for k in page.keys %}
+    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+  {% endfor %}
+</div>

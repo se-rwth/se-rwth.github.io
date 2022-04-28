@@ -1,9 +1,11 @@
 ---
 layout: page
 title: Cyber-Physical Systems (CPS)
+permalink: /topics/Cyber-Physical-Systems/
 description: 
 img: 
 importance: 1
+keys: [KRS12,ZPK+11,HRR12,RRW13c,RRW14a,GRJA12,HRRW12,BR12b,BBR07,RRW12,KPR12,FPPR12,KLPR12]
 ---
 
 ## Summary of Selected Papers
@@ -132,3 +134,14 @@ Assistance](/topics/Autonomic-Driving)
 - [MontiArc - Architectural Modeling](/topics/Software-Architecture)
 - [Robotics](/topics/Robotics)
 - [Unified Modeling Language (UML)](/topics/Unified-Modeling-Language)
+
+<img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt=""
+title="Trennlinie">
+
+## Selected Related Publications
+
+<div class="publications">
+  {% for k in page.keys %}
+    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+  {% endfor %}
+</div>

@@ -1,9 +1,11 @@
 ---
 layout: page
 title: Compositionality & Modularity of Models & Languages
+permalink: /topics/Compositionality/
 description: 
 img: 
 importance: 1
+keys: [BR07,HKR+09,HKR+07,KRV10,KRV08,KRV07,Voe11.RRRW15b,KKR+09,CBCR15,CCF+15a]
 ---
 ## Summary of Selected Papers
 "Divide and conquer" as well as "abstraction" are the most fundamental 
@@ -88,3 +90,14 @@ even better UML.
 - [Software Language Engineering (SLE)](/topics/Language-Engineering)
 - [UML/P](/topics/UML-P)
 - [Variability & Software Product Lines (SPL)](/topics/Variability)
+
+<img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt=""
+title="Trennlinie">
+
+## Selected Related Publications
+
+<div class="publications">
+  {% for k in page.keys %}
+    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+  {% endfor %}
+</div>

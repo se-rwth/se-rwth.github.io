@@ -1,9 +1,11 @@
 ---
 layout: page
 title: Domain-Specific Languages (DSLs)
+permalink: /topics/Domain-Specific-Languages/
 description: 
 img: 
 importance: 1
+keys: [GHK+07,FPR02,SRV+10,CFJ+16,KRV07b,KRV10,GR11,GKR+07,KRV08,Voe11,CBCR15,CCF+15a,KRV07,LRS+10,Wei12,GKR+06a]
 ---
 ## Summary of Selected Papers
 People are modeling everywhere. Both science and philosophy use models to 
@@ -153,3 +155,14 @@ development of DSLs.
 - [Software Language Engineering (SLE)](/topics/Language-Engineering)
 - [Unified Modeling Language (UML)](/topics/Unified-Modeling-Language)
 - [Variability & Software Product Lines (SPL)](/topics/Variability)
+
+<img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt=""
+title="Trennlinie">
+
+## Selected Related Publications
+
+<div class="publications">
+  {% for k in page.keys %}
+    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+  {% endfor %}
+</div>

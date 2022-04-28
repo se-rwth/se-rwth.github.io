@@ -1,9 +1,11 @@
 ---
 layout: page
 title: Generative Software Engineering
+permalink: /topics/Generative-SE/
 description: 
 img: 
 importance: 1
+keys: [Rum12,Rum11,Rum16,Rum17,Sch12,KRV10,GKR+06a,HRR12,KRV06,GKR+06b,Wei12,Rum04c,Rum03,Rum02]
 ---
 
 ## Summary of Selected Papers
@@ -106,3 +108,14 @@ for generative software development.
 - [MontiCore - Language Workbench](/topics/MontiCore)
 - [UML/P](/topics/UML-P)
 - [Unified Modeling Language (UML)](/topics/Unified-Modeling-Language)
+
+<img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt=""
+title="Trennlinie">
+
+## Selected Related Publications
+
+<div class="publications">
+  {% for k in page.keys %}
+    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+  {% endfor %}
+</div>

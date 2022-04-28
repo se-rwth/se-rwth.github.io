@@ -1,9 +1,11 @@
 ---
 layout: page
 title: Robotics
+permalink: /topics/Robotics/
 description: 
 img: 
 importance: 1
+keys: [RRW12,RRW13c,RRRW15b,THR+13,BBR07,BR12b]
 ---
 
 ## Summary of Selected Papers
@@ -129,3 +131,14 @@ techniques used there for function validation can be carried over.
 - [MontiCore - Language Workbench](/topics/MontiCore)
 - [Semantics of Modeling Languages](/topics/Semantics)
 - [State Based Modeling (Automata)](/topics/State-Based-Modeling)
+
+<img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt=""
+title="Trennlinie">
+
+## Selected Related Publications
+
+<div class="publications">
+  {% for k in page.keys %}
+    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+  {% endfor %}
+</div>

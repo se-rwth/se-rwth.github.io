@@ -1,9 +1,11 @@
 ---
 layout: page
 title: Evolution & Transformation of Models
+permalink: /topics/Evolution/
 description: 
 img: 
 importance: 1
+keys: [CFJ+16,Rum04c,Rum12,LRS+10,MMR10,PR94,KPR97,KR18a,PR99,PR01,PR03,Rum12,MRR11d,MRR11e,MRR10,RSW+15,HRRS11,HRRS12,HHL+13,HRR+11,HRW15,Wei12]
 ---
 
 ## Summary of Selected Papers
@@ -181,3 +183,14 @@ given descriptions of modeling languages.
 - [Software Language Engineering (SLE)](/topics/Language-Engineering)
 - [Unified Modeling Language (UML)](/topics/Unified-Modeling-Language)
 - [Variability & Software Product Lines (SPL)](/topics/Variability)
+
+<img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt=""
+title="Trennlinie">
+
+## Selected Related Publications
+
+<div class="publications">
+  {% for k in page.keys %}
+    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+  {% endfor %}
+</div>
