@@ -1,9 +1,11 @@
 ---
 layout: page
 title: State-Based Modeling (Automata)
+permalink: /topics/State-Based-Modeling/
 description: 
 img: 
 importance: 1
+keys: [GKR96,BCR07b,BCGR09a,BCGR09,PR94,RK96,Rum96,KPR97,Rum16,Rum17,GR95,BR07,RRW14a,THR+13,FLP+11b]
 ---
 ## Summary of Selected Papers
 Today we see that many computer science theories are based on state machines in 
@@ -179,3 +181,14 @@ that is compatible with refinement and composition.
 - [Modeling Software Architecture](/topics/Software-Architecture)
 - [Semantics of Modeling Languages](/topics/Semantics)
 - [Unified Modeling Language (UML)](/topics/Unified-Modeling-Language)
+
+<img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt=""
+title="Trennlinie">
+
+## Selected Related Publications
+
+<div class="publications">
+  {% for k in page.keys %}
+    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+  {% endfor %}
+</div>

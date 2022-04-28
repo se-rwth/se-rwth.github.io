@@ -1,9 +1,11 @@
 ---
 layout: page
 title: Modeling Software Architecture & the MontiArc Tool
+permalink: /topics/Software-Architecture/
 description: 
 img: 
 importance: 1
+keys: [BKR+17,BKRW19,BRKW17a,BR07,PR99,HRR12,RRW13c,RRW14a,HRR10,RRRW15b,HRR+11,HRRS11,HKR+11,HRRS12,GHK+07,GHK+08,GKPR08,MRR13,Rin14,MRR14b,MMR10,HRR98,HKR+16]
 ---
 ## Summary of Selected Papers
 **Distributed interactive systems** have become more and more important in the 
@@ -152,7 +154,7 @@ accommodate changes.
 
 While many architecture styles assume static structures, we explored a modeling 
 technique to describe **dynamic architectures** in [[HRR98]](#HRR98) 
-[HKR+16](#HKR+16). The former [[HRR98]](#HRR98) allows developers to express 
+[[HKR+16]](#HKR+16). The former [[HRR98]](#HRR98) allows developers to express 
 dynamically extensible interfaces of components with so-called component 
 interface diagrams. The latter [[HKR+16]](#HKR+16) allows developers to 
 associate component configurations to modes and to specify dynamic 
@@ -185,3 +187,14 @@ agile start of SPL integration.
 - [Robotics](/topics/Robotics)
 - [Semantics of Modeling Languages](/topics/Semantics)
 - [State-Based Modeling (Automata)](/topics/State-Based-Modeling)
+
+<img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt=""
+title="Trennlinie">
+
+## Selected Related Publications
+
+<div class="publications">
+  {% for k in page.keys %}
+    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+  {% endfor %}
+</div>

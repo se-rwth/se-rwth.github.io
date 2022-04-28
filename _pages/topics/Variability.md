@@ -1,9 +1,11 @@
 ---
 layout: page
 title: Variability & Software Product Lines
+permalink: /topics/Variability/
 description: 
 img: 
 importance: 1
+keys: [GKPR08,GHK+08,GRJA12,HRR+11,HRRS12,HKM+13,HRRS12,HHK+15,CGR09,GR11,FPR02]
 ---
 ## Summary of Selected Papers
 Most products, such as cars, printers, mobile phones, etc., exist in various 
@@ -129,3 +131,14 @@ process adaptation and needs to be tailored to the individual company.
 - [MontiCore - Language Workbench](/topics/MontiCore)
 - [Semantics of Modeling Languages](/topics/Semantics)
 - [Software Language Engineering (SLE)](/topics/Language-Engineering)
+
+<img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt=""
+title="Trennlinie">
+
+## Selected Related Publications
+
+<div class="publications">
+  {% for k in page.keys %}
+    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+  {% endfor %}
+</div>

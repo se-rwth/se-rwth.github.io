@@ -1,9 +1,11 @@
 ---
 layout: page
 title: UML/P
+permalink: /topics/UML-P/
 description: 
 img: 
 importance: 1
+keys: []
 ---
 
 ## Summary of Selected Papers
@@ -51,3 +53,14 @@ to the UML/P itself.
 - [Modeling Software Architecture](/topics/Software-Architecture)
 - [State-Based Modeling (Automata)](/topics/State-Based-Modeling)
 - [Unified Modeling Language (UML)](/topics/Unified-Modeling-Language)
+
+<img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt=""
+title="Trennlinie">
+
+## Selected Related Publications
+
+<div class="publications">
+  {% for k in page.keys %}
+    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+  {% endfor %}
+</div>

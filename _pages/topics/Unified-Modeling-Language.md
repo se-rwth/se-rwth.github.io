@@ -1,9 +1,11 @@
 ---
 layout: page
 title: Unified Modeling Language (UML)
+permalink: /topics/Unified-Modeling-Language/
 description: 
 img: 
 importance: 1
+keys: [Rum16,Rum17,Sch12,GR11,BCGR09,BCGR09a,BCR07,CGR08,GRR10,MRR11e,MRR11c,MRR11f,MRR11a,MRR11d,FHR08,BGH+98,Rum04c,Rum02,FPR02,EFL+99,SRV+10,FEL+98,KER99]
 ---
 
 ## Summary of Selected Papers 
@@ -90,3 +92,14 @@ generation as well as for high-level analysis.
 - [Semantics of Modeling Languages](/topics/Semantics)
 - [Software Language Engineering (SLE)](/topics/Language-Engineering)
 - [UML/P](https://www.se-rwth.de/topics/UML-P.php)
+
+<img src="{{ '/assets/img/balken.jpg' | relative_url }}" width = "100%" alt=""
+title="Trennlinie">
+
+## Selected Related Publications
+
+<div class="publications">
+  {% for k in page.keys %}
+    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+  {% endfor %}
+</div>
