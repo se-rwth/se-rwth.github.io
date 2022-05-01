@@ -15,12 +15,12 @@ keys: [
 nav: false
 horizontal: false
 ---
-{% for i in (0..7)%}
+{% for i in (0..10)%}
   <div class="row mt-3">
-    {% for k in page.keys limit:6 offset:continue %}
-      <div class="col-sm-2 mt-3 mt-md-0">
+    {% for k in page.keys limit:5 offset:continue %}
+      <div class="col-sm mt-3 mt-md-0">
         <cite>
-          <a href="#{{k}}"><img class="cover" src="/assets/img/covers/{{k}}.png" width="100%"></a>
+          <a href="#{{k}}"><img class="cover" src="/assets/img/covers/{{k}}.png"></a>
         </cite>
       </div>
     {% endfor %}
