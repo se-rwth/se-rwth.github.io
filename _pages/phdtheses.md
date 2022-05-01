@@ -15,7 +15,7 @@ horizontal: false
 ---
 {% for i in (0..10)%}
   <div class="row mt-3">
-    {% for k in page.keys limit:6 offset:continue %}
+    {% for k in page.keys limit:5 offset:continue %}
       <div class="col-sm mt-3 mt-md-0">
         <cite>
           <a href="#{{k}}"><img class="cover" src="/assets/img/covers/{{k}}.png"></a>
