@@ -409,7 +409,7 @@ In: S. Dustdar, E. Yu, C. Salinesi, D. Rieu, V. Pant, editors, International Con
 ## Management Cockpit for University Chair Controlling (MaCoCo)
 
 Within the [MaCoCo (Management Cockpit for 
-Controlling)](https://www.se-rwth.de/projects/MaCoCo.php) project we 
+Controlling)](/projects/MaCoCo) project we 
 realize a multi-user web-application for the decentralized management 
 and controlling of organizational processes within the chairs or 
 institutes of a university. The key elements of the project focus on 
@@ -417,7 +417,7 @@ finance, staff and project organization.
 
 Large parts of the code are generated with the [MontiCore language 
 workbench and code generation 
-framework](https://www.se-rwth.de/topics/MontiCore.php) to ensure a 
+framework](https://se-rwth.github.io/topics/MontiCore/) to ensure a 
 highly adaptable system. Lead users are involved actively in the 
 development process to be able to provide a useful solution. 
 
