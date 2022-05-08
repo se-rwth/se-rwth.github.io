@@ -41,9 +41,14 @@ nav: true
 We are located in the Informatikzentrum (computer science department) 
 at Ahornstraße 55 in 52074 Aachen. Once at the Informatikzentrum, the 
 following location plan can help you to find us. We are in building E1. 
-{% responsive_image path: assets/img/map.png class: "img-fluid rounded 
-z-depth-1" %} To reach the Informatikzentrum you have to approach 
-Aachen by plane, train, or car. 
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/map.png" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+To reach the Informatikzentrum you have to approach Aachen by plane, train, or car. 
 
 #### Arriving by Plane
 
@@ -97,14 +102,18 @@ This pre-located Google map may help plan your travel.
 ## Accommodation
 
 Aachen provides several Hotels within the historic downtown or close to 
-the Informatikzentrum, where we are located. {% responsive_image path: 
-assets/img/hotels_map.jpg class: "img-fluid rounded z-depth-1" %} 
+the Informatikzentrum, where we are located.
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/hotels_map.jpg" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 Regarding your accomodation needs, we usually propose these three 
 hotels 
 
 - [Novotel Aachen 
 City](http://www.novotel.com/gb/hotel-3557-novotel-aachen-city/index.shtml) 
-with rooms starting from €95 per night.\ "Located in the city center, 
+with rooms starting from €95 per night. "Located in the city center, 
 the Novotel Aachen City hotel houses 154 air-conditioned and spacious 
 rooms, each equipped with high-speed Internet connection, a swivel desk 
 and comfortable sofa. The first-class, innovative furnishings combine 
@@ -114,7 +123,7 @@ Aachen's rooftops. Beneath the hotel is a public garage."
 
 - [Mercure Hotel 
 Aachen](http://www.mercure.com/gb/hotel-5326-mercure-hotel-aachen-am-dom/index.shtml) 
-with rooms starting from €74 per night.\ "The Mercure Hotel Aachen am 
+with rooms starting from €74 per night. "The Mercure Hotel Aachen am 
 Dom, located in the city center, has 117 rooms, some of which have 
 terraces and overlook the old town. The VDR-certified hotel also has 3 
 meeting rooms, which can accommodate up to 22 people, and Wi-Fi in all 
@@ -123,7 +132,7 @@ as a public parking garage with reserved spaces for hotel guests."
 
 - [Hotel IBIS Aachen 
 Marschiertor](http://www.ibishotel.com/gb/hotel-0967-ibis-aachen-marschiertor-aix-la-chapelle/index.shtml) 
-with rooms starting from €65 per night.\ "The Ibis Aachen Marschiertor 
+with rooms starting from €65 per night. "The Ibis Aachen Marschiertor 
 is set in a peaceful yet central location. The hotel has 104 
 comfortable and modern rooms with wireless Internet access via Wi-Fi. 
 You can also surf the net and check your emails free of charge at the 
