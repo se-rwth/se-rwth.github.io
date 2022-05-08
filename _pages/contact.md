@@ -105,7 +105,9 @@ Aachen provides several Hotels within the historic downtown or close to
 the Informatikzentrum, where we are located.
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
+      <a href="https://www.google.de/maps/search/hotels+aachen/@50.775849,6.079345,15z?hl=en">
         {% include figure.html path="assets/img/hotels_map.jpg" class="img-fluid rounded z-depth-1" %}
+      </a>
     </div>
 </div>
 Regarding your accomodation needs, we usually propose these three 
