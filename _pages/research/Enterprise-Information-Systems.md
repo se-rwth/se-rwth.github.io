@@ -95,6 +95,8 @@ development time, increase flexibility and adaptivity.
 2. Models can be used for domain and data modeling.
 3. Generative approaches for enterprise information systems help to cope with
 new challenges such as privacy regulations.
+4. A methodology for retrofitting generative aspects in existing applications allows to
+replace existing code step-by-step with generated code.
 
 {% include trennlinie.html %}
 
