@@ -189,8 +189,10 @@ how to handle different lifecycle representations of the original system.
 
 Besides the production domain, we are investigating how digital twins
 can be applied to other areas, e.g.,
-accompanying digital twins for IoT systems [[KMR21]](#KMR21), or
-generative approaches to integrate cyber-physical systems in the 
+accompanying digital twins for [IoT](/research/IoT) 
+systems [[KMR21]](#KMR21), or
+generative approaches to integrate 
+[cyber-physical systems](/research/Cyber-Physical-Systems) in the 
 smart home domain with 
 their information systems [[KMR+20]](#KMR+20). 
 
@@ -233,7 +235,7 @@ allows us to reuse models and fastens the engineering of digital twins.
 - [Model-Based Assistive Systems](/research/Model-Based-Assistive-Systems)
 - [Models in Enterprise Information System Development](/research/Enterprise-Information-Systems)
 - [MontiGem - Generating Enterprise Management Systems](/research/MontiGem)
-- [MontiThings](/research/MontiThings)
+- [Cyber-Physical Systems](/research/Cyber-Physical-Systems)
 
 {% include trennlinie.html %}
 
