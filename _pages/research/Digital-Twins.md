@@ -5,10 +5,13 @@ permalink: /research/Digital-Twins/
 description:
 img:
 importance: 1
-keys: [BMR+22, DHM+22, BDJ+22, MPRW22, BHK21, BBD+21b, BBD+21a, DMR+20, BDH+20, BPVZP19, Rum17]
+keys: [BMR+22, DHM+22, BDJ+22, MPRW22, BHK21, BBD+21b, BBD+21a, DMR+20, BDH+20, BPVZP19]
 ---
 
 ## Summary of Most Relevant Topic Papers
+
+<img style = "padding-left: 10px;" src="{{ '/assets/img/research/digitalTwins/DT.Perspectives.png' | relative_url }}" width = "45%" alt="" title="Digital Twin Perspectives" align="right">
+
 
 There exists a plethora of definitions for Digital Twins (DTs),
 however, there is little consensus about what a DT actually is.
@@ -153,7 +156,7 @@ how to use process prediction within digital twins [[BHK21]](#BHK21).
 Other research focuses on the creation of
 low-code platforms for model-driven digital twins [[DHM+22]](#DHM+22) or
 sustainable digital twin engineering for the production domain.
-Within our research, 
+ 
 
 To realize digital twins and their cockpits is an increasingly complex task
 that leads us to the idea of increasing the degree of automation for
@@ -162,8 +165,23 @@ low-code development approach
 that reduces the amount of hand-written code needed and uses
 process mining techniques to derive PADTCs.
 
-Within [[MPRW22]](#MPRW22), we are discussing integration challenges
-for digital twin systems-of-systems such as the hoizontal integration of
+<center>
+<div class="row" style="width: 70%">
+    <div class="col-sm mt-3 mt-md-0">
+        {% responsive_image path: assets/img/DT.SoS.png 
+           title: "Composition and Integration of Digital Twin Systems-of-Systems" 
+           class: "img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+</center>
+<br />
+
+As such digital twins can exist for various domains, perspectives and
+levels of detail, it is interesting to investigate how to combine
+such digital twins in systems-of-systems.
+WIntegration challenges
+for digital twin systems-of-systems [[MPRW22]](#MPRW22)
+include, e.g., the hoizontal integration of
 digital twin parts, the composition of DTs for different perspectives, or
 how to handle different lifecycle representations of the original system.
 

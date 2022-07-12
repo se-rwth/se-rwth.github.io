@@ -12,16 +12,26 @@ keys: [HMR+19,Ma17,Mi13,Mi18,
 
 ## Summary of Most Relevant Topic Papers
 
-The aim of information services and systems is to turn data into useful
-information.
-Assistive systems are a special type of information system:
-they (1) provide situational support for human behaviour (2) based on
-information from previously stored and real-time monitored structural context
-and behaviour data (3) at the time the person needs or asks for it [[HMR+19]](#HMR+19).
+Assistive systems offer people support in a wide variety of situations. 
+This can be relevant in all areas of life, from our private 
+home, in health care, in vehicles or in the professional world. 
+If we consider our own home, such an assistive system can help us when 
+we forget things. 
+Assistive systems use information about processes  
+and context information, e.g., about rooms, objects in the rooms or
+devices we are interacting with.
 
-The figure below shows the main components of such an assistive
+**Assistive systems** [[HMR+19]](#HMR+19)
+1. provide situational support for human behaviour 
+2. based on
+information from previously stored and real-time monitored structural context
+and behaviour data 
+3. at the time the person needs or asks for it.
+
+The main components of an assistive
 system according to the architectural patterns for model
-centered architecture solutions [[Ma17]](#Ma17) .
+centered architecture solutions [[Ma17]](#Ma17) are sensors, storages
+observation components, a behavior engine and support components.
 Information about human behavior is collected via sensors or smart devices
 and processed in an observation engine, which stores the data and models.
 The behavior engine compares and connects the current behavior step with
@@ -52,7 +62,9 @@ engineering process, and ensures consistency-by-design.
 Our current work on assistive systems is based on former work within the
 Human Behavior Monitoring and Support (HBMS)
 project [[Mi13]](#Mi13) [[Mi18]](#Mi18)
-in which a domain specific language [[Mi13]](#Mi13) and domain specific modeling
+in which a domain specific language [[Mi13]](#Mi13) 
+including structural and behavior data,
+and domain specific modeling
 method for assistive systems [[MM15]](#MM15) were developed.
 
 Current work extends these approaches: to enable useful support, it

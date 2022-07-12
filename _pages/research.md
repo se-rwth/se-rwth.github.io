@@ -89,6 +89,7 @@ consolidated, compact form.
 - [Automotive](/research/Automotive)
 - [Autonomic Driving & Intelligent Driver
     Assistance](/research/Autonomic-Driving)
+- [Digital Twins and Digital Shadows in Engineering, Operation and Production](/research/Digital-Twins)
 - [Robotics Architectures and Tasks](/research/Robotics)
 - [Cloud Computing Applications](/research/Cloud)
 - [Enterprise Information Systems](/research/Enterprise-Information-Systems)
@@ -96,7 +97,6 @@ consolidated, compact form.
 
 {% comment %}
 - [Internet of Things (IoT)](/research/IoT)
-- [Digital Twins and Digital Shadows in Engineering, Operation and Production](/research/Digital-Twins)
 {% endcomment %}
 
 
