@@ -5,9 +5,9 @@ permalink: /research/Enterprise-Information-Systems/
 description:
 img:
 importance: 1
-keys: [KRV10,MSNRR15a,Loo17,
+keys: [HKR21, KRV10,MSNRR15a,Loo17,Rot17,
         Rei16,AMN+20a,ANV+18,
-        ELR+17,Mi19]
+        ELR+17,MNRV19,DGM+21,GMN+20]
 ---
 
 ## Summary of Most Relevant Topic Papers
@@ -55,14 +55,19 @@ Java Swing. The department has developed further generators such as
 MontiEE [[Loo17]](#Loo17) or MontiWIS [[Rei16]](#Rei16).
 
 The most recent generator, 
-**[MontiGem](/research/MontiGem)** [[AMN+19]](#AMN+19), was successfully
+**[MontiGem](/research/MontiGem)** [[AMN+20a]](#AMN+20a), was successfully
 applied
 in an application project for the financial controlling of the chairs of RWTH
-Aachen University, the MaCoCo project [[ANV+18]](#ANV+18). With MontiGem, it is
-possible to generate large parts of data centric business applications: The
+Aachen University, the [MaCoCo](/projects/MaCoCo) project [[ANV+18]](#ANV+18). 
+With MontiGem, it is
+possible to generate large parts of data centric business applications
+from a set of models: The
 data-structure and communication infrastructure, functions to access,
 retrieve and store the data, the GUIs, and parts of the access
 control.
+Additional transformations from [UML/P](/research/UML-P/) class diagrams
+to models for graphical user interfaces [[GMN+20]](#GMN+20)
+allow to even reduce the information needed for the generation process. 
 
 Enterprise Information Systems are facing challenges: 
 The General Data Protection Regulation (GDPR), in application since May 2018,
@@ -70,13 +75,17 @@ marks a new era in data privacy. These regulations are also relevant for EIS
 dealing with private data.
 Thus, we investigate the architecture of cloud services for
 the digital me in a privacy-aware environment [[ELR+17]](#ELR+17).
-Further approaches go beyond architectural aspects: [[Mi19]](#Mi19)
+Further approaches go beyond architectural aspects: [[MNRV19]](#MNRV19)
 discusses a privacy preserving data model and system architecture.
 The user-centered view on the system design allows to track who does
 what, when, why, where and how with personal data and can make this
 information available for users in an information portal.
 
-
+We have developed a methodology for 
+retrofitting generative aspects in existing applications
+[[DGM+21]](#DGM+21) to improve the application of
+[generative software engineering](/research/Generative-SE/) for
+brown-field information systems in practice. 
 
 {% include trennlinie.html %}
 
