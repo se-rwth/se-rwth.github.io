@@ -106,9 +106,10 @@ consolidated, compact form.
 - [MontiCore - Language Workbench for DSLs](/research/MontiCore)
 - [UML/P - Executable Modeling with UML](/research/UML-P)
 - [MontiArc - Architectural Modeling](/research/Software-Architecture)
+- [MontiGem - Generating Enterprise Management Systems](/research/MontiGem)
+
 
 {% comment %}
-- [MontiGem - Generating Enterprise Management Systems](/research/MontiGem)
 - [MontiThings - Modeling the IoT](/research/MontiThings)
 {% endcomment %}
 
