@@ -109,7 +109,7 @@ system or the operation processes of the physical system.
 <center>
 <div class="row" style="width: 70%">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/DTC.Process.png 
+        {% responsive_image path: assets/img/research/digitalTwins/DTC.Process.png 
            title: "Generating digital twin cockpits from models" 
            class: "img-fluid rounded z-depth-1" %}
     </div>
