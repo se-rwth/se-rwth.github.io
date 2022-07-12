@@ -6,8 +6,8 @@ description:
 img:
 importance: 1
 keys: [HMR+19,Ma17,Mi13,Mi18,
-        MM13,MM15,MS17,
-        Mi19,SM18,SM20,ELR+17]
+        MM13,MM15,MS17,MRZ21,
+        MNRV19,SM18,SM20,ELR+17]
 ---
 
 ## Summary of Most Relevant Topic Papers
@@ -77,11 +77,11 @@ assisted living and smart home domain [[MS17]](#MS17).
 Recent research discusses the context model for user-centered privacy-driven
 systems in the IoT domain including special aspects for the use in 
 combination with process mining
-systems [[Mi19]](#Mi19).
+systems [[MNRV19]](#MNRV19).
 
 The mark-up of online manuals for non-smart devices [[SM18]](#SM18) 
 as well as
-websites [[SM19]](#SM19) is one further step to provide human-centered
+websites [[SM20]](#SM20) is one further step to provide human-centered
 assistance.
 Using these approaches reduces system set-up time and improves flexibility
 for changes by automatically integrating device and application
@@ -91,7 +91,14 @@ Due to the General Data Protection Regulation (GDPR) organizations are
 obliged to consider privacy throughout the complete development process.
 Our work suggests solutions for privacy-aware environments for cloud
 services [[ELR+17]](#ELR+17) as well as privacy preserving information systems
-demonstrated on an IoT manufacturing use case [[Mi19]](#Mi19).
+demonstrated on an IoT manufacturing use case [[MNRV19]](#MNRV19).
+
+Within assistive systems, we can use different kinds of DSLs for generation 
+and during runtime, e.g., 
+we are investigating how goal modeling can be used as addition to
+behavior modeling languages [[MRZ21]](#MRZ21) and
+how to define context information and user tasks. 
+
 
 {% include trennlinie.html %}
 

@@ -5,17 +5,20 @@ permalink: /research/Digital-Twins/
 description:
 img:
 importance: 1
-keys: [BMR+22, DHM+22, BDJ+22, MPRW22, BHK21, BBD+21b, BBD+21a, DMR+20, BDH+20, BPVZP19]
+keys: [BMR+22, DHM+22, BDJ+22, MPRW22, BHK+21, BBD+21b, 
+       BBD+21a, DMR+20, BDH+20, BPVZP19,KMR21,KMR+20]
 ---
 
 ## Summary of Most Relevant Topic Papers
 
-<img style = "padding-left: 10px;" src="{{ '/assets/img/research/digitalTwins/DT.Perspectives.png' | relative_url }}" width = "45%" alt="" title="Digital Twin Perspectives" align="right">
 
 
 There exists a plethora of definitions for Digital Twins (DTs),
 however, there is little consensus about what a DT actually is.
 The main weaknesses about the available definitions are that they are:
+
+<img style = "padding-left: 10px;" src="{{ '/assets/img/research/digitalTwins/DT.Perspectives.png' | relative_url }}" width = "45%" alt="" title="Digital Twin Perspectives" align="right">
+
 1. ambiguous, by deferring to another undefined term, such as a  "virtual
    representation",  "a virtual projection of the industrial facility into 
    the cloud", or a  "computable virtual abstraction";
@@ -152,11 +155,10 @@ how to use
 creating digital twin architectures [[BDH+20]](#BDH+20),
 how to derive digital twin cockpits [[DMR+20]](#DMR+20) from models using 
 the [MontiGem](/research/MontiGem) generator, and
-how to use process prediction within digital twins [[BHK21]](#BHK21). 
+how to use process prediction within digital twins [[BHK+21]](#BHK+21). 
 Other research focuses on the creation of
 low-code platforms for model-driven digital twins [[DHM+22]](#DHM+22) or
 sustainable digital twin engineering for the production domain.
- 
 
 To realize digital twins and their cockpits is an increasingly complex task
 that leads us to the idea of increasing the degree of automation for
@@ -179,11 +181,18 @@ process mining techniques to derive PADTCs.
 As such digital twins can exist for various domains, perspectives and
 levels of detail, it is interesting to investigate how to combine
 such digital twins in systems-of-systems.
-WIntegration challenges
+Integration challenges
 for digital twin systems-of-systems [[MPRW22]](#MPRW22)
 include, e.g., the hoizontal integration of
 digital twin parts, the composition of DTs for different perspectives, or
 how to handle different lifecycle representations of the original system.
+
+Besides the production domain, we are investigating how digital twins
+can be applied to other areas, e.g.,
+accompanying digital twins for IoT systems [[KMR21]](#KMR21), or
+generative approaches to integrate cyber-physical systems in the 
+smart home domain with 
+their information systems [[KMR+20]](#KMR+20). 
 
 {% include trennlinie.html %}
 
