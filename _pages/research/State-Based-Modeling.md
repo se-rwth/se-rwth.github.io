@@ -61,7 +61,8 @@ complexity of the system model.
 
 Starting with [[PR94]](#PR94), we investigated how to use state machines to
 describe the abstract behavior of superclasses and refine it in subclasses.
-While the description in [[PR94]](#PR94) ist relatively informal, we have formalized the refinement relation in [[RK96]](#RK96) by mapping a state 
+While the description in [[PR94]](#PR94) ist relatively informal, 
+we have formalized the refinement relation in [[RK96]](#RK96) by mapping a state 
 machine to a set
 of possible component behaviors based on the streams of the Focus (see
 [Modeling Software Architecture](/research/Software-Architecture)) theory.
@@ -192,7 +193,8 @@ that is compatible with refinement and composition.
 ## Selected Topic-Specific Publications
 
 <div class="publications">
-  {% for k in page.keys %}
+  {% assign sortedKeys = page.keys | sort %}
+  {% for k in sortedKeys %}
     {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
   {% endfor %}
 </div>

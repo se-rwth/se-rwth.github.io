@@ -40,11 +40,8 @@ Engineering.
 
 ### Promotionsstellen für wissenschaftliche Mitarbeiter:innen
 
-- [Big Data-Architekturen und AI für Mobilität der 
-Zukunft](/assets/pdf/WiMi.CatenaX.ZF.pdf)
-
 - [Einsatz von NLP im Automobilen Ziele- und Anforderungsmanagement](
-/assets/pdf/WiMi.KIZAM.pdf)
+/assets/jobs/WiMi.KIZAM.pdf)
 
 - **oder Sie bewerben sich initiativ**
 
@@ -67,20 +64,20 @@ Projekte sind vorhanden.
 ### Hiwi-Stellen
 
 - [Design und Pflege von 
-Webinhalten](/assets/pdf/21.06.25.HiWi.Web.pdf)
+Webinhalten](/assets/jobs/21.06.25.HiWi.Web.pdf)
 
 - [InviDas: Entwicklung einer Plattform zur Vermittlung von 
-Datenschutzkonzepten für Smart-Wearables](/assets/pdf/22.05.17.Invidas.Hiwi.pdf)
+Datenschutzkonzepten für Smart-Wearables](/assets/jobs/22.05.17.Invidas.Hiwi.pdf)
 
 - [MaCoCo: Entwicklung eines webbasierten Management Cockpits fuer das 
 Lehrstuhl 
-Controlling](/assets/pdf/19.07.04.MaCoCo.pdf)
+Controlling](/assets/jobs/19.07.04.MaCoCo.pdf)
 
 - [Weiterentwicklung und Qualitässicherung der Language Workbench 
 MontiCore](/jobs/mc-hiwi) 
 
 - [SemDiff: Entwicklung von Tools zur automatisierten semantischen 
-Modelldifferenzierung](/assets/pdf/22.01.18.HiWi.SemDiff.pdf)
+Modelldifferenzierung](/assets/jobs/22.01.18.HiWi.SemDiff.pdf)
 
 - oder Sie bewerben sich initiativ
 

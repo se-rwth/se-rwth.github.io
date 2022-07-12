@@ -80,34 +80,6 @@ Currently, the modeling language engineering working group consists of:
 
 {% include trennlinie.html %}
 
-### Teaching
-
-Our research activities and their results influence the courses we offer. In the past, research in model-driven engineering, software language engineering, and their application manifested in project classes and seminars:
-
-- [Lecture - Softwaretechnik](https://www.se-rwth.de/teaching/ws1819/swt/) (Winter 18/19)
-- [Lecture - Software Language Engineering](https://www.se-rwth.de/teaching/ss18/sle/) (Summer 18)
-- [Lab Course - Statecharts in Action](https://www.se-rwth.de/teaching/ss18/lab/statecharts/) (Summer 18)
-- [Lecture - Model-Based Software Engineering](https://www.se-rwth.de/teaching/ss17/mbse/) (Summer 17)
-- [Lab Course - Model Transformation: the Heart and Soul of Model-Driven Software Development](https://www.se-rwth.de/teaching/ss16/lab_tf/) (Summer 16)
-- [Lecture - Model-Based Software Engineering](https://www.se-rwth.de/teaching/ws1516/mbse/) (Winter 15/16)
-- [Seminar - Selected Topics in Software Engineering](https://www.se-rwth.de/teaching/ws1516/seminar_se/) (Winter 15/16)
-- [Lab Course - Eliminating Anti-Patterns in Domain Models](https://www.se-rwth.de/teaching/ss15/lab_tf/) (Summer 15)
-- [Seminar - Selected Topics in Software Engineering](https://www.se-rwth.de/teaching/ws1415/seminar_se/) (Winter 14/15)
-- [Lecture - Model-Based Software Engineering (IPEC Summer School)](https://www.se-rwth.de/teaching/ss14/mbse/) (Summer 14)
-- [Lecture - Generative Software Engineering](https://www.se-rwth.de/teaching/ss14/gse/) (Summer 14)
-- [Lecture - Model-Based Software Engineering](https://www.se-rwth.de/teaching/ws1314/mbse/) (Winter 13/14)
-- [Proseminar - Best Practices of Modern and Efficient Software Engineering](https://www.se-rwth.de/teaching/ss13/proseminar/) (Summer 13)
-- [Lecture - Model-Based Software Engineering](https://www.se-rwth.de/teaching/ws1213/mbse/) (Winter 12/13)
-
-Additionally, we always have ideas for interesting Bachelor and Master theses in this context. Currently, we're looking for students willing to investigate the following research challenges.
-
-- Modeling language development and modularization
-- Model transformation based on the modelers vocabulary
-- Semantics of modeling languages and models and their differences
-- Methodologies and tutorials for using Language workbench
-
-{% include trennlinie.html %}
-
 ### Publications
 
 Our research manifests in project results with large and small partners from industry and research, as well as in our publications. We've arranged our publications by topic for your convenience below:

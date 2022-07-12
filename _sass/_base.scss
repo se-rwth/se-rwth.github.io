@@ -86,7 +86,6 @@ blockquote {
 }
 
 .post-description {
-  margin-bottom: 2rem;
   font-size: 0.875rem;
   a {
     color: inherit;
@@ -653,4 +652,26 @@ html.transition *:after {
     text-align: center;
     font-size: 14px;
     width: 150px;
+}
+
+//teams colums
+@media (min-width: 992px) {
+.col-lg-2 {
+    max-width: 19%;
+    }
+}
+
+// block pictures main page
+.span-block-main {
+    width: 120px;
+    background: #779ec9;
+    display: block;
+    margin: 0 auto;
+    padding: 4px 0;
+    color: #fff;
+    font-size: 14px;
+    font-family: Verdena,Arial,sans-serif;
+}
+
+.block-main a:hover {
 }

@@ -125,6 +125,8 @@ for computer science students at RWTH University and check the latest
 
 - [SE RWTH teaching website](https://www.se-rwth.de/teaching/)
 - [SE practicals, seminars website](https://www.se-rwth.de/teaching/)
+- [SE Master Theses / Masterarbeiten](https://www.se-rwth.de/theses/)
+- [SE Bachelor Theses / Bachelorarbeiten](https://www.se-rwth.de/theses/)
 
 #### Further links:
 

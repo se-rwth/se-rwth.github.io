@@ -4,26 +4,34 @@ title: Hiwi-Stellen
 permalink: /jobs/mc-hiwi
 nav: false
 ---
+
 **Weiterentwicklung und Qualitässicherung der Language Workbench MontiCore**
 
-Am Lehrstuhl i3 für Softwaretechnik (Software Engineering) der RWTH Aachen sind ab sofort mehrere Hiwi-Stellen zu 
-vergeben.
+Am Lehrstuhl i3 für Softwaretechnik (Software Engineering) der RWTH 
+Aachen sind ab sofort mehrere Hiwi-Stellen zu vergeben. 
 
 {% include trennlinie.html %}
 
 **Aufgabenbeschreibung**
 
-Zu den Aufgabengebieten gehört die längerfristige Mitarbeit bei der Entwicklung von MontiCore, der Language Workbench 
-des Lehrstuhls. Monticore ist eine umfassende Language Workbench zum Design und zur Realisierung von textuellen 
-domänenspezifischen Sprachen (DSLs). Die Workbench ermöglicht Forschung im Bereich modellbasierter 
-Softwareentwicklungsmethodiken mittels einer Vielfalt von DLS und Modellierungssprachen. In der Tat werden MontiCore 
-und aud MontiCore basierende DSLs erfolgreich in in der akademischen und idustriellen Forschung in verschiedensten 
-Domänen eingesetzte. Darunter befinden sich Bereiche wie der Automotive Bereich, Cloude Architekturen oder Security 
-Modellierung sowie Modellierung im Bereich Robotik und Neuronen. Ziel der Entwicklung von MontiCore ist eine Workbench, 
-die die agile Entwicklung von DSLs inklusiver begleitender Infrastruktur zur Analyse, Trransformation und 
-Codegenerierung ermöglicht und erleichtert.
+Zu den Aufgabengebieten gehört die längerfristige Mitarbeit bei der 
+Entwicklung von MontiCore, der Language Workbench des Lehrstuhls. 
+Monticore ist eine umfassende Language Workbench zum Design und zur 
+Realisierung von textuellen domänenspezifischen Sprachen (DSLs). Die 
+Workbench ermöglicht Forschung im Bereich modellbasierter 
+Softwareentwicklungsmethodiken mittels einer Vielfalt von DLS und 
+Modellierungssprachen. In der Tat werden MontiCore und aud MontiCore 
+basierende DSLs erfolgreich in in der akademischen und idustriellen 
+Forschung in verschiedensten Domänen eingesetzte. Darunter befinden 
+sich Bereiche wie der Automotive Bereich, Cloude Architekturen oder 
+Security Modellierung sowie Modellierung im Bereich Robotik und 
+Neuronen. Ziel der Entwicklung von MontiCore ist eine Workbench, die 
+die agile Entwicklung von DSLs inklusiver begleitender Infrastruktur 
+zur Analyse, Trransformation und Codegenerierung ermöglicht und 
+erleichtert. 
 
-Das Projekt bietet flexible Arbeitszeit. Die Arbeit kann teilweise in Heimarbeit erledigt werden.
+Das Projekt bietet flexible Arbeitszeit. Die Arbeit kann teilweise in 
+Heimarbeit erledigt werden. 
 
 **Zu den Aufgabengebieten gehören:**
 
@@ -33,7 +41,10 @@ Das Projekt bietet flexible Arbeitszeit. Die Arbeit kann teilweise in Heimarbeit
 
 {% include trennlinie.html %}
 
-Als zielstrebige(r) Student(in) haben Sie überdurchschnittliche Ergebnisse in Ihrem bisherigen Studium in der Informatik oder einem verwandten Studiengang, sind zuverlässig, flexibel und ergebnisorientiert.
+Als zielstrebige(r) Student(in) haben Sie überdurchschnittliche 
+Ergebnisse in Ihrem bisherigen Studium in der Informatik oder einem 
+verwandten Studiengang, sind zuverlässig, flexibel und 
+ergebnisorientiert. 
 
 **Notwendige Vorkenntnisse**
 - Fortgeschrittene Kenntnisse der Java-Programmierung

@@ -7,11 +7,10 @@ description: Software Engineering at RWTH Aachen, Bernhard Rumpe
 social: true  # includes social icons at the bottom of the page
 ---
 
-<div class="embed-responsive embed-responsive-16by9">
+<div class="embed-responsive embed-responsive-16by9 video-activities">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qvCU3Hz89ZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div> 
 
-<br>
 {% include trennlinie.html %}
 
 ## Our Mission
@@ -59,6 +58,43 @@ Improving software and systems development by identifying:
 
 {% include trennlinie.html %}
 
+<div class="container block-main">
+  <div class="row" style="text-align: center; margin: 0 0 40px 0;">
+    <div class="col">
+      <a href="https://mbse.se-rwth.de/">
+          <img src="assets/img/block-1.png">
+          <span class="span-block-main">MontiGem</span>
+      </a>
+    </div>
+    <div class="col">
+      <a href="/jobs/">
+          <img src="assets/img/block-2.png">
+          <span class="span-block-main" style="background: #0067a6">Digitalisation</span>
+      </a>
+    </div>
+    <div class="col">
+      <a href="/jobs/">
+          <img src="assets/img/block-3.png">
+          <span class="span-block-main">Automotive</span>
+      </a>
+    </div>
+    <div class="col">
+      <a href="/jobs/">
+          <img src="assets/img/block-4.png">
+          <span class="span-block-main" style="background: #0067a6">Digital Twin</span>
+      </a>
+    </div>
+    <div class="col">
+      <a href="https://monticore.github.io/monticore/">
+          <img src="assets/img/block-5.png">
+          <span class="span-block-main">MontiCore</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+{% include trennlinie.html %}
+
 #### General links: 
 
 - [About us](/about) 
@@ -80,6 +116,10 @@ tools. Further links to research are:
 - [Topic sorted list of most interesting publications](/research)
 - [Books](/books)
 - [Aachener Informatik-Berichte, Software Engineering / Ph.D. Theses](/phdtheses)
+
+{% include trennlinie.html %}
+
+
 
 
 

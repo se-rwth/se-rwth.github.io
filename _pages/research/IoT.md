@@ -5,7 +5,9 @@ permalink: /research/IoT/
 description:
 img:
 importance: 1
-keys: [PR13,HHR+15,RRRW15b,
+keys: [KRS+22, KMR21, AKK+21, KMR+20, 
+        MKM+19, HHK+14, 
+        PR13,HHR+15,RRRW15b,
         WCB17,BKL+18]
 ---
 
@@ -42,7 +44,8 @@ concepts [[BKL+18]](#BKL+18).
 ## Selected Topic-Specific Publications
 
 <div class="publications">
-  {% for k in page.keys %}
+  {% assign sortedKeys = page.keys | sort %}
+  {% for k in sortedKeys %}
     {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
   {% endfor %}
 </div>

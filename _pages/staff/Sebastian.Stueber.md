@@ -28,5 +28,5 @@ nav: false
 ### Publications:
 
 <div class="publications">
-  {% bibliography -f all-software-engineering-rwth-references -q @*[author ~= St{\"u}ber. S] %}
+  {% bibliography -f all-software-engineering-rwth-references -q @*[author ~= St{\\\"u}ber. S] %}
 </div>

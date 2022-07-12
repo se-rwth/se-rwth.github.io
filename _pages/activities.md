@@ -41,7 +41,7 @@ published via [Twitter](https://twitter.com/SE_RWTH) and
 
 <div class="embed-responsive embed-responsive-16by9 video-activities">
 <iframe 
-src="https://www.youtube.com/embed/videoseries?list=PLuHxQfNRwKzPtO0tC_GmagidFxaQP6bsb"
+src="https://www.youtube.com/embed/?listType=playlist&list=PLuHxQfNRwKzPtO0tC_GmagidFxaQP6bsb&index=2"
 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
 encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

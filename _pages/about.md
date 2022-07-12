@@ -133,6 +133,25 @@ refer to [our publications and research](/research).
 
 {% include trennlinie.html %}
 
+#### Links:
+
+- [Research group of Prof. Dr. Horst Lichter](https://www.swc.rwth-aachen.de/)
+- [Website of Prof. Dr. Horst Lichter](https://www.swc.rwth-aachen.de/team/horst-lichter/)
+- [Publications of Prof. Dr. Horst Lichter](https://www.swc.rwth-aachen.de/team/horst-lichter/publications-hl/)
+
+- [Research group of Prof. Dr. Abigail Morrison](https://www.fz-juelich.de/profile/morrison_a)
+- [Website of Prof. Dr. Abigail Morrison](https://www.se-rwth.de/staff/morrison/)
+
+- [Publications of Prof. Dr.-Ing. Dr. h. c. Manfred Nagl](https://www.se-rwth.de/staff/nagl/)
+- [Website of Prof. Dr.-Ing. Dr. h. c. Manfred Nagl](https://www.se-rwth.de/staff/nagl/)
+
+- [Chair of Prof. Dr. Bernhard Rumpe](https://www.se-rwth.de/)
+- [Website of Prof. Dr. Bernhard Rumpe](https://rumpe.github.io/)
+- [Publications of Prof. Dr. Bernhard Rumpe](https://rumpe.github.io/publications/)
+
+
+{% include trennlinie.html %}
+
 #### Further links:
 
 - [Publications](/publications)
