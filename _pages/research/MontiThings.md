@@ -34,7 +34,7 @@ keys: [KRS+22, KMR21, AKK+21, KMR+20]
 </center>
 <br />
 
-MontiThings [KRS+22, KMR21, AKK+21, KMR+20] is an ecosystem for model-driven development of IoT applications. 
+MontiThings [[KRS+22]](#KRS+21) [[KMR21]](#KMR21) [[AKK+21]](#AKK+21) [[KMR+20]](#KMR+20) is an ecosystem for model-driven development of IoT applications. 
 The core of MontiThings is a domain-specific language for the specification of IoT applications. 
 Like MontiArc, this language describes IoT applications as a component-and-connector (C&C) architecture. 
 Applications consist of components that can exchange data with other components via (directed and typed) ports that are linked by connectors.
@@ -76,15 +76,15 @@ At design time, developers model several aspects of their IoT application:
 - MontiThings models describe the business logic, i.e., functionality and data flow
 - Class diagrams describe the data structures used by components to exchange data
 - Handwritten code describes the behavior of components (C++) or the interaction with hardware (C++, Python)
-- Tagging is used for various purposes, e.g., tagging components with hardware requirements or connecting IoT applications to digital twins [KMR+20]
+- Tagging is used for various purposes, e.g., tagging components with hardware requirements or connecting IoT applications to digital twins [[KMR+20]](#KMR+20)
 
 In addition to this, there can also be platform dependent artifacts such as different libraries that are used to allow the generated code to interact with specific platforms.
 The project's artifacts are uploaded to an online repository such as GitLab or GitHub. 
-There, a CI/CD pipline transforms the models (if necessary [KMR21]), generates C++ code from the models, (cross-)compiles the code, and finally packages the applications as Docker images. 
+There, a CI/CD pipline transforms the models (if necessary [[KMR21]](#KMR21)), generates C++ code from the models, (cross-)compiles the code, and finally packages the applications as Docker images. 
 If not specified otherwise by the developers, there is one Docker image per component type. 
 
 At runtime, IoT devices download these Docker images to execute parts of the application and, together, execute the full IoT application. 
-The IoT devices may interact with numerous services that provide, e.g., communication between the components, digital twins [KMR+20], monitoring [KMR21], or deployment decisions.
+The IoT devices may interact with numerous services that provide, e.g., communication between the components, digital twins [[KMR+20]](#KMR+20), monitoring [[KMR21]](#KMR21), or deployment decisions.
 
 
 ## Adaptive Device-Owner-Controlled Deployment 
@@ -144,8 +144,8 @@ Some errors are not visible due to the higher abstraction level of the models.
 In practice, it can therefore happen that an application does not behave as expected, even if no error is visible in the model. 
 For example, the hardware on which the software is running may fail due to harsh environmental conditions (vibrations, humidity, ...) or a network may not be available.
 
-MontiThings provides tools and methods to analyze such errors [KMR21] as well as to fix them automatically (within certain limits) [KRS+22].
-For example, architectures can be observed at runtime and then modified by model transformations to make their behavior reproducible for developers in post [KMR21].
+MontiThings provides tools and methods to analyze such errors [[KMR21]](#KMR21) as well as to fix them automatically (within certain limits) [[KRS+22]](#KRS+22).
+For example, architectures can be observed at runtime and then modified by model transformations to make their behavior reproducible for developers in post [[KMR21]](#KMR21).
 
 
 <center>
