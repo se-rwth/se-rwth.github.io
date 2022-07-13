@@ -166,7 +166,7 @@ This automatically restores the state of the failed component.
 In order to put the replacement component in the state of the failed component, the messages that the failed component processed are played back to the replacement component. 
 The connectors of the replacement component are not yet connected to other components, so that messages generated during this recovery process do not affect the other components.
 The connectors are connected only after the recovery.
-To handle non-deterministic behavior and to reduce the complexity of this procedure to $\mathcal{O}(1)$ (instead of $\mathcal{O}(n)$ if all messages have to be restored, where $n$ is the number of messages), components can also serialize their state directly (usually after a constant number of processed messages) and store it in a central system. 
+To handle non-deterministic behavior and to reduce the complexity of this procedure to O(1) (instead of O(n) if all messages have to be restored, where n is the number of messages), components can also serialize their state directly (usually after a constant number of processed messages) and store it in a central system. 
 Thus, in the event of a failure, only a constant number of messages - namely the messages since the last state storage - need to be restored. 
 To bridge short-term downtimes, e.g. of a power saving mode, without causing network overhead, components can also store their serialized state locally.
 
