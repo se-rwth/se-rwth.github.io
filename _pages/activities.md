@@ -20,6 +20,16 @@ interesting and helpful information. Occasionally news are
 published via [Twitter](https://twitter.com/SE_RWTH) and
 [Facebook](https://www.facebook.com/SoftwareEngineering.RWTH/?pnref=story).
 
+[//]: # (Erste Variant - Die Videos laufen automatisch nacheinander)
+
+
+<div class="embed-responsive embed-responsive-16by9 video-activities">
+<iframe 
+src="https://www.youtube.com/embed/?listType=playlist&list=PLuHxQfNRwKzOiL1YvMQd31bwGS481GBxn"
+title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 {% include trennlinie.html %}
 
 ## Some Open Source Software
@@ -36,15 +46,6 @@ published via [Twitter](https://twitter.com/SE_RWTH) and
   have been incorporated into the project. Of course, the newest
   insights are continuously integrated.
 
-[//]: # (Erste Variant - Die Videos laufen automatisch nacheinander)
-
-
-<div class="embed-responsive embed-responsive-16by9 video-activities">
-<iframe 
-src="https://www.youtube.com/embed/?listType=playlist&list=PLuHxQfNRwKzPtO0tC_GmagidFxaQP6bsb&index=2"
-title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
 
 - [The SSElab Portfolio of SE Services](https://sselab.de/lab1/) -
   SSElab is comprising a set of services, such as git, subversion,
