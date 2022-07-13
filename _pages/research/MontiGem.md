@@ -5,7 +5,7 @@ permalink: /research/MontiGem/
 description:
 img:
 importance: 1
-keys: [HKR21, GMN+20, DMR+20, AMN+20a, MRV20, MNRV19, DGH+18, GHK+15a,GLRR15]
+keys: [HKR21, GMN+20, DMR+20, AMN+20a, MRV20, MNRV19, DGH+18, GHK+15a,GLRR15, GHK+20,BMR+22]
 ---
 ## Summary of Most Relevant Topic Papers
 
@@ -102,7 +102,7 @@ systems [[MNRV19]](#MNRV19),
 for energy management systems, 
 for creating [digital twin](/research/Digital-Twins) 
 cockpits [[DMR+20]](#DMR+20)
-and process-aware digital twin cockpits [[BMRW22]](#BMRW22),
+and process-aware digital twin cockpits [[BMR+22]](#BMR+22),
 for the parameter management during the engineering process 
 of wind turbines,
 and goal modeling in 
@@ -126,7 +126,8 @@ well as the development of information portals in the
 ## Selected Topic-Specific Publications
 
 <div class="publications">
-  {% for k in page.keys %}
+  {% assign sortedKeys = page.keys | sort %}
+  {% for k in sortedKeys %}
     {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
   {% endfor %}
 </div>

@@ -96,7 +96,8 @@ even better UML.
 ## Selected Topic-Specific Publications
 
 <div class="publications">
-  {% for k in page.keys %}
+  {% assign sortedKeys = page.keys | sort %}
+  {% for k in sortedKeys %}
     {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
   {% endfor %}
 </div>

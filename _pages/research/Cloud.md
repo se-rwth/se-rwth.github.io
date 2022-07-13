@@ -42,7 +42,7 @@ and open platforms. Regardless of the application domain, developers of such
 systems are in need for robust methods and efficient, easy-to-use languages
 and tools. 
 For example in [[HHK+14]](#HHK+14) and [[HHK+15a]](#HHK+15a), we discuss how to
-handle privacy in the cloud in a trusted environment:
+handle privacy in the cloud in a trusted environment.
 
 <center>
 <div class="row" style="width: 70%">
@@ -106,7 +106,8 @@ interesting to use configurable model-based technology.
 ## Selected Topic-Specific Publications
 
 <div class="publications">
-  {% for k in page.keys %}
+  {% assign sortedKeys = page.keys | sort %}
+  {% for k in sortedKeys %}
     {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
   {% endfor %}
 </div>

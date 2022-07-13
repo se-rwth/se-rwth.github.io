@@ -51,16 +51,16 @@ MontiThings is an architecture description language for rapid prototyping of Int
 
 Teaching at Chair of Software Engineering:
 
-- Lecture [Software Language Engineering](/teaching) (Lecture TA) (Summer 2022)
-- Practical Course [Model-Driven Engineering of Smart Home Applications]() (Organizer) (Summer 2022)
-- Lecture [Der digitale Lebenszyklus von Fahrzeugen als Teil des Internet of Things (IoT)]() (Lecture TA) (Winter 2021/22)
-- Practical Course [Model-Driven Engineering of IoT Applications in Industry 4.0 Production Systems]() (Organizer) (Winter 2021/22)
-- Lecture [Der digitale Lebenszyklus von Fahrzeugen als Teil des Internet of Things (IoT)]() (Lecture TA) (Winter 2020/21)
-- Practical Course [Model-driven Software Engineering for Connected Vehicles]() (Organizer) (Winter 2020/21)
-- Lecture [Software Language Engineering]() (Lecture TA) (Summer 2020)
-- Practical Course [Software Engineering in IoT and Smart Home]() (Organizer) (Summer 2020)
-- Lecture [Applied Software Engineering within the life cycle of Automotive Electronics]() (Lecture TA) (Winter 2019/20)
-- Lecture [Software Language Engineering]() (Lecture TA) (Summer 2019)
+- Lecture [Software Language Engineering](http://www.se-rwth.de/teaching/ss22/sle/) (Lecture TA) (Summer 2022)
+- Practical Course [Model-Driven Engineering of Smart Home Applications](https://se-rwth.de/teaching/ss22/lab/smarthome/) (Organizer) (Summer 2022)
+- Lecture [Der digitale Lebenszyklus von Fahrzeugen als Teil des Internet of Things (IoT)](https://www.se-rwth.de/teaching/ws2122/automotive/) (Lecture TA) (Winter 2021/22)
+- Practical Course [Model-Driven Engineering of IoT Applications in Industry 4.0 Production Systems](https://se-rwth.de/teaching/ws2122/lab/industry40/) (Organizer) (Winter 2021/22)
+- Lecture [Der digitale Lebenszyklus von Fahrzeugen als Teil des Internet of Things (IoT)](https://www.se-rwth.de/teaching/ws2021/automotive/) (Lecture TA) (Winter 2020/21)
+- Practical Course [Model-driven Software Engineering for Connected Vehicles](https://www.se-rwth.de/teaching/ws2021/lab/auto/) (Organizer) (Winter 2020/21)
+- Lecture [Software Language Engineering](http://www.se-rwth.de/teaching/ss20/sle/) (Lecture TA) (Summer 2020)
+- Practical Course [Software Engineering in IoT and Smart Home](https://www.se-rwth.de/teaching/ss20/lab/iot/) (Organizer) (Summer 2020)
+- Lecture [Applied Software Engineering within the life cycle of Automotive Electronics](https://www.se-rwth.de/teaching/ws1920/automotive/) (Lecture TA) (Winter 2019/20)
+- Lecture [Software Language Engineering](http://www.se-rwth.de/teaching/ss19/sle/) (Lecture TA) (Summer 2019)
 
 Former teaching at RWTH Aachen University:
 
