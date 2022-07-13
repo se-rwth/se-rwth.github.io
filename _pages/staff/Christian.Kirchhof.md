@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Jörg Christian Kirchhof, M.Sc.
+title: Jörg Christian Kirchhof, M.Sc. RWTH
 permalink: /staff/Christian.Kirchhof/
 nav: false
 ---
