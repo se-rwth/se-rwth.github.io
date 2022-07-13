@@ -8,24 +8,42 @@
     <!-- Author -->
     <div class="author" style="display: inline">
       {% for author in entry.author_array %}
-        {% if forloop.length == 1 %}
-            {{author.first | slice:0}}. {{author.prefix}} {{author.last}}:
+        {% assign firstnames = author.first | split: " " %}
+        {% for firstname in firstnames %}
+          {% assign nameparts = firstname | split: "-" %}
+          {% for namepart in nameparts %}
+            {% unless forloop.last%}
+              {{namepart | slice:0}}.-
+            {% else %}
+              {{namepart | slice:0}}.
+            {% endunless %}
+          {% endfor %}
+        {% endfor %}
+        {% unless forloop.last %}
+          {{author.prefix}} {{author.last}},
         {% else %}
-          {% unless forloop.last %}
-            {{author.first| slice:0}}. {{author.prefix}} {{author.last}},
-          {% else %}
-            {{author.first| slice:0}}. {{author.prefix}} {{author.last}}:
-          {% endunless %}
-        {% endif %}
+          {{author.prefix}} {{author.last}}:
+        {% endunless %}
       {% endfor %}
 
       {% unless entry.author %}
         {% for editor in entry.editor_array %}
-            {% unless forloop.last %}
-                  {{editor.first| slice:0}}. {{editor.prefix}} {{editor.last}},
-            {% else %}
-                  {{editor.first| slice:0}}. {{editor.prefix}} {{editor.last}} (Eds.):
-            {% endunless %}
+          {% assign firstnames = editor.first | split: " " %}
+          {% for firstname in firstnames %}
+            {% assign nameparts = firstname | split: "-" %}
+            {% for namepart in nameparts %}
+              {% unless forloop.last%}
+                {{namepart | slice:0}}.-
+              {% else %}
+                {{namepart | slice:0}}.
+              {% endunless %}
+            {% endfor %}
+          {% endfor %}
+          {% unless forloop.last %}
+            {{editor.prefix}} {{editor.last}},
+          {% else %}
+            {{editor.prefix}} {{editor.last}} (Eds.):
+          {% endunless %}
         {% endfor %}
       {% endunless %}
     </div>
@@ -52,10 +70,21 @@
 
       {% if entry.author and entry.editor %}
         {% for editor in entry.editor_array %}
+          {% assign firstnames = editor.first | split: " " %}
+          {% for firstname in firstnames %}
+            {% assign nameparts = firstname | split: "-" %}
+            {% for namepart in nameparts %}
+              {% unless forloop.last%}
+                {{namepart | slice:0}}.-
+              {% else %}
+                {{namepart | slice:0}}.
+              {% endunless %}
+            {% endfor %}
+          {% endfor %}
           {% unless forloop.last %}
-            {{editor.first| slice:0}}. {{editor.prefix}} {{editor.last}},
+            {{editor.prefix}} {{editor.last}},
           {% else %}
-            {{editor.first| slice:0}}. {{editor.prefix}} {{editor.last}} (Eds.),
+            {{editor.prefix}} {{editor.last}} (Eds.),
           {% endunless %}
         {% endfor %}
       {% endif %}
