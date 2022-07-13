@@ -34,6 +34,18 @@ keys: [KRS+22, KMR21, AKK+21, KMR+20]
 </center>
 <br />
 
+MontiThings is ecosystem for model-driven development of IoT applications. 
+The core of MontiThings is a domain-specific language for the specification of IoT applications. 
+Like MontiArc, this language describes IoT applications as a component-and-connector (C&C) architecture. 
+Applications consist of components that can exchange data with other components via (directed and typed) ports that are linked by connectors.
+Via sensor/actuator ports (shown by black filling), ports can also interact with the hardware of the IoT devices and, for example, accept a sensor value.
+The behavior of components can be described in one of four ways:
+
+- using statecharts
+- using an IoT-focussed Java-like language
+- using handwritten C++ Code
+- by instantiating and connecting other components
+
 ## Ecosystem Overview
 
 <center>
@@ -46,6 +58,10 @@ keys: [KRS+22, KMR21, AKK+21, KMR+20]
 </div>
 </center>
 <br />
+
+
+
+
 
 <center>
 <div class="row" style="width: 100%; max-width: 1000px">
