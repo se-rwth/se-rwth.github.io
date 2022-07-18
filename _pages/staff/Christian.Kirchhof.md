@@ -79,23 +79,10 @@ Former teaching at RWTH Aachen University:
   {% bibliography -f all-software-engineering-rwth-references -q @*[author ~= Kirchhof. J] %}
 </div>
 
-<div class="row">
-  <div id="SKS+17" class="col-sm-11">
-    <!-- Entry bib key -->
-    [SKS+17]
-    <!-- Authors -->
-    <div class="author" style="display: inline">
-      M. Serror, J. C. Kirchhof, M. Stoffers, K. Wehrle, and J. Gross:
-    </div>
-    <!-- Title -->
-    <div class="title">
-      <b><u><a href="https://www.comsys.rwth-aachen.de/fileadmin/papers/2017/2017-serror-pads-cows.pdf">Code-transparent Discrete Event Simulation for Time-accurate Wireless Prototyping</a>.</u></b>
-    </div>
-    <!-- Rest -->
-    <div class="periodical" style="display: inline">
-      In: Proceedings of the 5th ACM SIGSIM/PADS Conference on Principles of Advanced Discrete Simulation (SIGSIM-PADS’17), Singapore, Singapore, 5, 2017, ACM.
-    </div>
-  </div>
-</div>
-
-
+{% include reference.html
+  key = "SKS+17"
+  authors = "M. Serror, J. C. Kirchhof, M. Stoffers, K. Wehrle, and J. Gross"
+  url = "https://www.comsys.rwth-aachen.de/fileadmin/papers/2017/2017-serror-pads-cows.pdf"
+  title = "Code-transparent Discrete Event Simulation for Time-accurate Wireless Prototyping"
+  info = "In: Proceedings of the 5th ACM SIGSIM/PADS Conference on Principles of Advanced Discrete Simulation (SIGSIM-PADS’17), Singapore, Singapore, 5, 2017, ACM." 
+%}
