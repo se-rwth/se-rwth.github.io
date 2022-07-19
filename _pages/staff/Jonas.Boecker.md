@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Jonas Böcker
-permalink: /staff/Jonas.Böcker/
+permalink: /staff/Jonas.Boecker/
 nav: false
 ---
 

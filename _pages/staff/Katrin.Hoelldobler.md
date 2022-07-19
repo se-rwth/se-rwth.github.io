@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dr. Katrin Hölldobler, M.Sc.RWTH
-permalink: /staff/Katrin.Hölldobler/
+permalink: /staff/Katrin.Hoelldobler/
 nav: false
 ---
 

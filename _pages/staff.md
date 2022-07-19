@@ -32,7 +32,7 @@ Prof. Dr. Abigail Morrison can be found [here](https://www.fz-juelich.de/en/inm/
   </tbody>
   <thead class="text-center"><tr><th colspan="4">Postdoctoral Staff</th></tr></thead>
   <tbody>
-    {% include staff_row.html href='Katrin.Hölldobler' name='Dr. Katrin Hölldobler' email='hoelldobler@se-rwth.de' phone='21313' room='4226' %}
+    {% include staff_row.html href='Katrin.Hoelldobler' name='Dr. Katrin Hölldobler' email='hoelldobler@se-rwth.de' phone='21313' room='4226' %}
     {% include staff_row.html href='Oliver.Kautz' name='Dr. Oliver Kautz' email='kautz@se-rwth.de' phone='21348' room='4225' %}
     {% include staff_row.html href='Evgeny.Kusmenko' name='Dr. Evgeny Kusmenko' email='kusmenko@se-rwth.de' phone='21342' room='4220' %}
     {% include staff_row.html href='Judith.Michael' name='Dr. Judith Michael' email='michael@se-rwth.de' phone='21323' room='4305' %}
@@ -81,7 +81,7 @@ Prof. Dr. Abigail Morrison can be found [here](https://www.fz-juelich.de/en/inm/
   <tbody>
     {% include staff_row.html href='Daoud.Ali' name='Daoud Ali' email='ali@se-rwth.de' phone='21334' room='4226' %}
     {% include staff_row.html href='Vassily.Aliseyko' name='Vassily Aliseyko' email='aliseyko@se-rwth.de' phone='21320' room='4305' %}
-    {% include staff_row.html href='Jonas.Böcker' name='Jonas Böcker' email='boecker@se-rwth.de' phone='21357' room='4219' %}
+    {% include staff_row.html href='Jonas.Boecker' name='Jonas Boecker' email='boecker@se-rwth.de' phone='21357' room='4219' %}
     {% include staff_row.html href='Marita.Breuer' name='Marita Breuer' email='breuer@se-rwth.de' phone='21305' room='4309' %}
     {% include staff_row.html href='Julius.Gummersbach' name='Julius Gummersbach' email='gummersbach@se-rwth.de' phone='21355' room='4315' %}
     {% include staff_row.html href='Daniel.Maibach' name='Daniel Maibach' email='maibach@se-rwth.de' phone='21321' room='4306' %}
