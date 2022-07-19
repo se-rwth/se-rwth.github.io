@@ -3,8 +3,6 @@ layout: page
 title: Chair of Software Engineering
 permalink: /
 description: Software Engineering at RWTH Aachen, Bernhard Rumpe
-keys: [ HKR21, BBK+21, FHK+20, Rum17, Rum16, CFJ+16 ]
-
 social: true  # includes social icons at the bottom of the page
 ---
 

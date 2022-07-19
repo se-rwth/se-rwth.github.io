@@ -7,7 +7,7 @@ img:
 importance: 1
 keys: [Rum12,Rum11,Rum16,Rum17,
 Sch12,Hab16,HRR12,AMN+19,
-KRV10,GKR+06,KRV06,GKRS06,
+KRV10,GKR+06,KRV06,GKR+06,
 GHK+15,GHK+15a,Wei12,HRW15,
 Hoe18,HHR+15,AHRW17,
 Rum04c,Rum03,Rum02]
@@ -66,7 +66,7 @@ either vanish or their workload can greatly be reduced).
 Working with **generated and handwritten code** leads to
 challenges related with continuous repetitive generation
 (the generation gap problem).
-In [[GKRS06]](#GKRS06) [[GHK+15]](#GHK+15) [[GHK+15a]](#GHK+15a) we discuss mechanisms
+In [[GKR+06]](#GKR+06) [[GHK+15]](#GHK+15) [[GHK+15a]](#GHK+15a) we discuss mechanisms
 to keep generated and handwritten code
 separated, while integrating them in the product and enabling the repetitive
 generation (which is much more valuable than one-shot generation).

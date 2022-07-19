@@ -174,7 +174,7 @@ this DSL.
 
 More details about the [MontiCore Language Workbench for DSLs](/research/MontiCore) 
 can be found in 
-[[GKRS06]](#GKRS06), [[KRV08]](#KRV08), [[KRV10]](#KRV10) as well as the 
+[[GKR+06]](#GKR+06), [[KRV08]](#KRV08), [[KRV10]](#KRV10) as well as the 
 [MontiCore Website](http://www.monticore.de/).
 
 
