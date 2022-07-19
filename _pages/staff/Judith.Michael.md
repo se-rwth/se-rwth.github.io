@@ -12,7 +12,7 @@ nav: false
                alt="Judith Michael" style="float: left;">
         </div>
         <div class="col-lg-4">
-          <a href="../working-teams/team-MBAIS">Team Leader Model-Based Assistance and Information Services</a><br>
+          <a href="/working-teams/team-MBAIS">Team Leader Model-Based Assistance and Information Services</a><br>
           Software Engineering<br>
           Department of Computer Science 3<br>
           RWTH Aachen University<br>

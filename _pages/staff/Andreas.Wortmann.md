@@ -13,7 +13,7 @@ nav: false
         </div>
         <div class="col-lg-4">
           Dipl.-Inform. Dipl.-Wirt.Inform.<br>
-          Team Leader <a href="../working-teams/team-MDSE">Model-Driven Systems Engineering </a>
+          Team Leader <a href="/working-teams/team-MDSE">Model-Driven Systems Engineering </a>
           Software Engineering<br>
           Department of Computer Science 3<br>
           RWTH Aachen University<br>
@@ -121,7 +121,7 @@ in the board of the [European Association for Programming Languages and Systems 
 ### Publications:
 
 Of course, our research manifests in publications related to modeling, language engineering, and applying it to 
-robotics as well. We, therefore, also prepared [curated lists on these topics](../research) for you.
+robotics as well. We, therefore, also prepared [curated lists on these topics](/research) for you.
 
 <div class="publications">
   {% bibliography -f all-software-engineering-rwth-references -q @*[author ~= Wortmann. A] %}
