@@ -32,5 +32,5 @@ nav: false
 ### Publications:
 
 <div class="publications">
-  {% bibliography -f all-software-engineering-rwth-references -q @*[author ~= Bertram. V] %}
+  {% bibliography -f all-software-engineering-rwth-references -q @*[author ~= Ritz. J] %}
 </div>
