@@ -654,14 +654,14 @@ html.transition *:after {
     width: 150px;
 }
 
-//teams colums
+//Teams colums
 @media (min-width: 992px) {
 .col-lg-2 {
-    max-width: 19%;
+    max-width: 18%;
     }
 }
 
-// block pictures main page
+// Main Page Adjustments
 .span-block-main {
     width: 120px;
     background: #779ec9;
@@ -696,3 +696,11 @@ html.transition *:after {
     color: #0067a6;
     transition: 10s;
 }
+
+// Print Design
+
+//@media print {
+    //body {
+     //   background: blue;
+    //}
+//}
