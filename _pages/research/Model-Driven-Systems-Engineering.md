@@ -5,7 +5,7 @@ permalink: /research/Model-Driven-Systems-Engineering/
 description:
 img:
 importance: 1
-keys: [FND+98,GHK+08a,KMS+18,DGH+19,WCB17,BKL+18]
+keys: [FND+98,GHK+08a,KMS+18,DGH+19,WCB17,BKL+18,DRW+20]
 ---
 
 ## Summary of Most Relevant Topic Papers
@@ -24,7 +24,7 @@ In this, we
 leverage SysML to enable the vertical flow down from requirements to
 implementations that was well-received by the software developers.
 
-Moreover, we recently started intensifying our research efforts towards a
+Moreover, we are intensifying our research efforts towards a
 model-driven systems engineering that leverages methods and concepts from
 software engineering to make the systematic engineering of CPS more efficient. 
 To this end, we conducted a systematic mapping study
@@ -34,6 +34,18 @@ engineering [[WCB17]](#WCB17). To facilitate modeling products, resources, and
 processes in the context of Industry 4.0 we also conceived a multi-level
 framework for machining based on these concepts [[BKL+18]](#BKL+18).
 
+In a holistic model-driven engineering approach for CPS, we
+bridge the gap between functions and the physical product
+architecture to enable agile development driven by automation by
+modeling mechanical functional architectures in SysML [[DRW+20]](#DRW+20).
+
+
+
+{% include trennlinie.html %}
+
+## Key Statements
+
+1. 
 
 {% include trennlinie.html %}
 
