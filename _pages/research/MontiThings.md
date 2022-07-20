@@ -34,7 +34,7 @@ keys: [KRS+22, KMR21, AKK+21, KMR+20]
 </center>
 <br />
 
-MontiThings [[KRS+22]](#KRS+21) [[KMR21]](#KMR21) [[AKK+21]](#AKK+21) [[KMR+20]](#KMR+20) is an ecosystem for model-driven development of IoT applications. 
+MontiThings [[KRS+22]](#KRS+22) [[KMR21]](#KMR21) [[AKK+21]](#AKK+21) [[KMR+20]](#KMR+20) is an ecosystem for model-driven development of IoT applications. 
 The core of MontiThings is a domain-specific language for the specification of IoT applications. 
 Like [MontiArc](/research/Software-Architecture), this language describes IoT applications as a component-and-connector (C&C) architecture. 
 Applications consist of components that can exchange data with other components via (directed and typed) ports that are linked by connectors.
