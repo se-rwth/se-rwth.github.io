@@ -79,9 +79,8 @@ consolidated, compact form.
 - [State-Based Modeling (Automata)](/research/State-Based-Modeling)
 - [Unified Modeling Language (UML)](/research/Unified-Modeling-Language)
 
-{% comment %}
 - [Model-Based Assistive Systems](/research/Model-Based-Assistive-Systems)
-{% endcomment %}
+
 
 {% include trennlinie.html %}
 

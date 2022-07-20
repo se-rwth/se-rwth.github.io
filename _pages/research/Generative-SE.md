@@ -49,8 +49,9 @@ architectural analysis and design language MontiArc [[Hab16]](#Hab16)
 (used for the cloud as well as cyber-physical systems (CPS),
 such as cars or robotics [[HRR12]](#HRR12),
 see [MontiArc](/research/Software-Architecture))
-or the generator MontiGEM [[AMN+19]](#AMN+19) for enterprise information systems
-(see [MontiGem](/research/MontiGem)).
+or the generator [MontiGem](/research/MontiGem) [[AMN+19]](#AMN+19) for
+[enterprise information systems](/research/Enterprise-Information-Systems) or
+[assistive systems](/research/Model-Based-Assistive-Systems).
 All of them are based on the MontiCore language workbench [[KRV10]](#KRV10) [[GKR+06]](#GKR+06).
 With MontiCore we are able to easily define extensions of languages as well
 as new combinations and thus are able to reuse the defined UML/P
@@ -74,7 +75,8 @@ generation (which is much more valuable than one-shot generation).
 For various purposes, including preparation of a model for generation, it is
 helpful to define **model transformations**. We are able to create
 transformation languages in concrete syntax, that reuse the underlying
-language concepts [[Wei12]](#Wei12) [[HRW15]](#HRW15) [[Hoe18]](#Hoe18). Even more important, we describe
+language concepts [[Wei12]](#Wei12) [[HRW15]](#HRW15) [[Hoe18]](#Hoe18). 
+Even more important, we describe
 how to systematically derive a transformation language in concrete syntax.
 Since then, we have applied this technique successfully for several UML
 sub-languages and DSLs [[HHR+15]](#HHR+15) [[AHRW17]](#AHRW17) [[Hoe18]](#Hoe18)
@@ -129,6 +131,10 @@ of using modeling languages for programming in [[Rum02]](#Rum02).
 - [MontiCore - Language Workbench](/research/MontiCore)
 - [UML/P](/research/UML-P)
 - [Unified Modeling Language (UML)](/research/Unified-Modeling-Language)
+- [Model-Based Assistive Systems](/research/Model-Based-Assistive-Systems)
+- [Models in Enterprise Information System Development](/research/Enterprise-Information-Systems)
+
+
 
 {% include trennlinie.html %}
 

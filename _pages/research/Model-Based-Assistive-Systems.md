@@ -7,7 +7,7 @@ img:
 importance: 1
 keys: [HMR+19,MMR+17,MM13,MSS+18,
         MM13,MM15,MS17,MRZ21, MNRV19,
-        MKM+19,SM18,SM20,ELR+17,GMN+20]
+        MKM+19,SM18,SM20,ELR+17,AMN+19]
 ---
 
 ## Summary of Most Relevant Topic Papers
@@ -111,7 +111,7 @@ demonstrated on an IoT manufacturing use case [[MNRV19]](#MNRV19).
 </center>
 <br />
 
-We are successfully using the generator framework MontiGem [[GMN+20]](#GMN+20) 
+We are successfully using the generator framework MontiGem [[AMN+19]](#AMN+19) 
 to create assistive systems for smart homes supporting, e.g., cooking 
 processes. Process and context models allow us to generate web-based 
 multi-modal user interfaces that compose supporting texts from model 
