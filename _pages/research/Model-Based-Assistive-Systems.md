@@ -5,9 +5,9 @@ permalink: /research/Model-Based-Assistive-Systems/
 description:
 img:
 importance: 1
-keys: [HMR+19,Ma17,Mi13,Mi18,
+keys: [HMR+19,MMR+17,MM13,MSS+18,
         MM13,MM15,MS17,
-        Mi19,SM18,SM20,ELR+17]
+        MKM+19,SM18,SM20,ELR+17]
 ---
 
 ## Summary of Most Relevant Topic Papers
@@ -30,7 +30,7 @@ and behaviour data
 
 The main components of an assistive
 system according to the architectural patterns for model
-centered architecture solutions [[Ma17]](#Ma17) are sensors, storages
+centered architecture solutions [[MMR+17]](#MMR+17) are sensors, storages
 observation components, a behavior engine and support components.
 Information about human behavior is collected via sensors or smart devices
 and processed in an observation engine, which stores the data and models.
@@ -61,8 +61,8 @@ engineering process, and ensures consistency-by-design.
 
 Our current work on assistive systems is based on former work within the
 Human Behavior Monitoring and Support (HBMS)
-project [[Mi13]](#Mi13) [[Mi18]](#Mi18)
-in which a domain specific language [[Mi13]](#Mi13) 
+project [[MM13]](#MM13) [[MSS+18]](#MSS+18)
+in which a domain specific language [[MM13]](#MM13) 
 including structural and behavior data,
 and domain specific modeling
 method for assistive systems [[MM15]](#MM15) were developed.
@@ -77,7 +77,7 @@ assisted living and smart home domain [[MS17]](#MS17).
 Recent research discusses the context model for user-centered privacy-driven
 systems in the IoT domain including special aspects for the use in 
 combination with process mining
-systems [[Mi19]](#Mi19).
+systems [[MKM+19]](#MKM+19).
 
 The mark-up of online manuals for non-smart devices [[SM18]](#SM18) 
 as well as
@@ -91,7 +91,7 @@ Due to the General Data Protection Regulation (GDPR) organizations are
 obliged to consider privacy throughout the complete development process.
 Our work suggests solutions for privacy-aware environments for cloud
 services [[ELR+17]](#ELR+17) as well as privacy preserving information systems
-demonstrated on an IoT manufacturing use case [[Mi19]](#Mi19).
+demonstrated on an IoT manufacturing use case [[MKM+19]](#MKM+19).
 
 {% include trennlinie.html %}
 
@@ -116,7 +116,7 @@ demonstrated on an IoT manufacturing use case [[Mi19]](#Mi19).
 <div class="publications">
   {% assign sortedKeys = page.keys | sort %}
   {% for k in sortedKeys %}
-    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+    {% bibliography -f all-software-engineering-rwth-references -f additional-bib-entries -q @*[key={{k}}]* %}
   {% endfor %}
 </div>
 
