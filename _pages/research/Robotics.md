@@ -7,7 +7,7 @@ img:
 importance: 1
 keys: [RRW12,QGC+09,RRW13c,
         RRRW15b,AHRW17b,ABH+16,
-        ABH+17,MGH+98,HN01,
+        ABH+17,MGH+98,Hof03,
         ABK+17,THR+13,BRS+15,BBR07,BR12b]
 ---
 
@@ -92,7 +92,7 @@ languages [[ABH+17]](#ABH+17), we generate parts of a MontiArcAutomaton
 architecture including component structure and behavior. In this
 architecture, goals and tasks are translated into models of the planning
 domain description language (PDDL) [[MGH+98]](#MGH+98) and solved online using
-the Metric-FF [[HN01]](#HN01) planner [[ABK+17]](#ABK+17). Through our work, domain
+the Metric-FF [[Hof03]](#Hof03) planner [[ABK+17]](#ABK+17). Through our work, domain
 experts can focus on describing the domain and its properties and
 robotics experts can focus on implementing actors with their properties
 and actions.
