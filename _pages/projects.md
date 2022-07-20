@@ -22,6 +22,8 @@ SPES_keys: [RSW+15, BMP+16, RSW16]
 
 The explanations below will give you an overview over some major research
 projects our chair is or has recently been part of.
+All our [project results}(/research) 
+are aggregated to [research topics on our research website](/research).
 
 - [Agile Data Development](#ADD)
 - [AutoKnigge](#AutoKnigge)
