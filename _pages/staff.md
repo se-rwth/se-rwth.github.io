@@ -125,3 +125,36 @@ Prof. Dr. Abigail Morrison can be found [here](https://www.fz-juelich.de/en/inm/
     {% include staff_row.html name='Dr. René Wörzberger' %}
   </tbody>
 </table>
+<table class="table table-sm table-bordered">
+  <thead class="text-center"><tr><th colspan="4">Academic Alumni</th></tr></thead>
+  <tbody>
+    {% include alumni_row.html name='Dr. Ibrahim Armac' %}
+    {% include alumni_row.html name='Professor Dr. Christian Berger' %}
+    {% include alumni_row.html name='Dr. Timo Greifenberg' %}
+    {% include alumni_row.html name='Professor Dr. Hans Grönniger' %}
+    {% include alumni_row.html name='Dr. Tim Gülke' %}
+    {% include alumni_row.html name='Dr. Arne Haber' %}
+    {% include alumni_row.html name='Dr. Thomas Heer' %}
+    {% include alumni_row.html name='Dr. Lars Hermerschmidt' %}
+    {% include alumni_row.html name='Dr. Christoph Herrmann' %}
+    {% include alumni_row.html name='Dr. Anne-Therese Körtgen' %}
+    {% include alumni_row.html name='Dr. Holger Krahn' %}
+    {% include alumni_row.html name='Dr. Stefan Kühnel' %}
+    {% include alumni_row.html name='Dr. Markus Look' %}
+    {% include alumni_row.html name='Professor Dr. Shahar Maoz' %}
+    {% include alumni_row.html name='Dr. Cem Mengi' %}
+    {% include alumni_row.html name='Dr. Klaus Müller' %}
+    {% include alumni_row.html name='Dr. Pedram Mir Seyed Nazari' %}
+    {% include alumni_row.html name='Dr. Dirk Reiss' %}
+    {% include alumni_row.html name='Dr. Holger Rendel' %}
+    {% include alumni_row.html name='Dr. Daniel Retkowitz' %}
+    {% include alumni_row.html name='Professor Dr. Jan Ringert' %}
+    {% include alumni_row.html name='Dr. Christoph Schulze' %}
+    {% include alumni_row.html name='Dr. Frank Schroven' %}
+    {% include alumni_row.html name='Dr. Steven Völkel' %}
+    {% include alumni_row.html name='Dr. Erhard Weinell' %}
+    {% include alumni_row.html name='Dr. Ingo Weisemöller' %}
+    {% include alumni_row.html name='Dr. Michael von Wenckstern' %}
+    {% include alumni_row.html name='Dr. René Wörzberger' %}
+  </tbody>
+</table>
