@@ -12,6 +12,11 @@ keys: [HMR+19,MMR+17,MM13,MSS+18,
 
 ## Summary of Most Relevant Topic Papers
 
+<img style = "padding-left: 10px;" 
+src="{{ '/assets/img/research/assistiveSystems/AssistiveSystems.png' | relative_url }}" 
+width = "45%" alt="" title="Assistive Systems" align="right">
+
+
 Assistive systems offer people support in a wide variety of situations. 
 This can be relevant in all areas of life, from our private 
 home, in health care, in vehicles or in the professional world. 
@@ -43,7 +48,7 @@ step-by-step information multi-modal on different kinds of devices.
 <center>
 <div class="row" style="width: 70%">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/as_overview.png 
+        {% responsive_image path: assets/img/research/assistiveSystems/as_overview.png 
            title: "Main concepts of systems for human assistance" 
            class: "img-fluid rounded z-depth-1" %}
     </div>
@@ -88,7 +93,8 @@ for changes by automatically integrating device and application
 functionality into supporting systems.
 
 Due to the General Data Protection Regulation (GDPR) organizations are
-obliged to consider privacy throughout the complete development process.
+obliged to consider privacy throughout the complete development process,
+which is also relevant for assistive systems.
 Our work suggests solutions for privacy-aware environments for cloud
 services [[ELR+17]](#ELR+17) as well as privacy preserving information systems
 demonstrated on an IoT manufacturing use case [[MNRV19]](#MNRV19).
