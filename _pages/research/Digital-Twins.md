@@ -5,7 +5,7 @@ permalink: /research/Digital-Twins/
 description:
 img:
 importance: 1
-keys: [BMR+22, DHM+22, BDJ+22, MPRW22, BHK21, BBD+21b, BBD+21a, DMR+20, BDH+20, BPVZP19]
+keys: [BMR+22, DHM+22, BDJ+22, MPRW22, BHK+21, BBD+21b, BBD+21a, DMR+20, BDH+20, BPVZP19]
 ---
 
 ## Summary of Most Relevant Topic Papers
@@ -152,7 +152,7 @@ how to use
 creating digital twin architectures [[BDH+20]](#BDH+20),
 how to derive digital twin cockpits [[DMR+20]](#DMR+20) from models using 
 the [MontiGem](/research/MontiGem) generator, and
-how to use process prediction within digital twins [[BHK21]](#BHK21). 
+how to use process prediction within digital twins [[BHK+21]](#BHK+21). 
 Other research focuses on the creation of
 low-code platforms for model-driven digital twins [[DHM+22]](#DHM+22) or
 sustainable digital twin engineering for the production domain.
@@ -209,7 +209,7 @@ allows us to reuse models and fastens the engineering of digital twins.
 <div class="publications">
   {% assign sortedKeys = page.keys | sort %}
   {% for k in sortedKeys %}
-    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+    {% bibliography -f all-software-engineering-rwth-references -f additional-bib-entries -q @*[key={{k}}]* %}
   {% endfor %}
 </div>
 

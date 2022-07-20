@@ -5,7 +5,7 @@ permalink: /research/Autonomic-Driving/
 description:
 img:
 importance: 1
-keys: [R+10,BR12,BBR07,BR12b,BBH+13,MMR10,HKR12,   
+keys: [RBL+10,BR12,BBR07,BR12b,BBH+13,MMR10,HKR12,   
         BBB+08,FIK+18,BBH+15]
 ---
 
@@ -131,7 +131,7 @@ methods.
 <div class="publications">
   {% assign sortedKeys = page.keys | sort %}
   {% for k in sortedKeys %}
-    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+    {% bibliography -f all-software-engineering-rwth-references -f additional-bib-entries -q @*[key={{k}}]* %}
   {% endfor %}
 </div>
 

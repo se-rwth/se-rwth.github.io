@@ -19,7 +19,7 @@ def getmdkeys(path):
 
 
 def getbibkeys(path):
-    with open(path) as bibtex_file:
+    with open(path, encoding='utf8') as bibtex_file:
         bib_database = bibtexparser.load(bibtex_file)
 
     bibtexlist = bib_database.entries
@@ -42,7 +42,9 @@ def checkkeys(mdkeys, bibkeys):
 def main(filepath, bibpath, outname, ignore = []):
     files = [f for f in listdir(filepath) if isfile(join(filepath, f))]
     bib_keys = getbibkeys(bibpath + '/all-software-engineering-rwth-references.bib')
+    bib_keys_extern = getbibkeys(bibpath + '/additional-bib-entries.bib')
     bib_keys.extend(ignore)
+    bib_keys.extend(bib_keys_extern)
     with open(outname+".md", "w") as text_file:
         for file in files:
             keys = getmdkeys(filepath + '/' + file)
@@ -56,5 +58,5 @@ def main(filepath, bibpath, outname, ignore = []):
 
 if __name__ == "__main__":
     main('_pages/research', 'assets/bibliography', 'research')
-    ignore = ['NM08', 'SNZ08', 'Nag95', 'Nag96', 'Nag90', 'NP84', 'Nag79']
-    main('_pages', 'assets/bibliography', 'pages', ignore)
+    main('_pages/projects', 'assets/bibliography', 'projects')
+    main('_pages', 'assets/bibliography', 'pages')

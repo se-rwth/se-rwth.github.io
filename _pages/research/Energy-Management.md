@@ -120,7 +120,7 @@ based on generative technologies from the MontiCore Language Workbench.
 <div class="publications">
   {% assign sortedKeys = page.keys | sort %}
   {% for k in sortedKeys %}
-    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+    {% bibliography -f all-software-engineering-rwth-references -f additional-bib-entries -q @*[key={{k}}]* %}
   {% endfor %}
 </div>
 
