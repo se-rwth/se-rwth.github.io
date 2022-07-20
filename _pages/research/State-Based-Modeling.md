@@ -6,7 +6,7 @@ description:
 img: 
 importance: 1
 keys: [GKR96, BCR07b, BCGR09a, BCGR09, 
-        PR94, RK96, Rum96, KPR97, LS89, 
+        PR94, RK96, Rum96, KPR97, 
         Rum16, Rum17, GR95, BR07, 
         RRW14a, THR+13, FLP+11b]   
 ---
@@ -195,7 +195,7 @@ that is compatible with refinement and composition.
 <div class="publications">
   {% assign sortedKeys = page.keys | sort %}
   {% for k in sortedKeys %}
-    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+    {% bibliography -f all-software-engineering-rwth-references -f additional-bib-entries -q @*[key={{k}}]* %}
   {% endfor %}
 </div>
 

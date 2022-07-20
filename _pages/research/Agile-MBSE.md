@@ -5,7 +5,7 @@ permalink: /research/Agile-MBSE/
 description:
 img:
 importance: 1
-keys: [Rum17, Rum16, Rum04c, Rum02, Rum03, GKRS06,
+keys: [Rum17, Rum16, Rum04c, Rum02, Rum03, GKR+06,
 Rum12, Rum11, GKR+06, Sch12, LRSS10, HKR+09, PR03,
 MRR10, FHR08, KRV06, JWCR18, CEG+14, KMA+16]
 ---
@@ -63,7 +63,7 @@ deficiencies of existing UML tools but also the UML language itself
 need to be adapted to fit the needs of an agile software development
 process, e.g.,
 in [[Rum03]](#Rum03) we discuss how modeling of tests helps to increase reuse and
-efficiency and in [[GKRS06]](#GKRS06) the integration of
+efficiency and in [[GKR+06]](#GKR+06) the integration of
 models and ordinary programming code.
 
 
@@ -186,7 +186,7 @@ of forms of reuse of modelled software components.
 <div class="publications">
   {% assign sortedKeys = page.keys | sort %}
   {% for k in sortedKeys %}
-    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+    {% bibliography -f all-software-engineering-rwth-references -f additional-bib-entries -q @*[key={{k}}]* %}
   {% endfor %}
 </div>
 

@@ -3,12 +3,13 @@ layout: page
 title: Chair of Software Engineering
 permalink: /
 description: Software Engineering at RWTH Aachen, Bernhard Rumpe
-
 social: true  # includes social icons at the bottom of the page
 ---
 
 <div class="embed-responsive embed-responsive-16by9 video-activities">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qvCU3Hz89ZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qvCU3Hz89ZM" title="YouTube video player" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
 </div> 
 
 {% include trennlinie.html %}
@@ -32,66 +33,11 @@ Improving software and systems development by identifying:
 
 {% include trennlinie.html %}
 
-## Interesse an einer Promotion?
-
-* Sie könnten an einer der renommiertesten deutschen Universitäten im 
-  Bereich Informatik forschen! 
-* Wir suchen engagierte wissenschaftliche Mitarbeiterinnen und 
-  Mitarbeiter mit Interesse an einer Promotion im Software Engineering.
-* [Hier gibt es Details: 
-  https://www.se-rwth.de/jobs/](/jobs/) 
-* Oder melden Sie sich bei Bernhard Rumpe, rumpe@se-rwth.de. Eine 
-  aussagekräftige Bewerbungsunterlage ist dabei hilfreich. 
-
-## Interessed in a Ph.D. thesis / Doctorate?
-
-* You can elaborate your knowlede at one of the most renowned German 
-  universities in the field of Computer Science!
-* We are looking for dedicated academics
-  interested in a doctorate in software engineering
-  and especially the enhancement and application of 
-  modelling techniques in engineering and science.
-* [Here are details:
-  https://www.se-rwth.de/jobs/](/jobs/)
-* Or contact Bernhard Rumpe, rumpe@se-rwth.de. 
-  Meaningful application documents are helpful.
+{% include main-interesse-an-promotion.html %}
 
 {% include trennlinie.html %}
 
-<div class="container block-main">
-  <div class="row" style="text-align: center; margin: 0 0 40px 0;">
-    <div class="col">
-      <a href="https://mbse.se-rwth.de/">
-          <img src="assets/img/block-1.png">
-          <span class="span-block-main">MontiGem</span>
-      </a>
-    </div>
-    <div class="col">
-      <a href="/jobs/">
-          <img src="assets/img/block-2.png">
-          <span class="span-block-main" style="background: #0067a6">Digitalisation</span>
-      </a>
-    </div>
-    <div class="col">
-      <a href="/jobs/">
-          <img src="assets/img/block-3.png">
-          <span class="span-block-main">Automotive</span>
-      </a>
-    </div>
-    <div class="col">
-      <a href="/jobs/">
-          <img src="assets/img/block-4.png">
-          <span class="span-block-main" style="background: #0067a6">Digital Twin</span>
-      </a>
-    </div>
-    <div class="col">
-      <a href="https://monticore.github.io/monticore/">
-          <img src="assets/img/block-5.png">
-          <span class="span-block-main">MontiCore</span>
-      </a>
-    </div>
-  </div>
-</div>
+{% include main-block.html %}
 
 {% include trennlinie.html %}
 
@@ -119,7 +65,8 @@ tools. Further links to research are:
 
 {% include trennlinie.html %}
 
+#### Some Interesting Books:
 
-
+{% include main-some-books.html %}
 
 

@@ -5,20 +5,17 @@ permalink: /research/Digital-Twins/
 description:
 img:
 importance: 1
-keys: [BMR+22, DHM+22, BDJ+22, MPRW22, BHK+21, BBD+21b, 
-       BBD+21a, DMR+20, BDH+20, KMR21,KMR+20]
+keys: [BMR+22, DHM+22, BDJ+22, MPRW22, BHK+21, BBD+21b, BBD+21a, DMR+20, BDH+20, BPVZP19]
 ---
 
 ## Summary of Most Relevant Topic Papers
 
+<img style = "padding-left: 10px;" src="{{ '/assets/img/research/digitalTwins/DT.Perspectives.png' | relative_url }}" width = "45%" alt="" title="Digital Twin Perspectives" align="right">
 
 
 There exists a plethora of definitions for Digital Twins (DTs),
 however, there is little consensus about what a DT actually is.
 The main weaknesses about the available definitions are that they are:
-
-<img style = "padding-left: 10px;" src="{{ '/assets/img/research/digitalTwins/DT.Perspectives.png' | relative_url }}" width = "45%" alt="" title="Digital Twin Perspectives" align="right">
-
 1. ambiguous, by deferring to another undefined term, such as a  "virtual
    representation",  "a virtual projection of the industrial facility into 
    the cloud", or a  "computable virtual abstraction";
@@ -80,11 +77,11 @@ systems (physical and organizations), processes, products, and humans.
 The provided *services* during runtime of the digital twin
 might include process mining, artificial intelligence, simulation
 and predictive control services.
-Process mining techniques can be used within DTs as services to further 
+Process mining techniques can be used within \dts as services to further 
 improve and adapt the used knowledge.
 Artificial intelligence services help to realize real-time decisions and 
 explainable AI within decision support helps to reduce human errors in 
-decision making.
+decision making [[BPVZP19]](#BPVZP19).
 Services to control the physical object need to send execution commands 
 via APIs to the physical object and are often related to 
 self-adaptiveness [[BBD+21a]](#BBD+21a).
@@ -159,6 +156,7 @@ how to use process prediction within digital twins [[BHK+21]](#BHK+21).
 Other research focuses on the creation of
 low-code platforms for model-driven digital twins [[DHM+22]](#DHM+22) or
 sustainable digital twin engineering for the production domain.
+ 
 
 To realize digital twins and their cockpits is an increasingly complex task
 that leads us to the idea of increasing the degree of automation for
@@ -181,20 +179,11 @@ process mining techniques to derive PADTCs.
 As such digital twins can exist for various domains, perspectives and
 levels of detail, it is interesting to investigate how to combine
 such digital twins in systems-of-systems.
-Integration challenges
+WIntegration challenges
 for digital twin systems-of-systems [[MPRW22]](#MPRW22)
 include, e.g., the hoizontal integration of
 digital twin parts, the composition of DTs for different perspectives, or
 how to handle different lifecycle representations of the original system.
-
-Besides the production domain, we are investigating how digital twins
-can be applied to other areas, e.g.,
-accompanying digital twins for [IoT](/research/IoT) 
-systems [[KMR21]](#KMR21), or
-generative approaches to integrate 
-[cyber-physical systems](/research/Cyber-Physical-Systems) in the 
-smart home domain with 
-their information systems [[KMR+20]](#KMR+20). 
 
 {% include trennlinie.html %}
 
@@ -220,7 +209,7 @@ allows us to reuse models and fastens the engineering of digital twins.
 <div class="publications">
   {% assign sortedKeys = page.keys | sort %}
   {% for k in sortedKeys %}
-    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+    {% bibliography -f all-software-engineering-rwth-references -f additional-bib-entries -q @*[key={{k}}]* %}
   {% endfor %}
 </div>
 
@@ -235,7 +224,7 @@ allows us to reuse models and fastens the engineering of digital twins.
 - [Model-Based Assistive Systems](/research/Model-Based-Assistive-Systems)
 - [Models in Enterprise Information System Development](/research/Enterprise-Information-Systems)
 - [MontiGem - Generating Enterprise Management Systems](/research/MontiGem)
-- [Cyber-Physical Systems](/research/Cyber-Physical-Systems)
+- [MontiThings](/research/MontiThings)
 
 {% include trennlinie.html %}
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Jörg Christian Kirchhof, M.Sc.
+title: Jörg Christian Kirchhof, M.Sc. RWTH
 permalink: /staff/Christian.Kirchhof/
 nav: false
 ---
@@ -42,7 +42,7 @@ nav: false
 </center>
 <br />
 
-MontiThings is an architecture description language for rapid prototyping of Internet of Things applications. 
+[MontiThings](/research/MontiThings) is an architecture description language for rapid prototyping of Internet of Things applications. 
 [Available on GitHub!](https://github.com/monticore/montithings/)
 
 {% include trennlinie.html %}
@@ -79,3 +79,10 @@ Former teaching at RWTH Aachen University:
   {% bibliography -f all-software-engineering-rwth-references -q @*[author ~= Kirchhof. J] %}
 </div>
 
+{% include reference.html
+  key = "SKS+17"
+  authors = "M. Serror, J. C. Kirchhof, M. Stoffers, K. Wehrle, and J. Gross"
+  url = "https://www.comsys.rwth-aachen.de/fileadmin/papers/2017/2017-serror-pads-cows.pdf"
+  title = "Code-transparent Discrete Event Simulation for Time-accurate Wireless Prototyping"
+  info = "In: Proceedings of the 5th ACM SIGSIM/PADS Conference on Principles of Advanced Discrete Simulation (SIGSIM-PADS’17), Singapore, Singapore, 5, 2017, ACM." 
+%}

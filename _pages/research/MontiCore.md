@@ -8,7 +8,7 @@ importance: 1
 keys: [HKR21,
     KRV08,HR17,GKR+07,Wei12,BPR+20,GKR+08,Voe11,HRW18,BEK+19,HMR+19,
     BHR+21,Hoe18,KRV10,Kra10,BEH+20,BEK+18b,HJRW20,KRV07a,KRV07b,
-    HRR12,Sch12,BDL+18,GKRS06,
+    HRR12,Sch12,BDL+18,GKR+06,
     Ber10, HRW15, Kra10, Loo17, PBI+16, Pin14, Rum16]
 ---
 
@@ -139,7 +139,7 @@ editing for experienced users.
 <div class="publications">
   {% assign sortedKeys = page.keys | sort %}
   {% for k in sortedKeys %}
-    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+    {% bibliography -f all-software-engineering-rwth-references -f additional-bib-entries -q @*[key={{k}}]* %}
   {% endfor %}
 </div>
 

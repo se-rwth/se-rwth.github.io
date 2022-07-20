@@ -8,7 +8,7 @@ importance: 1
 keys: [Rum16,Rum17,Rum12,
 Rum11,Sch12,MRR11f,
 MRR11e,MRR11c,GJS05,
-HJW92,MRR11d,MRR11a,
+MRR11d,MRR11a,
 BKRW17a]
 ---
 
@@ -46,7 +46,7 @@ programming"). It comprises the following types of UML diagrams:
   various forms. OCL/P is a specific variant of OCL that allows for
   writing constraints in a syntax inspired by Java [[GJS05]](#GJS05). It
   is extended by various techniques for set and list comprehension
-  known from functional languages like Haskell [[HJW92]](#HJW92).
+  known from functional languages like Haskell.
 
 These languages can be used individually as well as in a coherent
 language family that allows to connect models of different sublanguages
@@ -119,7 +119,7 @@ to the UML/P itself.
 <div class="publications">
   {% assign sortedKeys = page.keys | sort %}
   {% for k in sortedKeys %}
-    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+    {% bibliography -f all-software-engineering-rwth-references -f additional-bib-entries -q @*[key={{k}}]* %}
   {% endfor %}
 </div>
 

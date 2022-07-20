@@ -6,8 +6,8 @@ description:
 img:
 importance: 1
 keys: [Rum12,Rum11,Rum16,Rum17,
-Sch12,Hab16,HRR12,AMN+20a,
-KRV10,GKR+06,KRV06,GKRS06,
+Sch12,Hab16,HRR12,AMN+19,
+KRV10,GKR+06,KRV06,GKR+06,
 GHK+15,GHK+15a,Wei12,HRW15,
 Hoe18,HHR+15,AHRW17,
 Rum04c,Rum03,Rum02]
@@ -49,7 +49,7 @@ architectural analysis and design language MontiArc [[Hab16]](#Hab16)
 (used for the cloud as well as cyber-physical systems (CPS),
 such as cars or robotics [[HRR12]](#HRR12),
 see [MontiArc](/research/Software-Architecture))
-or the generator MontiGEM [[AMN+20a]](#AMN+20a) for enterprise information systems
+or the generator MontiGEM [[AMN+19]](#AMN+19) for enterprise information systems
 (see [MontiGem](/research/MontiGem)).
 All of them are based on the MontiCore language workbench [[KRV10]](#KRV10) [[GKR+06]](#GKR+06).
 With MontiCore we are able to easily define extensions of languages as well
@@ -66,7 +66,7 @@ either vanish or their workload can greatly be reduced).
 Working with **generated and handwritten code** leads to
 challenges related with continuous repetitive generation
 (the generation gap problem).
-In [[GKRS06]](#GKRS06) [[GHK+15]](#GHK+15) [[GHK+15a]](#GHK+15a) we discuss mechanisms
+In [[GKR+06]](#GKR+06) [[GHK+15]](#GHK+15) [[GHK+15a]](#GHK+15a) we discuss mechanisms
 to keep generated and handwritten code
 separated, while integrating them in the product and enabling the repetitive
 generation (which is much more valuable than one-shot generation).
@@ -113,7 +113,7 @@ of using modeling languages for programming in [[Rum02]](#Rum02).
 <div class="publications">
   {% assign sortedKeys = page.keys | sort %}
   {% for k in sortedKeys %}
-    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+    {% bibliography -f all-software-engineering-rwth-references -f additional-bib-entries -q @*[key={{k}}]* %}
   {% endfor %}
 </div>
 

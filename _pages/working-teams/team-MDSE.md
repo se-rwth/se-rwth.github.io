@@ -51,40 +51,14 @@ engineering practices.
 
 Currently, the model-driven systems engineering working group consists of:
 
-<div class="container">
-    <div class="row d-flex justify-content-center">
-        <div class="col-lg-2 col-md-6">
-            <a href="https://www.se-rwth.de/staff/jansen/"><img class="staff-pics team-pics-design z-depth-1" src="../../assets/img/teams/jansen.jpeg" alt="Jansen"></a>
-            <span class="span-text-team-pics">Nico Jansen, M.Sc.</span>
-        </div>
-        <div class="col-lg-2 col-md-6">
-            <a href="https://www.se-rwth.de/staff/michael/"><img class="staff-pics team-pics-design z-depth-1" src="../../assets/img/teams/michael.jpeg" alt="Michael"></a>
-            <span class="span-text-team-pics">Judith Michael, Dr.</span>
-        </div>
-        <div class="col-lg-2 col-md-6">
-            <a href="https://www.se-rwth.de/staff/nachmann/"><img class="staff-pics team-pics-design z-depth-1" src="../../assets/img/teams/nachmann.png" alt="Nachmann"></a>
-            <span class="span-text-team-pics">Imke Nachmann, M.Sc.</span>
-        </div>
-        <div class="col-lg-2 col-md-6">
-            <a href="https://www.se-rwth.de/staff/kirchhof/"><img class="staff-pics team-pics-design z-depth-1" src="../../assets/img/teams/kirchhof.jpeg" alt="Kirchhof"></a>
-            <span class="span-text-team-pics">Jörg Christian Kirchhof, M.Sc.</span>
-        </div>
-        <div class="col-lg-2 col-md-6">
-            <a href="https://www.se-rwth.de/staff/schmalzing/"><img class="staff-pics team-pics-design z-depth-1" src="../../assets/img/teams/schmalzing.jpeg" alt="Schmalzing"></a>
-            <span class="span-text-team-pics">David Schmalzing, M.Sc.</span>
-        </div>
-        <div class="col-lg-2 col-md-6">
-            <a href="https://www.se-rwth.de/staff/wachtmeister/"><img class="staff-pics team-pics-design z-depth-1" src="../../assets/img/teams/wachtmeister.jpeg" alt="Wachtmeister"></a>
-            <span class="span-text-team-pics">Louis Wachtmeister, M.Sc.</span>
-        </div>
-    </div>
-</div>
+{% include team-members-MDSE.html %}
 
 {% include trennlinie.html %}
 
 ### Research Partners
 
-In ongoing and successfully finished research projects, we have collaborated with various partners from industry and academy, including:
+In ongoing and successfully finished research projects, we have collaborated with various partners 
+from industry and academy, including:
 
 - BMW Group
 - Bosch

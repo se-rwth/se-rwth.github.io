@@ -5,9 +5,9 @@ permalink: /research/Model-Based-Assistive-Systems/
 description:
 img:
 importance: 1
-keys: [HMR+19,Ma17,Mi13,Mi18,
-        MM13,MM15,MS17,MRZ21,
-        MNRV19,SM18,SM20,ELR+17]
+keys: [HMR+19,MMR+17,MM13,MSS+18,
+        MM13,MM15,MS17,MRZ21, MNRV19,
+        MKM+19,SM18,SM20,ELR+17]
 ---
 
 ## Summary of Most Relevant Topic Papers
@@ -77,11 +77,11 @@ assisted living and smart home domain [[MS17]](#MS17).
 Recent research discusses the context model for user-centered privacy-driven
 systems in the IoT domain including special aspects for the use in 
 combination with process mining
-systems [[MNRV19]](#MNRV19).
+systems [[MKM+19]](#MKM+19).
 
 The mark-up of online manuals for non-smart devices [[SM18]](#SM18) 
 as well as
-websites [[SM20]](#SM20) is one further step to provide human-centered
+websites [[SM19]](#SM19) is one further step to provide human-centered
 assistance.
 Using these approaches reduces system set-up time and improves flexibility
 for changes by automatically integrating device and application
