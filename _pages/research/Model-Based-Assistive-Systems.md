@@ -7,14 +7,14 @@ img:
 importance: 1
 keys: [HMR+19,MMR+17,MM13,MSS+18,
         MM13,MM15,MS17,MRZ21, MNRV19,
-        MKM+19,SM18,SM20,ELR+17]
+        MKM+19,SM18,SM20,ELR+17,GMN+20]
 ---
 
 ## Summary of Most Relevant Topic Papers
 
 <img style = "padding-left: 10px;" 
-src="{{ '/assets/img/research/assistiveSystems/AssistiveSystems.png' | relative_url }}" 
-width = "45%" alt="" title="Assistive Systems" align="right">
+src="{{ '/assets/img/research/assistiveSystems/AssistiveSystems2.png' | relative_url }}" 
+width = "30%" alt="" title="Assistive Systems" align="right">
 
 
 Assistive systems offer people support in a wide variety of situations. 
@@ -35,10 +35,11 @@ and behaviour data
 
 The main components of an assistive
 system according to the architectural patterns for model
-centered architecture solutions [[MMR+17]](#MMR+17) are sensors, storages
-observation components, a behavior engine and support components.
-Information about human behavior is collected via sensors or smart devices
-and processed in an observation engine, which stores the data and models.
+centered architecture solutions [[MMR+17]](#MMR+17) are sensors, storages,
+observation components, a behavior engine, and support components.
+Information about human behavior is collected via sensors, e.g., 
+via sensor floors [[LMK+11]](#LMK+11) or smart devices
+and processed in observation components, which stores the data and models.
 The behavior engine compares and connects the current behavior step with
 already existing models of behavior.
 The support engine decides which next step should be provided as behavior
@@ -99,11 +100,31 @@ Our work suggests solutions for privacy-aware environments for cloud
 services [[ELR+17]](#ELR+17) as well as privacy preserving information systems
 demonstrated on an IoT manufacturing use case [[MNRV19]](#MNRV19).
 
+<center>
+<div class="row" style="width: 70%">
+    <div class="col-sm mt-3 mt-md-0">
+        {% responsive_image path: assets/img/research/assistiveSystems/AssistGeneration.png 
+           title: "Generation Process for Assistive Systems" 
+           class: "img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+</center>
+<br />
+
+We are successfully using the generator framework MontiGem [[GMN+20]](#GMN+20) 
+to create assistive systems for smart homes supporting, e.g., cooking 
+processes. Process and context models allow us to generate web-based 
+multi-modal user interfaces that compose supporting texts from model 
+information and provide pictures and audio support. We cover concepts for 
+leading users to find or place objects using spatial relationships 
+and object nesting.
 Within assistive systems, we can use different kinds of DSLs for generation 
 and during runtime, e.g., 
 we are investigating how goal modeling can be used as addition to
 behavior modeling languages [[MRZ21]](#MRZ21) and
 how to define context information and user tasks. 
+
+
 
 
 {% include trennlinie.html %}
