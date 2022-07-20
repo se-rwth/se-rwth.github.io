@@ -104,7 +104,7 @@ M. Nagl. Einführung in die Programmiersprache Ada. 348 S., Vieweg-Verlag, 1982 
 341 S., 3. Auflage 1991 (Ada - Einführung in die Programmiersprache der Softwaretechnik), 343 S., 4. Auflage 1992, 
 343 S., 5. Auflage 1999 (Softwaretechnik mit Ada '95 - Entwicklung großer Systeme), 504 S., 6. Auflage 2003, 504 S.
 
-<a name="NP79"></a>
+<a name="Nag79"></a>
 M. Nagl. Graph-Grammatiken: Theorie, Anwendungen, Implementierung. Habilitationsschrift. 375 S., Vieweg-Verlag, 1979.
 
 M. Nagl/H.J. Schneider (Hrsg.). Graphs, Data Structures, Algorithms. Proc. Workshop WG'78 on "Graphtheoretic Concepts 
