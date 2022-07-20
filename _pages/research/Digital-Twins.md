@@ -6,7 +6,7 @@ description:
 img:
 importance: 1
 keys: [BMR+22, DHM+22, BDJ+22, MPRW22, BHK+21, BBD+21b, 
-       BBD+21a, DMR+20, BDH+20, BPVZP19,KMR21,KMR+20]
+       BBD+21a, DMR+20, BDH+20, KMR21,KMR+20]
 ---
 
 ## Summary of Most Relevant Topic Papers
@@ -80,11 +80,11 @@ systems (physical and organizations), processes, products, and humans.
 The provided *services* during runtime of the digital twin
 might include process mining, artificial intelligence, simulation
 and predictive control services.
-Process mining techniques can be used within \dts as services to further 
+Process mining techniques can be used within DTs as services to further 
 improve and adapt the used knowledge.
 Artificial intelligence services help to realize real-time decisions and 
 explainable AI within decision support helps to reduce human errors in 
-decision making [[BPVZP19]](#BPVZP19).
+decision making.
 Services to control the physical object need to send execution commands 
 via APIs to the physical object and are often related to 
 self-adaptiveness [[BBD+21a]](#BBD+21a).
