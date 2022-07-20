@@ -30,7 +30,7 @@ and behaviour data
 
 The main components of an assistive
 system according to the architectural patterns for model
-centered architecture solutions [[Ma17]](#Ma17) are sensors, storages
+centered architecture solutions [[MMR+17]](#MMR+17) are sensors, storages
 observation components, a behavior engine and support components.
 Information about human behavior is collected via sensors or smart devices
 and processed in an observation engine, which stores the data and models.
@@ -61,8 +61,8 @@ engineering process, and ensures consistency-by-design.
 
 Our current work on assistive systems is based on former work within the
 Human Behavior Monitoring and Support (HBMS)
-project [[Mi13]](#Mi13) [[Mi18]](#Mi18)
-in which a domain specific language [[Mi13]](#Mi13) 
+project [[MSS+18]](#MSS+18)
+in which a domain specific language [[MM13]](#MM13) 
 including structural and behavior data,
 and domain specific modeling
 method for assistive systems [[MM15]](#MM15) were developed.
@@ -81,7 +81,7 @@ systems [[MKM+19]](#MKM+19).
 
 The mark-up of online manuals for non-smart devices [[SM18]](#SM18) 
 as well as
-websites [[SM19]](#SM19) is one further step to provide human-centered
+websites [[SM20]](#SM20) is one further step to provide human-centered
 assistance.
 Using these approaches reduces system set-up time and improves flexibility
 for changes by automatically integrating device and application
