@@ -166,6 +166,9 @@ Diagrams.
 Furthermore, [[BGH+98b]](#BGH+98b) discusses the relationships between system, a
 view and a
 complete model in the context of the UML.
+And [[BGH+98a]](#BGH+98a) describes mechanisms to specify
+exemplary and complete object interactions, giving e.g. Sequence Diagrams
+a more powerful semantics.
 
 
 ## Abstraction, Underspecification and Executability
