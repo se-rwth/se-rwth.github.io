@@ -77,7 +77,7 @@ systems (physical and organizations), processes, products, and humans.
 The provided *services* during runtime of the digital twin
 might include process mining, artificial intelligence, simulation
 and predictive control services.
-Process mining techniques can be used within \dts as services to further 
+Process mining techniques can be used within DTs as services to further 
 improve and adapt the used knowledge.
 Artificial intelligence services help to realize real-time decisions and 
 explainable AI within decision support helps to reduce human errors in 
