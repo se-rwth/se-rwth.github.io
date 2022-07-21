@@ -6,7 +6,7 @@ description:
 img:
 importance: 1
 keys: [Rum12,Rum11,Rum16,Rum17,
-Sch12,Hab16,HRR12,AMN+19,
+Sch12,Hab16,HRR12,AMN+20a,
 KRV10,GKR+06,KRV06,GKR+06,
 GHK+15,GHK+15a,Wei12,HRW15,
 Hoe18,HHR+15,AHRW17,
@@ -49,7 +49,7 @@ architectural analysis and design language MontiArc [[Hab16]](#Hab16)
 (used for the cloud as well as cyber-physical systems (CPS),
 such as cars or robotics [[HRR12]](#HRR12),
 see [MontiArc](/research/Software-Architecture))
-or the generator [MontiGem](/research/MontiGem) [[AMN+19]](#AMN+19) for
+or the generator [MontiGem](/research/MontiGem) [[AMN+20a]](#AMN+20a) for
 [enterprise information systems](/research/Enterprise-Information-Systems) or
 [assistive systems](/research/Model-Based-Assistive-Systems).
 All of them are based on the MontiCore language workbench [[KRV10]](#KRV10) [[GKR+06]](#GKR+06).
