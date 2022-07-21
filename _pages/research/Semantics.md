@@ -9,7 +9,7 @@ keys: [KRV10,HKR21,HR04,RKB95,
     BHP+98,GKR96,KRB96,RK96,BCGR09a,
     BCGR09,BCR07a,BCR07b,CGR08,GRR09,
     MRR10,MRR11d,MRR11a,MRR11f,BKRW17,BR07,
-    EFLR99,BGH+97,BGH+98a,GR11,CGR09,
+    EFLR99,BGH+97,BGH+98a,BGH+98b,GR11,RR11,CGR09,
     GRR10,Rum17,Rum12,LRSS10,
     BS01,RW18,Rum96]
 ---
@@ -138,7 +138,7 @@ of Things or
 CPS, it does not exhibit concepts of objects and
 classes.
 
-We also discussed a **meta-modeling approach** [[EFLR99b]](#EFLR99b).
+We also discussed a **meta-modeling approach** [[EFLR99]](#EFLR99).
 As nothing is
 as mighty and comfortable as mathematical theories, one needs to
 carefully design the semantics in particular if a concept of the

@@ -10,8 +10,8 @@ GR11, BHP+98, BCGR09, BCGR09a,
 BCR07b, BCR07a, CGR08, MRR11e,
 MRR11c, MRR11f, MRR11a, MRR11d, GRR10,
 FHR08, BGH+98b, Rum04c,Rum02,
-PFR02, EFLR99, FEL+98, SRVK10, Rum04c,
-Rum03, Rum02]
+PFR02, EFLR99, FEL+98, SRVK10,
+Rum03,EFLR99b]
 ---
 
 
@@ -47,7 +47,7 @@ Other important questions are how to **ensure and identify model
 quality** [[FHR08]](#FHR08), how models, views and the system under
 development *correlate* to each other [[BGH+98b]](#BGH+98b) and how to
 use modeling in **agile development projects**
-[[Rum04c,Rum02]](#Rum04c,Rum02). The figure below demonstrates the
+[[Rum04c]](#Rum04c)[[Rum02]](#Rum02). The figure below demonstrates the
 principal forms of uses of UML models in agile development projects.
 The exemplary diagrams, namely object diagrams and sequence diagrams,
 are used for test case definition, whereas the more complete

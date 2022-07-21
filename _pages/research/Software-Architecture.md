@@ -5,7 +5,7 @@ permalink: /research/Software-Architecture/
 description: 
 img: 
 importance: 1
-keys: [BS01,Rum96,Rin14,Hab16,BR07,
+keys: [BS01,Rum96,Rin14,Hab16,BR07,HRR98,
         PR99,HRR10,RRW13c,RRW14a,Wor16,
         PR13,HHR+15,BKRW17a,RRRW15b,
         BHH+17,AHRW17b,HRR+11,HRRS11,
@@ -114,7 +114,7 @@ Because the language MontiArc is **designed for extensibility** , several
 sub-languages for behavior may be embedded directly within component definitions. 
 MontiArc is e.g. extended with automata to **MontiArcAutomaton** 
 [[RRW13c]](#RRW13c), [[Wor16]](#Wor16) and 
-[[RRW14a]](#RRW14a), with Cloud-constructs to ClArc [[NPR13]](#NPR13), 
+[[RRW14a]](#RRW14a), with Cloud-constructs to ClArc [[PR13]](#PR13), 
 and with security annotations to MontiSecArc [[HHR+15]](#HHR+15). 
 
 
