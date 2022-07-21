@@ -11,7 +11,7 @@ BCR07b, BCR07a, CGR08, MRR11e,
 MRR11c, MRR11f, MRR11a, MRR11d, GRR10,
 FHR08, BGH+98b, Rum04c,Rum02,
 PFR02, EFLR99, FEL+98, SRVK10,
-Rum03,EFLR99b]
+Rum03,EFLR99a]
 ---
 
 
@@ -69,7 +69,7 @@ The idea of **adaption and extension** of the UML in order to better
 suit the needs of specific domains or settings, is another important
 aspect. [[PFR02]](#PFR02) describes product line annotations for UML.
 More general discussions and insights on how to use meta-modeling for
-defining and adapting the UML are included in [[EFLR99b]](#EFLR99b),
+defining and adapting the UML are included in [[EFLR99a]](#EFLR99a),
 [[FEL+98]](#FEL+98) and [[SRVK10]](#SRVK10).
 
 To use UML not only for analysis but also for programming has an impact
