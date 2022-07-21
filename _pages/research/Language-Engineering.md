@@ -102,7 +102,7 @@ in a reusable form.
 In a second dimension, we decompose the tooling along the activities
 (front-end: model processing, context conditions, internal transformations,
 backend: printing) and decompose each of these activities along the
-individual language components. MontiCore 3 [[HR17]](#HR17), e.g., is able to
+individual language components. MontiCore 3 [[HR17]](#HR17), e.g., was already able to
 decompose the front-end language processing along the decomposition of the
 language itself [[KRV10]](#KRV10) [[Voe11]](#Voe11) [[KRV08]](#KRV08) 
 [[HMSNRW16]](#HMSNRW16) [[Naz17]](#Naz17) [[RRRW15b]](#RRRW15b). 

@@ -30,8 +30,10 @@ within and between models**.
 A modular approach for MBSE cannot only help us to master complexity, but is
 also a key enabler for model-based engineering of heterogeneous software
 systems as discussed in [[HKR+09]](#HKR+09).
-In [[BR07]](#BR07) we have described such a set of compositional modeling
-concepts, perfectly suited for modular development of interacting systems.
+In [[BR07]](#BR07) and [[RW18]](#RW18)
+we have described such a set of compositional modeling
+concepts, perfectly suited for modular development of
+concurrent, but intensively interacting systems.
 
 A **compositional approach** has to take into account several levels of
 the entire MBSE process, starting with the respective modeling language in
@@ -49,6 +51,24 @@ Languages](/research/Domain-Specific-Languages) (DSLs).
 As DSLs are becoming more and more popular, the efficient reuse of DSL
 fragments (i.e., language components) is vital to achieve an efficient
 development process.
+
+[[HLMSN+15]](#HLMSN+15) describes effectively working techniques and 
+caveats for an approach to integrate heterogeneous modeling
+languages such as UML or SysML 
+in the large via extensible and composable language components,
+which led finally to the methodological approach 
+of the composition of heterogeneous modeling languages in [[HLMSN+15a]](#HLMSN+15a).
+This approach distingushes language embedding, language inheritance,
+and language aggregation as three different composition techniques
+that affect concrete and abstract syntax as well as
+context conditions and is largely based on symbol table composition.
+[[MSNRR16]](#MSNRR16) extends the symbol table with generator
+information for a composable generation approach.
+
+[[HMSNRW16]](#HMSNRW16) concentrates on the automatic generation of
+extensible and type safe composable visitors, which are a core element for
+compositional synthesis and analysis algorithms and context conditions
+on models.
 
 But aside from the language definition, the accompanying infrastructure
 needs to be modular as well (as described in [[KRV07b]](#KRV07b)).
@@ -68,12 +88,21 @@ to be solved in [[CBCR15]](#CBCR15), which describes a conceptual model of the
 compositional, so called "globalized" use of domain specific languages,
 which we published together with related topics in [[CCF+15a]](#CCF+15a).
 
-As a new form of decomposition of model information we have developed
+Based on the possibility to compose languages from language components, we explored
+**controlled and extensible variability** of the concrete and abstract Syntax
+using with independent, composable language features in [[BEK+18a]](#BEK+18a),
+[[BEK+18b]](#BEK+18b) and [[BEK+19]](#BEK+19). 
+
+[[HRW18]](#HRW18) extends the idea of composition with systematic derivation
+of new languages.
+As an application of this  form of derivation
+we have developed a new form of decomposition of model information, namely
 the concept of tagging languages in [[GLRR15]](#GLRR15). It allows describing 
 additional, e.g., technical information for model elements in
 extra documents and thus facilitates reuse of the original model in
 different contexts with individual tag sets, but also of tags on
 different models. It furthermore allows to type the tags.
+MontiCore can automatically derive a tagging language for each given base language.
 
 
 {% include trennlinie.html %}

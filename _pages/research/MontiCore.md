@@ -83,7 +83,7 @@ access to MontiCore itself.
 ## MontiCore's History 
 
 MontiCore has been developed since 2004
-[[GKR+08]](#GKR+08) [[HR17]](#HR17). 
+[[GKR+08]](#GKR+08) [[HKR21]](#HKR21). 
 We started its development because at that time the
 available tools for model management where often very poor in
 functionality and also not extensible, but closed shops. In 2004 the

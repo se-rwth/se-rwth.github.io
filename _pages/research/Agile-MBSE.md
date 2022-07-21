@@ -7,7 +7,8 @@ img:
 importance: 1
 keys: [Rum17, Rum16, Rum04c, Rum02, Rum03, GKR+06,
 Rum12, Rum11, GKR+06, Sch12, LRSS10, HKR+09, PR03,
-MRR10, FHR08, KRV06, JWCR18, CEG+14, KMA+16]
+MRR10, FHR08, KRV06, JWCR18, CEG+14, KMA+16,
+GKR+08,HKR21,RRSW17]
 ---
 
 ## Summary of Most Relevant Topic Papers
@@ -117,11 +118,20 @@ desired or unwanted object structures, are presented there as well.
 
 In the last decade, we implemented a **language workbench** called MontiCore
 (see [MontiCore - Language Workbench for DSLs](/research/MontiCore))
-that was first described in [[GKR+06]](#GKR+06). On top of MontiCore, we
+that was first described in [[GKR+06]](#GKR+06) and [[GKR+08]](#GKR+08).
+Its current Handbook [[HKR21]](#HKR21) explains technical details as well
+as the principal guidelines for its use and 
+also offers a core layer of reusable language components.
+On top of MontiCore, we
 realized most of the language components of the UML/P [[Sch12]](#Sch12).
 This work includes a precise definition of textual languages, type checks,
 checks for context conditions within and between
 UML sub-languages and a framework for the implementation of code generators.
+
+MontiCore also assumes a larger part of the current
+*Software Language Engineering* course at RWTH
+and serves as basis for the mechanisms to teach agile modeling
+adressed in \cite{RRSW17}.
 
 ## Specific Concepts Assisting Agile Development
 
