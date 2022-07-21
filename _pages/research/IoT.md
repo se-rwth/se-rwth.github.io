@@ -17,7 +17,7 @@ In line with our mission, our research contributions to the Internet of
 Things and Industry 4.0 focus on modeling techniques to support and
 facilitate development of increasingly complex solutions. Early
 contributions include architecture modeling techniques and infrastructures
-for the efficient development of cloud-based systems [[NPR13]](#NPR13), secure
+for the efficient development of cloud-based systems [[PR13]](#PR13), secure
 distributed systems [[HHR+15]](#HHR+15), and distributed robotics
 systems [[RRRW15b]](#RRRW15b).
 

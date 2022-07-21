@@ -7,7 +7,7 @@ img:
 importance: 1
 keys: [HMR+19,MMR+17,MM13,MSS+18,
         MM13,MM15,MS17,MRZ21, MNRV19,
-        MKM+19,SM18,SM20,ELR+17,AMN+20a]
+        MKM+19,SM18,SM20,ELR+17,AMN+20a,LMK+11]
 ---
 
 ## Summary of Most Relevant Topic Papers

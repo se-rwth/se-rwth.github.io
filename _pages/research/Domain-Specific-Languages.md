@@ -11,7 +11,7 @@ keys: [GHK+07,PFR02,SRVK10,
         GKR+07,KRV08,Voe11,
         HKR21,Sch12,HRW18,
         CBCR15,CCF+15a,KRV07a,
-        GKR+06,LRSS10,Wei12]
+        GKR+06,LRSS10,Wei12,HRW15,Hoe18]
 ---
 
 ## Summary of Most Relevant Topic Papers

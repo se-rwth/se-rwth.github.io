@@ -15,7 +15,7 @@ keys: [Rum16,Rum17,HRW15,
         HRW15,GLRR15,BDL+18,
         BJRW18,Wei12,Hoe18,
         BEK+18a, BEK+19, CGR09, 
-        GR11, Kra10]
+        GR11, Kra10, HR17]
 ---
 
 [//]: # Bem: einige Key's absichtlich nicht im Text refernziert: CGR09, GR11, Kra10
@@ -37,7 +37,7 @@ In various domains, however, it is more appropriate to employ [Domain Specific
 Languages (DSLs)](/research/Domain-Specific-Languages) to enable
 non-software developers specifying properties, configuring their systems,
 etc. in terms of established domain concepts and corresponding language
-elements. DSLs have already achieved a significant degree of penetration in industry [[HWR14]](#HWR14).
+elements. DSLs have already achieved a significant degree of penetration in industry [[HRW15]](#HRW15).
 With the upcoming age of digitization, we thus expect DSLs
 to grow even stronger and
 therefore also involve increasing effort in their efficient engineering, integration and composition.

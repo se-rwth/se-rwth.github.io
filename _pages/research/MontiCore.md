@@ -8,8 +8,9 @@ importance: 1
 keys: [HKR21,
     KRV08,HR17,GKR+07,Wei12,BPR+20,GKR+08,Voe11,HRW18,BEK+19,HMR+19,
     BHR+21,Hoe18,KRV10,Kra10,BEH+20,BEK+18b,HJRW20,KRV07a,KRV07b,
-    HRR12,Sch12,BDL+18,GKR+06,
-    Ber10, HRW15, Kra10, Loo17, PBI+16, Pin14, Rum16]
+    HRR12,Sch12,BDL+18,GKR+06,AHRW17,RRW15,HHR+15,MRRW16,GLRR15,
+    Ber10,HRW15,Kra10,Loo17,PBI+16,Pin14,Rum16,Rum17,Wor16,Hab16
+    Rei16,Rot17]
 ---
 
 [//]: # Bem: viele Key's absichtlich nicht im Text refernziert
