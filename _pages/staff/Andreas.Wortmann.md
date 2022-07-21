@@ -13,7 +13,7 @@ nav: false
         </div>
         <div class="col-lg-4">
           Dipl.-Inform. Dipl.-Wirt.Inform.<br>
-          Team Leader <a href="/working-teams/team-MDSE">Model-Driven Systems Engineering </a>
+          Team Leader <a href="../working-teams/team-MDSE">Model-Driven Systems Engineering </a>
           Software Engineering<br>
           Department of Computer Science 3<br>
           RWTH Aachen University<br>

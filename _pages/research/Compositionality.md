@@ -6,7 +6,7 @@ description:
 img: 
 importance: 1
 keys: [BR07,HKR+09,HKR+07,KRV10,
-       KRV08,KRV07a,Voe11,RRRW15b,KKP+09,
+       KRV08,KRV07a,KRV07b,Voe11,RRRW15b,KKP+09,
        GLRR15,CBCR15,CCF+15a]
 ---
 

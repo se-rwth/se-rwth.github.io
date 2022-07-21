@@ -55,7 +55,7 @@ handle privacy in the cloud in a trusted environment.
 </center>
 <br />
 
-In our research [[NPR13]](#NPR13), we tackle these challenges by perusing a model-based,
+In our research [[PR13]](#PR13), we tackle these challenges by perusing a model-based,
 generative approach. The core of this approach are several modeling languages
 that describe different aspects of a cloud-based system in a concise and
 technology-agnostic way. Software architecture and infrastructure models

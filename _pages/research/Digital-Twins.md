@@ -89,7 +89,7 @@ self-adaptiveness [[BBD+21a]](#BBD+21a).
 
 To visualize relevant information, an interface for domain experts is needed,
 which leads us to the term 
- **digital twin cockpit** [[BMRW22]](#BMRW22).  
+ **digital twin cockpit** [[BMR+22]](#BMR+22).  
 * A digital twin cockpit is the user interaction part (UI/GUI) of a 
 digital twin.
 * It provides the graphical user interface for
@@ -118,7 +118,7 @@ system or the operation processes of the physical system.
 <br />
 
 A specific kind of a digital twin cockpits is a
-**Process-Aware Digital Twin Cockpit (PADTC)** [[BMRW22]](#BMRW22).  
+**Process-Aware Digital Twin Cockpit (PADTC)** [[BMR+22]](#BMR+22).  
 
 * A PADTC is a
 digital twin cockpit that additionally provides functionality to handle 
