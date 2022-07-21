@@ -22,8 +22,8 @@ This can be relevant in all areas of life, from our private
 home, in health care, in vehicles or in the professional world. 
 If we consider our own home, such an assistive system can help us when 
 we forget things. 
-Assistive systems use information about processes  
-and context information, e.g., about rooms, objects in the rooms or
+Assistive systems use information about processes and context 
+information, e.g., about rooms, objects in the rooms or
 devices we are interacting with.
 
 **Assistive systems** [[HMR+19]](#HMR+19)
@@ -58,9 +58,8 @@ step-by-step information multi-modal on different kinds of devices.
 <br />
 
 For both, information and assistive services and systems, the application of
-agile, model-based and generative methods (see 
-[Agile Model-Based Software Engineering](/research/Agile-MBSE) and
-[Generative Software Engineering](/research/Generative-SE))
+[agile](/research/Agile-MBSE), model-based and 
+[generative](/research/Generative-SE) methods 
 fastens the development process,
 enables a quick response to requirements changes in a user-centered
 engineering process, and ensures consistency-by-design.
