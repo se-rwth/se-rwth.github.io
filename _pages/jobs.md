@@ -37,7 +37,7 @@ wissenschaftliche Mitarbeiter als auch Hiwis im Bereich Software
 Engineering.
 
 {% include trennlinie.html %}
-
+<a name="WiMi"></a>
 ### Promotionsstellen für wissenschaftliche Mitarbeiter:innen
 
 - [Einsatz von NLP im Automobilen Ziele- und Anforderungsmanagement](
@@ -60,7 +60,7 @@ eigenen thematisch fokussierten Arbeitsgruppe. Die dafür notwendigen
 Projekte sind vorhanden. 
 
 {% include trennlinie.html %}
-
+<a name="HIWI"></a>
 ### Hiwi-Stellen
 
 - [Design und Pflege von 
