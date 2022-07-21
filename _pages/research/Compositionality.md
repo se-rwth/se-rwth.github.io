@@ -7,7 +7,9 @@ img:
 importance: 1
 keys: [BR07,HKR+09,HKR+07,KRV10,
        KRV08,KRV07a,KRV07b,Voe11,RRRW15b,KKP+09,
-       GLRR15,CBCR15,CCF+15a]
+       GLRR15,CBCR15,CCF+15a,
+       BEK+18a,BEK+18b,BEK+19,HKR21,
+       HLMSN+15,HLMSN+15a,HMSNRW16,HRW18,MSNRR16,RW18]
 ---
 
 ## Summary of Most Relevant Topic Papers
