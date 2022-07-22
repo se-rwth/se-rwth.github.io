@@ -6,16 +6,15 @@ description:
 img: 
 importance: 1
 keys: [GHK+07,PFR02,SRVK10,
-        CFJ+16,KRV07b,KRV10,
-        FHR08,KKP+09,GR11,
-        GKR+07,KRV08,Voe11,
-        HKR21,Sch12,HRW18,
-        CBCR15,CCF+15a,KRV07a,
-        GKR+06,LRSS10,Wei12,HRW15,Hoe18,
-	BDL+18, BEK+18a, BEK+18b, BEK+19, BJRW18,
-	DHH+20, GKR+08, GMR+16, HLMSN+15, HLMSN+15a, KRV06,
-	Kra10, ZPK+11]
-
+      CFJ+16,KRV07b,KRV10,
+      FHR08,KKP+09,GR11,
+      GKR+07,KRV08,Voe11,
+      HKR21,Sch12,HRW18,
+      CBCR15,CCF+15a,KRV07a,
+      GKR+06,LRSS10,Wei12,HRW15,Hoe18,
+      BDL+18, BEK+18a, BEK+18b, BEK+19, BJRW18,
+      DHH+20, GKR+08, GMR+16, HLMSN+15, HLMSN+15a, KRV06,
+      Kra10, ZPK+11]
 ---
 
 ## Summary of Most Relevant Topic Papers
