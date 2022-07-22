@@ -112,7 +112,7 @@ Product Line (SPL) that captures commonalities and differences.
 variant and can more easily be applied to derive and implement SPLs from 
 existing products in industrial size projects.
 4. Delta-concepts are successfully applied to MontiArc and Simulink.
-5. Variability applied to modelling languages allows to capture semantic 
+5. Variability applied to modeling languages allows to capture semantic 
 variation. This is essential to capture the semantics of the UML.
 6. **Industrial introduction of SPL** based development needs organizational and 
 process adaptation and needs to be tailored to the individual company.

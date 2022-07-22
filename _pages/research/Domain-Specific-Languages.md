@@ -11,7 +11,11 @@ keys: [GHK+07,PFR02,SRVK10,
         GKR+07,KRV08,Voe11,
         HKR21,Sch12,HRW18,
         CBCR15,CCF+15a,KRV07a,
-        GKR+06,LRSS10,Wei12,HRW15,Hoe18]
+        GKR+06,LRSS10,Wei12,HRW15,Hoe18,
+	BDL+18, BEK+18a, BEK+18b, BEK+19, BJRW18,
+	DHH+20, GKR+08, GMR+16, HLMSN+15, HLMSN+15a, KRV06,
+	Kra10, ZPK+11]
+
 ---
 
 ## Summary of Most Relevant Topic Papers
@@ -105,11 +109,29 @@ reuse, conciseness, and usability.
 In [[FHR08]](#FHR08), we discuss **metrics and potential guidelines**, that help to
 achieve high quality models and extend this into a **collection of design
 guidelines for DSLs** in [[KKP+09]](#KKP+09).
+We discuss the needed roles in software development using
+domain specific languages already in [[KRV06]](#KRV06).
 
 Another important aspect is how to define the [semantics](/research/Semantics) 
 of DSLs.
-Variability in syntax and semantics for DSLs in general
-and UML in particular has been discussed in [[GR11]](#GR11).
+**Variability in syntax and semantics** for DSLs in general
+and UML in particular has been discussed in [[GR11]](#GR11) and
+[[GMR+16]](#GMR+16).
+Controlled and extensible variability of concrete and abstract syntax with
+independent language features are defined in [[BEK+18a]](#BEK+18a)
+and [[BEK+18b]](#BEK+18b). These are both prerequisites for a
+systematic composition of independently defined **language features**
+amounting to a **language product line** [[BEK+19]](#BEK+19).
+From such a product line, many individual languages can be defined,
+fitting perfectly to the desired needs of the users.
+
+[[BDL+18]](#BDL+18) also presents a method to **derive internal DSLs**,
+i.e. pure Java APIs that allow to directly build and manipulate 
+the abstract syntax of a model, without offering a concrete syntax,
+from grammars.
+Similarly, grammars are translated to accurate metamodels as
+described in [[BJRW18]](#BJRW18).
+
 For an extensive discussion on semantics we refer the reader to
 [Semantics of Modeling Languages](/research/Semantics).
 
@@ -119,7 +141,14 @@ For an extensive discussion on semantics we refer the reader to
 **Modularity** is a key concept in software development and the enabler for
 efficient reuse. We investigated the application of modularity to the
 development of DSLs in [[GKR+07]](#GKR+07), [[KRV08]](#KRV08) and [[Voe11]](#Voe11).
-Modularity has been successfully applied in various areas of the DSL
+This approach is extended by compositional techniques 
+for context conditions and especially symbol tables in [[HLMSN+15]](#HLMSN+15)
+and [[HLMSN+15a]](#HLMSN+15a). These internal composition techniques extend
+the ability to reuse and compose tool internal algorithms that can be
+applied on the abstract syntax and thus goes far beyond a mere
+reuse of definitions of context-free language constructs (i.e. the grammar).
+
+Therefore, modularity has been successfully applied in various areas of the DSL
 development process, such as concrete and abstract syntax, context
 conditions, and symbol table structures and has been implemented in our
 language workbench [MontiCore](/research/MontiCore) [[HKR21]](#HKR21).
@@ -127,7 +156,7 @@ language workbench [MontiCore](/research/MontiCore) [[HKR21]](#HKR21).
 We can **compose independently developed languages** into **integrated families of
 DSLs**, which allows us to describe a system from various viewpoints using these
 different DSLs. The language family [UML/P](/research/UML-P),
-defined in [[Sch12]](#Sch12), serves as an
+initially realized in [[Sch12]](#Sch12), serves as an
 example of this technique.
 
 We can **reuse existing languages** by embedding them as sub-languages, e.g.,
@@ -174,9 +203,13 @@ this DSL.
 
 More details about the [MontiCore Language Workbench for DSLs](/research/MontiCore) 
 can be found in 
-[[GKR+06]](#GKR+06), [[KRV08]](#KRV08), [[KRV10]](#KRV10) as well as the 
+[[GKR+06]](#GKR+06), [[KRV08]](#KRV08), [[KRV10]](#KRV10),
+[[GKR+08]](#GKR+08) and [[Kra10](#Kra10) 
+as well as the 
 [MontiCore Website](http://www.monticore.de/).
 
+Some successful applications are documented in the Air
+Traffic Management \cite{ZPK+11} and television \cite{DHH+20} domains.
 
 {% include trennlinie.html %}
 

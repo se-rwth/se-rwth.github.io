@@ -104,7 +104,7 @@ performance storage that is able to capture sensor data and DR signals.
 
 ## Key Statements
 
-1. We defined a practically used DSL for modelling structure and functionality 
+1. We defined a practically used DSL for modeling structure and functionality 
 of buildings and facilities using MontiCore.
 2. Specification and analysis for buildings, closing the loop in the lifecycle 
 of a building.

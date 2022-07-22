@@ -166,7 +166,7 @@ This creates a structural and behavioural system theoretical view on buildings
 as cyber-physical systems (digital twin) 
 [[RW18]](#RW18).
 
-The digital modelling of buildings and their facilities as well as the 
+The digital modeling of buildings and their facilities as well as the 
 availability of sensor and actor data enables the implementation of Big Data 
 analyses. For instance, machine and deep learning approaches are used to 
 automate anomaly detection. Furthermore, machine learning can be applied on 
