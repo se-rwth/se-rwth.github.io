@@ -19,12 +19,12 @@ keys: [GHK+07,PFR02,SRVK10,
 
 ## Summary of Most Relevant Topic Papers
 
-The ability to abstract is one of the basic cognitive abilities of the human
+The ability to abstraction is one of the basic cognitive abilities of the human
 being. Both science and philosophy use models to
 understand and describe the concepts and phenomena in their fields. Engineering
 disciplines use models to describe the systems they intend to design.
 All human beings use
-models, but only informatics defines and studies the set of valid models,
+models, but only informatics started to define and study the set of valid models,
 namely the **modeling language** explicitly.
 This is made necessary because computer
 scientists use models not only to communicate among each other, but also with
