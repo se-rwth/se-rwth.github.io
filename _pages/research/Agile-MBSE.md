@@ -119,7 +119,7 @@ desired or unwanted object structures, are presented there as well.
 In the last decade, we implemented a **language workbench** called MontiCore
 (see [MontiCore - Language Workbench for DSLs](/research/MontiCore))
 that was first described in [[GKR+06]](#GKR+06) and [[GKR+08]](#GKR+08).
-Its current Handbook [[HKR21]](#HKR21) explains technical details as well
+The MontiCore handbook [[HKR21]](#HKR21) explains technical details as well
 as the principal guidelines for its use and 
 also offers a core layer of reusable language components.
 On top of MontiCore, we
@@ -131,7 +131,7 @@ UML sub-languages and a framework for the implementation of code generators.
 MontiCore also assumes a larger part of the current
 *Software Language Engineering* course at RWTH
 and serves as basis for the mechanisms to teach agile modeling
-adressed in \cite{RRSW17}.
+adressed in [[RRSW17]](#RRSW17).
 
 ## Specific Concepts Assisting Agile Development
 

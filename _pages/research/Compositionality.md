@@ -60,15 +60,15 @@ languages such as UML or SysML
 in the large via extensible and composable language components,
 which led finally to the methodological approach 
 of the composition of heterogeneous modeling languages in [[HLMSN+15a]](#HLMSN+15a).
-This approach distingushes language embedding, language inheritance,
-and language aggregation as three different composition techniques
-that affect concrete and abstract syntax as well as
-context conditions and is largely based on symbol table composition.
-[[MSNRR16]](#MSNRR16) extends the symbol table with generator
-information for a composable generation approach.
+This approach distingushes **language embedding**, **language inheritance**,
+and **language aggregation** as three different **composition** techniques
+that affect concrete and abstract syntax,
+context conditions aqnd in particular **symbol table composition**.
+[[MSNRR16]](#MSNRR16) extends the symbol table infrastructure with generator
+information for a **composable generation** approach.
 
 [[HMSNRW16]](#HMSNRW16) concentrates on the automatic generation of
-extensible and type safe composable visitors, which are a core element for
+**extensible and type safe composable visitors**, which are a core element for
 compositional synthesis and analysis algorithms and context conditions
 on models.
 
@@ -91,8 +91,8 @@ compositional, so called "globalized" use of domain specific languages,
 which we published together with related topics in [[CCF+15a]](#CCF+15a).
 
 Based on the possibility to compose languages from language components, we explored
-**controlled and extensible variability** of the concrete and abstract Syntax
-using with independent, composable language features in [[BEK+18a]](#BEK+18a),
+**controlled and extensible variability** of the concrete and abstract syntax
+using independent, composable language features in [[BEK+18a]](#BEK+18a),
 [[BEK+18b]](#BEK+18b) and [[BEK+19]](#BEK+19). 
 
 [[HRW18]](#HRW18) extends the idea of composition with systematic derivation
