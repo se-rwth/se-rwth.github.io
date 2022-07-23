@@ -41,7 +41,7 @@ systems engineering with domain-specific software languages and language process
 This includes developing sophisticated language architectures for application in different domains 
 including automated driving, the smart factories of Industry 4.0, and robotics.
 
-To this end, the [model-driven systems engineering](../working-teams/team-MDSE) research group at the chair of Software 
+To this end, the [model-driven systems engineering](../../working-teams/team-MDSE) research group at the chair of Software 
 Engineering concentrates on related research projects, such as [iserveU](https://www.se-rwth.de/materials/iserveu/) 
 or [CrESt](https://crest.in.tum.de/). In this group,  we also conduct teaching and academic organization 
 in the context of language-driven systems engineering. Part of these activities are illustrated below.
