@@ -10,7 +10,8 @@ Sch12,Hab16,HRR12,AMN+20a,
 KRV10,GKR+06,KRV06,GKR+06,
 GHK+15,GHK+15a,Wei12,HRW15,
 Hoe18,HHR+15,AHRW17,
-Rum04c,Rum03,Rum02]
+Rum04c,Rum03,Rum02,
+GKR+08,GMR+16,HKR21,HLMSN+15,HLMSN+15a,HMSNRW16,MSNRR16]
 ---
 
 ## Summary of Most Relevant Topic Papers
@@ -52,7 +53,8 @@ see [MontiArc](/research/Software-Architecture))
 or the generator [MontiGem](/research/MontiGem) [[AMN+20a]](#AMN+20a) for
 [enterprise information systems](/research/Enterprise-Information-Systems) or
 [assistive systems](/research/Model-Based-Assistive-Systems).
-All of them are based on the MontiCore language workbench [[KRV10]](#KRV10) [[GKR+06]](#GKR+06).
+All of them are based on the MontiCore language workbench
+[[KRV10]](#KRV10) [[GKR+06]](#GKR+06) [[GKR+08]](#GKR+08) [[HKR21]](#HKR21).
 With MontiCore we are able to easily define extensions of languages as well
 as new combinations and thus are able to reuse the defined UML/P
 sub-languages and generation techniques in various applied projects.
@@ -81,6 +83,19 @@ how to systematically derive a transformation language in concrete syntax.
 Since then, we have applied this technique successfully for several UML
 sub-languages and DSLs [[HHR+15]](#HHR+15) [[AHRW17]](#AHRW17) [[Hoe18]](#Hoe18)
 (see [Evolution & Transformation of Models](/research/Evolution)).
+
+[[HMSNRW16}}(#HMSNRW16) presents how to
+generate extensible and statically type-safe visitors
+fitting to the abstract syntax (meta-model). Both abstract syntax classes and 
+visitor infrastructure are now fully generated from MontCore.
+In [[MSNRR16]](#MSNRR16), we discuss the use of symbols for ensuring the validity
+of composed models and therefore also of finally generated source code.
+[[GMR+16]](#GMR+16) discusses product lines of template-based code generators
+introducing variability into the generation process.
+Intgerating all these we propose 
+a compositional approach for engineering reusable language components
+in [[HLMSN+15]](#HLMSN+15) and [[HLMSN+15a]](#HLMSN+15a), which is meanwhile
+also fully integrated into MontiCore.
 
 Sometimes **executability** can be a disadvantageous characteristics for a
 modeling language, especially when people start modeling concrete algorithms
