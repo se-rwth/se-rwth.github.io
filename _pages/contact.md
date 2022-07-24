@@ -117,7 +117,7 @@ fitness area with a steam bath, allowing you to relax high above
 Aachen's rooftops. Beneath the hotel is a public garage." 
 
 - [Mercure Hotel 
-Aachen](http://www.mercure.com/gb/hotel-5326-mercure-hotel-aachen-am-dom/index.shtml) 
+Aachen am Dom](https://all.accor.com/hotel/5326/index.en.shtml)
 with rooms starting from €74 per night. "The Mercure Hotel Aachen am 
 Dom, located in the city center, has 117 rooms, some of which have 
 terraces and overlook the old town. The VDR-certified hotel also has 3 
