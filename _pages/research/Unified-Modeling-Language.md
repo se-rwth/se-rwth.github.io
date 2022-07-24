@@ -21,7 +21,9 @@ Challenges for the standardization of the UML, such as problems for
 defining a semantics for the entire UML, have been well-known for a
 long time [[KER99]](#KER99). Thus, many of our contributions build on
 the UML variant UML/P  which is suitable for programming. UML/P is
-described in [[Rum16]](#Rum16) and [[Rum17]](#Rum17) and implemented in
+described in [[Rum16]](#Rum16) and [[Rum17]](#Rum17)
+respectively [[Rum12]](#Rum12) and [[Rum13]](#Rum13)
+and implemented in
 a first version in [[Sch12]](#Sch12)
 (see [UML/P - Executable Modeling with UML](/research/UML-P)).
 
