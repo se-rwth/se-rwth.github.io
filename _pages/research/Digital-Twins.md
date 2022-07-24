@@ -18,22 +18,15 @@ width = "45%" alt="" title="Digital Twin Perspectives" align="right">
 There exists a plethora of definitions for **Digital Twins** (DTs),
 Although there is a rough convergence,
 there is little consensus about what a gigital twin actually is.
-The main weaknesses about the available definitions are that they are:
-1. ambiguous, by deferring to another undefined term, such as a  "virtual
-   representation",  "a virtual projection of the industrial facility into 
-   the cloud", or a  "computable virtual abstraction";
-2. narrow, by focusing on specific use cases, domains, or technologies, such
-   as a  "digital model of the real network environment";  "product avatar"
-   which includes only the product perspective and not machines, processes, 
-   or material; or a  "virtual representation based on AR-technology";
+The main weaknesses [[BMR+22]](#BMR+22) about the available definitions are that they are:
+1. ambiguous, by deferring to another undefined term;
+2. narrow, by focusing on specific use cases, domains, or technologies;
 3. underspecified, where a digital twin is mainly defined via its 
    automatic data flow from virtual to physical object but 
    falls short on discussing the role of models and additional information, 
    characteristics, and functionalities a digital twin has over its physical 
    object; or
-4. utopian, due to all-encompassing aspirations, such as an "integrated 
-   virtual model of a real-world system containing all of its physical 
-   information", or a "complete digital representation".
+4. utopian, due to all-encompassing aspirations.
 
 As none of the found definitions fit, 
 we have proposed generally and especially in the RWTH Cluster of 
