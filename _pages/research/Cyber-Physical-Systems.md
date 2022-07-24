@@ -151,7 +151,7 @@ Assistance](/research/Autonomic-Driving)
 - [MontiArc - Architectural Modeling](/research/Software-Architecture)
 - [Robotics Architectures and Tasks](/research/Robotics)
 - [Unified Modeling Language (UML)](/research/Unified-Modeling-Language)
-- [MontiThings - Modeling the IoT](/research/Robotics)
+- [MontiThings - Modeling the IoT](/research/MontiThings)
 
 {% include trennlinie.html %}
 

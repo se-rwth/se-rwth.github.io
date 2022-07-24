@@ -106,16 +106,9 @@ consolidated, compact form.
 - [UML/P - Executable Modeling with UML](/research/UML-P)
 - [MontiArc - Architectural Modeling](/research/Software-Architecture)
 - [MontiGem - Generating Enterprise Management Systems](/research/MontiGem)
-
-
-{% comment %}
 - [MontiThings - Modeling the IoT](/research/MontiThings)
-{% endcomment %}
 
-
-{% comment %}
 {% include trennlinie.html %}
-
 
 ## Upcoming Research Topics
 
@@ -125,7 +118,6 @@ articles. We assume results will be published in the near future:
 - SysML 2.0
 - Modelling in Production 
   (fitting to the RWTH Internet of Production Excellence Cluster, IOP)
-{% endcomment %}
 
 {% include trennlinie.html %}
 

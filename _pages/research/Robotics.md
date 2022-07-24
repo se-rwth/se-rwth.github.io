@@ -170,7 +170,8 @@ techniques used there for function validation can be carried over.
 - [MontiCore - Language Workbench](/research/MontiCore)
 - [Semantics of Modeling Languages](/research/Semantics)
 - [State Based Modeling (Automata)](/research/State-Based-Modeling)
-- [MontiThings - Modeling the IoT](/research/Robotics)
+- [MontiThings - Modeling the IoT](/research/MontiThings)
+
 
 {% include trennlinie.html %}
 

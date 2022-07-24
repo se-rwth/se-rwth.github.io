@@ -257,7 +257,8 @@ agile start of SPL integration.
 - [Robotics Architectures and Tasks](/research/Robotics)
 - [Semantics of Modeling Languages](/research/Semantics)
 - [State-Based Modeling (Automata)](/research/State-Based-Modeling)
-- [MontiThings - Modeling the IoT](/research/Robotics)
+- [MontiThings - Modeling the IoT](/research/MontiThings)
+
 
 {% include trennlinie.html %}
 
