@@ -168,7 +168,7 @@ Furthermore, we applied it to robotics (see also
 the MontiArcAutomaton infrastructure ([[RRW14a]](#RRW14a),
 [[RRW13]](#RRW13), see also
 [Modeling Software Architecture](/research/Software-Architecture)),
-for [Cyper-Physical Systems](/research/Cyber-Physical-Systems) 
+for [Cyber-Physical Systems](/research/Cyber-Physical-Systems) 
 in [[RW18]](#RW18), in a
 modeling language combining state machines and an architectural description
 language in [[THR+13]](#THR+13) as well as in building management systems in
