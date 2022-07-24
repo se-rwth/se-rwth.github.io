@@ -7,7 +7,7 @@ img:
 importance: 1
 keys: [GKR96, BCR07b, BCGR09a, BCGR09, 
         PR94, RK96, Rum96, KPR97, 
-        Rum16, Rum17, GR95, BR07, 
+        Rum16, Rum17, GR95, BR07, RRW13, RW18,
         RRW14a, THR+13, FLP+11b]   
 ---
 
@@ -165,8 +165,11 @@ All our knowledge about state machines is being embedded in the model-based
 development method for the UML in [[Rum16]](#Rum16) and [[Rum17]](#Rum17).
 Furthermore, we applied it to robotics (see also
 [Robotics Architectures and Tasks](/research/Robotics)) with
-the MontiArcAutomaton infrastructure ([[RRW14a]](#RRW14a), see also
-[Modeling Software Architecture](/research/Software-Architecture)), a
+the MontiArcAutomaton infrastructure ([[RRW14a]](#RRW14a),
+[[RRW13]](#RRW13), see also
+[Modeling Software Architecture](/research/Software-Architecture)),
+for [Cyper-Physical Systems](/research/Cyber-Physical-Systems) 
+in [[RW18]](#RW18), in a
 modeling language combining state machines and an architectural description
 language in [[THR+13]](#THR+13) as well as in building management systems in
 [[FLP+11b]](#FLP+11b).
