@@ -19,14 +19,15 @@ production systems, and so on.
 
 We have a long tradition on contributing to
 **model-based systems engineering** in
-automotive [[FND+98]](#FND+98) and [[GHK+08a]](#GHK+08a), 
-which we were able to condense into a 
+automotive [[FND+98]](#FND+98) and [[GHK+08a]](#GHK+08a).
+We have been able to condense ithese into a 
 new comprehensive **model-driven development process** for automotive software
 including
 function testing with the BMW Group [[KMS+18]](#KMS+18), [[DGH+19]](#DGH+19). 
 In this, we
-leverage SysML to enable the vertical flow down from requirements to
-implementations that was well-received by the software developers.
+leverage SysML to enable the vertical flow starting with informal requirements
+through various kinds of modeled viewpoints to
+implementations, which was well-received by the software developers.
 
 Moreover, we are conducting intensive research to intensivy 
 model-driven systems engineering that leverages methods and concepts from
@@ -44,16 +45,17 @@ in **SysML** [[DRW+20]](#DRW+20).
 
 A highly relevant part of physical systems will in the future be their 
 **Digital Twin**.
-We use Digital Twins in a larger sense, not only for simulation,
+We use [Digital Twins](/research/Digital-Twins)
+in a broader sense, not only for simulation,
 but also for collecting data and providing aggregation and information services
 about the physical twin.
 Our **RWTH' Excellence cluster Internet of Production** considers
 fast decision making at production time with low latencies using
 contextual data traces of production systems, also known as
 **Digital Shadows** (DS) [[SHH+20]](#SHH+20). We have investigated
-how to derive Digital Twins (DTs)
+how to derive Digital Twins 
 and applied this for example for injection molding [[BDH+20]](#BDH+20).
-We generalized this a approach in a technqiue allowing us to 
+We generalized this approach in a technique allowing us to 
 generate interfaces between a cyber-physical system and its Digital Twin
 [[KMR+20]](#KMR+20)
  and

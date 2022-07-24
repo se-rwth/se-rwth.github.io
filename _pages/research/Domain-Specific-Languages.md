@@ -19,8 +19,8 @@ keys: [GHK+07,PFR02,SRVK10,
 
 ## Summary of Most Relevant Topic Papers
 
-The ability to abstraction is one of the basic cognitive abilities of the human
-being. Both science and philosophy use models to
+The ability to abstraction is one of the basic cognitive abilities of human
+beings. Both science and philosophy use models to
 understand and describe the concepts and phenomena in their fields. Engineering
 disciplines use models to describe the systems they intend to design.
 All human beings use
@@ -125,7 +125,7 @@ From such a product line, many individual languages can be defined,
 fitting perfectly to the desired needs of the users.
 
 [[BDL+18]](#BDL+18) also presents a method to **derive internal DSLs**,
-i.e. pure Java APIs that allow to directly build and manipulate 
+i.e. pure Java APIs, that allow to directly build and manipulate 
 the abstract syntax of a model, without offering a concrete syntax,
 from grammars.
 Similarly, grammars are translated to accurate metamodels as
@@ -203,12 +203,13 @@ this DSL.
 More details about the [MontiCore Language Workbench for DSLs](/research/MontiCore) 
 can be found in 
 [[GKR+06]](#GKR+06), [[KRV08]](#KRV08), [[KRV10]](#KRV10),
-[[GKR+08]](#GKR+08) and [[Kra10](#Kra10) 
-as well as the 
+[[GKR+08]](#GKR+08) and [[Kra10]](#Kra10) 
+as well as on the 
 [MontiCore Website](http://www.monticore.de/).
 
-Some successful applications are documented in the Air
-Traffic Management \cite{ZPK+11} and television \cite{DHH+20} domains.
+Some successful applications are also documented in the
+unusual domains of Air
+Traffic Management [[ZPK+11]](#ZPK+11) and television [[DHH+20]](#DHH+20).
 
 {% include trennlinie.html %}
 
