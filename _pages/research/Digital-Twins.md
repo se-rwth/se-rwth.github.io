@@ -8,13 +8,16 @@ importance: 1
 keys: [BMR+22, DHM+22, BDJ+22, MPRW22, BHK+21, BBD+21b, BBD+21a, DMR+20, BDH+20]
 ---
 
-## Summary of Most Relevant Topic Papers
+## Summary and Definitions of Most Relevant Topic Papers
 
-<img style = "padding-left: 10px;" src="{{ '/assets/img/research/digitalTwins/DT.Perspectives.png' | relative_url }}" width = "45%" alt="" title="Digital Twin Perspectives" align="right">
+<img style = "padding-left: 10px;" src="{{ 
+'/assets/img/research/digitalTwins/DT.Perspectives.png' | relative_url }}" 
+width = "45%" alt="" title="Digital Twin Perspectives" align="right">
 
 
-There exists a plethora of definitions for Digital Twins (DTs),
-however, there is little consensus about what a DT actually is.
+There exists a plethora of definitions for **Digital Twins** (DTs),
+Although there is a rough convergence,
+there is little consensus about what a gigital twin actually is.
 The main weaknesses about the available definitions are that they are:
 1. ambiguous, by deferring to another undefined term, such as a  "virtual
    representation",  "a virtual projection of the industrial facility into 
@@ -32,19 +35,16 @@ The main weaknesses about the available definitions are that they are:
    virtual model of a real-world system containing all of its physical 
    information", or a "complete digital representation".
 
-As none of these definitions fit, researchers in the German cluster of 
-Excellence "Internet of Production" [[BDJ+22]](#BDJ+22), 
-which involves about 200 participating 
-researchers from more than 30 co-located institutes from different disciplines, 
-such as engineering, material science, computer science, economics, 
-and social sciences, and more than 50 industrial partners, 
-have come up with the following definition:
+As none of the found definitions fit, 
+we have proposed generally and especially in the RWTH Cluster of 
+Excellence "Internet of Production" [[BDJ+22]](#BDJ+22)
+the following definition:
 
-A **digital twin** [[DMR+20]](#DMR+20) of a system consists of
+**Definition**: A **digital twin** of a system consists of
 * a set of **models** of the system,
 * a set of **digital shadows**, and
 * provides a set of **services** to use the data and models purposefully 
-with respect to the original system.
+with respect to the original system. (from [[DMR+20]](#DMR+20))
 
 To be able to create a digital twin requires that we have observable elements 
 in the physical world that can be monitored, sensed, or actuated and 
@@ -55,10 +55,11 @@ world, e.g., structure, behavior, physical, geometrical or mathematical models.
 These models can be, e.g., used to create the digital twin or to compare the 
 current status of the twin with planned states.
 
-Each **digital shadow** [[BBD+21b]](#BBD+21b) in this  *set of digital shadows* includes
-* a set of contextual data-traces and/or their aggregation and abstraction 
-collected concerning a system for a specific purpose with respect to the 
-original system.
+**Definition**: A **digital shadow** includes
+* a set of contextual data-traces and/or 
+* their aggregation and abstraction collected concerning a system 
+  for a specific purpose with respect to the 
+  original system. (from [[BBD+21b]](#BBD+21b))
 
 Within [[BBD+21b]](#BBD+21b), we present a conceptual model, 
 give details on each concept
@@ -89,14 +90,16 @@ self-adaptiveness [[BBD+21a]](#BBD+21a).
 
 To visualize relevant information, an interface for domain experts is needed,
 which leads us to the term 
- **digital twin cockpit** [[BMR+22]](#BMR+22).  
-* A digital twin cockpit is the user interaction part (UI/GUI) of a 
+ **digital twin cockpit**. 
+  
+**Definition**: 
+A digital twin cockpit is the user interaction part (UI/GUI) of a 
 digital twin.
-* It provides the graphical user interface for
+It provides the graphical user interface for
 visualizations of its data organized in digital shadows and models, and
 the interaction with services of the digital twin, and thus
-enabling humans to access, adapt and add information and
-monitor and partially control the physical system.
+enables humans to access, adapt and add information and
+monitor and partially control the physical system. (from [[BMR+22]](#BMR+22))
 
 A cockpit is, by definition, a part of the digital twin, and  can be seen both
 as a special service provided by the digital twin and an integrative front-end
@@ -118,15 +121,17 @@ system or the operation processes of the physical system.
 <br />
 
 A specific kind of a digital twin cockpits is a
-**Process-Aware Digital Twin Cockpit (PADTC)** [[BMR+22]](#BMR+22).  
+**Process-Aware Digital Twin Cockpit (PADTC)**.  
 
-* A PADTC is a
+**Definition**:
+A **Process-Aware Digital Twin Cockpit (PADTC)** is a
 digital twin cockpit that additionally provides functionality to handle 
 explicated processes of the 
-physical object and its' context.
+physical object and its' context. (from  [[BMR+22]](#BMR+22))
 
 
-A PADTC is a digital twin cockpit but has a stronger focus on processes, which
+A PADTC is also a digital twin cockpit but has a stronger focus on 
+processes, which
 are explicitly defined using appropriate process definition languages.
 A PADTC knows the allowed processes (in the form of models), the current status
 of these processes (in the form of status data), and
@@ -138,14 +143,18 @@ context, which includes humans and other physical objects respectively their
 digital twins.
 A process may have several active participants, but not all of those need to be 
 participating in each process definition, which allows various forms of 
-automation of processes. Thus, a process step is executed automatically by the 
-physical object, the digital twin (only), which means it is a form of data 
-processing. In addition, it is executed by physical objects in the context,
-is executed by humans involved, or
-is executed by humans involved using the physical object.
+automation of processes. Thus, a process step may be executed 
+automatically by the 
+physical and digital twiins together, 
+or even by one of them only.
+Data processing, e.g., is digital twin only activity.
+In addition, it a process step may be executed by physical objects 
+of the neighboring context,
+may be executed by humans involved, or
+may be executed by humans together with both twins.
 
 Besides these foundations of digital twins, we have further investigated 
-which DSLs are relevant for the Engineering of Digital Twins,
+which DSLs are relevant for the engineering of Digital Twins,
 self-adaptive digital twin architectures [[BBD+21a]](#BBD+21a),
 how to use 
 [Generative Software Engineering](/research/Generative-SE) for 
@@ -159,7 +168,7 @@ sustainable digital twin engineering for the production domain.
  
 
 To realize digital twins and their cockpits is an increasingly complex task
-that leads us to the idea of increasing the degree of automation for
+that enforces a high degree of automation for
 creating them. Within [[BMR+22]](#BMR+22), we have presented a
 low-code development approach
 that reduces the amount of hand-written code needed and uses
@@ -179,9 +188,9 @@ process mining techniques to derive PADTCs.
 As such digital twins can exist for various domains, perspectives and
 levels of detail, it is interesting to investigate how to combine
 such digital twins in systems-of-systems.
-WIntegration challenges
+Integration challenges
 for digital twin systems-of-systems [[MPRW22]](#MPRW22)
-include, e.g., the hoizontal integration of
+include, e.g., the horizontal integration of
 digital twin parts, the composition of DTs for different perspectives, or
 how to handle different lifecycle representations of the original system.
 
