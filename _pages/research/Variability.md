@@ -8,6 +8,7 @@ importance: 1
 keys: [GHK+08,GRJA12,HKM+13,
         HHK+15,BEK+19,GKPR08,
         HRR+11,HRRS12,CGR09,
+	GMR+16,HHK+13,HRRS11,HRW15,
         GR11,PFR02,BEK+18b]
 ---
 
@@ -39,7 +40,8 @@ down fashion, e.g., in the automotive domain [[GHK+08]](#GHK+08) using 150%
 models. Reducing overhead and associated costs is discussed in
 [[GRJA12]](#GRJA12). Feature diagrams suffer from the need to first decompose the
 problem space and understand possible features in order to build the feature
-diagram before being able to apply it. In [[GHK+08]](#GHK+08) and [[GKPR08]](#GKPR08) we
+diagram before being able to apply it. In [[GHK+08]](#GHK+08) and
+[[GKPR08]](#GKPR08) we
 also speak of a 150% model. This normally enforces a product line definition
 phase in which the requirements and features need to be collected which
 creates additional costs. Among others we discuss decreasing these costs
@@ -54,12 +56,14 @@ A set of commonly applicable deltas configures a system variant. We discuss
 the application of this technique to Delta-MontiArc [[HRR+11]](#HRR+11) and
 to Delta-Simulink [[HKM+13]](#HKM+13). Deltas can not only describe spacial
 variability but also temporal variability which allows for using them for
-software product line evolution [[HRRS12]](#HRRS12). 
+software product line evolution [[HRRS11]](#HRRS11) [[HRRS12]](#HRRS12). 
 
-In [[HHK+15]](#HHK+15) we have
+In [[HHK+13]](#HHK+13) and [[HHK+15]](#HHK+15) we have
 generalized this approach to investigate, how to synthesize a delta
 modeling language based on a given modeling language. Thus deltas can
-generally be applied to almost any language.
+generally be applied to almost any language. Delta language derivation is a
+application of the general principle of language derivation discussed in 
+[[HRW15]](#HRW15).
 
 
 ## Variability in Language Definitions
@@ -74,7 +78,9 @@ For this purpose we defined a systematic way to define variants of
 modeling languages [[CGR09]](#CGR09). We applied this research, e.g., in the
 form of semantic language refinement on state charts in [[GR11]](#GR11).
 Additionally, we investigated a method to model syntactic language variability 
-through **language product lines**.
+through **language product lines**
+and applied it e.g. to the generative aspect of a language tool in 
+[[GMR+16]](#GMR+16).
 
 In [[PFR02]](#PFR02) we discussed how to apply annotation to the UML to
 describe product variation points.
