@@ -12,10 +12,9 @@ keys: [BS01,Rum96,Rin14,Hab16,BR07,HRR98,
         HKR+11,HRRS12,HKR+16,GHK+07,
         GHK+08,GKPR08,MRR13,MRR14b,
         MRRW16,DGH+19,MMR10,BKRW19,
+	AHRW17,BHK+17,HRR12,KKR19,MRR14a,RRW13,RW18,
         BKRW17]
 ---
-
-[//]: # Bem: einige Key's absichtlich nicht im Text refernziert: BS01, Hab16, Rum96, Wor16
 
 ## Summary of Most Relevant Topic Papers
 
@@ -65,7 +64,8 @@ fitting component interfaces suitable for property analysis, effective
 realization, and reuse of components under variability considerations. We have 
 made a number of contributions to this field from more theoretical 
 considerations up to a concrete tooling infrastructure called 
-MontiArc [[BKRW17a]](#BKRW17a).
+MontiArc [[BKRW17a]](#BKRW17a) [[HRR12]](#HRR12)
+and also and applied it among others to Cyber-Physical Systems [[RRW13]](#RRW13).
 
 
 ## Theoretical Foundations of Software Architecture Modeling
@@ -76,7 +76,8 @@ in [[BR07]](#BR07). Mathematical foundations are given for modeling of
 interfaces, building architectures through composition and decomposition, 
 layering architectures as well as hierarchical decomposition, and implementation 
 of components using state machines. Especially the refinement (see also 
-[[PR99]](#PR99)) of hierarchy, interfaces, and behavior is discussed as well as 
+[[PR99]](#PR99)) [[RW18]](#RW18)
+of hierarchy, interfaces, and behavior is discussed as well as 
 abstraction mechanisms for the integration of abstract viewpoints. The presented 
 theory consists of a set of theorems and provides a basis for architectural 
 modeling without sticking to a concrete syntax of a modeling language.
@@ -84,7 +85,8 @@ modeling without sticking to a concrete syntax of a modeling language.
 
 ## MontiArc - Architecture Modeling with Semantics
 
-MontiArc [[HRR10]](#HRR10) [[Hab16]](#Hab16) is a framework for modeling and simulation
+MontiArc [[HRR10]](#HRR10) [[Hab16]](#Hab16) is a framework for modeling and
+simulation
 of software architectures that has been developed for modeling
 distributed interactive systems using [MontiCore](/research/MontiCore).
 
@@ -129,8 +131,9 @@ approach, a smooth integration of architectural design and programming is
 achieved. We call this **architectural programming** [[HRR10]](#HRR10), 
 [[BKRW17a]](#BKRW17a) which supported by powerful
 code generation mechanisms based on chains of model
-transformations [[AHRW17b]](#AHRW17b).
-
+transformations [[AHRW17]](#AHRW17) [[AHRW17b]](#AHRW17b).
+Mechanisms for a systematic extension of 
+MontiArc are generally discussed in \cite{BHH+17}.
 
 ## Architectural Variability
 
@@ -185,7 +188,8 @@ automotive development processes.
 
 We have defined a precise verification technique that allows developers
 to decompose logical architectures into smaller pieces of functionality,
-e.g., individual features in [[MRR13]](#MRR13) and [[Rin14]](#Rin14), and to verify
+e.g., individual features in [[MRR13]](#MRR13) and [[Rin14]](#Rin14),
+to synthesize implementations of crosscutting view [[MRR14a]](#MRR14a), and to verify
 their consistency against a complete architecture in [[MRR14b]](#MRR14b). Our
 hypothesis is that with this technique, developers will be able to
 decompose requirements into features and compose their implementation
@@ -210,11 +214,18 @@ evolution based on semantic differences is presented in [[BKRW17]](#BKRW17).
 
 While many architecture styles assume static structures, we explored a modeling 
 technique to describe **dynamic architectures** in [[HRR98]](#HRR98) 
-[[HKR+16]](#HKR+16). The former [[HRR98]](#HRR98) allows developers to express 
+[[HKR+16]](#HKR+16). 
+The former [[HRR98]](#HRR98) allows developers to express 
 dynamically extensible interfaces of components with so-called component 
 interface diagrams. The latter [[HKR+16]](#HKR+16) allows developers to 
 associate component configurations to modes and to specify dynamic 
 reconfiguration behavior via mode automata that describe when to switch modes.
+
+This is based on a
+classification of dynamic reconfiguration approaches in these kinds of
+architecture description languages [[BHK+17]](#BHK+17) 
+and also applied to dynamic architectural changes 
+in self-adaptive cooperative systems [[KKR19]](#KKR19).
 
 {% include trennlinie.html %}
 
