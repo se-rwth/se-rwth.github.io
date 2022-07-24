@@ -84,15 +84,16 @@ Since then, we have applied this technique successfully for several UML
 sub-languages and DSLs [[HHR+15]](#HHR+15) [[AHRW17]](#AHRW17) [[Hoe18]](#Hoe18)
 (see [Evolution & Transformation of Models](/research/Evolution)).
 
-[[HMSNRW16}}(#HMSNRW16) presents how to
+[[HMSNRW16]](#HMSNRW16) presents how to
 generate extensible and statically type-safe visitors
-fitting to the abstract syntax (meta-model). Both abstract syntax classes and 
-visitor infrastructure are now fully generated from MontCore.
+fitting to the abstract syntax (meta-model)
+of a language. Both abstract syntax classes and 
+visitor infrastructure are now fully generated from MontiCore.
 In [[MSNRR16]](#MSNRR16), we discuss the use of symbols for ensuring the validity
 of composed models and therefore also of finally generated source code.
 [[GMR+16]](#GMR+16) discusses product lines of template-based code generators
 introducing variability into the generation process.
-Intgerating all these we propose 
+Integrating all these findings, we propose 
 a compositional approach for engineering reusable language components
 in [[HLMSN+15]](#HLMSN+15) and [[HLMSN+15a]](#HLMSN+15a), which is meanwhile
 also fully integrated into MontiCore.
