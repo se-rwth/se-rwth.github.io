@@ -10,7 +10,7 @@ GR11, BHP+98, BCGR09, BCGR09a,
 BCR07b, BCR07a, CGR08, MRR11e,
 MRR11c, MRR11f, MRR11a, MRR11d, GRR10,
 FHR08, BGH+98b, Rum04c,Rum02,
-PFR02, FEL+98, SRVK10,Rum12,Rum13,
+PFR02, FEL+98, SRVK10,Rum12,Rum11,
 Rum03,EFLR99a]
 ---
 
@@ -22,7 +22,7 @@ defining a semantics for the entire UML, have been well-known for a
 long time [[KER99]](#KER99). Thus, many of our contributions build on
 the UML variant UML/P  which is suitable for programming. UML/P is
 described in [[Rum16]](#Rum16) and [[Rum17]](#Rum17)
-respectively [[Rum12]](#Rum12) and [[Rum13]](#Rum13)
+respectively [[Rum11]](#Rum11) and [[Rum12]](#Rum12)
 and implemented in
 a first version in [[Sch12]](#Sch12)
 (see [UML/P - Executable Modeling with UML](/research/UML-P)).

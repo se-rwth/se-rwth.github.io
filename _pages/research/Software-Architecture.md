@@ -133,7 +133,7 @@ achieved. We call this **architectural programming** [[HRR10]](#HRR10),
 code generation mechanisms based on chains of model
 transformations [[AHRW17]](#AHRW17) [[AHRW17b]](#AHRW17b).
 Mechanisms for a systematic extension of 
-MontiArc are generally discussed in \cite{BHH+17}.
+MontiArc are generally discussed in [[BHH+17]](#BHH+17).
 
 ## Architectural Variability
 
@@ -189,7 +189,7 @@ automotive development processes.
 We have defined a precise verification technique that allows developers
 to decompose logical architectures into smaller pieces of functionality,
 e.g., individual features in [[MRR13]](#MRR13) and [[Rin14]](#Rin14),
-to synthesize implementations of crosscutting view [[MRR14a]](#MRR14a), and to verify
+to synthesize implementations of crosscutting views [[MRR14a]](#MRR14a), and to verify
 their consistency against a complete architecture in [[MRR14b]](#MRR14b). Our
 hypothesis is that with this technique, developers will be able to
 decompose requirements into features and compose their implementation
