@@ -67,13 +67,21 @@ generalized in [[RRRW15b]](#RRRW15b) [[AHRW17b]](#AHRW17b). For interested reade
 [MontiArcAutomaton](https://github.com/MontiCore/montiarc)
 provides further information on the MontiArcAutomaton framework.
 
-<iframe width="560" height="315" src="https://youtu.be/xvlYN-6awfk" title="Mode Driven Coffee Service"
-allow="accelerometer; autplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+<div class="embed-responsive embed-responsive-16by9 video-activities">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xvlYN-6awfk" title="YouTube video player" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div> 
+
+
 In several projects, we modeled logistics services with Festo Robotino Robots, 
 ROS, and Python.
 
-<video src="www.youtube.com/embed/u6LF8KjvDgM" controls="controls" style="max-width: 730px;">
-</video>
+<div class="embed-responsive embed-responsive-16by9 video-activities">
+<iframe width="560" height="315" src="www.youtube.com/embed/u6LF8KjvDgM" title="YouTube video player" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div> 
 
 ## Capability-Based Robotics Architectures
 
