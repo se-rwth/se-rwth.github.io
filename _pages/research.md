@@ -115,9 +115,10 @@ consolidated, compact form.
 Fresh research topics not necessarily already come with published 
 articles. We assume results will be published in the near future:
 
-- SysML 2.0
-- Modelling in Production 
-  (fitting to the RWTH Internet of Production Excellence Cluster, IOP)
+- SysML 2.0: the SpesML approach
+- Modelling in Production: Systems, Software, Processes and Data
+  (fitting to the RWTH Excellence Cluster Internet of Production, IOP)
+- Low Code / Now Code Environments using Models@Runtime
 
 {% include trennlinie.html %}
 
