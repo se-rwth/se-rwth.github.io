@@ -94,7 +94,7 @@ allowfullscreen></iframe>
 
 ## Capability-Based Robotics Architectures
 
-Although the costs for robotics hardware and software decrease,
+Although, the costs for robotics hardware and software decrease,
 deploying a successful robotics application still requires tremendous
 effort. While various challenging issues for service robotics have been
 solved to a degree where their deployment is possible, integration of
