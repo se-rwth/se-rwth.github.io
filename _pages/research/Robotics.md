@@ -67,7 +67,7 @@ generalized in [[RRRW15b]](#RRRW15b) [[AHRW17b]](#AHRW17b). For interested reade
 [MontiArcAutomaton](https://github.com/MontiCore/montiarc)
 provides further information on the MontiArcAutomaton framework.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xvlYN-6awfk" title="Mode Driven Coffee Service"
+<iframe width="560" height="315" src="https://youtu.be/xvlYN-6awfk" title="Mode Driven Coffee Service"
 allow="accelerometer; autplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
 In several projects, we modeled logistics services with Festo Robotino Robots, 
 ROS, and Python.
