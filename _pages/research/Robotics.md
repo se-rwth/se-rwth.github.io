@@ -73,6 +73,8 @@ provides further information on the MontiArcAutomaton framework.
 In several projects, we modeled logistics services with Festo Robotino Robots, 
 ROS, and Python.
 
+<video src="www.youtube.com/embed/u6LF8KjvDgM" controls="controls" style="max-width: 730px;">
+</video>
 
 ## Capability-Based Robotics Architectures
 
