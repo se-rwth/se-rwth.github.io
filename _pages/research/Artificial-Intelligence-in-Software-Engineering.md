@@ -5,7 +5,7 @@ permalink: /research/Artificial-Intelligence-in-Software-Engineering/
 description: 
 img: 
 importance: 1
-keys: [KPRS19, DKMR19, EJK+19, KNP+19, BKRW19, DEKR19, DGH+19, KRRS19, 
+keys: [AKKR19, KPRS19, DKMR19, EJK+19, KNP+19, BKRW19, DEKR19, DGH+19, KRRS19, 
     HRR12, RW18, KR18a, DGH+18, KMS+18, BKRW17, GLPR15, KLPR12, 
     MRR11g, MRR11d, MRR11b, RR11, FLP+11, BR07, KRRW17]
 ---
@@ -43,6 +43,10 @@ This enables the compiler to support the systems engineer by automating the
 lifecycle of such components. Thereby, we support multiple learning approaches 
 such as supervised learning, reinforcement learning, generative adversarial 
 networks, etc. Figure 1 summarizes the main aspects of the MontiAnna framework.
+To facilitate the analysis and enable MLOps in an agile development of machine learning-based
+systems we derived a software 2.0 artifact model for and use it as a basis for a 
+modular build system, distinguishing between different kinds of artifacts such as
+training/test data, software model, machine learning model, trained machine learning model etc [[AKKR21]](#AKKR21). 
 
 ## Semantic Differencing
 The semantic difference between two models *m* and *m'* is the set of elements 

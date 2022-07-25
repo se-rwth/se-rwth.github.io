@@ -91,7 +91,7 @@ applications [[ABH+16]](#ABH+16). From these declarative modeling
 languages [[ABH+17]](#ABH+17), we generate parts of a MontiArcAutomaton
 architecture including component structure and behavior. In this
 architecture, goals and tasks are translated into models of the planning
-domain description language (PDDL) [[MGH+98]](#MGH+98) and solved online using
+domain definition language (PDDL) [[MGH+98]](#MGH+98) and solved online using
 the Metric-FF [[Hof03]](#Hof03) planner [[ABK+17]](#ABK+17). Through our work, domain
 experts can focus on describing the domain and its properties and
 robotics experts can focus on implementing actors with their properties
