@@ -159,7 +159,7 @@ millions of miles for safety validation in the car domain.
 <center>
 <div class="row" style="width: 50%">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/research/Caroline-Finish.JPG  %}
+        {% responsive_image path: assets/img/research/robotics/Caroline-Finish.JPG  %}
     </div>
 </div>
 </center>
