@@ -37,6 +37,14 @@ humans as well as to industrial robots and to autonomous cars.
 
 ## Modeling Robotic Application Architectures and Behavior
 
+<center>
+<div class="row" style="width: 50%">
+    <div class="col-sm mt-3 mt-md-0">
+        {% responsive_image path: assets/img/research/robotics/robots.jpg  %}
+    </div>
+</div>
+</center>
+<br />
 
 Describing both, a robot's software architecture and its behavior in integrated
 models, yields many advantages to cope with complexity: the models are
@@ -76,6 +84,7 @@ allowfullscreen></iframe>
 
 In several projects, we modeled logistics services with Festo Robotino Robots, 
 ROS, and Python.
+
 
 <div class="embed-responsive embed-responsive-16by9 video-activities">
 <iframe width="560" height="315" src="www.youtube.com/embed/u6LF8KjvDgM" title="YouTube video player" 
@@ -146,6 +155,16 @@ discussed in [[BR12b]](#BR12b)
 that this a main enabler for intensive regression testing and thus agile 
 development and has now become the primary technique for virtually driving 
 millions of miles for safety validation in the car domain.
+
+<center>
+<div class="row" style="width: 50%">
+    <div class="col-sm mt-3 mt-md-0">
+        {% responsive_image path: assets/img/research/Caroline-Finish.JPG 
+           title: "DSL models as central artifacts" class: "img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+</center>
+<br />
 
 
 {% include trennlinie.html %}
