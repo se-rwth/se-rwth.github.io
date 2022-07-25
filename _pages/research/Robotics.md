@@ -67,9 +67,13 @@ generalized in [[RRRW15b]](#RRRW15b) [[AHRW17b]](#AHRW17b). For interested reade
 [MontiArcAutomaton](https://github.com/MontiCore/montiarc)
 provides further information on the MontiArcAutomaton framework.
 
+<iframe width="560" height="315" src="https://youtu.be/xvlYN-6awfk" title="Mode Driven Coffee Service"
+allow="accelerometer; autplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
 In several projects, we modeled logistics services with Festo Robotino Robots, 
 ROS, and Python.
 
+<video src="www.youtube.com/embed/u6LF8KjvDgM" controls="controls" style="max-width: 730px;">
+</video>
 
 ## Capability-Based Robotics Architectures
 
@@ -91,7 +95,7 @@ applications [[ABH+16]](#ABH+16). From these declarative modeling
 languages [[ABH+17]](#ABH+17), we generate parts of a MontiArcAutomaton
 architecture including component structure and behavior. In this
 architecture, goals and tasks are translated into models of the planning
-domain description language (PDDL) [[MGH+98]](#MGH+98) and solved online using
+domain definition language (PDDL) [[MGH+98]](#MGH+98) and solved online using
 the Metric-FF [[Hof03]](#Hof03) planner [[ABK+17]](#ABK+17). Through our work, domain
 experts can focus on describing the domain and its properties and
 robotics experts can focus on implementing actors with their properties
