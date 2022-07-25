@@ -136,6 +136,6 @@ Bernhard Rumpe, who coauthored with S. Shankar Sastry, who coauthored with Béla
 who coauthored with Paul Erdös.
 - There is a [XKCD comic on this.](https://xkcd.com/599/)
 - I am a member of the 
-[IEEE RAS Technical Committee of Software Engineering for Robotics and Automaton (TC-SOFT).](https://www.ieee-ras.org/software-engineering-for-robotics-and-automation/activities)
+    IEEE RAS Technical Committee of Software Engineering for Robotics and Automaton (TC-SOFT)
 - A short vita can be found on my [personal website.](https://awortmann.github.io/)
 
