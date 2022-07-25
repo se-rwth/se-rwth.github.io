@@ -46,7 +46,7 @@ networks, etc.
 To facilitate the analysis and enable MLOps in an agile development of machine learning-based
 systems we derived a software 2.0 artifact model for and use it as a basis for a 
 modular build system, distinguishing between different kinds of artifacts such as
-training/test data, software model, machine learning model, trained machine learning model etc [[AKK+21]](#AKK+21). 
+training/test data, software model, machine learning model, trained machine learning model, etc. [[AKK+21]](#AKK+21). 
 
 ## Semantic Differencing
 The semantic difference between two models *m* and *m'* is the set of elements 
