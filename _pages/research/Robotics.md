@@ -67,6 +67,9 @@ generalized in [[RRRW15b]](#RRRW15b) [[AHRW17b]](#AHRW17b). For interested reade
 [MontiArcAutomaton](https://github.com/MontiCore/montiarc)
 provides further information on the MontiArcAutomaton framework.
 
+<video src="http://www.youtube.com/embed/xvlYN-6awfk" controls="controls" style="max-width: 730px;">
+</video>
+
 In several projects, we modeled logistics services with Festo Robotino Robots, 
 ROS, and Python.
 
