@@ -153,7 +153,7 @@ framework.
 <center>
 <div class="row" style="width: 50%">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/research/ai/MontiBelleNew.jpg  %}
+        {% responsive_image path: assets/img/research/ai/MontiBelleNew.png  %}
     </div>
 </div>
 </center>
