@@ -119,7 +119,7 @@ language itself [[KRV10]](#KRV10) [[Voe11]](#Voe11) [[KRV08]](#KRV08)
 MontiCore also
 assists modular decomposition of the backend code generation based on
 different targets and different sublanguages [[RRRW15b]](#RRRW15b) 
-[[MSNRR16]](#MSNRR16) [[GMR+16](#GMR+16)
+[[MSNRR16]](#MSNRR16) [[GMR+16]](#GMR+16)
 [[BBC+18]](#BBC+18) (see also [Compositionality/Modularity of 
 Models](/research/Compositionality)).
 
