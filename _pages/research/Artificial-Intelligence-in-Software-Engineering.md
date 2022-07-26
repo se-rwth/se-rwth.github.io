@@ -42,11 +42,23 @@ as standardized machine learning components
 This enables the compiler to support the systems engineer by automating the 
 lifecycle of such components. Thereby, we support multiple learning approaches 
 such as supervised learning, reinforcement learning, generative adversarial 
-networks, etc.
+networks, etc. The core structure of MontiAnna is shown in the following figure:
+
+<center>
+<div class="row" style="width: 50%">
+    <div class="col-sm mt-3 mt-md-0">
+        {% responsive_image path: assets/img/research/ai/montiannafw.png  %}
+    </div>
+</div>
+</center>
+<br />
+
 To facilitate the analysis and enable MLOps in an agile development of machine learning-based
 systems we derived a software 2.0 artifact model for and use it as a basis for a 
 modular build system, distinguishing between different kinds of artifacts such as
 training/test data, software model, machine learning model, trained machine learning model, etc. [[AKK+21]](#AKK+21). 
+
+
 
 ## Semantic Differencing
 The semantic difference between two models *m* and *m'* is the set of elements 
@@ -58,6 +70,15 @@ the models. A semantic differencing operator is an automatic procedure for
 computing diff witnesses for two given models. As the semantics of models is 
 usually an infinite set, detecting whether the semantic difference is empty and 
 effectively computing a diff witnesses are no trivial tasks.
+
+<center>
+<div class="row" style="width: 50%">
+    <div class="col-sm mt-3 mt-md-0">
+        {% responsive_image path: assets/img/research/ai/semdiff.png  %}
+    </div>
+</div>
+</center>
+<br />
 
 - 
 [[MRR11d]](#MRR11d)
@@ -124,6 +145,16 @@ traffic management is not far in the future
 Figure 3 overviews the most important constituents of the verification 
 framework.
 
+<center>
+<div class="row" style="width: 50%">
+    <div class="col-sm mt-3 mt-md-0">
+        {% responsive_image path: assets/img/research/ai/MontiBelleNew.jpg  %}
+    </div>
+</div>
+</center>
+<br />
+
+
 ## Test Case Generation
 Efficient testing is essential to engineer reliable automotive software. 
 However, deriving test cases from ambiguous textual requirements is often a 
@@ -142,6 +173,15 @@ realized for a variant of SysML activity diagrams and state charts. The modeling
 languages are tailored towards testing automotive software and automatic test 
 case derivation and applying a model transformation to automatically derive 
 executable test cases.
+
+<center>
+<div class="row" style="width: 50%">
+    <div class="col-sm mt-3 mt-md-0">
+        {% responsive_image path: assets/img/research/ai/testcasegenerator.png  %}
+    </div>
+</div>
+</center>
+<br />
 
 Figure 4 shows an overview of the test case creation process. Customer 
 requirements in combination with customer requirement models are the input for 
@@ -179,6 +219,15 @@ this, classification models can be utilised to autonomously detect fault
 situations. The application of neural networks also allows to classify unknown 
 sensor and actor information (e.g. type of sensor/actor). Figure 5 illustrates 
 these circumstances.
+
+<center>
+<div class="row" style="width: 50%">
+    <div class="col-sm mt-3 mt-md-0">
+        {% responsive_image path: assets/img/research/ai/AI_BigDataEnvironment.png  %}
+    </div>
+</div>
+</center>
+<br />
 
 {% include trennlinie.html %}
 
