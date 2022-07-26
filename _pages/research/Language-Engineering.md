@@ -6,16 +6,17 @@ description:
 img: 
 importance: 1
 keys: [Rum16,Rum17,HRW15,
-        HKR21,KRV07b,KRV10,
-        HRW18,CFJ+16,CBCR15,
-        BEK+18b,CCF+15a,CKM+18,
-        SRVK10,Voe11,KRV08,
-        HMSNRW16,Naz17,RRRW15b,
-        BBC+18,HHK+13,HHK+15,
-        HRW15,GLRR15,BDL+18,
-        BJRW18,Wei12,Hoe18,
-        BEK+18a, BEK+19, CGR09, 
-        GR11, Kra10, HR17]
+      HKR21,KRV07b,KRV10,
+      HRW18,CFJ+16,CBCR15,
+      BEK+18b,CCF+15a,CKM+18,
+      SRVK10,Voe11,KRV08,
+      HMSNRW16,Naz17,RRRW15b,
+      BBC+18,HHK+13,HHK+15,
+      HRW15,GLRR15,BDL+18,
+      BJRW18,Wei12,Hoe18,
+      BEK+18a, BEK+19, CGR09, 
+      GHK+15,GHK+15a,GMR+16,HLMSN+15,HLMSN+15a,MSNRR16,
+      GR11, Kra10, HR17]
 ---
 
 [//]: # Bem: einige Key's absichtlich nicht im Text refernziert: CGR09, GR11, Kra10
@@ -84,12 +85,15 @@ inference, as well as assistance for their evolution .
 
 Of course, we also 
 consider variability for modeling languages and have investigated a method to 
-model syntactic language [variability](/research/Variability) through **language 
-product lines** 
+model syntactic language [variability](/research/Variability) through
+**language product lines** 
 [[BEK+18a]](#BEK+18a) 
 [[BEK+18b]](#BEK+18b) 
 [[BEK+19]](#BEK+19).
 
+In [[GHK+15]](#GHK+15) and [[GHK+15a]](#GHK+15a), 
+we discuss the integration of handwritten
+and generated object-oriented code in combination with such product lines.
 
 ## Language and Tool Composition
 
@@ -109,11 +113,13 @@ individual language components. MontiCore 3 [[HR17]](#HR17), e.g., was
 already able to
 decompose the front-end language processing along the decomposition of the
 language itself [[KRV10]](#KRV10) [[Voe11]](#Voe11) [[KRV08]](#KRV08) 
-[[HMSNRW16]](#HMSNRW16) [[Naz17]](#Naz17) [[RRRW15b]](#RRRW15b). 
+[[HMSNRW16]](#HMSNRW16) [[Naz17]](#Naz17) [[RRRW15b]](#RRRW15b)
+[[HLMSN+15]](#HLMSN+15) [[HLMSN+15a]](#HLMSN+15a).
 
 MontiCore also
 assists modular decomposition of the backend code generation based on
 different targets and different sublanguages [[RRRW15b]](#RRRW15b) 
+[[MSNRR16]](#MSNRR16) [[GMR+16](#GMR+16)
 [[BBC+18]](#BBC+18) (see also [Compositionality/Modularity of 
 Models](/research/Compositionality)).
 
