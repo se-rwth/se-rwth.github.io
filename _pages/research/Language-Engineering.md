@@ -29,7 +29,8 @@ improvement. For many other activities, such as architectural design,
 behavioral modeling, and data structure specifications, we use the general
 purpose [Unified Modeling 
 Language (UML) ](/research/Unified-Modeling-Language) 
-[[Rum16]](#Rum16) [[Rum17]](#Rum17). Nevertheless, UML and its tooling still are much less
+[[Rum16]](#Rum16) [[Rum17]](#Rum17). Nevertheless, UML and its tooling still
+are much less
 elaborate and hence subject to extensive syntactic, semantic, and methodical
 improvement.
 
@@ -37,10 +38,12 @@ In various domains, however, it is more appropriate to employ [Domain Specific
 Languages (DSLs)](/research/Domain-Specific-Languages) to enable
 non-software developers specifying properties, configuring their systems,
 etc. in terms of established domain concepts and corresponding language
-elements. DSLs have already achieved a significant degree of penetration in industry [[HRW15]](#HRW15).
+elements. DSLs have already achieved a significant degree of penetration
+in industry [[HRW15]](#HRW15).
 With the upcoming age of digitization, we thus expect DSLs
 to grow even stronger and
-therefore also involve increasing effort in their efficient engineering, integration and composition.
+therefore also involve increasing effort in their efficient engineering,
+integration and composition.
 
 Design of a DSL is a complex task, because, on one hand, it needs to be
 precise enough for being processed by a computer and, on the other hand,
@@ -102,7 +105,8 @@ in a reusable form.
 In a second dimension, we decompose the tooling along the activities
 (front-end: model processing, context conditions, internal transformations,
 backend: printing) and decompose each of these activities along the
-individual language components. MontiCore 3 [[HR17]](#HR17), e.g., was already able to
+individual language components. MontiCore 3 [[HR17]](#HR17), e.g., was
+already able to
 decompose the front-end language processing along the decomposition of the
 language itself [[KRV10]](#KRV10) [[Voe11]](#Voe11) [[KRV08]](#KRV08) 
 [[HMSNRW16]](#HMSNRW16) [[Naz17]](#Naz17) [[RRRW15b]](#RRRW15b). 
@@ -116,11 +120,13 @@ Models](/research/Compositionality)).
 
 ## Language Derivation
 
-**Language derivation** is, to our belief, a promising technique to **develop new
+**Language derivation** is, to our belief, a promising technique to
+**develop new
 languages** for a specific purpose that are relying on existing basic
 languages [[HHK+13]](#HHK+13) [[HHK+15]](#HHK+15) [[HRW15]](#HRW15) 
 [[GLRR15]](#GLRR15) [[BDL+18]](#BDL+18) [[BJRW18]](#BJRW18).
-Formally, a language derivation is a mapping **D**, that maps a base language **B**
+Formally, a language derivation is a mapping **D**, that maps a base
+language **B**
 into another language **D(B)**. This mapping produces new languages, not models.
 To automatically derive such new languages **D(B)** or, at least, assist such
 derivation with tools, the base language **B** itself has to be modeled
@@ -134,7 +140,8 @@ techniques.
 #### Transformation Languages in Concrete Syntax
 
 Instead of using a fully generic transformation language that is applicable
-to a base language **B**, we automatically derive a transformation language **T(B)**
+to a base language **B**, we automatically derive a transformation
+language **T(B)**
 that merges elements of the concrete syntax of **B** with generic - and thus
 reusable - elements for defining transformations on **B** models. The result is
 a comprehensible and easy applicable transformation language that modelers
@@ -153,7 +160,8 @@ models of the base language **B**).
 
 #### Tagging Languages
 
-A **tagging model** is used in the context of a base model **M** and adds additional
+A **tagging model** is used in the context of a base model **M** and adds
+additional
 information in form of tags to the elements defined in **M**. This, for example,
 can be used to add technology-specific information or advice on how code
 generation, model merging and other algorithmic transformations have to
@@ -185,7 +193,8 @@ definition for tags.
 ## Delta Languages
 
 Another way of deriving new languages from
-existing languages is described in [[HHK+15]](#HHK+15) and [[HHK+13]](#HHK+13), where a
+existing languages is described in [[HHK+15]](#HHK+15) and
+[[HHK+13]](#HHK+13), where a
 base language **B** is used to derive a delta language **Delta(B)**. The delta
 language **Delta(B)** enables to explicitly describe differences between a base
 model of **B** and the model variant (also of **B**). This helps to define system
@@ -194,7 +203,8 @@ elements are added, modified, or deleted on the base model. Thus delta
 approach is popular for the management of Variability and Software Product
 Lines (SPL) (see [Variability and Software Product Lines 
 (SPL)](/research/Variability)).
-Again the delta operator transforms a base language **B** into a language **Delta(B)**
+Again the delta operator transforms a base language **B** into a
+language **Delta(B)**
 allowing to describe delta models. Each delta model can be applied individually
 and therefore n deltas amount to 2^n variants (modulo application
 dependencies
@@ -207,9 +217,11 @@ have been **applied to Simulink in an industrial context**.
 
 {% include trennlinie.html %}
 
+
 ## Key Statements
-1. Software Language Engineering requires elaborate tooling to assist (partially 
-automated) language development.
+
+1. Software Language Engineering requires elaborate tooling to assist
+  (partially automated) language development.
 2. "Language Engineering in The Large" is based on techniques well known from 
 Software Engineering:
   - Decomposition of a language enables to design language components 
@@ -219,8 +231,8 @@ Software Engineering:
   - Techniques for systematic refinement and adaption of existing languages help 
   white-box reuse.
   - Automatic derivation of new languages is based on existing base languages.
-3. Transformation, tagging and delta languages can be automatically derived from 
-base languages.
+3. Transformation, tagging and delta languages can be automatically derived
+  from base languages.
 
 {% include trennlinie.html %}
 
@@ -253,3 +265,4 @@ base languages.
 - [Books](/books)
 - [Aachener Informatik-Berichte, Software Engineering / Ph.D. Theses](/phdtheses)
 - [Website of the SE](https://www.se-rwth.de)
+
