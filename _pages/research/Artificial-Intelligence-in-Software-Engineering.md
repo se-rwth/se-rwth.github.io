@@ -11,6 +11,7 @@ keys: [AKK+21, KPRS19, DKMR19, EJK+19, KNP+19, BKRW19, DEKR19, DGH+19, KRRS19,
 ---
 
 ## Summary of Most Relevant Topic Papers
+
 Our resarch on artificial intelligence divides into modeling deep learning and 
 applying artificial intelligence to different application domains. We developed
 
@@ -26,7 +27,9 @@ engineering via test case generation.
 - frameworks exploiting machine learning to analyse the data generated, e.g., by 
 modern buildings and cards in operation and production systems.
 
+
 ## MontiAnna - A Modeling Framework for Deep Learning
+
 Deep learning is gaining a more and more important role in today's software 
 systems. Developing such systems requires appropriate methodologies and tools 
 taking learning into account at all stages of a development process and at 
@@ -54,13 +57,13 @@ networks, etc. The core structure of MontiAnna is shown in the following figure:
 <br />
 
 To facilitate the analysis and enable MLOps in an agile development of machine learning-based
-systems we derived a software 2.0 artifact model for and use it as a basis for a 
+systems we derived a software 2.0 artifact model and use it as a basis for a 
 modular build system, distinguishing between different kinds of artifacts such as
 training/test data, software model, machine learning model, trained machine learning model, etc. [[AKK+21]](#AKK+21). 
 
 
-
 ## Semantic Differencing
+
 The semantic difference between two models *m* and *m'* is the set of elements 
 in the semantics of the model m that are not elements in the semantics of the 
 model *m'*. Each element in a semantic difference is called a diff witness. Diff 
@@ -115,7 +118,9 @@ and no element of the semantics of *cd1*. It is thus a diff witness in the
 semantic difference from *cd2* to *cd1*. Similarly, the object structure *os2* 
 is a diff witness in the semantic difference from *cd1* to *cd2*.
 
+
 ## Intelligent Verification
+
 We apply logic, knowledge representation and intelligent reasoning to software 
 engineering to perform correctness proofs, execute symbolic tests or find 
 counterexamples. The theorem prover Isabelle is a mature and fundamental tool, 
