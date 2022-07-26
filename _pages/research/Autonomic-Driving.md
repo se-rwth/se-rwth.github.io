@@ -6,7 +6,7 @@ description:
 img:
 importance: 1
 keys: [RBL+10,BR12,BBR07,BR12b,BBH+13,MMR10,HKR12,   
-        BBB+08,FIK+18,BBH+15]
+        BBB+08,FIK+18,BBH+15,GKR+17]
 ---
 
 ## Summary of Most Relevant Topic Papers
@@ -111,6 +111,29 @@ In recent years, we also investigate in the **next steps of autonomy**, namely
 with almost no distance to drive very energy efficient [[FIK+18]](#FIK+18),
 as well as virtualization of development of safety algorithms, e.g., for
 the EuroNCAP and US NCAP scenarios discussed [[BBH+15]](#BBH+15).
+
+With MontiSim, the Chair of Software Engineering developed a full 
+blown autonomous and cooperative driving simulator [[GKR+17]](#GKR+17).
+It enables the developer to test driving software and identify
+errors and potentials in driving behavior. In large driving
+scenarios it can be beneficial to subdivide the simulation
+problem spatially as distant vehicles have no or only a low
+impact on each other [[FIK+18]](#FIK+18) [[KKRZ19]](#KKRZ19).
+Furthermore, to render the driving performance more realistic,
+the executing target hardware is emulated and the execution timings
+are estimated [[HKK+22]](#HKK+22). The differences between the planned
+and the simulated trajectories with and without hardware emulation
+are depicted below.
+
+<center>
+<div class="row" style="width: 70%">
+    <div class="col-sm mt-3 mt-md-0">
+        {% responsive_image path: assets/img/research/ad/hwemu.png 
+        class: "img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+</center>
+<br />
 
 
 {% include trennlinie.html %}
