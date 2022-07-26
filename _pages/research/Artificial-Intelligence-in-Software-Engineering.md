@@ -50,7 +50,8 @@ networks, etc. The core structure of MontiAnna is shown in the following figure:
 <center>
 <div class="row" style="width: 50%">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/research/ai/montiannafw.png  %}
+        {% responsive_image path: assets/img/research/ai/montiannafw.png  
+		   class: "img-fluid rounded z-depth-1" %}
     </div>
 </div>
 </center>
@@ -77,7 +78,8 @@ effectively computing a diff witnesses are no trivial tasks.
 <center>
 <div class="row" style="width: 50%">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/research/ai/semdiff.png  %}
+        {% responsive_image path: assets/img/research/ai/semdiff.png  
+		   class: "img-fluid rounded z-depth-1" %}
     </div>
 </div>
 </center>
@@ -147,13 +149,14 @@ traffic management is not far in the future
 [[HRR12]](#HRR12),
 [[RR11]](#RR11),
 [[BR07]](#BR07).
-Figure 3 overviews the most important constituents of the verification 
+The following figure overviews the most important constituents of the verification 
 framework.
 
 <center>
 <div class="row" style="width: 50%">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/research/ai/MontiBelleNew.png  %}
+        {% responsive_image path: assets/img/research/ai/MontiBelleNew.png  
+		   class: "img-fluid rounded z-depth-1"%}
     </div>
 </div>
 </center>
@@ -182,13 +185,14 @@ executable test cases.
 <center>
 <div class="row" style="width: 50%">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/research/ai/testcasegenerator.png  %}
+        {% responsive_image path: assets/img/research/ai/testcasegenerator.png  
+		   class: "img-fluid rounded z-depth-1"%}
     </div>
 </div>
 </center>
 <br />
 
-Figure 4 shows an overview of the test case creation process. Customer 
+Customer 
 requirements in combination with customer requirement models are the input for 
 the specification of the functional behavior of the system under development. 
 The output of specifying the functional behavior are activity diagrams and 
@@ -222,13 +226,14 @@ automate anomaly detection. Furthermore, machine learning can be applied on
 sensor data to automatically detect different system operation modes. Based on 
 this, classification models can be utilised to autonomously detect fault 
 situations. The application of neural networks also allows to classify unknown 
-sensor and actor information (e.g. type of sensor/actor). Figure 5 illustrates 
+sensor and actor information (e.g. type of sensor/actor). The following figure illustrates 
 these circumstances.
 
 <center>
 <div class="row" style="width: 50%">
     <div class="col-sm mt-3 mt-md-0">
-        {% responsive_image path: assets/img/research/ai/AI_BigDataEnvironment.png  %}
+        {% responsive_image path: assets/img/research/ai/AI_BigDataEnvironment.png  
+		   class: "img-fluid rounded z-depth-1"%}
     </div>
 </div>
 </center>
