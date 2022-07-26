@@ -113,7 +113,7 @@ syntactic changes that are responsible for the existence of semantic differences
 in 
 [[KR18a]](#KR18a).
 The method relies on a search in a tree where the nodes of the tree represent 
-possible changes to models. As an example for semantic differencing, Figure 2 
+possible changes to models. As an example for semantic differencing, the given class diagram
 depicts the two class diagrams *cd1* and *cd2* and the object structures *os1* 
 and *os2*. The object structure *os1* is an element of the semantics of *cd2* 
 and no element of the semantics of *cd1*. It is thus a diff witness in the 
