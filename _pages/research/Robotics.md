@@ -37,6 +37,14 @@ humans as well as to industrial robots and to autonomous cars.
 
 ## Modeling Robotic Application Architectures and Behavior
 
+<center>
+<div class="row" style="width: 50%">
+    <div class="col-sm mt-3 mt-md-0">
+        {% responsive_image path: assets/img/research/robotics/robots.jpg  %}
+    </div>
+</div>
+</center>
+<br />
 
 Describing both, a robot's software architecture and its behavior in integrated
 models, yields many advantages to cope with complexity: the models are
@@ -67,17 +75,26 @@ generalized in [[RRRW15b]](#RRRW15b) [[AHRW17b]](#AHRW17b). For interested reade
 [MontiArcAutomaton](https://github.com/MontiCore/montiarc)
 provides further information on the MontiArcAutomaton framework.
 
-<iframe width="560" height="315" src="https://youtu.be/xvlYN-6awfk" title="Mode Driven Coffee Service"
-allow="accelerometer; autplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+<div class="embed-responsive embed-responsive-16by9 video-activities">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xvlYN-6awfk" title="YouTube video player" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div> 
+
+
 In several projects, we modeled logistics services with Festo Robotino Robots, 
 ROS, and Python.
 
-<video src="www.youtube.com/embed/u6LF8KjvDgM" controls="controls" style="max-width: 730px;">
-</video>
+
+<div class="embed-responsive embed-responsive-16by9 video-activities">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u6LF8KjvDgM" title="YouTube video player" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div> 
 
 ## Capability-Based Robotics Architectures
 
-Although the costs for robotics hardware and software decrease,
+Although, the costs for robotics hardware and software decrease,
 deploying a successful robotics application still requires tremendous
 effort. While various challenging issues for service robotics have been
 solved to a degree where their deployment is possible, integration of
@@ -138,6 +155,15 @@ discussed in [[BR12b]](#BR12b)
 that this a main enabler for intensive regression testing and thus agile 
 development and has now become the primary technique for virtually driving 
 millions of miles for safety validation in the car domain.
+
+<center>
+<div class="row" style="width: 50%">
+    <div class="col-sm mt-3 mt-md-0">
+        {% responsive_image path: assets/img/research/robotics/Caroline-Finish.JPG  %}
+    </div>
+</div>
+</center>
+<br />
 
 
 {% include trennlinie.html %}
