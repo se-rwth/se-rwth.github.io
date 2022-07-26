@@ -146,6 +146,8 @@ on realistic scenarios.
 scenarios, which is not that complicated.
 4. Software-intensive functions in embedded domains can be developed using agile 
 methods.
+5. Hardware emulation is necessary in autonomous driving simulation
+to obtain precise driving results and enable an agile cross-platform development.
 
 {% include trennlinie.html %}
 
