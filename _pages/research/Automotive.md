@@ -102,6 +102,15 @@ variants. All these techniques allow us to understand incompatibilities
 or identify the portion of compatibility of two components respectively
 their models.
 
+<center>
+<div class="row" style="width: 70%">
+    <div class="col-sm mt-3 mt-md-0">
+        {% responsive_image path: assets/img/research/auto/Caroline-Recognition.png 
+        class: "img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+</center>
+<br />
 
 {% include trennlinie.html %}
 
