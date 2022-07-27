@@ -5,9 +5,9 @@ permalink: /research/Artificial-Intelligence-in-Software-Engineering/
 description: 
 img: 
 importance: 1
-keys: [AKK+21, KPRS19, DKMR19, EJK+19, KNP+19, BKRW19, DEKR19, DGH+19, KRRS19, 
-    HRR12, RW18, KR18a, DGH+18, KMS+18, BKRW17, GLPR15, KLPR12, 
-    MRR11g, MRR11d, MRR11b, RR11, FLP+11, BR07, KRRW17]
+keys: [AKK+21, KMP+21, KPRS19, DKMR19, EJK+19, KNP+19, BKRW19, DEKR19, DGH+19, KRRS19, 
+    RW18, KR18a, DGH+18, KMS+18, BKRW17, KRRW17, GLPR15, KLPR12, MRR11g, MRR11d, 
+    MRR11b, FLP+11]
 ---
 
 ## Summary of Most Relevant Topic Papers
@@ -51,7 +51,7 @@ networks, etc. The core structure of MontiAnna is shown in the following figure:
 <div class="row" style="width: 50%">
     <div class="col-sm mt-3 mt-md-0">
         {% responsive_image path: assets/img/research/ai/montiannafw.png  
-		   class: "img-fluid rounded z-depth-1" %}
+           class: "img-fluid rounded z-depth-1" %}
     </div>
 </div>
 </center>
@@ -79,7 +79,7 @@ effectively computing a diff witnesses are no trivial tasks.
 <div class="row" style="width: 50%">
     <div class="col-sm mt-3 mt-md-0">
         {% responsive_image path: assets/img/research/ai/semdiff.png  
-		   class: "img-fluid rounded z-depth-1" %}
+           class: "img-fluid rounded z-depth-1" %}
     </div>
 </div>
 </center>
@@ -145,10 +145,7 @@ These and the rapid increase of computation capabilities suggest that a
 prominent application for reducing certification costs of critical systems such 
 as intelligent flight control systems or assistance systems for air or road 
 traffic management is not far in the future 
-[[KRRS19]](#KRRS19),
-[[HRR12]](#HRR12),
-[[RR11]](#RR11),
-[[BR07]](#BR07).
+[[KMP+21]](#KMP+21).
 The following figure overviews the most important constituents of the verification 
 framework.
 
@@ -156,7 +153,7 @@ framework.
 <div class="row" style="width: 50%">
     <div class="col-sm mt-3 mt-md-0">
         {% responsive_image path: assets/img/research/ai/MontiBelleNew.png  
-		   class: "img-fluid rounded z-depth-1"%}
+           class: "img-fluid rounded z-depth-1"%}
     </div>
 </div>
 </center>
@@ -186,7 +183,7 @@ executable test cases.
 <div class="row" style="width: 50%">
     <div class="col-sm mt-3 mt-md-0">
         {% responsive_image path: assets/img/research/ai/testcasegenerator.png  
-		   class: "img-fluid rounded z-depth-1"%}
+           class: "img-fluid rounded z-depth-1"%}
     </div>
 </div>
 </center>
@@ -233,7 +230,7 @@ these circumstances.
 <div class="row" style="width: 50%">
     <div class="col-sm mt-3 mt-md-0">
         {% responsive_image path: assets/img/research/ai/AI_BigDataEnvironment.png  
-		   class: "img-fluid rounded z-depth-1"%}
+           class: "img-fluid rounded z-depth-1"%}
     </div>
 </div>
 </center>

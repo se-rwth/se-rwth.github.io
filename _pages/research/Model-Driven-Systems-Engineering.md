@@ -71,17 +71,17 @@ in order to understand, control and optimize the physical machine.
 ## Key Statements
 
 1. Model-Driven Systems Engineering is
-	interdisciplinary, including engineering and management
-	of complex CPS largely based and driven by models. 
+   interdisciplinary, including engineering and management
+   of complex CPS largely based and driven by models. 
 1. SysML is capable of modeling mechanical functional architectures
-	together wit their controlling software.
+   together wit their controlling software.
 1. A Digital Twin should not only be for simulation,
-	but also for collecting data and providing aggregation
-	and information services about the physical twin.
+   but also for collecting data and providing aggregation
+   and information services about the physical twin.
 1. A **Digital Twin Cockpit** contains the user interface of such 
-	digital twin with its services, visualizations and potentially
-	control and optimization options.
-	
+   digital twin with its services, visualizations and potentially
+   control and optimization options.
+
 {% include trennlinie.html %}
 
 ## Selected Topic-Specific Publications

@@ -121,7 +121,7 @@ problem spatially as distant vehicles have no or only a low
 impact on each other [[FIK+18]](#FIK+18) [[KKRZ19]](#KKRZ19).
 Furthermore, to render the driving performance more realistic,
 the executing target hardware is emulated and the execution timings
-are estimated [[HKK+22]](#HKK+22). The differences between the planned
+are estimated. The differences between the planned
 and the simulated trajectories with and without hardware emulation
 are depicted below.
 
