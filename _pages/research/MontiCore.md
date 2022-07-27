@@ -11,7 +11,7 @@ keys: [HKR21,
     HRR12,Sch12,BDL+18,GKR+06,AHRW17,RRW15,HHR+15,MRRW16,GLRR15,
     Ber10,HRW15,Kra10,Loo17,PBI+16,Pin14,Rum16,Rum17,Wor16,Hab16,
     Rei16,Rot17,
-    Gre19,Her19,Kus21,Plo18,Rei16,Rei16}.
+    Gre19,Her19,Kus21,Plo18}.
 
 ---
 
