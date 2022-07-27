@@ -40,7 +40,4 @@ from the Federal Government and the European Union
     <img class="staff-pics z-depth-1" style="width: 100%;" src="../../assets/img/publ.png">
 </a>
 
-<a href="https://www.se-rwth.de/publications/Model-Based-Development-and-Logical-AI-for-Secure-and-Safe-Avionics-Systems-A-Verification-Framework-for-SysML-Behavior-Specifications.pdf">
-    <img class="staff-pics z-depth-1" style="width: 100%;" src="../../assets/img/aec.png">
-</a>
 
