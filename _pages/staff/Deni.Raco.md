@@ -37,7 +37,7 @@ in the [Graduate Research Training Group](https://www.rwth-aachen.de/go/id/pmf/l
 from the Federal Government and the European Union
 
 <a href="https://www.se-rwth.de/staff/raco/publ.pdf">
-    <img class="staff-pics z-depth-1" style="width: 100%;" src="../../assets/img/publ.png">
+    <img class="staff-pics z-depth-1" style="width: auto;" src="../../assets/img/publ.png">
 </a>
 
 
