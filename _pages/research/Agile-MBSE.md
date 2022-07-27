@@ -128,7 +128,7 @@ This work includes a precise definition of textual languages, type checks,
 checks for context conditions within and between
 UML sub-languages and a framework for the implementation of code generators.
 
-MontiCore also serves as demonstration tool of the yearly
+MontiCore also serves as demonstration tool of the annual
 *Software Language Engineering* course at RWTH
 and serves as basis for the mechanisms to teach agile modeling
 adressed in [[RRSW17]](#RRSW17).

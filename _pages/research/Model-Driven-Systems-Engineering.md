@@ -20,7 +20,7 @@ production systems, and so on.
 We have a long tradition on contributing to
 **model-based systems engineering** in
 automotive [[FND+98]](#FND+98) and [[GHK+08a]](#GHK+08a).
-We have been able to condense ithese into a 
+We have been able to condense these into a 
 new comprehensive **model-driven development process** for automotive software
 including
 function testing with the BMW Group [[KMS+18]](#KMS+18), [[DGH+19]](#DGH+19). 

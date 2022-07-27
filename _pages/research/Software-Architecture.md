@@ -76,7 +76,7 @@ in [[BR07]](#BR07). Mathematical foundations are given for modeling of
 interfaces, building architectures through composition and decomposition, 
 layering architectures as well as hierarchical decomposition, and implementation 
 of components using state machines. Especially the refinement (see also 
-[[PR99]](#PR99)) [[RW18]](#RW18)
+[[PR99]](#PR99) [[RW18]](#RW18))
 of hierarchy, interfaces, and behavior is discussed as well as 
 abstraction mechanisms for the integration of abstract viewpoints. The presented 
 theory consists of a set of theorems and provides a basis for architectural 
@@ -132,8 +132,8 @@ achieved. We call this **architectural programming** [[HRR10]](#HRR10),
 [[BKRW17a]](#BKRW17a) which supported by powerful
 code generation mechanisms based on chains of model
 transformations [[AHRW17]](#AHRW17) [[AHRW17b]](#AHRW17b).
-Mechanisms for a systematic extension of 
-MontiArc are generally discussed in [[BHH+17]](#BHH+17).
+General mechanisms for a systematic extension of 
+the language MontiArc for various purposes are discussed in [[BHH+17]](#BHH+17).
 
 ## Architectural Variability
 
