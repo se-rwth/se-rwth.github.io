@@ -51,7 +51,7 @@ networks, etc. The core structure of MontiAnna is shown in the following figure:
 <div class="row" style="width: 50%">
     <div class="col-sm mt-3 mt-md-0">
         {% responsive_image path: assets/img/research/ai/montiannafw.png  
-		   class: "img-fluid rounded z-depth-1" %}
+           class: "img-fluid rounded z-depth-1" %}
     </div>
 </div>
 </center>
@@ -79,7 +79,7 @@ effectively computing a diff witnesses are no trivial tasks.
 <div class="row" style="width: 50%">
     <div class="col-sm mt-3 mt-md-0">
         {% responsive_image path: assets/img/research/ai/semdiff.png  
-		   class: "img-fluid rounded z-depth-1" %}
+           class: "img-fluid rounded z-depth-1" %}
     </div>
 </div>
 </center>
@@ -156,7 +156,7 @@ framework.
 <div class="row" style="width: 50%">
     <div class="col-sm mt-3 mt-md-0">
         {% responsive_image path: assets/img/research/ai/MontiBelleNew.png  
-		   class: "img-fluid rounded z-depth-1"%}
+           class: "img-fluid rounded z-depth-1"%}
     </div>
 </div>
 </center>
@@ -186,7 +186,7 @@ executable test cases.
 <div class="row" style="width: 50%">
     <div class="col-sm mt-3 mt-md-0">
         {% responsive_image path: assets/img/research/ai/testcasegenerator.png  
-		   class: "img-fluid rounded z-depth-1"%}
+           class: "img-fluid rounded z-depth-1"%}
     </div>
 </div>
 </center>
@@ -233,7 +233,7 @@ these circumstances.
 <div class="row" style="width: 50%">
     <div class="col-sm mt-3 mt-md-0">
         {% responsive_image path: assets/img/research/ai/AI_BigDataEnvironment.png  
-		   class: "img-fluid rounded z-depth-1"%}
+           class: "img-fluid rounded z-depth-1"%}
     </div>
 </div>
 </center>
