@@ -30,10 +30,9 @@ nav: false
 {% include trennlinie.html %}
 
 - Computer Science, Mathematics and Doctoral Studies at [RWTH Aachen University](https://en.wikipedia.org/wiki/RWTH_Aachen_University)
-- Doctoral Grant from the [German Research Foundation](https://www.dfg.de/en/dfg_profile/mission/what_is_the_dfg/index.html) 
-in the [Graduate Research Training Group](https://www.rwth-aachen.de/go/id/pmf/lidx/1) 
+- Doctoral Grant from the German Research Foundation in the [Graduate Research Training Group](https://www.rwth-aachen.de/go/id/pmf/lidx/1)
 "Algorithmic Synthesis of Reactive and Discrete-Continuous Systems”
-- [Entrepreneurship Grant](https://www.esf.de/portal/EN/Funding-period-2014-2020/ESF-Programmes/bmwi/exist.html) 
+- [Entrepreneurship Grant](https://www.esf.de/portal/EN/Funding-period-2021-2027/Funding_Programmes/bmwk/exist.html) 
 from the Federal Government and the European Union
 
 <a href="https://www.se-rwth.de/staff/raco/publ.pdf">
