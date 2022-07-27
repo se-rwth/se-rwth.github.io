@@ -10,6 +10,7 @@ keys: [Lee08a,KRS12,RW18,ZPK+11,
        BR12b,BBR07,KRSvW18a,AHRW17b,
        RSW+15,KRR+16,RRS+16,
        RRW13c,Wor16,RRW14a,RRW12,
+       BDH+20,KKR19,RRW13,
        RRSW17,KPR12,FPPR12,KLPR12]
 ---
 
@@ -60,9 +61,15 @@ specify and detect **interesting events**.
 
 As long term interest, we
 intensively do research on how to improve the engineering for
-distributed automotive systems as well. For example [[HRR12]](#HRR12) [[KRRW17]](#KRRW17),
+distributed automotive systems as well.
+For example [[HRR12]](#HRR12) [[KRRW17]](#KRRW17),
 outline our proposal for an architecture centric development approach.
 
+The [[digital twin]](/research/Digital-Twins)
+of a cyberphysical system is in our special interest and
+we have discussed among others, how to develop digital 
+twins efficiently. E.g. [[BDH+20]](#BDH+20) describes an application
+for injection molding.
 
 #### Automotive
 
@@ -79,6 +86,11 @@ development of **autonomous driving cars**.
 We discuss this in [[BR12b]](#BR12b) based on our experiences in
 building such a car and using sophisticated simulation techniques for
 the context of autonomous robots (cars).
+[[KKR19]](#KKR19) furthermore contains a discussion of how to model
+and simulate dynamic architectures of cooporative systems,
+such as convois of cars, which through their movement dynamically
+adapt their communication topology themselves.
+
 Moreover,
 fully automatic simulation of the cyber-physical contexts of cars
 and fully automatic checking of the robots' behavior leads to an highly
@@ -100,6 +112,7 @@ language suitable for the specific challenges in
 robotics [[RRW13c]](#RRW13c) [[Wor16]](#Wor16) as well as in [[RRW14a]](#RRW14a). This language
 serves from requirements modeling [[RRW12]](#RRW12) to the complete
 development of CPS software [[RRSW17]](#RRSW17).
+In [[RRW13]](#RRW13), we describe a code generation framework for this language.
 
 
 #### Buildings 
@@ -146,6 +159,7 @@ applied those to cars, robots, avionics and building infrastructures.
 - [Automotive](/research/Automotive)
 - [Autonomic Driving & Intelligent Driver 
 Assistance](/research/Autonomic-Driving)
+- [Digital Twins and Digital Shadows in Engineering, Operation and Production](/research/Digital-Twins)
 - [Domain Specific Languages (DSLs)](/research/Domain-Specific-Languages)
 - [Energy Management](/research/Energy-Management)
 - [MontiArc - Architectural Modeling](/research/Software-Architecture)
