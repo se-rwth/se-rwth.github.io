@@ -29,8 +29,6 @@ nav: false
 <br>
 {% include trennlinie.html %}
 
-### Teaching:
-
 - Computer Science, Mathematics and Doctoral Studies at [RWTH Aachen University](https://en.wikipedia.org/wiki/RWTH_Aachen_University)
 - Doctoral Grant from the [German Research Foundation](https://www.dfg.de/en/dfg_profile/mission/what_is_the_dfg/index.html) 
 in the [Graduate Research Training Group](https://www.rwth-aachen.de/go/id/pmf/lidx/1) 
@@ -39,17 +37,10 @@ in the [Graduate Research Training Group](https://www.rwth-aachen.de/go/id/pmf/l
 from the Federal Government and the European Union
 
 <a href="https://www.se-rwth.de/staff/raco/publ.pdf">
-    <img class="staff-pics z-depth-1" style="width: auto;" src="../../assets/img/publ.png">
+    <img class="staff-pics z-depth-1" style="width: 100%;" src="../../assets/img/publ.png">
 </a>
 
 <a href="https://www.se-rwth.de/publications/Model-Based-Development-and-Logical-AI-for-Secure-and-Safe-Avionics-Systems-A-Verification-Framework-for-SysML-Behavior-Specifications.pdf">
-    <img class="staff-pics z-depth-1" style="width: auto;" src="../../assets/img/aec.png">
+    <img class="staff-pics z-depth-1" style="width: 100%;" src="../../assets/img/aec.png">
 </a>
 
-{% include trennlinie.html %}
-
-### Publications:
-
-<div class="publications">
-  {% bibliography -f all-software-engineering-rwth-references -q @*[author ~= Raco. D] %}
-</div>
