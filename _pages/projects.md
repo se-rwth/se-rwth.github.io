@@ -14,6 +14,7 @@ HBP_keys: [Plo18, BPEM18, PBI+16]
 iserveU_keys: [HMSNR+15, ABH+16, ABK+17]
 IoP_keys: [DJM+19, DJR+19, SHH+20, BDH+20]
 MaCoCo_keys: [GHK+20]
+MontiBelle_keys: [KMP+21, KPRR21, BKR+20, KPRR20a, KPRR20, KRRS19]
 MontiGem_keys: [GMN+20, AMN+20a]
 SemDiff_keys: [DKMR20, DKMR19, BKRW19, KR18a, BKRW17, MRR11d, MRR11b, MRR10]
 SenCloud_keys: [HHK+15a, HHK+14, HPR13]
@@ -458,7 +459,7 @@ successful adoption by the industry.
 
 ## MontiBelle - Intelligent Verification
 
-Based on a well-established mathematical dataflow-theory, we apply
+Based on a [well-established mathematical dataflow-theory](#KMP+21), we apply
 logic, knowledge representation and intelligent reasoning to software
 engineering to perform correctness proofs, execute symbolic tests or
 find counterexamples. The theorem prover Isabelle is a mature and
@@ -481,6 +482,13 @@ These and the rapid increase of computation capabilities suggest that a
 prominent application for reducing certification costs of critical
 systems such as intelligent flight control systems or assistance
 systems for air or road traffic management is not far in the future.
+
+#### Selected publications
+<div class="publications">
+  {% for k in page.MontiBelle_keys %}
+    {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
+  {% endfor %}
+</div>
 
 {% include trennlinie.html %}
 <a name="MontiCore"></a>
