@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 	Dr. Judith Michael, Dipl.-Ing.
+title: Dr. Judith Michael, Dipl.-Ing.
 permalink: /staff/Judith.Michael/
 nav: false
 ---

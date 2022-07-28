@@ -25,7 +25,7 @@ Prof. Dr. Abigail Morrison can be found [here](https://www.fz-juelich.de/en/inm/
   <tbody>
     {% include staff_row.html href='https://www.se-rwth.de/staff/rumpe' name='Prof. Dr. Bernhard Rumpe' email='rumpe@se-rwth.de' phone='21301' room='4301' %}
     {% include staff_row.html href='https://www.swc.rwth-aachen.de/' name='Prof. Dr. Horst Lichter' email='lichter@swc.rwth-aachen.de' %}
-    {% include staff_row.html href='Abigail.Morrison' name='Prof. Dr. Abigail Morrison' email='morrison@se-rwth.de' phone='	(Jülich)' %}
+    {% include staff_row.html href='Abigail.Morrison' name='Prof. Dr. Abigail Morrison' email='morrison@se-rwth.de' phone='(Jülich)' %}
     {% include staff_row.html href='Manfred.Nagl' name='Prof. Dr.-Ing. Dr. h.c. Manfred Nagl' email='nagl@i3.informatik.rwth-aachen.de' phone='21350' room='4303' %}
     {% include staff_row.html name='Prof. Dr. Ingrid Oliveira de Nunes' email='nunes@se-rwth.de' phone='(Humboldt)' room='4220' %}
     {% include staff_row.html href='Andreas.Wortmann' name='Prof. Dr. Andreas Wortmann' email='wortmann@se-rwth.de' phone='(Jun.)' room='4219' %}
