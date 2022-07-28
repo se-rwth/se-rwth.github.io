@@ -9,7 +9,7 @@ keys: [GRJA12,GHK+07,GHK+08,
         BR12b,BR12,BBR07,
         DGH+19,KMS+18,HKM+13,
         HRRW12,KRR+16,RRS+16,
-        RSW+15]
+        RSW+15,KKR19]
 ---
 
 ## Summary of Most Relevant Topic Papers
@@ -111,6 +111,10 @@ their models.
 </div>
 </center>
 <br />
+
+In [[KKR19]](#KKR19), we introduce a framework for modeling the dynamic
+reconfiguration of component and connector architectures
+and apply it to the domain of cooperating vehicles.
 
 {% include trennlinie.html %}
 

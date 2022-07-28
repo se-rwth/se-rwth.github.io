@@ -5,8 +5,8 @@ permalink: /research/Autonomic-Driving/
 description:
 img:
 importance: 1
-keys: [RBL+10,BR12,BBR07,BR12b,BBH+13,MMR10,HKR12,   
-        BBB+08,FIK+18,BBH+15,GKR+17,KKRZ19,HKK+22]
+keys: [RBL+10,BR12,BBR07,BR12b,MMR10,HKR12,   
+        BBB+08,FIK+18,BBH+15,GKR+17,KKRZ19]
 ---
 
 ## Summary of Most Relevant Topic Papers
@@ -93,14 +93,10 @@ systems' development with the current development standards, such as ISO
 quality on one hand and legal issues on the other hand.
 
 As tooling infrastructure, we mainly used an IDE such as Eclipse and in
-particular the SSElab storage, versioning and management services [[HKR12]](#HKR12).
+particular the SSElab storage, versioning and management services
+[[HKR12]](#HKR12).
 Without those, agile development would not have been
 possible.
-
-In further projects, we have **evaluated and designed OEM specific
-architectures and processes**, on individual assistance functions and on
-the complete architecture. [[BBH+13]](#BBH+13) contains metrics, e.g., to
-understand the cross-linkage complexity for software and functions.
 
 In [[MMR10]](#MMR10) we give an overview of the state-of-the-art in
 development and evolution on a more general level by considering **any
@@ -109,8 +105,7 @@ kind of critical system** that relies on architectural descriptions.
 In recent years, we also investigate in the **next steps of autonomy**, namely
 **cooperatively interacting autonomous vehicles**, allowing e.g., convoys
 with almost no distance to drive very energy efficient [[FIK+18]](#FIK+18),
-as well as virtualization of development of safety algorithms, e.g., for
-the EuroNCAP and US NCAP scenarios discussed [[BBH+15]](#BBH+15).
+as well as virtualization of development of safety algorithms.
 
 With MontiSim, the Chair of Software Engineering developed a full 
 blown autonomous and cooperative driving simulator [[GKR+17]](#GKR+17).
