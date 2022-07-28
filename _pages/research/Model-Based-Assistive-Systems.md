@@ -7,6 +7,7 @@ img:
 importance: 1
 keys: [HMR+19,MMR+17,MM13,MSS+18,
         MM13,MM15,MS17,MRZ21, MNRV19,
+	MKB+19,MRV20,SM18a,
         MKM+19,SM18,SM20,ELR+17,AMN+20a,LMK+11]
 ---
 
@@ -71,6 +72,10 @@ in which a domain specific language [[MM13]](#MM13)
 including structural and behavior data,
 and domain specific modeling
 method for assistive systems [[MM15]](#MM15) were developed.
+A concept for defining goal modeling languages [[MRV20]](#MRV20)
+or UML/P based languages [[MNRV19]](#MNRV19)
+describes a process how languages for assistive systems can be
+created.
 
 Current work extends these approaches: to enable useful support, it
 is important to know more than just the behavior of a person.
