@@ -88,7 +88,7 @@ building such a car and using sophisticated simulation techniques for
 the context of autonomous robots (cars).
 [[KKR19]](#KKR19) furthermore contains a discussion of how to model
 and simulate dynamic architectures of cooporative systems,
-such as cars in urban traffic or cars in 
+such as cars in urban traffic or even
 temporary convois, which through their movement
 and distances dynamically
 adapt their communication topology.
