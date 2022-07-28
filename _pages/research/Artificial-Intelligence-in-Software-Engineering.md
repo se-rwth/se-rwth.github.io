@@ -62,7 +62,8 @@ networks, etc. The core structure of MontiAnna is shown in the following figure:
 </center>
 <br />
 
-To facilitate the analysis and enable MLOps in an agile development
+To facilitate the analysis and enable MLOps (short for 
+"DevOps for Machine Learning") in an agile development
 of machine learning-based
 systems we derived a software 2.0 artifact model and use it as a basis for a 
 modular build system, distinguishing between different kinds of artifacts such as
