@@ -65,10 +65,10 @@ distributed automotive systems as well.
 For example [[HRR12]](#HRR12) [[KRRW17]](#KRRW17),
 outline our proposal for an architecture centric development approach.
 
-The [[digital twin]](/research/Digital-Twins)
+The [Digital Twin](/research/Digital-Twins)
 of a cyberphysical system is in our special interest and
-we have discussed among others, how to develop digital 
-twins efficiently. E.g. [[BDH+20]](#BDH+20) describes an application
+we have discussed among others, how to develop Digital 
+Twins efficiently. E.g. [[BDH+20]](#BDH+20) describes an application
 for injection molding.
 
 #### Automotive
@@ -88,8 +88,10 @@ building such a car and using sophisticated simulation techniques for
 the context of autonomous robots (cars).
 [[KKR19]](#KKR19) furthermore contains a discussion of how to model
 and simulate dynamic architectures of cooporative systems,
-such as convois of cars, which through their movement dynamically
-adapt their communication topology themselves.
+such as cars iin urban traffic or cars building 
+temporary convois, which through their movement
+and distances dynamically
+adapt their communication topology.
 
 Moreover,
 fully automatic simulation of the cyber-physical contexts of cars
@@ -97,8 +99,10 @@ and fully automatic checking of the robots' behavior leads to an highly
 efficient development process with high quality results [[BBR07]](#BBR07).
 Optimized code-generators [[KRSvW18a]](#KRSvW18a)
 and domain specific code
-generation [[AHRW17b]](#AHRW17b) are key for CPS. Moreover, we have extended our work
-from individual CPS to **product lines of CPS** [[RSW+15]](#RSW+15) [[KRR+16]](#KRR+16) [[RRS+16]](#RRS+16).
+generation [[AHRW17b]](#AHRW17b) are key for CPS.
+Moreover, we have extended our work
+from individual CPS to **product lines of CPS**
+[[RSW+15]](#RSW+15) [[KRR+16]](#KRR+16) [[RRS+16]](#RRS+16).
 
 
 #### Robotics
