@@ -5,7 +5,8 @@ permalink: /research/Digital-Twins/
 description:
 img:
 importance: 1
-keys: [BMR+22, DHM+22, BDJ+22, MPRW22, BHK+21, BBD+21b, BBD+21a, DMR+20, BDH+20]
+keys: [BMR+22, DHM+22, BDJ+22, MPRW22, BHK+21,
+    KMR+20, BBD+21b, BBD+21a, DMR+20, BDH+20]
 ---
 
 ## Summary and Definitions of Most Relevant Topic Papers
@@ -151,6 +152,8 @@ self-adaptive digital twin architectures [[BBD+21a]](#BBD+21a),
 how to use 
 [Generative Software Engineering](/research/Generative-SE) for 
 creating digital twin architectures [[BDH+20]](#BDH+20),
+how to
+generate interfaces between a cyber-physical system and its DT~\cite{KMR+20},
 how to derive digital twin cockpits [[DMR+20]](#DMR+20) from models using 
 the [MontiGem](/research/MontiGem) generator, and
 how to use process prediction within digital twins [[BHK+21]](#BHK+21). 
