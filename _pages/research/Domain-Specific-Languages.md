@@ -17,6 +17,17 @@ keys: [GHK+07,PFR02,SRVK10,
       Kra10, ZPK+11]
 ---
 
+[//]: literatureCheck: not mentioned below, only in literature:
+[//]: [[AHRW17]](#AHRW17) [[BEH+20]](#BEH+20) [[BHR+21]](#BHR+21)
+[//]: [[BPR+20]](#BPR+20) [[Ber10]](#Ber10) [[Gre19]](#Gre19)
+[//]: [[HHR+15]](#HHR+15) [[HJRW20]](#HJRW20) [[HMR+19]](#HMR+19)
+[//]: [[HRR12]](#HRR12) [[Hab16]](#Hab16) [[Her19]](#Her19)
+[//]: [[Kus21]](#Kus21) [[Loo17]](#Loo17) [[MRRW16]](#MRRW16)
+[//]: [[PBI+16]](#PBI+16) [[Pin14]](#Pin14) [[Plo18]](#Plo18)
+[//]: [[RRW15]](#RRW15) [[Rei16]](#Rei16) [[Rot17]](#Rot17)
+[//]: [[Wor16]](#Wor16)
+
+
 ## Summary of Most Relevant Topic Papers
 
 The ability to abstraction is one of the basic cognitive abilities of human
