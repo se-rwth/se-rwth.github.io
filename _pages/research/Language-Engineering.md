@@ -10,7 +10,7 @@ keys: [Rum16,Rum17,HRW15,
         HRW18,CFJ+16,CBCR15,
         BEK+18b,CCF+15a,CKM+18,
         SRVK10,Voe11,KRV08,
-        HMSNRW16,Naz17,RRRW15b,
+        HNRW16,Naz17,RRRW15b,
         BBC+18,HHK+13,HHK+15,
         HRW15,GLRR15,BDL+18,
         BJRW18,Wei12,Hoe18,
@@ -105,7 +105,7 @@ backend: printing) and decompose each of these activities along the
 individual language components. MontiCore 3 [[HR17]](#HR17), e.g., was already able to
 decompose the front-end language processing along the decomposition of the
 language itself [[KRV10]](#KRV10) [[Voe11]](#Voe11) [[KRV08]](#KRV08) 
-[[HMSNRW16]](#HMSNRW16) [[Naz17]](#Naz17) [[RRRW15b]](#RRRW15b). 
+[[HNRW16]](#HNRW16) [[Naz17]](#Naz17) [[RRRW15b]](#RRRW15b). 
 
 MontiCore also
 assists modular decomposition of the backend code generation based on
