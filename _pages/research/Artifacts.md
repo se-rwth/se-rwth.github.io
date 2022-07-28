@@ -207,7 +207,8 @@ the artifacts they work with.
 - enabling analyses of the artifact data to understand and improve projects.
 
 2. This is even more beneficial once the domain of CPS development is entered
-   and projects span across multiple departments and a multitude of tools [[HJK+21]](#HJK+21).
+   and projects span across multiple departments and a multitude of tools
+   [[HJK+21]](#HJK+21).
 3. We have developed a methodology providing modeling techniques to help
    understand artifacts and their relations in complex development projects.
    Furthermore, we created a customizable tool-chain which enables automated

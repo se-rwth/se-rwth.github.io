@@ -5,8 +5,11 @@ permalink: /research/Artificial-Intelligence-in-Software-Engineering/
 description: 
 img: 
 importance: 1
-keys: [AKK+21, KMP+21, KPRS19, DKMR19, EJK+19, KNP+19, BKRW19, DEKR19, DGH+19, KRRS19, 
-    RW18, KR18a, DGH+18, KMS+18, BKRW17, KRRW17, GLPR15, KLPR12, MRR11g, MRR11d, 
+keys: [AKK+21, KMP+21, KPRS19, DKMR19, EJK+19, KNP+19, BKRW19,
+    DEKR19, DGH+19, KRRS19, 
+    RW18, KR18a, DGH+18, KMS+18, BKRW17, KRRW17, GLPR15, KLPR12,
+    MRR11g, MRR11d, 
+    BDH+20,BR07,HRR12,RR11,
     MRR11b, FLP+11]
 ---
 
@@ -16,16 +19,18 @@ Our resarch on artificial intelligence divides into modeling deep learning and
 applying artificial intelligence to different application domains. We developed
 
 - MontiAnna, a family of domain specific languages for describing the 
-architectures of neural networks, their training, and their training data.
+  architectures of neural networks, their training, and their training data.
 - different variants of semantic differencing operators that can be used for 
-non-trivial model evolution analyses that focus on detecting the semantic 
-differences between model versions.
+  non-trivial model evolution analyses that focus on detecting the semantic 
+  differences between model versions.
 - MontiBelle, which uses Isabelle and its logic-based intelligence to support 
-semi-automated formal verification of software architectures.
-- a methodology to automatically test system requirements in automotive software 
-engineering via test case generation.
-- frameworks exploiting machine learning to analyse the data generated, e.g., by 
-modern buildings and cards in operation and production systems.
+  semi-automated formal verification of software architectures.
+- a methodology to automatically test system requirements in
+  automotive software 
+  engineering via test case generation.
+- frameworks exploiting machine learning to analyse the data generated,
+  e.g., by 
+  modern buildings and cards in operation and production systems.
 
 
 ## MontiAnna - A Modeling Framework for Deep Learning
@@ -57,10 +62,12 @@ networks, etc. The core structure of MontiAnna is shown in the following figure:
 </center>
 <br />
 
-To facilitate the analysis and enable MLOps in an agile development of machine learning-based
+To facilitate the analysis and enable MLOps in an agile development
+of machine learning-based
 systems we derived a software 2.0 artifact model and use it as a basis for a 
 modular build system, distinguishing between different kinds of artifacts such as
-training/test data, software model, machine learning model, trained machine learning model, etc. [[AKK+21]](#AKK+21). 
+training/test data, software model, machine learning model,
+trained machine learning model, etc. [[AKK+21]](#AKK+21). 
 
 
 ## Semantic Differencing
@@ -113,7 +120,8 @@ syntactic changes that are responsible for the existence of semantic differences
 in 
 [[KR18a]](#KR18a).
 The method relies on a search in a tree where the nodes of the tree represent 
-possible changes to models. As an example for semantic differencing, the given class diagram
+possible changes to models. As an example for semantic differencing,
+the given class diagram
 depicts the two class diagrams *cd1* and *cd2* and the object structures *os1* 
 and *os2*. The object structure *os1* is an element of the semantics of *cd2* 
 and no element of the semantics of *cd1*. It is thus a diff witness in the 
@@ -145,7 +153,7 @@ These and the rapid increase of computation capabilities suggest that a
 prominent application for reducing certification costs of critical systems such 
 as intelligent flight control systems or assistance systems for air or road 
 traffic management is not far in the future 
-[[KMP+21]](#KMP+21).
+[[KMP+21]](#KMP+21) [[KRRS19]](#KRRS19) [[HRR12]](#HRR12).
 The following figure overviews the most important constituents of the verification 
 framework.
 
@@ -214,7 +222,7 @@ and actor behavior within a system
 [[KLPR12]](#KLPR12).
 This creates a structural and behavioural system theoretical view on buildings 
 as cyber-physical systems (digital twin) 
-[[RW18]](#RW18).
+[[RW18]](#RW18) [[BDH+20]](#BDH+20).
 
 The digital modeling of buildings and their facilities as well as the 
 availability of sensor and actor data enables the implementation of Big Data 
@@ -223,7 +231,8 @@ automate anomaly detection. Furthermore, machine learning can be applied on
 sensor data to automatically detect different system operation modes. Based on 
 this, classification models can be utilised to autonomously detect fault 
 situations. The application of neural networks also allows to classify unknown 
-sensor and actor information (e.g. type of sensor/actor). The following figure illustrates 
+sensor and actor information (e.g. type of sensor/actor).
+The following figure illustrates 
 these circumstances.
 
 <center>
