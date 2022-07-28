@@ -6,7 +6,7 @@ description:
 img:
 importance: 1
 keys: [RBL+10,BR12,BBR07,BR12b,MMR10,HKR12,   
-        BBB+08,FIK+18,BBH+15,GKR+17,KKRZ19]
+        FIK+18,GKR+17,KKRZ19]
 ---
 
 ## Summary of Most Relevant Topic Papers

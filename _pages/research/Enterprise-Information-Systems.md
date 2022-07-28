@@ -6,7 +6,7 @@ description:
 img:
 importance: 1
 keys: [HKR21, KRV10,MSNRR15a,Loo17,Rot17,
-        Rei16,AMN+20a,ANV+18,
+        Rei16,AMN+20a,ANV+18,DHM+22,
         ELR+17,MNRV19,DGM+21,GMN+20]
 ---
 
@@ -68,13 +68,15 @@ control.
 Additional transformations from [UML/P](/research/UML-P/) class diagrams
 to models for graphical user interfaces [[GMN+20]](#GMN+20)
 allow to even reduce the information needed for the generation process. 
+MontiGem has, e.g., been used in for financial management \cite{GHK+20}
+or for creating digital twin cockpits \cite{DMR+20}.
 
 Enterprise Information Systems are facing challenges: 
 The General Data Protection Regulation (GDPR), in application since May 2018,
 marks a new era in data privacy. These regulations are also relevant for EIS
 dealing with private data.
 Thus, we investigate the architecture of cloud services for
-the digital me in a privacy-aware environment [[ELR+17]](#ELR+17).
+the **Digital Me** in a privacy-aware environment [[ELR+17]](#ELR+17).
 Further approaches go beyond architectural aspects: [[MNRV19]](#MNRV19)
 discusses a privacy preserving data model and system architecture.
 The user-centered view on the system design allows to track who does
@@ -130,3 +132,4 @@ replace existing code step-by-step with generated code.
 - [Books](/books)
 - [Aachener Informatik-Berichte, Software Engineering / Ph.D. Theses](/phdtheses)
 - [Website of the SE](https://www.se-rwth.de)
+
