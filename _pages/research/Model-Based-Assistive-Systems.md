@@ -72,9 +72,9 @@ in which a domain specific language [[MM13]](#MM13)
 including structural and behavior data,
 and domain specific modeling
 method for assistive systems [[MM15]](#MM15) were developed.
-A concept for defining goal modeling languages [[MRV20]](#MRV20)
+A technique for using goal modeling languages [[MRV20]](#MRV20)
 or UML/P based languages [[MNRV19]](#MNRV19)
-describes a process how languages for assistive systems can be
+describes, how languages for assistive systems can be
 created.
 
 Current work extends these approaches: to enable useful support, it
