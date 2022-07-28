@@ -302,7 +302,7 @@ expertise. Models of these languages are used by a
 integrated robotics middlewares to, ultimately, operate service robots
 in a German hospital. The project is funded by the [German Federal
 Ministry for Education and Research
-(BMBF)](http://www.softwaresysteme.pt-dlr.de/de/forschungsvorhaben-servicerobotik.php).
+(BMBF)](https://www.softwaresysteme.dlr-pt.de/de/forschungsvorhaben-servicerobotik.php).
 Additional materials can be found at our [iserveU Materials
 Website](http://www.se-rwth.de/materials/iserveu/).
 
