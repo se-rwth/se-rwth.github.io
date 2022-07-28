@@ -68,8 +68,8 @@ control.
 Additional transformations from [UML/P](/research/UML-P/) class diagrams
 to models for graphical user interfaces [[GMN+20]](#GMN+20)
 allow to even reduce the information needed for the generation process. 
-MontiGem has, e.g., been used in for financial management \cite{GHK+20}
-or for creating digital twin cockpits \cite{DMR+20}.
+MontiGem has, e.g., been used for financial management [[GHK+20]](#GHK+20)
+or for creating digital twin cockpits [[DMR+20]](#DMR+20).
 
 Enterprise Information Systems are facing challenges: 
 The General Data Protection Regulation (GDPR), in application since May 2018,
