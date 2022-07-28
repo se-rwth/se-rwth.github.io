@@ -152,8 +152,8 @@ self-adaptive digital twin architectures [[BBD+21a]](#BBD+21a),
 how to use 
 [Generative Software Engineering](/research/Generative-SE) for 
 creating digital twin architectures [[BDH+20]](#BDH+20),
-how to
-generate interfaces between a cyber-physical system and its DT~\cite{KMR+20},
+how to generate
+interfaces between a cyber-physical system and its DT [[KMR+20]](#KMR+20),
 how to derive digital twin cockpits [[DMR+20]](#DMR+20) from models using 
 the [MontiGem](/research/MontiGem) generator, and
 how to use process prediction within digital twins [[BHK+21]](#BHK+21). 
