@@ -8,10 +8,13 @@ importance: 1
 keys: [RRW12,QGC+09,RRW13c,
         RRRW15b,AHRW17b,ABH+16,
         ABH+17,MGH+98,Hof03,
+	AHRW17,HKR21,RRW13,RRW14a,
         ABK+17,THR+13,BRS+15,BBR07,BR12b]
 ---
 
 [//]: # TODO: Video' Embedding is missing, siehe: https://www.se-rwth.de/topics/Robotics.php
+
+[//]: Bem: [MGH+98], [Hof03], [QGC+09] are external and not part of dissanhang
 
 ## Summary of Most Relevant Topic Papers
 
@@ -52,7 +55,8 @@ platform independent, can be decomposed to be developed independently by
 experts of the respective fields, are highly reusable and may be subjected
 to formal analysis.
 
-In [[RRW12]](#RRW12) we have introduced the architecture and behavior modeling
+In [[RRW12]](#RRW12) [[RRW14a]](#RRW14a)
+we have introduced the architecture and behavior modeling
 language and framework MontiArcAutomaton which provides an integrated,
 platform independent structure and behavior modeling language family with an
 extensible code generation framework. MontiArcAutomaton’s central concept is
@@ -71,7 +75,8 @@ for the ROS robot operating system [[QGC+09]](#QGC+09).
 The integration of automata and tables to model component behavior are described
 in [[RRW13c]](#RRW13c).
 The integration capabilities of MontiArc have been extended and
-generalized in [[RRRW15b]](#RRRW15b) [[AHRW17b]](#AHRW17b). For interested readers, the
+generalized in [[RRRW15b]](#RRRW15b) [[AHRW17]](#AHRW17)
+[[AHRW17b]](#AHRW17b). For interested readers, the
 [MontiArcAutomaton](https://github.com/MontiCore/montiarc)
 provides further information on the MontiArcAutomaton framework.
 
@@ -113,7 +118,8 @@ languages [[ABH+17]](#ABH+17), we generate parts of a MontiArcAutomaton
 architecture including component structure and behavior. In this
 architecture, goals and tasks are translated into models of the planning
 domain definition language (PDDL) [[MGH+98]](#MGH+98) and solved online using
-the Metric-FF [[Hof03]](#Hof03) planner [[ABK+17]](#ABK+17). Through our work, domain
+the Metric-FF [[Hof03]](#Hof03) planner [[ABK+17]](#ABK+17).
+Through our work, domain
 experts can focus on describing the domain and its properties and
 robotics experts can focus on implementing actors with their properties
 and actions.
