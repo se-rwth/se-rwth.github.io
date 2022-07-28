@@ -41,7 +41,7 @@ nav: false
 ### Publications:
 
 <div class="publications">
-  {% bibliography -f all-software-engineering-rwth-references -q @*[author ~= Hölldobler. K] %}
+{% bibliography -f all-software-engineering-rwth-references -q @*[author ~= H{\\\"o}lldobler. K] %}
 </div>
 
 {% include trennlinie.html %}

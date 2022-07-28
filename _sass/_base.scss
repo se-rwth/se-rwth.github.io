@@ -673,9 +673,28 @@ html.transition *:after {
     font-family: Verdena,Arial,sans-serif;
 }
 
-.main-some-books img{
+.main-some-books {
+    margin: 24px 0;
+    width: 160px;
+    float: left;
+}
+
+.main-some-books img {
     width: 120px;
     height: 190px;
+    margin: 0 auto;
+}
+
+.main-some-books p {
+    transition: all 0.2s ease-in-out;
+    color: #007bff;
+    margin-top: 7px;
+    display: block;
+    text-align: center;
+}
+
+.main-some-books p:hover{
+    color: #224e7e;
 }
 
 .interesse-an-promotion {
@@ -699,8 +718,28 @@ html.transition *:after {
 
 // Print Design
 
-//@media print {
-    //body {
-     //   background: blue;
-    //}
-//}
+@media screen {
+  .print-page {
+    display: none;
+  }
+}
+
+@media print {
+  .print-page {
+    display: block;
+    text-align: center;
+  }
+
+  .mt-5 {
+    margin-top: 0!important;
+  }
+
+  .post-title,
+  .post-description {
+    text-align: center;
+  }
+
+  .video-activities {
+    display: none;
+  }
+}

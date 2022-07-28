@@ -67,6 +67,12 @@ tools. Further links to research are:
 
 #### Some Interesting Books:
 
-{% include main-some-books.html %}
+{% include main-some-books.html href='/books/#HKR21' src='/assets/img/main-page-book-1.png' key='[HKR21]'%}
+{% include main-some-books.html href='/books/#BBK+21' src='/assets/img/main-page-book-2.jpeg' key='[BBK+21]'%}
+{% include main-some-books.html href='/books/#FHK+20' src='/assets/img/main-page-book-3.jpeg' key='[FHK+20]'%}
+{% include main-some-books.html href='/books/#Rum17' src='/assets/img/main-page-book-4.jpeg' key='[Rum17]'%}
+{% include main-some-books.html href='/books/#Rum16' src='/assets/img/main-page-book-6.jpeg' key='[Rum16]'%}
+{% include main-some-books.html href='/books/#CFJ+16' src='/assets/img/main-page-book-5.jpeg' key='[CFJ+16]'%}
+
 
 
