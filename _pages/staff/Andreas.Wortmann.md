@@ -118,7 +118,7 @@ Information Systems Engineering
 I also serve in the editorial board of the [Journal of Automotive Software Engineering (JASE)](https://www.atlantis-press.com/journals/jase) as well as 
 in the board of the [European Association for Programming Languages and Systems (EAPLS).](https://eapls.org/)
 
-### Publications:
+### Publications: 
 
 Of course, our research manifests in publications related to modeling, language engineering, and applying it to 
 robotics as well. We, therefore, also prepared [curated lists on these topics](/research) for you.
