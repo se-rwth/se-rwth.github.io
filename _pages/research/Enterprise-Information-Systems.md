@@ -7,7 +7,7 @@ img:
 importance: 1
 keys: [HKR21,KRV10,NRR15a,Loo17,Rot17,
        Rei16,AMN+20a,ANV+18,DHM+22,GHK+20,
-       ELR+17,MNRV19,DGM+21,GMN+20]
+       ELR+17,MNRV19,DGM+21,GMN+20,DMR+20]
 ---
 
 ## Summary of Most Relevant Topic Papers
