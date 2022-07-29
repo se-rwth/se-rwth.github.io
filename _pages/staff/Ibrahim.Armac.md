@@ -35,7 +35,7 @@ nav: false
 ### Publications:
 
 <div class="publications">
-  {% bibliography -f all-software-engineering-rwth-references -q @*[author ~= Arma{\\\c}. I] %}  
+  {% bibliography -f all-software-engineering-rwth-references -q @*[author ~= Arma{\\c c}. I] %}  
 </div>
 
 {% include trennlinie.html %}
