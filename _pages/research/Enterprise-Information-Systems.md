@@ -5,9 +5,9 @@ permalink: /research/Enterprise-Information-Systems/
 description:
 img:
 importance: 1
-keys: [HKR21, KRV10,MSNRR15a,Loo17,Rot17,
-        Rei16,AMN+20a,ANV+18,DHM+22,
-        ELR+17,MNRV19,DGM+21,GMN+20]
+keys: [HKR21,KRV10,NRR15a,Loo17,Rot17,
+       Rei16,AMN+20a,ANV+18,DHM+22,GHK+20,
+       ELR+17,MNRV19,DGM+21,GMN+20,DMR+20]
 ---
 
 ## Summary of Most Relevant Topic Papers
@@ -49,7 +49,7 @@ handwritten code, such as application logic.
 The **MontiCore Data Explorer (MontiDEx)** code generator was used
 for the automatic generation of customizable, extensible data-centric
 business applications from [UML/P](/research/UML-P) Class Diagrams 
-[[MSNRR15a]](#MSNRR15a) [[Rot17]](#Rot17).
+[[NRR15a]](#NRR15a) [[Rot17]](#Rot17).
 It processes models to generate data-centric applications in Java and
 Java Swing. The department has developed further generators such as
 MontiEE [[Loo17]](#Loo17) or MontiWIS [[Rei16]](#Rei16).

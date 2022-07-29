@@ -8,10 +8,10 @@ nav: true
 AutoKnigge_keys: [KKR19, KPRS19, KKMR19]
 CarOLO_keys: [BR09a, BR12b, BR12]
 CrESt_keys: [KRSW20, BEK+19, BEK+18b, BGRW18]
-EMA_keys: [KNP+19, KRSvW18a, KRRW17]
+EMA_keys: [KNP+19, KRS+18a, KRRW17]
 MSim_keys: [KKRZ19, FIK+18]
 HBP_keys: [Plo18, BPEM18, PBI+16]
-iserveU_keys: [HMSNR+15, ABH+16, ABK+17]
+iserveU_keys: [HNR+15, ABH+16, ABK+17]
 IoP_keys: [DJM+19, DJR+19, SHH+20, BDH+20]
 MaCoCo_keys: [GHK+20]
 MontiBelle_keys: [KMP+21, KPRR21, BKR+20, KPRR20a, KPRR20, KRRS19]
@@ -235,7 +235,7 @@ for autonomous, interactively collaborative vehicles.
 <div class="publications">
   {% for k in page.EMA_keys %}
     {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
-    {% if k == "KRSvW18a" %} <ul> <ul> <li> <a href="https://zenodo.org/record/1314370">Additional Materials </a> </li> </ul> </ul> {% endif %}
+    {% if k == "KRS+18a" %} <ul> <ul> <li> <a href="https://zenodo.org/record/1314370">Additional Materials </a> </li> </ul> </ul> {% endif %}
   {% endfor %}
 </div>
 

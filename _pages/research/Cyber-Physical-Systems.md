@@ -7,7 +7,7 @@ img:
 importance: 1
 keys: [Lee08a,KRS12,RW18,ZPK+11,
        HRR12,KRRW17,GRJA12,HRRW12,
-       BR12b,BBR07,KRSvW18a,AHRW17b,
+       BR12b,BBR07,KRS+18a,AHRW17b,
        RSW+15,KRR+16,RRS+16,
        RRW13c,Wor16,RRW14a,RRW12,
        BDH+20,KKR19,RRW13,
@@ -97,7 +97,7 @@ Moreover,
 fully automatic simulation of the cyber-physical contexts of cars
 and fully automatic checking of the robots' behavior leads to an highly
 efficient development process with high quality results [[BBR07]](#BBR07).
-Optimized code-generators [[KRSvW18a]](#KRSvW18a)
+Optimized code-generators [[KRS+18a]](#KRS+18a)
 and domain specific code
 generation [[AHRW17b]](#AHRW17b) are key for CPS.
 Moreover, we have extended our work

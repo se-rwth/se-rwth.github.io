@@ -11,7 +11,7 @@ KRV10,GKR+06,KRV06,GKR+06,
 GHK+15,GHK+15a,Wei12,HRW15,
 Hoe18,HHR+15,AHRW17,
 Rum04c,Rum03,Rum02,
-GKR+08,GMR+16,HKR21,HLMSN+15,HLMSN+15a,HMSNRW16,MSNRR16]
+GKR+08,GMR+16,HKR21,HLN+15,HLN+15a,HNRW16,NRR16]
 ---
 
 ## Summary of Most Relevant Topic Papers
@@ -84,18 +84,18 @@ Since then, we have applied this technique successfully for several UML
 sub-languages and DSLs [[HHR+15]](#HHR+15) [[AHRW17]](#AHRW17) [[Hoe18]](#Hoe18)
 (see [Evolution & Transformation of Models](/research/Evolution)).
 
-[[HMSNRW16]](#HMSNRW16) presents how to
+[[HNRW16]](#HNRW16) presents how to
 generate extensible and statically type-safe visitors
 fitting to the abstract syntax (meta-model)
 of a language. Both abstract syntax classes and 
 visitor infrastructure are now fully generated from MontiCore.
-In [[MSNRR16]](#MSNRR16), we discuss the use of symbols for ensuring the validity
+In [[NRR16]](#NRR16), we discuss the use of symbols for ensuring the validity
 of composed models and therefore also of finally generated source code.
 [[GMR+16]](#GMR+16) discusses product lines of template-based code generators
 introducing variability into the generation process.
 Integrating all these findings, we propose 
 a compositional approach for engineering reusable language components
-in [[HLMSN+15]](#HLMSN+15) and [[HLMSN+15a]](#HLMSN+15a), which is meanwhile
+in [[HLN+15]](#HLN+15) and [[HLN+15a]](#HLN+15a), which is meanwhile
 also fully integrated into MontiCore.
 
 Sometimes **executability** can be a disadvantageous characteristics for a

@@ -13,7 +13,7 @@ keys: [GHK+07,PFR02,SRVK10,
       CBCR15,CCF+15a,KRV07a,
       GKR+06,LRSS10,Wei12,HRW15,Hoe18,
       BDL+18, BEK+18a, BEK+18b, BEK+19, BJRW18,
-      DHH+20, GKR+08, GMR+16, HLMSN+15, HLMSN+15a, KRV06,
+      DHH+20, GKR+08, GMR+16, HLN+15, HLN+15a, KRV06,
       Kra10, ZPK+11]
 ---
 
@@ -152,8 +152,8 @@ For an extensive discussion on semantics we refer the reader to
 efficient reuse. We investigated the application of modularity to the
 development of DSLs in [[GKR+07]](#GKR+07), [[KRV08]](#KRV08) and [[Voe11]](#Voe11).
 This approach is extended by compositional techniques 
-for context conditions and especially symbol tables in [[HLMSN+15]](#HLMSN+15)
-and [[HLMSN+15a]](#HLMSN+15a). These internal composition techniques extend
+for context conditions and especially symbol tables in [[HLN+15]](#HLN+15)
+and [[HLN+15a]](#HLN+15a). These internal composition techniques extend
 the ability to reuse and compose tool internal algorithms that can be
 applied on the abstract syntax and thus goes far beyond a mere
 reuse of definitions of context-free language constructs (i.e. the grammar).

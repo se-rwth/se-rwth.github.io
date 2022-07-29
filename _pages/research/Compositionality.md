@@ -9,7 +9,7 @@ keys: [BR07,HKR+09,HKR+07,KRV10,
        KRV08,KRV07a,KRV07b,Voe11,RRRW15b,KKP+09,
        GLRR15,CBCR15,CCF+15a,
        BEK+18a,BEK+18b,BEK+19,HKR21,
-       HLMSN+15,HLMSN+15a,HMSNRW16,HRW18,MSNRR16,RW18]
+       HLN+15,HLN+15a,HNRW16,HRW18,NRR16,RW18]
 ---
 
 ## Summary of Most Relevant Topic Papers
@@ -54,20 +54,20 @@ As DSLs are becoming more and more popular, the efficient reuse of DSL
 fragments (i.e., language components) is vital to achieve an efficient
 development process.
 
-[[HLMSN+15]](#HLMSN+15) describes effectively working techniques and 
+[[HLN+15]](#HLN+15) describes effectively working techniques and 
 caveats for an approach to integrate heterogeneous modeling
 languages such as UML or SysML 
 in the large via extensible and composable language components,
 which led finally to the methodological approach 
-of the composition of heterogeneous modeling languages in [[HLMSN+15a]](#HLMSN+15a).
+of the composition of heterogeneous modeling languages in [[HLN+15a]](#HLN+15a).
 This approach distingushes **language embedding**, **language inheritance**,
 and **language aggregation** as three different **composition** techniques
 that affect concrete and abstract syntax,
 context conditions aqnd in particular **symbol table composition**.
-[[MSNRR16]](#MSNRR16) extends the symbol table infrastructure with generator
+[[NRR16]](#NRR16) extends the symbol table infrastructure with generator
 information for a **composable generation** approach.
 
-[[HMSNRW16]](#HMSNRW16) concentrates on the automatic generation of
+[[HNRW16]](#HNRW16) concentrates on the automatic generation of
 **extensible and type safe composable visitors**, which are a core element for
 compositional synthesis and analysis algorithms and context conditions
 on models.
