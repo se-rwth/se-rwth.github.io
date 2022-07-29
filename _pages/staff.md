@@ -98,56 +98,54 @@ Prof. Dr. Abigail Morrison can be found [here](https://www.fz-juelich.de/en/inm/
   <thead class="text-center"><tr><th colspan="4">Academic Alumni</th></tr></thead>
   <tbody>
     <tr>
-        <td>Dr. Ibrahim Armac</td>
-        <td>Prof. Dr. Christian Berger</td>
-        <td>Dr. Timo Greifenberg</td>
+        {% include alumni_row.html href='Ibrahim.Armac' name='Dr. Ibrahim Armac'%}
+        {% include alumni_row.html href='Christian.Berger' name='Prof. Dr. Christian Berger'%}
+        {% include alumni_row.html href='Timo.Greifenberg' name='Dr. Timo Greifenberg'%}
     </tr>
     <tr>
-        <td>Prof. Dr. Hans Grönniger</td>
-        <td>Dr. Tim Gülke</td>
-        <td>Dr. Arne Haber</td>
+        {% include alumni_row.html href='Hans.Groenniger' name='Prof. Dr. Hans Grönniger'%}
+        {% include alumni_row.html href='Tim.Guelke' name='Dr. Tim Gülke'%}
+        {% include alumni_row.html href='Arne.Haber' name='Dr. Arne Haber'%}
     </tr>
     <tr>
-        <td>Dr. Thomas Heer</td>
-        <td>Dr. Lars Hermerschmidt</td>
-        <td>Dr. Christoph Herrmann</td>
+        {% include alumni_row.html href='Thomas.Heer' name='Dr. Thomas Heer'%}
+        {% include alumni_row.html href='Lars.Hermerschmidt' name='Dr. Lars Hermerschmidt'%}
+        {% include alumni_row.html href='Christoph.Herrmann' name='Dr. Christoph Herrmann'%}
     </tr>
     <tr>
-        <td>Dr. Anne-Therese Körtgen</td>
-        <td>Dr. Holger Krahn</td>
-        <td>Dr. Stefan Kühnel</td>
+        {% include alumni_row.html href='Anne.Koertgen' name='Dr. Anne-Therese Körtgen'%}
+        {% include alumni_row.html name='Dr. Holger Krahn'%}
+        {% include alumni_row.html name='Dr. Stefan Kühnel'%}
     </tr>
     <tr>
-        <td>Dr. Markus Look</td>
-        <td>Prof. Dr. Shahar Maoz</td>
-        <td>Dr. Cem Mengi</td>
+        {% include alumni_row.html href='Markus.Look' name='Dr. Markus Look'%}
+        {% include alumni_row.html href='Shahar.Maoz' name='Prof. Dr. Shahar Maoz'%}
+        {% include alumni_row.html href='Cem.Mengi' name='Dr. Cem Mengi'%}
     </tr>
     <tr>
-        <td>Dr. Klaus Müller</td>
-        <td>Dr. Pedram Mir Seyed Nazari</td>
-        <td>Dr. Dirk Reiss</td>
+        {% include alumni_row.html href='Klaus.Mueller' name='Dr. Klaus Müller'%}
+        {% include alumni_row.html href='Pedram.Nazari' name='Dr. Pedram Mir Seyed Nazari'%}
+        {% include alumni_row.html name='Dr. Dirk Reiss'%}
     </tr>
     <tr>
-        <td>Dr. Holger Rendel</td>
-        <td>Dr. Daniel Retkowitz</td>
-        <td>Prof. Dr. Jan Ringert</td>
+        {% include alumni_row.html href='Holger.Rendel' name='Dr. Holger Rendel'%}
+        {% include alumni_row.html href='Daniel.Retkowitz' name='Dr. Daniel Retkowitz'%}
+        {% include alumni_row.html href='https://ringert.blogspot.com/' name='Prof. Dr. Jan Ringert'%}
     </tr>
     <tr>
-        <td>Dr. Christoph Schulze</td>
-        <td>Dr. Frank Schroven</td>
-        <td>Dr. Steven Völkel</td>
+        {% include alumni_row.html href='Christoph.Schulze' name='Dr. Christoph Schulze'%}
+        {% include alumni_row.html name='Dr. Frank Schroven'%}
+        {% include alumni_row.html href='Steven.Voelkel' name='Dr. Steven Völkel'%}
     </tr>
     <tr>
-        <td>Dr. Erhard Weinell</td>
-        <td>Dr. Ingo Weisemöller</td>
-        <td>Dr. Michael von Wenckstern</td>
+        {% include alumni_row.html name='Dr. Erhard Weinell'%}
+        {% include alumni_row.html href='Ingo.Weisemoeller' name='Dr. Ingo Weisemöller'%}
+        {% include alumni_row.html href='Michael.Wenckstern' name='Dr. Michael von Wenckstern'%}
     </tr>
     <tr>
-        <td>Dr. René Wörzberger</td>
+        {% include alumni_row.html href='https://rene.woerzberger.de/' name='Dr. René Wörzberger'%}
         <td></td>
         <td></td>
     </tr>
   </tbody>
 </table>
-
-
