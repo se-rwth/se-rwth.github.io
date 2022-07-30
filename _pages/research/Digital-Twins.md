@@ -84,7 +84,7 @@ self-adaptiveness [[BBD+21a]](#BBD+21a).
 With a focus on the digital shadow and their use, we have in
 [[BDR+21]](#BDR+21)
 also investigated what the economic implications and
-new business models of the use of digital twin services might be.
+new business models of the use of digital twin services will be.
 
 To visualize relevant information, an interface for domain experts is needed,
 which leads us to the term 

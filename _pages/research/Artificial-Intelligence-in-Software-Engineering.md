@@ -157,7 +157,7 @@ traffic management is not far in the future
 [[KMP+21]](#KMP+21) [[KRRS19]](#KRRS19) [[HRR12]](#HRR12).
 For this purpose we have realized the Focus theory,
 a detailed and well defined theory on distributed interacting connector
-and component systems in Isabelle [[BKR+20]](#BKR+20).
+and component systems, in Isabelle [[BKR+20]](#BKR+20).
 
 The following figure overviews the most important constituents of the verification 
 framework.

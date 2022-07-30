@@ -8,7 +8,7 @@ importance: 1
 keys: [RRW12,QGC+09,RRW13c,
       RRRW15b,AHRW17b,ABH+16,
       ABH+17,MGH+98,Hof03,
-      AHRW17,HKR21,RRW13,RRW14a,
+      AHRW17,HKR21,RRW14a,
       ABK+17,THR+13,BRS+15,BBR07,BR12b]
 ---
 

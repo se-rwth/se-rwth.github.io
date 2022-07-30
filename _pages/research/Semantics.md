@@ -243,7 +243,7 @@ regarded as active objects.
 We illustrate our state machine formalism and its stream-based composition in
 with [State-Based Modeling (Automata)](/research/State-Based-Modeling).
 
-Meanwhile a first encoding of these theories 
+A realization of the untimed version of these theories 
 in the Isabelle verification tool is defined in [[BKR+20]](#BKR+20).
 
 {% include trennlinie.html %}

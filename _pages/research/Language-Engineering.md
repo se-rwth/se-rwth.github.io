@@ -79,7 +79,7 @@ definition** [[SRVK10]](#SRVK10), identifying, for instance, the need for
 metamodel merging and
 inference, as well as assistance for their evolution .
 As a bridge between the two techniqual spaces, namely grammars and metamodels,
-we examined a mapping between both [[BJRW18]](#BJRW18).
+we examine a mapping between both in [[BJRW18]](#BJRW18).
 
 Of course, we also 
 consider variability for modeling languages and have investigated a method to 

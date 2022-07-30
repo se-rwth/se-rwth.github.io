@@ -46,11 +46,11 @@ in **SysML** [[DRW+20]](#DRW+20).
 For that purpose we also did a 
 detailed examination of the upcoming SysML 2.0 standard [[JPR+22]](#JPR+22).
 
-[[BBR20]](#BBR20) (in German) 
-contains a detailed examination of the current 
+[[BBR20]](#BBR20) 
+contains an examination of the current 
 state-of-the-art of advanced systems engineering techniques,
 argues that the use of models in dedicated modeling languages
-serve as essential basis for advanced techniques in systems engineering,
+serves as essential basis for advanced techniques in systems engineering,
 and finally discusses how the SPES/CrEST methodology 
 can be advanced to fully assist a software as well as a
 physical system engineering approach.
