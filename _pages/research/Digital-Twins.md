@@ -5,7 +5,7 @@ permalink: /research/Digital-Twins/
 description:
 img:
 importance: 1
-keys: [BMR+22, DHM+22, BDJ+22, MPRW22, BHK+21,
+keys: [BMR+22, DHM+22, BDJ+22, MPRW22, BHK+21, BDR+21,
     KMR+20, BBD+21b, BBD+21a, DMR+20, BDH+20]
 ---
 
@@ -19,7 +19,8 @@ width = "45%" alt="" title="Digital Twin Perspectives" align="right">
 There exists a plethora of definitions for **Digital Twins** (DTs),
 Although there is a rough convergence,
 there is little consensus about what a digital twin actually is.
-The main weaknesses [[BMR+22]](#BMR+22) about the available definitions are that they are:
+The main weaknesses [[BMR+22]](#BMR+22) about the available definitions are
+that they are:
 1. ambiguous, by deferring to another undefined term;
 2. narrow, by focusing on specific use cases, domains, or technologies;
 3. underspecified, as they 
@@ -80,6 +81,10 @@ Services to control the physical object need to send execution commands
 via APIs to the physical object and are often related to 
 self-adaptiveness [[BBD+21a]](#BBD+21a).
 
+With a focus on the digital shadow and their use, we have in
+[[BDR+21]](#BDR+21)
+also investigated what the economic implications and
+new business models of the use of digital twin services might be.
 
 To visualize relevant information, an interface for domain experts is needed,
 which leads us to the term 

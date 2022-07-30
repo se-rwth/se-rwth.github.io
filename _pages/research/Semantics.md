@@ -10,7 +10,7 @@ keys: [KRV10,HKR21,HR04,RKB95,
     BCGR09,BCR07a,BCR07b,CGR08,GRR09,
     MRR10,MRR11d,MRR11a,MRR11f,BKRW17,BR07,
     EFLR99,BGH+97,BGH+98a,BGH+98b,GR11,RR11,CGR09,
-    GRR10,Rum17,Rum12,LRSS10,
+    GRR10,Rum17,Rum12,LRSS10,BKR+20,
     BS01,RW18,Rum96]
 ---
 
@@ -114,8 +114,7 @@ and
 [[BCR07b]](#BCR07b)
 for more detailed versions and 
 [[CGR08]](#CGR08)
-for an application on class diagrams. Here we see the hierarchy of the 
-mathematical model:
+for an application on class diagrams. 
 
 The system model and its variants are used for a variety of tool
 embeddings of the semantic domain. We provide a structured approach for
@@ -243,6 +242,9 @@ focus: distributed, asynchronously communicating agents, which can be
 regarded as active objects.
 We illustrate our state machine formalism and its stream-based composition in
 with [State-Based Modeling (Automata)](/research/State-Based-Modeling).
+
+Meanwhile a first encoding of these theories 
+in the Isabelle verification tool is defined in [[BKR+20]](#BKR+20).
 
 {% include trennlinie.html %}
 

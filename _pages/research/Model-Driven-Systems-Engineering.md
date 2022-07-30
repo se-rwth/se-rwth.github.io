@@ -5,7 +5,8 @@ permalink: /research/Model-Driven-Systems-Engineering/
 description:
 img:
 importance: 1
-keys: [FND+98,GHK+08a,KMS+18,DGH+19,BKL+18,DRW+20,
+keys: [FND+98,GHK+08a,KMS+18,DGH+19,BKL+18,DRW+20,JPR+22,
+    BBR20,
     BDH+20, DMR+20, KMR+20, SHH+20]
 ---
 
@@ -42,6 +43,17 @@ bridge the gap between functions and the physical product
 architecture to enable agile development driven by automation by
 **modeling mechanical functional architectures** 
 in **SysML** [[DRW+20]](#DRW+20).
+For that purpose we also did a 
+detailed examination of the upcoming SysML 2.0 standard [[JPR+22]](#JPR+22).
+
+[[BBR20]](#BBR20) (in German) 
+contains a detailed examination of the current 
+state-of-the-art of advanced systems engineering techniques,
+argues that the use of models in dedicated modeling languages
+serve as essential basis for advanced techniques in systems engineering,
+and finally discusses how the SPES/CrEST methodology 
+can be advanced to fully assist a software as well as a
+physical system engineering approach.
 
 A highly relevant part of physical systems will in the future be their 
 **Digital Twin**.

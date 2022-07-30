@@ -11,6 +11,7 @@ BCR07b, BCR07a, CGR08, MRR11e,
 MRR11c, MRR11f, MRR11a, MRR11d, GRR10,
 FHR08, BGH+98b, Rum04c,Rum02,
 PFR02, FEL+98, SRVK10,Rum12,Rum11,
+JPR+22,
 Rum03,EFLR99a]
 ---
 
@@ -82,6 +83,10 @@ executable modeling with UML in *agile projects* in
 [[Rum03]](#Rum03) and the *advantages and perils of using modeling
 languages for programming* in [[Rum02]](#Rum02).
 
+Many of the above mentioned insights to UML are now also transferred to the
+Systems Modeling Language SysML 2.
+This includes also a close examination of the SysML [[JPR+22]](#JPR+22).
+
 ## Key Statements
 
 1. UML is a big language with many forms of uses.
@@ -93,6 +98,8 @@ languages for programming* in [[Rum02]](#Rum02).
    generation as well as for high-level analysis.
 
 4. Tooling is necessary to use UMl in agile projects.
+
+5. Insights gained from UML language definition and methodical use can be transferred to SysML.
 
 {% include trennlinie.html %}
 

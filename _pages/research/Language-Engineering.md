@@ -14,7 +14,7 @@ keys: [Rum16,Rum17,HRW15,
         BBC+18,HHK+13,HHK+15,
         HRW15,GLRR15,BDL+18,
         BJRW18,Wei12,Hoe18,
-        BEK+19, CGR09, 
+        BEK+19, CGR09, BPR+20, BJRW18,
         GR11, Kra10, HR17]
 ---
 
@@ -78,13 +78,16 @@ the possibilities and the challenges using **metamodels for language
 definition** [[SRVK10]](#SRVK10), identifying, for instance, the need for
 metamodel merging and
 inference, as well as assistance for their evolution .
+As a bridge between the two techniqual spaces, namely grammars and metamodels,
+we examined a mapping between both [[BJRW18]](#BJRW18).
 
 Of course, we also 
 consider variability for modeling languages and have investigated a method to 
-model syntactic language [variability](/research/Variability) through **language 
+model syntactic language [variability](/research/Variability)
+through **language 
 product lines** 
 [[BEK+18b]](#BEK+18b) 
-[[BEK+19]](#BEK+19).
+[[BEK+19]](#BEK+19) [[BPR+20]](#BPR+20).
 
 
 ## Language and Tool Composition
@@ -127,7 +130,7 @@ explicitly, for instance as a metamodel or as a grammar together with its
 well-formedness rules in a reasonably explicit form. Thus, language
 derivation can be partially understood as model transformation on a
 metalanguage. We, so far, successfully conceived three language derivation
-techniques.
+techniques, described below.
 
 
 #### Transformation Languages in Concrete Syntax

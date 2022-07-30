@@ -9,7 +9,7 @@ keys: [AKK+21, KMP+21, KPRS19, DKMR19, EJK+19, KNP+19, BKRW19,
     DEKR19, DGH+19, KRRS19, 
     RW18, KR18a, DGH+18, KMS+18, BKRW17, KRRW17, GLPR15, KLPR12,
     MRR11g, MRR11d, 
-    BDH+20,BR07,HRR12,RR11,
+    BDH+20,BR07,HRR12,RR11,BKR+20,
     MRR11b, FLP+11]
 ---
 
@@ -155,6 +155,10 @@ prominent application for reducing certification costs of critical systems such
 as intelligent flight control systems or assistance systems for air or road 
 traffic management is not far in the future 
 [[KMP+21]](#KMP+21) [[KRRS19]](#KRRS19) [[HRR12]](#HRR12).
+For this purpose we have realized the Focus theory,
+a detailed and well defined theory on distributed interacting connector
+and component systems in Isabelle [[BKR+20]](#BKR+20).
+
 The following figure overviews the most important constituents of the verification 
 framework.
 
@@ -170,6 +174,7 @@ framework.
 
 
 ## Test Case Generation
+
 Efficient testing is essential to engineer reliable automotive software. 
 However, deriving test cases from ambiguous textual requirements is often a 
 costly and error-prone endeavor. Model-based software engineering uses models as 
@@ -211,6 +216,7 @@ Next, these test sets are the input to verify the system under development using
 a suitable test environment.
 
 ## Building, Car, and Production System Analysis using Machine Learning
+
 Nowadays modern systems generate a massive amount of observable data. This data 
 can be used to optimize the operation efficiency and prevent unneeded CO2 
 emission or reduce costs. 

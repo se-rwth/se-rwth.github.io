@@ -10,15 +10,16 @@ keys: [Lee08a,KRS12,RW18,ZPK+11,
        BR12b,BBR07,KRS+18a,AHRW17b,
        RSW+15,KRR+16,RRS+16,
        RRW13c,Wor16,RRW14a,RRW12,
-       BDH+20,KKR19,RRW13,
+       BDH+20,KKR19,RRW13,Wor21,BBR20,
        RRSW17,KPR12,FPPR12,KLPR12]
 ---
 
 ## Summary of Most Relevant Topic Papers
 
 CPS are software controlled, collaborating
-physical machines [[Lee08a]](#Lee08a) [[KRS12]](#KRS12). This new term arises mainly due
-to the increased ability of computers to sense their environment and to
+physical machines [[Lee08a]](#Lee08a) [[KRS12]](#KRS12) [[BBR20]](#BBR20).
+This term reflects 
+the increased ability of computers to sense their environment and to
 interact with their contexts in various ways. As consequence, CPS are
 usually designed as distributed networks of interacting nodes and
 physical devices (machines) that carry out certain tasks. Often some of
@@ -35,19 +36,22 @@ Nowadays, CPS are found in many domains, including aerospace,
 [automotive](/research/Automotive), [energy](/research/Energy-Management), 
 healthcare, manufacturing, and [robotics](/research/Robotics). Many
 distributed CPS use a virtual communication network mapped to the
-internet or telecommunication infrastructure.
+internet or telecommunication infrastructure [[BBR20]](#BBR20).
 
 At its heart, CPS engineering suffers from the problem that control theory, 
-built on integration and differentiation calculus used by almost any engineering 
-discipline, and the digital theory of [state 
-machines](/research/State-Based-Modeling) are not very well integrated and thus do 
-not allow us to describe CPS in an integrated way. Many attempts have been made, 
+built on integration and differentiation calculus used by almost any
+engineering discipline, and the digital theory of [state 
+machines](/research/State-Based-Modeling)
+are not very well integrated and thus do 
+not allow us to describe CPS in an integrated way.
+Many attempts have been made, 
 but a good standard has yet to emerge.
 
 The **complexity and heterogeneity** of CPS introduces a wide conceptual gap
 between problem and solution domains. Model-driven engineering of such
 systems can decrease this gap by using models as abstractions and thus
-facilitate a more efficient development of robust CPS [[RW18]](#RW18).
+facilitate a more efficient development of robust CPS
+[[RW18]](#RW18) [[Wor21]](#Wor21).
 
 
 ### CPS Application Domains
