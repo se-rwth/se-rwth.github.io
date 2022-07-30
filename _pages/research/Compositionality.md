@@ -8,7 +8,7 @@ importance: 1
 keys: [BR07,HKR+09,HKR+07,KRV10,
        KRV08,KRV07a,KRV07b,Voe11,RRRW15b,KKP+09,
        GLRR15,CBCR15,CCF+15a,
-       BEK+18a,BEK+18b,BEK+19,HKR21,
+       BEK+18b,BEK+19,HKR21,
        HLN+15,HLN+15a,HNRW16,HRW18,NRR16,RW18]
 ---
 
@@ -92,7 +92,7 @@ which we published together with related topics in [[CCF+15a]](#CCF+15a).
 
 Based on the possibility to compose languages from language components, we explored
 **controlled and extensible variability** of the concrete and abstract syntax
-using independent, composable language features in [[BEK+18a]](#BEK+18a),
+using independent, composable language features in 
 [[BEK+18b]](#BEK+18b) and [[BEK+19]](#BEK+19). 
 
 [[HRW18]](#HRW18) extends the idea of composition with systematic derivation

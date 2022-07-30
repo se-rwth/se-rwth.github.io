@@ -8,13 +8,13 @@ importance: 1
 keys: [Rum16,Rum17,HRW15,
         HKR21,KRV07b,KRV10,
         HRW18,CFJ+16,CBCR15,
-        BEK+18b,CCF+15a,CKM+18,
+        BEK+18b,CCF+15a,
         SRVK10,Voe11,KRV08,
         HNRW16,Naz17,RRRW15b,
         BBC+18,HHK+13,HHK+15,
         HRW15,GLRR15,BDL+18,
         BJRW18,Wei12,Hoe18,
-        BEK+18a, BEK+19, CGR09, 
+        BEK+19, CGR09, 
         GR11, Kra10, HR17]
 ---
 
@@ -72,8 +72,8 @@ the following techniques largely discussed in [[CFJ+16]](#CFJ+16) help:
 To improve understanding of language engineering, we have defined the terms
 **language** and **language components** in [[CBCR15]](#CBCR15) 
 [[BEK+18b]](#BEK+18b) and how to
-capitalize on this from a global perspective in [[CCF+15a]](#CCF+15a) 
-[[CKM+18]](#CKM+18). Additionally, we discuss
+capitalize on this from a global perspective in [[CCF+15a]](#CCF+15a).
+Additionally, we discuss
 the possibilities and the challenges using **metamodels for language
 definition** [[SRVK10]](#SRVK10), identifying, for instance, the need for
 metamodel merging and
@@ -83,7 +83,6 @@ Of course, we also
 consider variability for modeling languages and have investigated a method to 
 model syntactic language [variability](/research/Variability) through **language 
 product lines** 
-[[BEK+18a]](#BEK+18a) 
 [[BEK+18b]](#BEK+18b) 
 [[BEK+19]](#BEK+19).
 

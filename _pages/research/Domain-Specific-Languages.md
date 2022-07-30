@@ -12,7 +12,7 @@ keys: [GHK+07,PFR02,SRVK10,
       HKR21,Sch12,HRW18,
       CBCR15,CCF+15a,KRV07a,
       GKR+06,LRSS10,Wei12,HRW15,Hoe18,
-      BDL+18, BEK+18a, BEK+18b, BEK+19, BJRW18,
+      BDL+18, BEK+18b, BEK+19, BJRW18,
       DHH+20, GKR+08, GMR+16, HLN+15, HLN+15a, KRV06,
       Kra10, ZPK+11]
 ---
@@ -128,8 +128,8 @@ of DSLs.
 and UML in particular has been discussed in [[GR11]](#GR11) and
 [[GMR+16]](#GMR+16).
 Controlled and extensible variability of concrete and abstract syntax with
-independent language features are defined in [[BEK+18a]](#BEK+18a)
-and [[BEK+18b]](#BEK+18b). These are both prerequisites for a
+independent language features are defined in 
+[[BEK+18b]](#BEK+18b). These are both prerequisites for a
 systematic composition of independently defined **language features**
 amounting to a **language product line** [[BEK+19]](#BEK+19).
 From such a product line, many individual languages can be defined,
