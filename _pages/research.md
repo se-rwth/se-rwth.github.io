@@ -41,7 +41,7 @@ systems, but also in administration, e.g. leveraging on the model based
 formalization of contracts, laws, and standards. 
 
 Our **language workbench MontiCore** 
-[[HKR21]](https://monticore.de/handbook.pdf), is a key framework for 
+[[ HKR21 ]](https://monticore.de/handbook.pdf), is a key framework for 
 creating and processing **domain-specific languages**. It has 
 successfully been used to demonstrate that code generation increases 
 software quality and developer efficiency. This means, MBSE enables and 
