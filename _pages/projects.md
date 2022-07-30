@@ -89,6 +89,9 @@ used across projects. Sub-goals of this project are:
   development tools, and the downstream validation and certification
   strategy.
 
+* Project is embedded in 
+  [MontiGem - Generating Enterprise Management Systems](/research/MontiGem)
+
 {% include trennlinie.html %}
 <a name="AutoKnigge"></a>
 
@@ -113,6 +116,10 @@ serves as a guidelines catalogue for cooperative vehicles.
     {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
   {% endfor %}
 </div>
+
+* Project is embedded in
+  [Autonomic Driving & Intelligent Driver
+    Assistance](/research/Autonomic-Driving) and [Automotive](/research/Automotive)
 
 {% include trennlinie.html %}
 <a name="BestEnergy"></a>
@@ -147,6 +154,9 @@ these activities.
 </center>
 <br />
 
+* Project is embedded in
+  [Smart Energy Management](/research/Energy-Management)
+
 {% include trennlinie.html %}
 <a name="CarOLO"></a>
 
@@ -176,6 +186,10 @@ Challenge](https://en.wikipedia.org/wiki/DARPA_Grand_Challenge_(2007))).
 </div>
 </center>
 <br />
+
+* Project is embedded in
+  [Autonomic Driving & Intelligent Driver
+    Assistance](/research/Autonomic-Driving) and [Automotive](/research/Automotive)
 
 {% include trennlinie.html %}
 <a name="CrESt"></a>
@@ -209,6 +223,15 @@ for Education and Research (BMBF).
 </div>
 </center>
 <br />
+
+* Project is embedded in
+  various areas including
+  [Model-Driven Systems Engineering](/research/Model-Driven-Systems-Engineering),
+  [Variability & Software Product Lines (SPL)](/research/Variability),
+  [Semantics of Modeling Languages](/research/Semantics), 
+  [Modeling Software Architecture](/research/Software-Architecture), and
+  [MontiArc - Architectural Modeling](/research/Software-Architecture).
+
 
 {% include trennlinie.html %}
 <a name="EMA"></a>
@@ -256,6 +279,13 @@ for autonomous, interactively collaborative vehicles.
 </center>
 <br />
 
+* Project is embedded in
+  [Artificial Intelligence in Software Engineering](/research/Artificial-Intelligence-in-Software-Engineering),
+  [Modeling Software Architecture](/research/Software-Architecture),
+  [State-Based Modeling (Automata)](/research/State-Based-Modeling),
+  [Domain-Specific Languages (DSLs)](/research/Domain-Specific-Languages), and
+  [MontiArc - Architectural Modeling](/research/Software-Architecture)
+
 {% include trennlinie.html %}
 <a name="HBP"></a>
 
@@ -284,6 +314,10 @@ behavior.
 </div>
 </center>
 <br />
+
+* Project is embedded in
+  [Software Language Engineering (SLE)](/research/Language-Engineering) and
+  [Domain-Specific Languages (DSLs)](/research/Domain-Specific-Languages).
 
 {% include trennlinie.html %}
 <a name="iserveU"></a>
@@ -323,6 +357,10 @@ Website](http://www.se-rwth.de/materials/iserveu/).
 </center>
 <br />
 
+* Project is embedded in
+  [Robotics Architectures and Tasks](/research/Robotics) and
+  [MontiArc - Architectural Modeling](/research/Software-Architecture).
+
 {% include trennlinie.html %}
 <a name="InviDas"></a>
 
@@ -359,6 +397,12 @@ Bremen and Otto-Friedrich Universität Bamberg.
 </div>
 </center>
 <br />
+
+* Project is embedded in
+  [Model-Based Assistive Systems](/research/Model-Based-Assistive-Systems),
+  [Cloud Computing Applications](/research/Cloud),
+  [Enterprise Information Systems](/research/Enterprise-Information-Systems), and
+  [MontiGem - Generating Enterprise Management Systems](/research/MontiGem)
 
 {% include trennlinie.html %}
 <a name="IoP"></a>
@@ -404,6 +448,11 @@ real-time, on an adequate level of granularity.
 </center>
 <br />
 
+* Project is embedded in
+  [Model-Driven Systems Engineering](/research/Model-Driven-Systems-Engineering),
+  [Digital Twins and Digital Shadows in Engineering, Operation and Production](/research/Digital-Twins),
+  [MontiGem - Generating Enterprise Management Systems](/research/MontiGem).
+
 {% include trennlinie.html %}
 <a name="MaCoCo"></a>
 
@@ -442,6 +491,11 @@ realized by the two Chairs of Management Accounting and Software Engineering.
 </center>
 <br />
 
+* Project is embedded in
+  [Cloud Computing Applications](/research/Cloud),
+  [Enterprise Information Systems](/research/Enterprise-Information-Systems), and
+  [MontiGem - Generating Enterprise Management Systems](/research/MontiGem)
+
 {% include trennlinie.html %}
 <a name="ModelPlex"></a>
 
@@ -454,8 +508,14 @@ develop an open solution for complex systems engineering improving
 quality and productivity, lead its industrialisation and ensure its
 successful adoption by the industry.
 
+* Project is embedded in
+  [Software Language Engineering (SLE)](/research/Language-Engineering), 
+  [Domain-Specific Languages (DSLs)](/research/Domain-Specific-Languages), and
+  [MontiCore - Language Workbench for DSLs](/research/MontiCore).
+
 {% include trennlinie.html %}
 <a name="MontiBelle"></a>
+
 
 ## MontiBelle - Intelligent Verification
 
@@ -489,6 +549,12 @@ systems for air or road traffic management is not far in the future.
     {% bibliography -f all-software-engineering-rwth-references -q @*[key={{k}}]* %}
   {% endfor %}
 </div>
+
+* Project is embedded in
+   [Artifacts in Complex Development Projects](/research/Artifacts),
+   [Semantics of Modeling Languages](/research/Semantics), and
+   [State-Based Modeling (Automata)](/research/State-Based-Modeling)
+
 
 {% include trennlinie.html %}
 <a name="MontiCore"></a>
@@ -570,6 +636,12 @@ summary of how to use [MontiCore](http://monticore.de/).
 </center>
 <br />
 
+* This project is described in the topic 
+  [MontiCore - Language Workbench for DSLs](/research/MontiCore),
+  but it provides the core tool infrastructure for many other 
+  language definitions and projects.
+
+
 {% include trennlinie.html %}
 <a name="MontiGem"></a>
 
@@ -610,6 +682,12 @@ The generated parts include:
 </center>
 <br />
 
+* This project is described in the topic
+  [MontiGem - Generating Enterprise Management Systems](/research/MontiGem),
+  but it provides the core tool infrastructure for many other
+  projects.
+
+
 {% include trennlinie.html %}
 <a name="SemanticDiff"></a>
 
@@ -646,6 +724,11 @@ version. In this project, we develop
 </center>
 <br />
 
+* Project is embedded in
+  [Semantics of Modeling Languages](/research/Semantics),
+  [Unified Modeling Language (UML)](/research/Unified-Modeling-Language), and
+  [Artificial Intelligence in Software Engineering](/research/Artificial-Intelligence-in-Software-Engineering).
+
 {% include trennlinie.html %}
 <a name="SensorCloud"></a>
 
@@ -679,6 +762,9 @@ cloud-based system which integrates into private life.
 </center>
 <br />
 
+* Project is embedded in
+  [Cloud Computing Applications](/research/Cloud).
+
 {% include trennlinie.html %}
 <a name="SPES"></a>
 
@@ -706,6 +792,12 @@ systems.
 </center>
 <br />
 
+* Project is embedded in
+  [Domain-Specific Languages (DSLs)](/research/Domain-Specific-Languages),
+  [Unified Modeling Language (UML)](/research/Unified-Modeling-Language),
+  [State-Based Modeling (Automata)](/research/State-Based-Modeling), and
+  [Agile Model-Based Software Engineering](/research/Agile-MBSE).
+
 {% include trennlinie.html %}
 <a name="SpesML"></a>
 
@@ -730,6 +822,15 @@ MBSE, especially among small and medium-sized enterprises. Thus, the
 widely used modeling language SysML will be semantically and
 methodically substantiated and will pave the way to a comprehensive
 MBSE approach, especially for industry.
+
+* Project is embedded in
+  [Domain-Specific Languages (DSLs)](/research/Domain-Specific-Languages),
+  [Unified Modeling Language (UML)](/research/Unified-Modeling-Language),
+  [Semantics of Modeling Languages](/research/Semantics),
+  [State-Based Modeling (Automata)](/research/State-Based-Modeling), and
+  [Agile Model-Based Software Engineering](/research/Agile-MBSE).
+
+
 
 {% include trennlinie.html %}
 
