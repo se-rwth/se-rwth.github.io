@@ -6,7 +6,75 @@ description: Research at Software Engineering at RWTH Aachen, Bernhard Rumpe
 order: 2
 nav: true
 horizontal: false
+dropdown: true
+children:
+    - title: Overview
+      permalink: /research/
+    - title: divider
+    - title: Agile Model-Based SE
+      permalink: /research/Agile-MBSE/
+    - title: Artifacts in Complex Development Projects
+      permalink: /esearch/Artifacts/
+    - title: Artificial Intelligence
+      permalink: /research/Artificial-Intelligence-in-Software-Engineering/
+    - title: Cyber Physical Systems
+      permalink: /research/Cyber-Physical-Systems/
+    - title: Model-Driven Systems Engineering
+      permalink: /research/Model-Driven-Systems-Engineering/
+    - title: divider
+    - title: Software Language Engineering
+      permalink: /research/Language-Engineering/
+    - title: Domain-Specific Languages
+      permalink: /research/Domain-Specific-Languages/
+    - title: Compositionality & Modularity of Models
+      permalink: /research/Compositionality/
+    - title: Variability & Software Product Lines
+      permalink: /research/Variability/
+    - title: Evolution & Transformation of Models
+      permalink: /research/Evolution/
+    - title: Generative SE
+      permalink: /research/Generative-SE/
+    - title: Semantics of Modeling Languages
+      permalink: /research/Semantics/
+    - title: divider
+    - title: Modeling Software Architecture
+      permalink: /research/Software-Architecture/
+    - title: State-Based Modeling
+      permalink: /research/State-Based-Modeling/
+    - title: Unified Modeling Language
+      permalink: /research/Unified-Modeling-Language/
+    - title: divider
+    - title: Model-Based Assistive Systems
+      permalink: /research/Model-Based-Assistive-Systems/
+    - title: divider
+    - title: Automotive
+      permalink: /research/Automotive/
+    - title: Autonomic Driving
+      permalink: /research/Autonomic-Driving/
+    - title: Digital Twins
+      permalink: /research/Digital-Twins/
+    - title: Robotics
+      permalink: /research/Robotics/
+    - title: Cloud Computing Applications
+      permalink: /research/Cloud/
+    - title: Enterprise Information Systems
+      permalink: /research/Enterprise-Information-Systems/
+    - title: Smart Energy Management
+      permalink: /research/Energy-Management/
+    - title: divider
+    - title: MontiCore
+      permalink: /research/MontiCore/
+    - title: UML/P
+      permalink: /research/UML-P/
+    - title: MontiArc
+      permalink: /research/Software-Architecture/
+    - title: MontiGem
+      permalink: /research/MontiGem/
+    - title: MontiThings
+      permalink: /research/MontiThings/
 ---
+
+{% include video-block.html src='https://www.youtube.com/embed/videoseries?list=PLuHxQfNRwKzMgVPGSQG8sf7baFHfRSn_L' %}
 
 **Our research mission**:
 Improving software and systems development by identifying: 

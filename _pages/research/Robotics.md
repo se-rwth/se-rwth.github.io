@@ -12,8 +12,6 @@ keys: [RRW12,QGC+09,RRW13c,
       ABK+17,THR+13,BRS+15,BBR07,BR12b]
 ---
 
-[//]: # TODO: Video' Embedding is missing, siehe: https://www.se-rwth.de/topics/Robotics.php
-
 [//]: Bem: [MGH+98], [Hof03], [QGC+09] are external and not part of dissanhang
 
 ## Summary of Most Relevant Topic Papers
@@ -37,6 +35,7 @@ robotic product assembly tasks in industrial contexts as well as planned and
 unplanned logistic tasks. We apply this to indoor robots interacting with
 humans as well as to industrial robots and to autonomous cars.
 
+{% include video-block.html src='https://www.youtube.com/embed/videoseries?list=PLuHxQfNRwKzMgVPGSQG8sf7baFHfRSn_L' %}
 
 ## Modeling Robotic Application Architectures and Behavior
 
@@ -80,22 +79,12 @@ generalized in [[RRRW15b]](#RRRW15b) [[AHRW17]](#AHRW17)
 [MontiArcAutomaton](https://github.com/MontiCore/montiarc)
 provides further information on the MontiArcAutomaton framework.
 
-<div class="embed-responsive embed-responsive-16by9 video-activities">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xvlYN-6awfk" title="YouTube video player" 
-frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
-</div> 
-
+{% include video-block.html src='https://www.youtube.com/embed/xvlYN-6awfk' %}
 
 In several projects, we modeled logistics services with Festo Robotino Robots, 
 ROS, and Python.
 
-
-<div class="embed-responsive embed-responsive-16by9 video-activities">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/u6LF8KjvDgM" title="YouTube video player" 
-frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
-</div> 
+{% include video-block.html src='https://www.youtube.com/embed/u6LF8KjvDgM' %}
 
 ## Capability-Based Robotics Architectures
 

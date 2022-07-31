@@ -1,8 +1,22 @@
 <div class="main-some-books">
     {% if include.href %}<a href="{{ include.href }}">{% endif %}
-        {% if include.src %}<img src="{{ include.src }}" width="100%" style="display: block;">{% endif %}
-    </a>
+    {% if include.src %}<img src="{{ include.src }}" width="100%" style="display: block;">{% endif %}
+</a>
     {% if include.href %}<a href="{{ include.href }}">{% endif %}
-        {% if include.key %} <p> {{ include.key }} {% endif %}</p>
-    </a>
+    {% if include.key %} <p> {{ include.key }} {% endif %}</p>
+</a>
 </div>
+
+
+<!--<div class="row mt-3">-->
+<!--    <div class="col-sm-2 mt-3 mt-md-0">-->
+<!--        {% if include.href %}<a href="{{ include.href }}">{% endif %}-->
+<!--        {% if include.src %}<img src="{{ include.src }}" width="100%">{% endif %}</a>-->
+<!--    </div>-->
+<!--    <div class="col-sm-10 mt-3 mt-md-0">-->
+<!--        {% if include.href %}<a href="{{ include.href }}">{% endif %}-->
+<!--            {% if include.schluessel %}{% bibliography -f all-software-engineering-rwth-references -q @*[key ~= "{{ include.schluessel }}"] %}-->
+<!--            {% endif %}-->
+<!--         </a>-->
+<!--    </div>-->
+<!--</div>-->

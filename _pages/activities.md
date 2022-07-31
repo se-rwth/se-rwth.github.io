@@ -20,15 +20,7 @@ interesting and helpful information. Occasionally news are
 published via [Twitter](https://twitter.com/SE_RWTH) and
 [Facebook](https://www.facebook.com/SoftwareEngineering.RWTH/?pnref=story).
 
-[//]: # (Erste Variant - Die Videos laufen automatisch nacheinander)
-
-
-<div class="embed-responsive embed-responsive-16by9 video-activities">
-<iframe 
-src="https://www.youtube.com/embed/?listType=playlist&list=PLuHxQfNRwKzOiL1YvMQd31bwGS481GBxn"
-title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{% include video-block.html src='https://www.youtube.com/embed/?listType=playlist&list=PLuHxQfNRwKzOiL1YvMQd31bwGS481GBxn' %}
 
 {% include trennlinie.html %}
 
@@ -174,6 +166,9 @@ German and provide lots of supplemental material.
   Overview, Background,
   Problems.](http://videos.rennes.inria.fr/invites/rumpe/index.htm)
   Invited Talk. Inria/Irisa. Rennes, 2003.
+- [Festvortraege, Invited Talks, Grüßworte](https://www.youtube.com/watch?v=5EOUVTPbVck&list=PLuHxQfNRwKzOm9bqAuEwepJC6jXJmPfBP)
+- [Erklärvideos Modellbasierte Softwareentwicklung](https://www.youtube.com/watch?v=2E3-5O84wic&list=PLuHxQfNRwKzNZk5-RgfXUkPGT3sY_vgBO)
+- [Modelling Architecture with Andreas Wortmann](https://www.youtube.com/channel/UCLGrX_2F2ZrsFH6YMryP-jA/videos)
 
 {% include trennlinie.html %}
 

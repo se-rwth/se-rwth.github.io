@@ -133,6 +133,21 @@ are depicted below.
 
 {% include trennlinie.html %}
 
+### Team CarOLO at the DARPA Urban Challenge
+
+{% include video-block.html src='https://www.youtube.com/embed/videoseries?list=PLuHxQfNRwKzNir4GfkGkvff1Glal9xOOq' %}
+
+Videos:
+-  Day 1 NQE Team CarOLO DARPA Urban Challenge 2007
+-  Day 2 NQE Team CarOLO DARPA Urban Challenge 2007
+-  Day 3 NQE Team CarOLO DARPA Urban Challenge 2007
+-  Day 4 NQE Team CarOLO DARPA Urban Challenge 2007
+-  Day 5 NQE Team CarOLO DARPA Urban Challenge 2007
+-  Day 6 NQE Team CarOLO DARPA Urban Challenge 2007
+-  Day 7 NQE Team CarOLO DARPA Urban Challenge 2007
+
+{% include trennlinie.html %}
+
 ## Key Statements
 1. Automatic, repeatable tests speed up the development process.
 2. Testing of sensor-based functions works best by simulating the sensoric input 

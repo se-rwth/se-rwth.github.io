@@ -253,6 +253,35 @@ network modeling and training language. The models can be executed and
 validated in MontiSim, our distributed and service-oriented simulator
 for autonomous, interactively collaborative vehicles.
 
+Playlist: [EmbeddedMontiArc: C&C Modeling and Simulation for Embedded Systems](https://www.youtube.com/embed/videoseries?list=PLuHxQfNRwKzOjqjur1TMYfQOlGT9dGjrL)
+- 2 Minute Madness on MDSE and AI
+- EmbeddedMontiArc: Textual Modeling Alternative to Simulink
+- Simulation of Autonomous Driving Vehicles-Technology Overview
+- Simulation of Autonomous Driving Vehicles - Driving at Rain and at Night
+- Simulation of Autonomous Driving Vehicles - Driving at Sun and Daytime
+- Component and Connectors Views: Definition, Verification, Witnesses (Bachelor Thesis)
+- Event based Dynamic Reconfiguration of Component and Connector Architectures
+- Defining Semantics of Extra Functional Properties in Component and Connector Mod
+- Bounded Model Checking of Self Driving Cars Requirements against its Implementat
+- Evolutionary Tuning of PID Controllers
+- Multi User Online IDE for DSLs on the example language MontiArc
+- Component and Connectors Views Definition Verification Witnesses
+- Example Video for EmbeddedMontiArcStudio
+- EmbeddedMontiArcStudio Overview Video
+- Simulating several Cars
+- Modeling an Autopilot for Self Driving Cars with EmbeddedMontiArc
+- Modeling PacMan with EmbeddedMontiArc
+
+Playlist: [Case Study Videos for "Highly-Optimizing and Multi-Target Compiler for Embedded System Models"](https://www.youtube.com/watch?v=IDBabDrlB5M&list=PLuHxQfNRwKzPhyxNzBjGGInlmFzoUh2Xy)
+- ClustererNoKMeans Matlab
+- Matlab MatrixModifier
+- ClustererOpt Matlab
+- EMA Armadillo part1
+- EMA Armadillo part2
+- ClustererNoKMeansOpt Matlab
+- Clusterer EMA
+- Matlab Clusterer
+
 #### Selected publications EmbeddedMontiArc
 
 <div class="publications">
@@ -529,6 +558,11 @@ usability we provide a high-level API encapsulating the low-level logic
 engine as well as a domain-specific modeling language as front end
 coupled with an Isabelle code generator.
 
+Playlist: [MontiBelle - Interactive Verificaton made Powerful](https://www.youtube.com/watch?v=cl403KXZrrc&list=PLuHxQfNRwKzO5DJq2X6DOI1FDcQ5sJAyO)
+- Verified Design of Safety-Critical Cyber-Physical Avionics Systems with the MontiBelle Framework
+- Vehicle Feature Interaction Verification at the Push of a Button
+- Model-Based Development and Logical AI for Secure and Safe Avionics Systems
+
 <center>
 <div class="row" style="width: 85%">
     <div class="col-sm mt-3 mt-md-0">
@@ -652,6 +686,22 @@ The MontiGem framework allows developers to generate large parts of a
 web application for a domain specific Enterprise Information System
 based on the input models and provides a runtime environment for such
 systems.
+
+Playlist: [Gerating Information Systems with MontiGem](https://www.youtube.com/watch?v=f62kl-BW834&list=PLuHxQfNRwKzNIfS2FXGm9Dnw6fBEULprs)
+- Textual BPMN Notation for Generative Software Engineering
+- Information Systems for Privacy of Wearable Data
+- Modellbasierte Entwicklung einer mobilen Applikation zur ParkinsonfrÃŒherkennung
+- Development of an Information System for a Fully Automated Stem Cell Production System
+- Modellbasierte Visualisierung von DBLP-Publikationsdaten
+- Digitalisierung der Hochschule: Ein Informationsportal zur Dokumentation von persÃ¶nlichen Daten
+- MontiGEM: Generating a GraphQL API
+- Modell-basierte Informationssysteme am Beispiel einer Wetterstation
+- Zielmodellierung in generierten Informationssystemen
+- Zielmodellierung in MontiGEM
+- Transformation monolithischer Enterprise-Anwendungen zu Microservice-Architekturen.
+- Generating Tutorial System for a User Iterface of a Web Application
+- Generative Approach to Implementation of Undo Functionality in a Web-Application Front-End
+- Goal Modeling and MDSE for Behavior Assistance
 
 The generated parts include:
 

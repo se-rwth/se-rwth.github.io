@@ -166,6 +166,10 @@ blockquote {
   }
 }
 
+.navbar .dropdown-menu a {
+    padding: 0 16px !important;
+}
+
 .navbar-toggler {
   .icon-bar {
     display: block;
@@ -731,7 +735,7 @@ html.transition *:after {
   }
 
   .mt-5 {
-    margin-top: 0!important;
+    margin-top: 0 !important;
   }
 
   .post-title,

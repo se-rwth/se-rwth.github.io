@@ -67,6 +67,13 @@ considerations up to a concrete tooling infrastructure called
 MontiArc [[BKRW17a]](#BKRW17a) [[HRR12]](#HRR12)
 and also and applied it among others to Cyber-Physical Systems [[RRW13]](#RRW13).
 
+{% include video-block.html src='https://www.youtube.com/embed/videoseries?list=PLuHxQfNRwKzO0uBO9XXNbnO-kYYIen-B7' %}
+
+Videos:
+- Transformation Tool for Simulink Models to MontiArc Models (Bachelor Thesis)
+- Multi User Online IDE for DSLs on the example language MontiArc (Bachelor Thesis)
+- Controlling a Self Driving Car with MontiArc
+- MontiArcAutomaton Editor
 
 ## Theoretical Foundations of Software Architecture Modeling
 
