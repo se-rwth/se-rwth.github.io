@@ -47,19 +47,19 @@ children:
       permalink: /research/Model-Based-Assistive-Systems/
     - title: divider
     - title: divider
-    - title: Domain-specific: Automotive
+    - title: Domain: Automotive
       permalink: /research/Automotive/
-    - title: Domain-specific: Autonomic Driving
+    - title: Domain: Autonomic Driving
       permalink: /research/Autonomic-Driving/
-    - title: Domain-specific: Digital Twins
+    - title: Domain: Digital Twins
       permalink: /research/Digital-Twins/
-    - title: Domain-specific: Robotics
+    - title: Domain: Robotics
       permalink: /research/Robotics/
-    - title: Domain-specific: Cloud Computing Applications
+    - title: Domain: Cloud Computing Applications
       permalink: /research/Cloud/
-    - title: Domain-specific: Enterprise Information Systems
+    - title: Domain: Enterprise Information Systems
       permalink: /research/Enterprise-Information-Systems/
-    - title: Domain-specific: Smart Energy Management
+    - title: Domain: Smart Energy Management
       permalink: /research/Energy-Management/
     - title: divider
     - title: Tool: MontiCore
