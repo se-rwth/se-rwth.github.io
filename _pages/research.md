@@ -43,35 +43,35 @@ children:
       permalink: /research/State-Based-Modeling/
     - title: Unified Modeling Language
       permalink: /research/Unified-Modeling-Language/
-    - title: divider
     - title: Model-Based Assistive Systems
       permalink: /research/Model-Based-Assistive-Systems/
     - title: divider
-    - title: Automotive
+    - title: divider
+    - title: Domain-specific: Automotive
       permalink: /research/Automotive/
-    - title: Autonomic Driving
+    - title: Domain-specific: Autonomic Driving
       permalink: /research/Autonomic-Driving/
-    - title: Digital Twins
+    - title: Domain-specific: Digital Twins
       permalink: /research/Digital-Twins/
-    - title: Robotics
+    - title: Domain-specific: Robotics
       permalink: /research/Robotics/
-    - title: Cloud Computing Applications
+    - title: Domain-specific: Cloud Computing Applications
       permalink: /research/Cloud/
-    - title: Enterprise Information Systems
+    - title: Domain-specific: Enterprise Information Systems
       permalink: /research/Enterprise-Information-Systems/
-    - title: Smart Energy Management
+    - title: Domain-specific: Smart Energy Management
       permalink: /research/Energy-Management/
     - title: divider
-    - title: MontiCore
+    - title: Tool: MontiCore
       permalink: /research/MontiCore/
-    - title: UML/P
-      permalink: /research/UML-P/
-    - title: MontiArc
+    - title: Tool: MontiArc
       permalink: /research/Software-Architecture/
-    - title: MontiGem
+    - title: Tool: MontiGem
       permalink: /research/MontiGem/
-    - title: MontiThings
+    - title: Tool: MontiThings
       permalink: /research/MontiThings/
+    - title: Tool: UML/P
+      permalink: /research/UML-P/
 ---
 
 {% include video-block.html src='https://www.youtube.com/embed/videoseries?list=PLuHxQfNRwKzMgVPGSQG8sf7baFHfRSn_L' %}
