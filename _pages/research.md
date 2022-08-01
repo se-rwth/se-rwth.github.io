@@ -15,35 +15,35 @@ children:
       permalink: /research/Agile-MBSE/
     - title: Artifacts in Complex Development Projects
       permalink: /esearch/Artifacts/
-    - title: Artificial Intelligence
+    - title: Artificial Intelligence (AI)
       permalink: /research/Artificial-Intelligence-in-Software-Engineering/
-    - title: Cyber Physical Systems
+    - title: Cyber Physical Systems (CPS)
       permalink: /research/Cyber-Physical-Systems/
-    - title: Model-Driven Systems Engineering
+    - title: Model-Driven Systems Engineering (MDSysE)
       permalink: /research/Model-Driven-Systems-Engineering/
     - title: divider
-    - title: Software Language Engineering
+    - title: Software Language Engineering (SLE)
       permalink: /research/Language-Engineering/
-    - title: Domain-Specific Languages
+    - title: Domain-Specific Languages (DSL)
       permalink: /research/Domain-Specific-Languages/
     - title: Compositionality & Modularity of Models
       permalink: /research/Compositionality/
-    - title: Variability & Software Product Lines
+    - title: Variability & Software Product Lines (SPL)
       permalink: /research/Variability/
     - title: Evolution & Transformation of Models
       permalink: /research/Evolution/
-    - title: Generative SE
+    - title: Generative SE (GSE)
       permalink: /research/Generative-SE/
     - title: Semantics of Modeling Languages
       permalink: /research/Semantics/
     - title: divider
-    - title: Modeling Software Architecture
+    - title: Modeling Software Architecture 
       permalink: /research/Software-Architecture/
-    - title: State-Based Modeling
+    - title: State-Based Modeling / Automata
       permalink: /research/State-Based-Modeling/
-    - title: Unified Modeling Language
+    - title: Unified Modeling Language (UML)
       permalink: /research/Unified-Modeling-Language/
-    - title: Model-Based Assistive Systems
+    - title: Model-Based Assistive Systems (MBAIS)
       permalink: /research/Model-Based-Assistive-Systems/
     - title: divider
     - title: divider
@@ -51,13 +51,13 @@ children:
       permalink: /research/Automotive/
     - title: Domain Autonomic Driving
       permalink: /research/Autonomic-Driving/
-    - title: Domain Digital Twins
+    - title: Domain Digital Twins (DT)
       permalink: /research/Digital-Twins/
     - title: Domain Robotics
       permalink: /research/Robotics/
     - title: Domain Cloud Computing Applications
       permalink: /research/Cloud/
-    - title: Domain Enterprise Information Systems
+    - title: Domain Enterprise Information Systems (EIS)
       permalink: /research/Enterprise-Information-Systems/
     - title: Domain Smart Energy Management
       permalink: /research/Energy-Management/
