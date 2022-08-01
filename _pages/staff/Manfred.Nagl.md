@@ -69,7 +69,9 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 
 {% include trennlinie.html %}
 
-## Short CV:
+<details>
+<summary>Short CV</summary>
+<br>
 
 <div class="divTable">
 	<div class="divTableBody">
@@ -120,10 +122,11 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 	</div>
 </div>
 <br>
+</details>
 
-{% include trennlinie.html %}
-
-### Honors:
+<details>
+<summary>Honors</summary>
+<br>
 
 <div class="divTable">
 	<div class="divTableBody">
@@ -167,9 +170,11 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 </div>
 <br>
 
-{% include trennlinie.html %}
+</details>
 
-## Important Research Projects:
+<details>
+<summary>Important Research Projects</summary>
+<br>
 
 <div class="divTable">
 	<div class="divTableBody">
@@ -210,9 +215,11 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 </div>
 <br>
 
-{% include trennlinie.html %}
+</details>
 
-## Important Quality Assurance Activities for Research and Teaching:
+<details>
+<summary>Important Quality Assurance Activities for Research and Teaching</summary>
+<br>
 
 <div class="divTable">
 	<div class="divTableBody">
@@ -254,9 +261,11 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 </div>
 <br>
 
-{% include trennlinie.html %}
+</details>
 
-## PhDs of the Group, Habilitation 47:
+<details>
+<summary>PhDs of the Group, Habilitation 47</summary>
+<br>
 
 - R. Gall: (Betreuung mit Prof. Schneider, Erlangen) über Programmieren im Großen mit Graph-Grammatiken, Diss. Univ. Erlangen, 224 S., IMMD-Bericht, 16,1, 1983
 - M. Kaul: Präzedenz-Graph-Grammatiken, Diss. Univ. Osnabrück, 236 S., 1985
@@ -306,9 +315,11 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 - Th. Heer: Controlling Development Processes, 430 S., Dissertation RWTH Aachen, Shaker-Verlag 2011
 - C. Mengi: Automotive Software – Prozesse, Modelle und Variabilität, 350 S., RWTH Aachen, Aachener Informatik-Berichte, Serie Software Engineering, Shaker-Verlag 2012
 
-{% include trennlinie.html %}
+</details>
 
-## Former PhDs being Professors 18:
+<details>
+<summary>Former PhDs being Professors 18</summary>
+<br>
 
 ### Full Professors
 
@@ -337,9 +348,11 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 - R. Wörzberger, Hochschule Düsseldorf
 - D. Retkowitz, Hochschule Mönchengladbach
 
-{% include trennlinie.html %}
+</details>
 
-## Former PhDs in Industry:
+<details>
+<summary>Former PhDs in Industry</summary>
+<br>
 
 ### Managing Directors 9
 
@@ -378,9 +391,13 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 - Dr. Andreas Winter, Portfolio-Manager, Ericsson, Herzogenrath
 - Dr. René Wörzberger, Senior Chief Architect IT-Systeme bei Deutsche Post DHL Group, Bonn, später FH-Professor
 
-{% include trennlinie.html %}
+</details>
 
-## Books:
+<details>
+<summary>Books</summary>
+<br>
+
+### Books 27:
 
 - H. J. Schneider/ M. Nagl (Hrsg.): Programmiersprachen, 4. Fachtagung der Gesellschaft für Informatik, Informatik-Fachberichte Band 1, 270 S., Berlin: Springer-Verlag (1976).
 
@@ -436,9 +453,13 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 
 - M. Nagl: Software-Architekturmodellierung, völlig veränderte Neuauflage des PiG-Buches, in Arbeit
 
-{% include trennlinie.html %}
+</details>
 
-## Reviewed papers 152:
+<details>
+<summary>Reviewed papers</summary>
+<br>
+
+### Reviewed papers 152:
 
 - M. Nagl: Graphische Ausgabe numerischer Daten, Heft in der Siemens-Zeitschrift data praxis, München 1972, 28 Seiten.
 - M. Nagl: Formal Languages of Labelled Graphs, Computing 16, 113-137 (1976).
@@ -591,9 +612,13 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 - M. Nagl/ O. Spaniol: Wird die Informatik zur Commodity und bedeutungslos?, 8pp, einger. für Informatik Spektrum, 2013.
 - C. Leng/ J.M. Loebel/ M. Nagl/ L. Porada/ A. Rabe/ S. Rehm/ K. Zweig: Die GI soll wachsen: Zustand und Ideen für ihre Stärkung, Informatik-Spektrum 38, 4, 296-301 (2015).
 
-{% include trennlinie.html %}
+</details>
 
-## Non-reviewed and internal publications 65:
+<details>
+<summary>Non-reviewed and internal publications</summary>
+<br>
+
+### Non-reviewed and internal publications 65:
 
 - M. Nagl: Mathematik für Naturwissenschaftler, Ausarbeitung einer Vorlesung von W. L. Fischer, Erlangen 1969.
 - M. Nagl: Die Klasse der FC-Gruppen und ihre Beziehungen zu anderen Gruppenklassen, Staatsexamensarbeit, Erlangen 1969.
@@ -660,9 +685,13 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 - M. Nagl: Die fragwürdige Rolle der Informatik, Austria-Forum 7pp, August 2017
 - M. Nagl: Der steile Aufstieg der Informatik – persönliche Eindrücke von 1969 bis 2018, 10 pp. Austria-Forum, 2018
 
-{% include trennlinie.html %}
+</details>
 
-## Colloquial Talks 315:
+<details>
+<summary>Colloquial Talks</summary>
+<br>
+
+### Colloquial Talks 315:
 
 - M. Nagl: Eine Präzisierung des Pfaltz/Rosenfeldschen Produktionsbegriffs bei mehrdimensionalen Grammatiken, Tagung über Formale Sprachen und Programmiersprachen, 29.-31.3.1973, Universität Dortmund
 - M. Nagl: Beziehungen zwischen verschiedenen Klassen von Diagramm-Sprachen, Fachgespräch über mehrdimensionale formale Sprachen, 14. - 15.6.1973, Universität Erlangen-Nürnberg
@@ -989,3 +1018,4 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 - M. Nagl: Informatics Doctorate in Europe, Models and Equivalence, Deans Workshop, European Computer Science Summit of Informatics Europe, Göteborg, Schweden, 8. 10. 2018
 - M. Nagl: Impuls Statement und Panelist, „Politische Wirkung von Fakultätentag und GI“, Plenarsitzung Fakultätentag Informatik, 16. 11. 18. Osnabrück
 
+</details>
