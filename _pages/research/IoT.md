@@ -5,34 +5,17 @@ permalink: /research/IoT/
 description:
 img:
 importance: 1
-keys: [KRS+22, KMR21, AKK+21, KMR+20, 
+keys: [KRS+22, KMR21, KMR+20, 
         MKM+19, HHK+14, 
         PR13,HHR+15,RRRW15b,
         WCB17,BKL+18]
 ---
 
-[//]: # Bem: dies ist nur der Text aus HMR+19; TODO: #28
 
-In line with our mission, our research contributions to the Internet of
-Things and Industry 4.0 focus on modeling techniques to support and
-facilitate development of increasingly complex solutions. Early
-contributions include architecture modeling techniques and infrastructures
-for the efficient development of cloud-based systems [[PR13]](#PR13), secure
-distributed systems [[HHR+15]](#HHR+15), and distributed robotics
-systems [[RRRW15b]](#RRRW15b).
+The Internet of Things requires the development of increasingly complex distributed systems. The [MontiThings ecosystem](/research/MontiThings) [[KRS+22]](#KRS+22) provides an end-to-end solution to modeling, deploying, and analyzing [[KMR21]](#KMR21) failure-tolerant [[KRS+22]](#KRS+22) Internet of Things systems and connecting them to synthesized digital twins [[KMR+20]](#KMR+20). We have investigated how model-driven methods can support the development of privacy-aware [[ELR+17]](#ELR+17) [[HHK+14]](#HHK+14) cloud systems [[PR13]](#PR13), distributed systems security [[HHR+15]](#HHR+15), privacy-aware process mining [[MKM+19]](#MKM+19), and distributed robotics applications [[RRRW15b]](#RRRW15b).
 
-With the rise of Industry 4.0, we included modeling outside of informatics,
-e.g., in mechanical or electrical engineering, into our focus of
-research. To this end, we conducted a systematic mapping study on modeling
-in Industry 4.0 [[WCB17]](#WCB17) which uncovered that knowledge representation
-and discrete modeling of systems and processes demand for 
-[Domain-Specific Languages (DSLs)](/research/Domain-Specific-Languages)
-usable by the automation and manufacturing experts.
 
-In that study, we also identified products, resources, and processes as
-primary Industry 4.0 concerns that usually are related inflexibly. Hence, we
-conceived a multi-level framework for machining based on these
-concepts [[BKL+18]](#BKL+18).
+In the course of Industry 4.0, we have also turned our attention to mechanical or electrical applications. We identified the digital representation, integration, and (re-)configuration of automation systems as primary Industry 4.0 concerns [[WCB17]](#WCB17). Using a multi-level modeling framework, we support machine as a service approaches [[BKL+18]](#BKL+18).
 
 {% include trennlinie.html %}
 
@@ -55,6 +38,7 @@ concepts [[BKL+18]](#BKL+18).
 ## Related Topics
 - [Domain Specific Languages (DSLs)](/research/Domain-Specific-Languages)
 - [Energy Management](/research/Energy-Management)
+- [MontiThings - Modeling the IoT](/research/MontiThings)
 - [MontiArc - Architectural Modeling](/research/Software-Architecture)
 - [Robotics Architectures and Tasks](/research/Robotics)
 - [Cyber Physical Systems (CPS)](/research/Cyber-Physical-Systems)
