@@ -67,13 +67,6 @@ considerations up to a concrete tooling infrastructure called
 MontiArc [[BKRW17a]](#BKRW17a) [[HRR12]](#HRR12)
 and also and applied it among others to Cyber-Physical Systems [[RRW13]](#RRW13).
 
-{% include video-block.html src='https://www.youtube.com/embed/videoseries?list=PLuHxQfNRwKzO0uBO9XXNbnO-kYYIen-B7' %}
-
-Videos:
-- Transformation Tool for Simulink Models to MontiArc Models (Bachelor Thesis)
-- Multi User Online IDE for DSLs on the example language MontiArc (Bachelor Thesis)
-- Controlling a Self Driving Car with MontiArc
-- MontiArcAutomaton Editor
 
 ## Theoretical Foundations of Software Architecture Modeling
 
@@ -233,6 +226,16 @@ classification of dynamic reconfiguration approaches in these kinds of
 architecture description languages [[BHK+17]](#BHK+17) 
 and also applied to dynamic architectural changes 
 in self-adaptive cooperative systems [[KKR19]](#KKR19).
+
+{% include trennlinie.html %}
+
+{% include video-block.html src='https://www.youtube.com/embed/videoseries?list=PLuHxQfNRwKzO0uBO9XXNbnO-kYYIen-B7' %}
+
+Videos in this playlist:
+- Transformation Tool for Simulink Models to MontiArc Models
+- Multi User Online IDE for DSLs on the example language MontiArc
+- Controlling a Self Driving Car with MontiArc
+- MontiArcAutomaton Editor
 
 {% include trennlinie.html %}
 

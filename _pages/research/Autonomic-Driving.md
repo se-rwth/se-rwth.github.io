@@ -137,14 +137,16 @@ are depicted below.
 
 {% include video-block.html src='https://www.youtube.com/embed/videoseries?list=PLuHxQfNRwKzNir4GfkGkvff1Glal9xOOq' %}
 
-Videos:
--  Day 1 NQE Team CarOLO DARPA Urban Challenge 2007
--  Day 2 NQE Team CarOLO DARPA Urban Challenge 2007
--  Day 3 NQE Team CarOLO DARPA Urban Challenge 2007
--  Day 4 NQE Team CarOLO DARPA Urban Challenge 2007
--  Day 5 NQE Team CarOLO DARPA Urban Challenge 2007
--  Day 6 NQE Team CarOLO DARPA Urban Challenge 2007
--  Day 7 NQE Team CarOLO DARPA Urban Challenge 2007
+Videos in this playlist:
+-  one for each day in the Team CarOLO DARPA Urban Challenge 2007
+[//] -  Day 1 NQE Team CarOLO DARPA Urban Challenge 2007
+[//] -  Day 2 NQE Team CarOLO DARPA Urban Challenge 2007
+[//] -  Day 3 NQE Team CarOLO DARPA Urban Challenge 2007
+[//] -  Day 4 NQE Team CarOLO DARPA Urban Challenge 2007
+[//] -  Day 5 NQE Team CarOLO DARPA Urban Challenge 2007
+[//] -  Day 6 NQE Team CarOLO DARPA Urban Challenge 2007
+[//] -  Day 7 NQE Team CarOLO DARPA Urban Challenge 2007
+
 
 {% include trennlinie.html %}
 
@@ -184,7 +186,7 @@ to obtain precise driving results and enable an agile cross-platform development
 ## Youtube Videos of the Darpa Urban Challenge 2007
 - [Channel of teamcarolo (9 videos)](https://www.youtube.com/user/teamcarolo)
 - [Final Event Highlights](https://www.youtube.com/watch?v=aHYRtOvSx-M)
-- [Mo-re videos of the Darpa Urban Challenge 
+- [More videos of the Darpa Urban Challenge 
 2007](https://www.youtube.com/results?search_query=Darpa%20Urban%20Challenge&sm=3) 
 
 {% include trennlinie.html %}
