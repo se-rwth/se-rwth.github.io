@@ -8,7 +8,7 @@ nav: true
 horizontal: false
 dropdown: true
 children:
-    - title: Overview
+    - title: Research Topics Overview
       permalink: /research/
     - title: divider
     - title: Agile Model-Based SE
