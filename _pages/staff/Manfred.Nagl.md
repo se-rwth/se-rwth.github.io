@@ -382,9 +382,59 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 
 ## Books:
 
-<div class="publications">
-  {% bibliography -f all-software-engineering-rwth-references -q @*[author ~= Nagl. M] %}  
-</div>
+- H. J. Schneider/ M. Nagl (Hrsg.): Programmiersprachen, 4. Fachtagung der Gesellschaft für Informatik, Informatik-Fachberichte Band 1, 270 S., Berlin: Springer-Verlag (1976).
+
+- M. Nagl/H. J. Schneider (Hrsg.): Graphs, Data Structures, Algorithms, Proc. Workshop WG'78 on "Graphtheoretic Concepts in Computer Science", Applied Computer Science Band 13, 339 S., München: Carl Hanser Verlag (1979).
+
+- M. Nagl: Graph-Grammatiken: Theorie, Anwendungen, Implementierung, 375 S., Braunschweig/Wiesbaden: Vieweg-Verlag (1979), (identisch mit der Habilitationsschrift), first book on Graph Rewriting.
+
+- M. Nagl: Einführung in die Programmiersprache Ada, 348 S., Braunschweig/Wiesbaden: Vieweg-Verlag, (1982), Nachdruck 1983, first German book on Ada.
+
+- H. Ehrig/M. Nagl/G. Rozenberg (Hrsg.): Graph Grammars and Their Application to Computer Science, Proc. 2nd International Workshop, Osnabrück, Lect. Notes in Comp. Science 153, 452 S., Berlin: Springer-Verlag (1983).
+
+- M. Nagl/J. Perl (Hrsg.): Proc. WG`83, International Workshop on Graphtheoretic Concepts in Computer Science, 397 S., Linz: Trauner-Verlag: (1984).
+
+- H. Ehrig/M. Nagl/G. Rozenberg/A. Rosenfeld (Hrsg.): Graph Grammars and Their Application to Computer Science, Proc. 3rd Int. Workshop on Graph Grammars, Virginia USA, Lect. Notes in Comp. Science 291, 609 S., Berlin: Springer-Verlag (1987).
+
+- M. Nagl: Einführung in die Programmiersprache Ada, 2. völlig neu bearb. und erweiterte Auflage, 341 S., Wiesbaden: Vieweg-Verlag (1988), 3. neu bearb. Auflage mit dem Titel Ada - Einführung in die Programmiersprache der Softwaretechnik, 343 S., (1991), 4. Auflage (1992).
+
+- M. Nagl (Ed.): Proc. WG'89 15th Int. Workshop on "Graphtheoretic Concepts in Computer Science", Lecture Notes in Computer Science 411, 372 S., Berlin: Springer-Verlag (1990).
+
+- M. Nagl: Softwaretechnik: Methodisches Programmieren im Großen, 387 S., Berlin: Springer-Verlag (1990), first book on Software Architectures.
+
+- M. Nagl (Hrsg.): Software- und Information Engineering, Congress VI, Online-Konferenz 1993, 523 S., Velbert: Online-Verlag (1993).
+
+- M. Nagl (Ed.): Proceedings WG '95, 21st Intl. Workshop on "Graph-Theoretic Concepts in Computer Science", Lecture Notes in Computer Science 1017, 402 S., Berlin: Springer-Verlag (1995).
+
+- M. Nagl (Ed.): Building Tightly Integrated Software Development Environments - The IPSEN Project, Lecture Notes in Computer Science 1170, 709 S., Berlin: Springer-Verlag (1996).
+
+- M. Nagl (Hrsg.): Verteilte, integrierte Anwendungsarchitekturen: Die Software-Welt im Umbruch, Congressband VI, Online '97, 416 S., Velbert: Online-Verlag (1997).
+
+- M. Nagl/B. Westfechtel (Hrsg.): Integration von Entwicklungssystemen in Ingenieuranwendungen - Substantielle Verbesserung der Entwicklungsprozesse, 440 S., Springer-Verlag (1999).
+
+- M. Nagl: Softwaretechnik und Ada '95 - Entwicklung großer Systeme, 5. völlig neue und erweiterte Auflage, 504 S., Wiesbaden: Vieweg-Verlag. (1999); 6. Aufl. (2003), only remaining German book on Ada.
+
+- M. Nagl/A. Schürr/M. Münch (Eds.): Proc. Intl. Workshop on 'Applications of Graph Transformation System with Industrial Relevance' (AGTIVE '99), Lecture Notes in Comp. Sci. 1779, 496 S., Springer-Verlag (2000).
+
+- M. Nagl (Hrsg.): B2B mit EAI: Strategien mit XML, Java + Agenten, Online 2001, Congressband VI, 456 S., Velbert: Online-Verlag (2001).
+
+- M. Nagl/B. Westfechtel (Hrsg.): Modelle, Werkzeuge und Infrastrukturen zur Unterstützung von Entwicklungsprozessen, 392 S., Wiley VCH (2003).
+
+- J.L. Pfaltz/M. Nagl/B. Böhlen (Eds.): Proc. 2nd Intl. Workshop on "Applications of Graph Transformation with Industrial Relevance" (AGTIVE '03), Lecture Notes in Computer Science 3062, 500 S., Springer-Verlag (2004).
+
+- J. Hromkovic/M. Nagl/B. Westfechtel (Eds.): Proc. WG '04, 30th Intl. Workshop on "Graph Theoretic Concepts in Computer Science", Lecture Notes in Computer Science 3353, 404 S., Springer-Verlag (2004).
+
+- M. Nagl/W. Marquardt (Eds.): Collaborative and Distributed Chemical Engineering: From Understanding to Substantial Design Process Support - Results of the IMPROVE Project, Lecture Notes in Computer Science 4970, 851 S., Springer-Verlag (2008)
+
+- A.Schürr/M. Nagl/A. Zündorf: Applications of Graph Transformation with Industrial Relevance (AGTIVE 2007), Lecture Notes in Comp. Sci. 5088, 610 S., Springer-Verlag (2008)
+
+- M. Nagl/H.J. Bargstädt/M. Hoffmann/N. Müller: Zukunft Ingenieurwissenschaften - Zukunft Deutschland, Beiträge einer 4ING-Fachkonferenz und der gemeinsamen Plenarversammlung der 4ING-Fakultätentage, 268 S., Springer-Verlag (2008)
+
+- A. Borkowski/ M. Nagl (Guest Editors): Proc. of the First Polish-German Workshop on Research Cooperation in Computer Science, Technical Sciences, Cracow, 2009, Special Issue Vol. 58, No. 3 of the Bulletin of the Polish Academy of Sciences, September 2010
+
+- M. Nagl: Gotik und Informatik, Intelligenter Entwurf damals und heute, Springer Vieweg, 310 S., (2019)
+
+- M. Nagl: Software-Architekturmodellierung, völlig veränderte Neuauflage des PiG-Buches, in Arbeit
 
 {% include trennlinie.html %}
 
