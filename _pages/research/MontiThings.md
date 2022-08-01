@@ -5,7 +5,7 @@ permalink: /research/MontiThings/
 description:
 img:
 importance: 1
-keys: [KRS+22, KMR21, AKK+21, KMR+20]
+keys: [KRS+22, KMR21, KMR+20]
 ---
 
 <center>
@@ -32,7 +32,7 @@ keys: [KRS+22, KMR21, AKK+21, KMR+20]
 </center>
 <br />
 
-MontiThings [[KRS+22]](#KRS+22) [[KMR21]](#KMR21) [[AKK+21]](#AKK+21) 
+MontiThings [[KRS+22]](#KRS+22) [[KMR21]](#KMR21) 
 [[KMR+20]](#KMR+20) is an ecosystem for model-driven development of 
 IoT applications. 
 The core of MontiThings is a domain-specific language for the 
