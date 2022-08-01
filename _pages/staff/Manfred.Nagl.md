@@ -263,7 +263,7 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>PhDs of the Group, Habilitation 47</summary>
 <br>
 
@@ -317,7 +317,7 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Former PhDs being Professors 18</summary>
 <br>
 
@@ -350,7 +350,7 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Former PhDs in Industry</summary>
 <br>
 
@@ -393,7 +393,7 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Books</summary>
 <br>
 
@@ -455,8 +455,8 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 
 </details>
 
-<details>
-<summary>Reviewed papers</summary>
+<details markdown="1">
+<summary>Reviewed papers </summary>
 <br>
 
 ### Reviewed papers 152:
@@ -614,7 +614,7 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Non-reviewed and internal publications</summary>
 <br>
 
@@ -687,7 +687,7 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Colloquial Talks</summary>
 <br>
 
