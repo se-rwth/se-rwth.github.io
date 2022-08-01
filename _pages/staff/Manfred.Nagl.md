@@ -122,6 +122,8 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 	</div>
 </div>
 <br>
+
+{% include trennlinie.html %}
 </details>
 
 <details>
@@ -170,6 +172,7 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 </div>
 <br>
 
+{% include trennlinie.html %}
 </details>
 
 <details>
@@ -215,6 +218,7 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 </div>
 <br>
 
+{% include trennlinie.html %}
 </details>
 
 <details>
@@ -261,6 +265,7 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 </div>
 <br>
 
+{% include trennlinie.html %}
 </details>
 
 <details markdown="1">
@@ -315,6 +320,7 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 - Th. Heer: Controlling Development Processes, 430 S., Dissertation RWTH Aachen, Shaker-Verlag 2011
 - C. Mengi: Automotive Software – Prozesse, Modelle und Variabilität, 350 S., RWTH Aachen, Aachener Informatik-Berichte, Serie Software Engineering, Shaker-Verlag 2012
 
+{% include trennlinie.html %}
 </details>
 
 <details markdown="1">
@@ -348,6 +354,7 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 - R. Wörzberger, Hochschule Düsseldorf
 - D. Retkowitz, Hochschule Mönchengladbach
 
+{% include trennlinie.html %}
 </details>
 
 <details markdown="1">
@@ -391,6 +398,7 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 - Dr. Andreas Winter, Portfolio-Manager, Ericsson, Herzogenrath
 - Dr. René Wörzberger, Senior Chief Architect IT-Systeme bei Deutsche Post DHL Group, Bonn, später FH-Professor
 
+{% include trennlinie.html %}
 </details>
 
 <details markdown="1">
@@ -453,6 +461,7 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 
 - M. Nagl: Software-Architekturmodellierung, völlig veränderte Neuauflage des PiG-Buches, in Arbeit
 
+{% include trennlinie.html %}
 </details>
 
 <details markdown="1">
@@ -612,6 +621,7 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 - M. Nagl/ O. Spaniol: Wird die Informatik zur Commodity und bedeutungslos?, 8pp, einger. für Informatik Spektrum, 2013.
 - C. Leng/ J.M. Loebel/ M. Nagl/ L. Porada/ A. Rabe/ S. Rehm/ K. Zweig: Die GI soll wachsen: Zustand und Ideen für ihre Stärkung, Informatik-Spektrum 38, 4, 296-301 (2015).
 
+{% include trennlinie.html %}
 </details>
 
 <details markdown="1">
@@ -685,6 +695,7 @@ Member of [4ING](http://www.4ing.net/) Board 06-11
 - M. Nagl: Die fragwürdige Rolle der Informatik, Austria-Forum 7pp, August 2017
 - M. Nagl: Der steile Aufstieg der Informatik – persönliche Eindrücke von 1969 bis 2018, 10 pp. Austria-Forum, 2018
 
+{% include trennlinie.html %}
 </details>
 
 <details markdown="1">
