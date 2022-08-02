@@ -74,8 +74,6 @@ children:
       permalink: /research/UML-P/
 ---
 
-{% include video-block.html src='https://www.youtube.com/embed/videoseries?list=PLuHxQfNRwKzMgVPGSQG8sf7baFHfRSn_L' %}
-
 **Our research mission**:
 Improving software and systems development by identifying: 
 * **methods, concepts, tools** 
