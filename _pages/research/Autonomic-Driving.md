@@ -139,13 +139,13 @@ are depicted below.
 
 Videos in this playlist:
 -  one for each day in the Team CarOLO DARPA Urban Challenge 2007
-[//] -  Day 1 NQE Team CarOLO DARPA Urban Challenge 2007
-[//] -  Day 2 NQE Team CarOLO DARPA Urban Challenge 2007
-[//] -  Day 3 NQE Team CarOLO DARPA Urban Challenge 2007
-[//] -  Day 4 NQE Team CarOLO DARPA Urban Challenge 2007
-[//] -  Day 5 NQE Team CarOLO DARPA Urban Challenge 2007
-[//] -  Day 6 NQE Team CarOLO DARPA Urban Challenge 2007
-[//] -  Day 7 NQE Team CarOLO DARPA Urban Challenge 2007
+[//]: -  Day 1 NQE Team CarOLO DARPA Urban Challenge 2007
+[//]: -  Day 2 NQE Team CarOLO DARPA Urban Challenge 2007
+[//]: -  Day 3 NQE Team CarOLO DARPA Urban Challenge 2007
+[//]: -  Day 4 NQE Team CarOLO DARPA Urban Challenge 2007
+[//]: -  Day 5 NQE Team CarOLO DARPA Urban Challenge 2007
+[//]: -  Day 6 NQE Team CarOLO DARPA Urban Challenge 2007
+[//]: -  Day 7 NQE Team CarOLO DARPA Urban Challenge 2007
 
 
 {% include trennlinie.html %}
