@@ -7,15 +7,28 @@ img:
 importance: 1
 keys: [KRS+22, KMR21, KMR+20, 
         MKM+19, HHK+14, DRW+20,
-        PR13,HHR+15,RRRW15b,
+        PR13,HHR+15,RRRW15b,ELR+17],
         WCB17,BKL+18]
 ---
 
 
-The Internet of Things requires the development of increasingly complex distributed systems. The [MontiThings ecosystem](/research/MontiThings) [[KRS+22]](#KRS+22) provides an end-to-end solution to modeling, deploying, and analyzing [[KMR21]](#KMR21) failure-tolerant [[KRS+22]](#KRS+22) Internet of Things systems and connecting them to synthesized digital twins [[KMR+20]](#KMR+20). We have investigated how model-driven methods can support the development of privacy-aware [[ELR+17]](#ELR+17) [[HHK+14]](#HHK+14) cloud systems [[PR13]](#PR13), distributed systems security [[HHR+15]](#HHR+15), privacy-aware process mining [[MKM+19]](#MKM+19), and distributed robotics applications [[RRRW15b]](#RRRW15b).
+The Internet of Things requires the development of increasingly complex distributed
+systems. The [MontiThings ecosystem](/research/MontiThings) [[KRS+22]](#KRS+22)
+provides an end-to-end solution to modeling, deploying, and analyzing
+[[KMR21]](#KMR21) failure-tolerant [[KRS+22]](#KRS+22) Internet of Things systems
+and connecting them to synthesized digital twins [[KMR+20]](#KMR+20).
+We have investigated how model-driven methods can support the development of
+privacy-aware [[ELR+17]](#ELR+17) [[HHK+14]](#HHK+14) cloud systems [[PR13]](#PR13),
+distributed systems security [[HHR+15]](#HHR+15), privacy-aware process
+mining [[MKM+19]](#MKM+19), and distributed robotics applications [[RRRW15b]](#RRRW15b).
 
 
-In the course of Industry 4.0, we have also turned our attention to mechanical or electrical applications [[DRW+20]](#DRW+20). We identified the digital representation, integration, and (re-)configuration of automation systems as primary Industry 4.0 concerns [[WCB17]](#WCB17). Using a multi-level modeling framework, we support machine as a service approaches [[BKL+18]](#BKL+18).
+In the course of Industry 4.0, we have also turned our attention to
+mechanical and electrical applications [[DRW+20]](#DRW+20). We identified the
+digital representation, integration, and (re-)configuration of automation systems
+as primary Industry 4.0 concerns [[WCB17]](#WCB17). Using a
+multi-level modeling framework, we support machine as a
+service approaches [[BKL+18]](#BKL+18).
 
 {% include trennlinie.html %}
 
