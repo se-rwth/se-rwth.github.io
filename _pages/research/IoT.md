@@ -7,7 +7,7 @@ img:
 importance: 1
 keys: [KRS+22, KMR21, KMR+20, 
         MKM+19, HHK+14, DRW+20,
-        PR13,HHR+15,RRRW15b,ELR+17],
+        PR13,HHR+15,RRRW15b,ELR+17,
         WCB17,BKL+18]
 ---
 
