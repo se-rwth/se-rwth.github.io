@@ -14,7 +14,7 @@ children:
     - title: Agile Model-Based SE
       permalink: /research/Agile-MBSE/
     - title: Artifacts in Complex Development Projects
-      permalink: /esearch/Artifacts/
+      permalink: /research/Artifacts/
     - title: Artificial Intelligence (AI)
       permalink: /research/Artificial-Intelligence-in-Software-Engineering/
     - title: Cyber Physical Systems (CPS)
