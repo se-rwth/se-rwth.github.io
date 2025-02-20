@@ -1,0 +1,1910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Modeling in Advanced Systems Engineering |
+
+
+
+  SE@RWTH
+
+</title>
+<meta name="description" content="Website of the Chair of Software Engineering at RWTH Aachen
+">
+
+<!-- Google Verification -->
+
+
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css" integrity="oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/mdb.min.css" integrity="Y3+zUQCTOSqaSbyEFKLA6oQi8oF3I2xzkIR+ywroD3fkLG3LF2DJq/mU03KQqSZv/nGQDC2Upf73IZYZYMX4GQ==" crossorigin="anonymous" type="text/css"/>
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="/assets/css/all.min.css" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css" integrity="pOZ6Cz1wopk9RluJMvHM1AEMkPCS+ihnGztyD0kI991jgZ8hj9YQ61k4ouvGNvLHE0z6Vifp3ytAmeeW8sbbZQ==" crossorigin="anonymous" type="text/css">
+
+<!-- Styles -->
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon.png">
+<link rel="stylesheet" href="/assets/css/main.css" type="text/css">
+<!--<link rel="canonical" href="https://www.se-rwth.de/sosym/Modeling-in-advanced-systems-engineering/">-->
+
+
+
+
+
+
+    <!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['addDownloadExtensions', "bib"]);
+    _paq.push(['disableCookies']);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="https://stats.fh-aachen.de/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '34']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+<!-- End Matomo Code -->
+
+  </head>
+
+  <body class=" sticky-bottom-footer">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand title font-weight-lighter" href="/">
+        
+          <img src="/assets/img/icons/rwth_se_rgb.png" height="70px">
+        
+        
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <!-- <li class="nav-item ">
+            <a class="nav-link" href="/">
+              About
+              
+            </a>
+          </li> -->
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Essays
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essays/">Essay List</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Definition/">Digital Twin</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Companion/">Digital Companion</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Maturity-Model/">Digital Twin Maturity Model</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Explicit-versus-implicit-models/">Explicit versus Implicit Models</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Gesetze-DSL/">DSLs für Gesetze und Ordnungen (in D)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Research-Software-Engineering/">Research Software Engineering (RSE)</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Modeling-in-advanced-systems-engineering/">Modeling in Advanced Systems Engineering</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Model-Definitions/">Model-Based Definitions</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Low-Code/">Low Code</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Reference-Models/">Reference Models</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Research
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/">Research Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#foundations">MBSE Foundations</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#applications">Application Domains</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#tools">Software Tools</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Publications
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/publications/">All Publications</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/books/">Books</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/phdtheses/">Ph.D. Theses</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/assets/bibliography/all-software-engineering-rwth-references.bib">Bibtex</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Teaching
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/">Teaching</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/teaching-overview/">Teaching Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/#currentsem">Current Semester</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/archive/">Course archive (starting WS 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="https://www.se-rwth.de/teaching/indexArchiv.php">Course archive (until SoSe 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/theses/">BA/MA Theses</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/">Major project overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/22.09.MontiGem.Ford.Press.Release/">MontiGem Ford Press Release</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiCore/">MontiCore</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiGem/">MontiGem</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+          <li class="nav-item ">
+              <a class="nav-link" href="/jobs/">
+                Jobs
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About us
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/about/">About us</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/staff/">Staff</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/activities/">Activities</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teams/">Teams</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/contact/">Contact &amp; Arrival</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Modeling in Advanced Systems Engineering</h1>
+    <p class="post-description"></p>
+  </header>
+
+  <article>
+    
+
+    <div class="toc_content">
+      
+    </div>
+    <div class="clearfix">
+      <p>The use of models and the activity of 
+modeling is an integral part of almost all development activities for 
+complex systems.</p>
+
+<h5 id="complexity---the-main-challenge"><strong><em>Complexity - the main Challenge</em></strong></h5>
+
+<p><strong>Complexity is an omnipresent challenge, for software, 
+for mechanical systems with intelligence</strong> (e.g., autonomous cars, 
+robots, healthcare gadgets or airplanes)<strong>, for production plants, and 
+also for biological systems</strong> (e.g., advanced medicine, human cells, 
+organs, and even full organisms), that will be engineered with 
+increased frequency in the future. Managing complexity in a development 
+process becomes much easier, when a well organized development process
+can be centered around an end-to-end modelling approach, allowing to 
+connect early requirements, architectural and design decisions, 
+behavioral specifications, as well as testable expected properties and
+test data through an integrated modeling approach.</p>
+
+<p><strong>“Systems of systems”</strong> are typically 
+confederated and collaborating ensembles of systems that were 
+originally designed individually, but through new opportunities that 
+were not originally envisioned, are now required to tightly cooperate. 
+Examples of such systems include telecommunications services, multiple 
+integrated web services across the internet, energy networks and also 
+the city networks of collaborating smart buildings and transportation 
+infrastructure. Modelling is a core technique to understand the 
+interplay of a system of systems.</p>
+
+<h5 id="models-in-engineering"><strong><em>Models in Engineering</em></strong></h5>
+
+<p>All of the examples listed previously rely on models. During development 
+of these initially independent systems, models are often defined before 
+the system exists, requiring explicit modeling activities to explicate 
+requirements on the system to document multiple design decisions and 
+alternatives.</p>
+
+<h5 id="models-in-data-science"><strong><em>Models in Data Science</em></strong></h5>
+
+<p>This is an entirely different process from how models 
+come to life when using data science techniques to extract models 
+(e.g., of behavior or typical dynamic configurations) from observations 
+of existing systems. These other kinds of extracted models are helpful 
+when optimizing existing systems and processes, but are not intended 
+for the original design (which may have occurred by nature).</p>
+
+<h5 id="shared-modeling-paradigms"><strong><em>Shared Modeling Paradigms?</em></strong></h5>
+
+<p>However, 
+it is our belief that even though the process for model creation and 
+use is different across various domains, the same underlying modeling 
+paradigms and concepts can often be incorporated. As a consequence, 
+these models could also be adopted in similar modeling languages.</p>
+
+<p>This brings us to the interesting question of <strong>whether and how far a 
+modeling language from UML or SysML (e.g., Statecharts or Activity 
+Diagrams) is already fit for this purpose?</strong></p>
+
+<p>For example, <strong>how much 
+extension</strong> is needed to add concepts such as <strong>modeling uncertainty and 
+statistical distribution of possible behaviors</strong>? Even though there is 
+much research in these domains that has produced compelling results, 
+how long will it take to see these results made available in broadly 
+used tools? We believe that much progress still needs to be made in 
+order to realize the full potential.</p>
+
+<h5 id="software-model-languages-migrate-to-systems-engineering"><strong><em>Software Model Languages migrate to Systems Engineering?</em></strong></h5>
+
+<p>Currently (in 2022+), there is an ongoing effort to inject more 
+explicit modeling techniques into the Systems Engineering discipline, 
+which we define as including the intersection of the mechanical, 
+electrical and software subdomains.</p>
+
+<p>Software Engineering already 
+provides many modeling techniques to address complexity and 
+architectural structure. This is also true for Electrical Engineering, 
+with Mechanical Engineering supporting the use of many modeling ideas 
+in different contexts.</p>
+
+<p>The concepts of modeling across these 
+disciplines can expand the ability of a systems engineer to address 
+safety, security, robustness and operability concerns, as well as many 
+other desirable properties of the systems to be developed and produced 
+in the future.</p>
+
+<h5 id="model-and-language-integration"><strong><em>Model and Language Integration</em></strong></h5>
+
+<p>This observation brings us to the well-known challenge that most of 
+these modeling techniques do not integrate very well. As a consequence, 
+it is still frustratingly difficult to define an appropriate tool chain 
+that adequately addresses a new project’s needs (e.g., systems analyses 
+and synthesis activities).</p>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h5 id="ai-components-in-a-system-a-game-changer--partially"><strong><em>AI-components in a System: a game changer? – Partially!</em></strong></h5>
+
+<p>From a Software Engineering point of view, the existence of components 
+developed using Artificial Intelligence does not really change the 
+game. Software Engineering has established the foundational 
+understanding that software is never completely correct and the 
+unpredictable behavioral errors must be detected and absorbed 
+internally to prevent full system failure. The integration of AI 
+components becomes just another type of unreliable component that must 
+be mastered.</p>
+
+<p>Specific precautions must be taken to address the 
+possible failures of AI-based components. Even the idea of 
+self-explainability is not an entirely new concept. A common challenge 
+of Software Engineering is the need to explain to a user what the 
+software is doing or why it cannot do a specific requested action. The 
+existence of explicitly defined models can be helpful in explaining 
+behavior to users (e.g., using state model as underlying concepts).</p>
+
+<h5 id="advanced-systems-engineering-needs-both-software-engineering-and-ai"><strong><em>“Advanced Systems Engineering” needs both, Software Engineering and AI</em></strong></h5>
+
+<p>The idea of “Advanced Systems Engineering” is an approach that tries to 
+address many of the current challenges, often by adding AI-based 
+development techniques for the software needs of the system.</p>
+
+<p>However, 
+many of the existing modeling techniques, methods and practices of 
+Software Engineering are currently often ignored because of an 
+assumption that 
+software need not be developed in the future as in the past. This 
+approach places an emphasis on training software through condensing 
+available data to directly embeddable models. Yet, this idea will only 
+work in very very narrow cases and it is not clear what to do with the 
+majority of the complex software that is not addressed by an “Advanced 
+Systems Engineering” approach.</p>
+
+<p>Innovative systems seem to derive their 
+innovations to a larger extent from the software and software services 
+around the mechanical part of the system. 
+And only a little part of it can actually be developed using AI techniques.
+The rest is still pure Software Engineering.</p>
+
+<h5 id="software-engineering-methods-techniques-and-tools-would-be-well-applied-in-other-disciplines"><strong><em>Software Engineering methods, techniques and tools would be well applied in other disciplines</em></strong></h5>
+
+<p>Computer Science (in general) and Software Engineering (in particular) 
+have not been able to transfer all of their knowledge, techniques and 
+methods to Systems Engineering.</p>
+
+<p>There is much to do and the use of an 
+integrated set of modeling techniques, defined in explicit modeling 
+languages and assisted by an integrated toolchain, is still far away. 
+Software development methods, such as Agile Methods or DevOps, amidst 
+the general use of models is steadily increasing in the integrated 
+Systems Engineering domain.</p>
+
+<p>It will be interesting to see which forms of model modularity will be 
+more successful and beneficial for Systems Engineers in the long-term 
+and how all of these forms and their use of models will collaborate 
+during design and operation of advanced, intelligent systems.</p>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h5 id="some-achievements-of-software-engineering"><strong><em>Some Achievements of Software Engineering</em></strong></h5>
+
+<p>The above observations are to be seen in the light of the history and 
+start of the Software Engineering discipline: In early times software 
+engineers were often told from experts in systems development that they 
+“should develop their software in the same systematic and predictable 
+way as other engineers (e.g., mechanical engineers)”.</p>
+
+<p>We can trace Software Engineering back to the 1968 NATO Science 
+Committee conference in Garmisch, Germany, organized by Friedrich L. 
+Bauer. In that short time, software developers have created their own 
+portfolio of methods, ranging from heavyweight documentation-oriented 
+approaches to the much more beloved agile and light-weight methods. 
+Even though there is always potential for optimization, agile 
+techniques have reached a level where software developers can produce 
+reliable products using cost efficient, relatively predictable and 
+controllable processes.</p>
+
+<p>What seems to be even more important is that the way of developing 
+software is tightly connected to general innovation processes that not 
+only lead to novel ideas about how to implement software, but also to 
+new ideas about potential features and services that can be integrated 
+into software solutions. The tight coupling of software development and 
+innovation is closely related to the strong connection between 
+requirements elicitation and direct implementation in agile processes, 
+where the same stakeholders are responsible for the innovations of 
+development. Furthermore, the invention of new control and data 
+structures in object-oriented development can drive the innovation of 
+new features.</p>
+
+<p>Software-based companies in Silicon Valley have used this mood of 
+innovation effectively. They have integrated software services into 
+their core business model, which has led to innovative thinking and 
+effective, agile development of products in other domains (e.g., 
+medical services, autonomous driving, electric cars, finance). 
+Traditional companies based on fundamental engineering processes may 
+feel threatened by the radical change and fast rate of innovation that 
+the new technologies offer.</p>
+
+<p>There are many challenges in training classical engineers to adopt a 
+new form of project organization, most importantly more<br>
+responsibilities are given to the developers and developers have to 
+accept these. However, this mindset is a constructive approach to 
+improve innovation. Traditional engineering-based companies, as well as 
+other software-intensive companies, now have to catch up. Many good 
+examples in these areas give us hope that change is possible.</p>
+
+<p>In systems that require expertise from multiple areas of engineering, 
+traditional engineers are becoming more open to software engineering 
+practices. Furthermore, software development methodologies are being 
+adopted more frequently into traditional engineering practice. In a 
+recent and wellknown German TV broadcast, a highly esteemed expert in 
+mechanical and production engineering, Günther Schuh, was asked why he 
+and his team were able to produce the “StreetScooter” electric car so 
+quickly. Schuh said, “Because they have used computer science methods”. 
+In particular, Schuh mentioned agility as a key catalyst to the 
+increased speed of development.</p>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h2 id="summary">Summary</h2>
+
+<ol>
+  <li>Software Engineering has developed an excellent portfolio of
+ development methods, languages and tools.</li>
+  <li>An “Advanced Systems Engineering” approach should<br>
+ integrate Model-Based and Agile Software Development 
+ methodology much more intensively.</li>
+</ol>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<p>This essay is an excerpt from <a href="https://www.sosym.org/" target="_blank" rel="noopener noreferrer">SoSyM</a> editorials
+<a href="#GR22a">[GR22a]</a> and <a href="#GR18a">[GR18a]</a>, which are published under the
+<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons licence</a>.</p>
+
+<div class="publications">
+  <ol class="bibliography">
+<li>
+<div class="row">
+
+  <div id="GR22a" class="col-sm-11">
+    <!-- Entry bib key -->
+    [GR22a]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Gray,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="https://www.sosym.org/editorials/files/GR22a.pdf" target="_blank" rel="noopener noreferrer">Modeling in advanced systems engineering</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+        
+          In: Journal Software and Systems Modeling (SoSyM),
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 21(2),
+        
+      
+      
+      
+      
+        pp. 435-436,
+      
+      
+      
+      
+      
+        Springer Berlin / Heidelberg,
+      
+      
+      
+      
+        Mar.
+      
+      
+        2022.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="GR18a" class="col-sm-11">
+    <!-- Entry bib key -->
+    [GR18a]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Gray,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="https://www.sosym.org/editorials/files/GR18a.pdf" target="_blank" rel="noopener noreferrer">Software engineering methods in other engineering disciplines</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+        
+          In: Journal Software and Systems Modeling (SoSyM),
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 17(2),
+        
+      
+      
+      
+      
+        pp. 363-364,
+      
+      
+      
+      
+      
+        Springer Berlin / Heidelberg,
+      
+      
+      
+      
+      
+        2018.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+</ol>
+</div>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h4 id="further-links">Further links:</h4>
+
+<ul>
+  <li><a href="/essays">Essays, Comments, Definitions around Modeling</a></li>
+  <li><a href="/publications">Publications</a></li>
+  <li><a href="/research">Topic sorted list of most interesting publications</a></li>
+  <li><a href="/books">Books</a></li>
+  <li><a href="https://www.se-rwth.de">Website of the SE</a></li>
+</ul>
+
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+      <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+let scrollButton = document.getElementById("btn-back-to-top");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
+  }
+}
+
+scrollButton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+    
+
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="sticky-bottom mt-5">
+  <div class="container">
+    <!-- &copy; Copyright 2025   . -->
+    
+    
+    <a href="https://www.se-rwth.de/impressum/">Impressum</a>.
+    
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="/assets/js/jquery.min.js" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/popper.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/mdb.min.js" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="/assets/js/masonry.pkgd.min.js"></script>
+<script defer src="/assets/js/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="/assets/js/medium-zoom.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+  
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer src="/assets/js/tex-mml-chtml.js" type="text/javascript" id="MathJax-script"></script>
+<script defer src="/assets/js/polyfill.min.js"></script>
+
+
+  <script src="/assets/js/toc.js" crossorigin="anonymous"></script>
+  <script async src="/assets/js/widgets.js" charset="utf-8"></script>
+
+</html>

@@ -1,0 +1,3897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Digital Twins and Digital Shadows in Engineering and Production |
+
+
+
+  SE@RWTH
+
+</title>
+<meta name="description" content="Website of the Chair of Software Engineering at RWTH Aachen
+">
+
+<!-- Google Verification -->
+
+
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css" integrity="oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/mdb.min.css" integrity="Y3+zUQCTOSqaSbyEFKLA6oQi8oF3I2xzkIR+ywroD3fkLG3LF2DJq/mU03KQqSZv/nGQDC2Upf73IZYZYMX4GQ==" crossorigin="anonymous" type="text/css"/>
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="/assets/css/all.min.css" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css" integrity="pOZ6Cz1wopk9RluJMvHM1AEMkPCS+ihnGztyD0kI991jgZ8hj9YQ61k4ouvGNvLHE0z6Vifp3ytAmeeW8sbbZQ==" crossorigin="anonymous" type="text/css">
+
+<!-- Styles -->
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon.png">
+<link rel="stylesheet" href="/assets/css/main.css" type="text/css">
+<!--<link rel="canonical" href="https://www.se-rwth.de/research/Digital-Twins/">-->
+
+
+
+
+
+
+    <!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['addDownloadExtensions', "bib"]);
+    _paq.push(['disableCookies']);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="https://stats.fh-aachen.de/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '34']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+<!-- End Matomo Code -->
+
+  </head>
+
+  <body class=" sticky-bottom-footer">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand title font-weight-lighter" href="/">
+        
+          <img src="/assets/img/icons/rwth_se_rgb.png" height="70px">
+        
+        
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <!-- <li class="nav-item ">
+            <a class="nav-link" href="/">
+              About
+              
+            </a>
+          </li> -->
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Essays
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essays/">Essay List</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Definition/">Digital Twin</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Companion/">Digital Companion</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Maturity-Model/">Digital Twin Maturity Model</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Explicit-versus-implicit-models/">Explicit versus Implicit Models</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Gesetze-DSL/">DSLs für Gesetze und Ordnungen (in D)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Research-Software-Engineering/">Research Software Engineering (RSE)</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Modeling-in-advanced-systems-engineering/">Modeling in Advanced Systems Engineering</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Model-Definitions/">Model-Based Definitions</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Low-Code/">Low Code</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Reference-Models/">Reference Models</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Research
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/">Research Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#foundations">MBSE Foundations</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#applications">Application Domains</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#tools">Software Tools</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Publications
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/publications/">All Publications</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/books/">Books</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/phdtheses/">Ph.D. Theses</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/assets/bibliography/all-software-engineering-rwth-references.bib">Bibtex</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Teaching
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/">Teaching</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/teaching-overview/">Teaching Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/#currentsem">Current Semester</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/archive/">Course archive (starting WS 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="https://www.se-rwth.de/teaching/indexArchiv.php">Course archive (until SoSe 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/theses/">BA/MA Theses</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/">Major project overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/22.09.MontiGem.Ford.Press.Release/">MontiGem Ford Press Release</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiCore/">MontiCore</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiGem/">MontiGem</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+          <li class="nav-item ">
+              <a class="nav-link" href="/jobs/">
+                Jobs
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About us
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/about/">About us</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/staff/">Staff</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/activities/">Activities</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teams/">Teams</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/contact/">Contact &amp; Arrival</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Digital Twins and Digital Shadows in Engineering and Production</h1>
+    <p class="post-description"></p>
+  </header>
+
+  <article>
+    
+
+    <div class="toc_content">
+      
+    </div>
+    <div class="clearfix">
+      <h2 id="summary-and-definitions-of-most-relevant-topic-papers">Summary and Definitions of Most Relevant Topic Papers</h2>
+
+<p><img style="padding-left: 10px;" src="/assets/img/research/digitalTwins/Production.png" width="39%" alt="" title="Digital Twin Production" align="right"></p>
+
+<p>There exists a plethora of definitions for <strong>Digital Twins</strong> (DTs),
+Although there is a rough convergence,
+there is little consensus about what a digital twin actually is.
+The main weaknesses <a href="#BMR+22">[BMR+22]</a> about the available definitions are
+that they are:</p>
+<ol>
+  <li>ambiguous, by deferring to another undefined term;</li>
+  <li>narrow, by focusing on specific use cases, domains, or technologies;</li>
+  <li>underspecified, as they 
+fall short on discussing the role of models and additional information, 
+characteristics, and functionalities a DT has over its physical 
+object; or</li>
+  <li>utopian, due to all-encompassing aspirations.</li>
+</ol>
+
+<p>As none of the found definitions fit, 
+we have proposed generally and especially in the  <a href="#BDJ+22">[BDJ+22]</a>
+the following definition:</p>
+
+<p>Various definitions of <strong>digital twins</strong> are in use. 
+Here, we condense these definitions into a more innovative 
+one that not only allows simulations but various other forms of uses.
+An earlier version of 
+this text is based on <a href="#DMR+20">[DMR+20]</a>, <a href="#BMR+22">[BMR+22]</a>,
+<a href="#BDJ+22">[BDJ+22]</a>, and <a href="#BBD+21b">[BBD+21b]</a>.
+See also our essay on 
+<a href="/essay/Digital-Twin-Definition">Digital Twin Definitions</a>.</p>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Definition: Digital Twin, V2.2 </h4>
+    <p>
+
+    </p>
+<p>A <strong>digital twin</strong> of an original system is a software that consists of</p>
+
+    <ul>
+      <li>a set of models of the system and</li>
+      <li>a set of digital shadows, both of which are purposefully 
+updated on a regular basis, and</li>
+      <li>provides a set of services to use both purposefully 
+with respect to the original system.</li>
+    </ul>
+
+    <p>The digital twin interacts with the original system by</p>
+    <ul>
+      <li>providing useful information about the system’s context and</li>
+      <li>sending it control commands.</li>
+    </ul>
+
+  
+</div>
+
+<p>To be able to create a digital twin requires that we have observable elements 
+in the physical world that can be monitored, sensed, or actuated and 
+controlled.</p>
+
+<p>The <em>set of models</em> helps to understand the system in the physical
+world, e.g., structure, behavior, physical, geometrical or mathematical models.
+These models can be, e.g., used to create the digital twin or to compare the 
+current status of the twin with planned states.</p>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Definition: Digital Shadow </h4>
+    <p>
+
+    </p>
+<p>A <strong>digital shadow</strong> includes</p>
+
+    <ul>
+      <li>a set of contextual data traces and/or</li>
+      <li>their aggregation and abstraction collected concerning a
+system for a specific purpose with respect to the original
+system.</li>
+    </ul>
+
+    <p>(originally published in <a href="#BBD+21b">[BBD+21b]</a>)</p>
+
+  
+</div>
+
+<p>Within <a href="#BBD+21b">[BBD+21b]</a>, we present a conceptual model, 
+give details on each concept
+and provide an example from the production domain from our work in the 
+RWTH Cluster of Excellence “Internet of Production”.
+Following this definition, a digital shadow is
+a passive set of data <a href="#BDJ+22">[BDJ+22]</a> which is an information source about
+a system’s state and history.
+The shadows are collected, filtered, and reduced for their purpose in
+varying forms of abstractions and are purely digital artifacts produced by a 
+(physical) system.
+We can use, e.g., process mining algorithms for aggregating digital shadows 
+from observed data <a href="#BDJ+22">[BDJ+22]</a>.
+Moreover, shadows may contain information from different perspectives, e.g., 
+systems (physical and organizations), processes, products, and humans.</p>
+
+<p>The provided <em>services</em> during runtime of the digital twin
+might include process mining, artificial intelligence, simulation
+and predictive control services.
+Process mining techniques <a href="#BHK+21">[BHK+21]</a> 
+can be used within DTs as services to further 
+improve and adapt the used knowledge.
+Artificial intelligence services help to realize real-time decisions and 
+explainable AI within decision support helps to reduce human errors in 
+decision making.
+Services to control the physical object need to send execution commands 
+via APIs to the physical object and are often related to 
+self-adaptiveness <a href="#BBD+21a">[BBD+21a]</a>.</p>
+
+<p><img style="padding-left: 10px;" src="/assets/img/research/digitalTwins/DT.Perspectives.png" width="45%" alt="" title="Digital Twin Perspectives" align="right"></p>
+
+<p>Communication between the DT and its’ original system
+is bidirectional, allowing, e.g., to send various
+forms of information about the environment or other systems to the
+physical system. 
+The DT 
+may also send various forms of control commands, from configurations
+up to hard real-time execution commands, if the overall system is 
+designed to enable this.</p>
+
+<p>With a focus on the digital shadow and their use, we have in
+<a href="#BDR+21">[BDR+21]</a>
+also investigated what the economic implications and
+new business models of the use of digital twin services will be.</p>
+
+<p>To visualize relevant information, an interface for domain experts is needed,
+which leads us to the term 
+ <strong>digital twin cockpit</strong>.</p>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Definition: Digital Twin Cockpit </h4>
+    <p>
+
+    </p>
+<p>A <strong>digital twin cockpit</strong> is the user interaction part
+(UI/GUI) of a digital twin.</p>
+
+    <p>It provides the graphical user interface for
+visualizations of its data organized in digital shadows and models, and
+the interaction with services of the digital twin, and thus
+enables humans to access, adapt and add information and
+monitor and partially control the physical system.</p>
+
+    <p>(originally published in <a href="#BMR+22">[BMR+22]</a>)</p>
+
+  
+</div>
+
+<p>A cockpit is, by definition, a part of the digital twin, and  can be seen both
+as a special service provided by the digital twin and an integrative front-end
+component for various specific services that the digital twin provides.
+A cockpit visualizes various forms of data, which includes, e.g., digital 
+shadows, any form of data received from third-party systems, all kinds of data
+and commands entered by the humans using the cockpit and models of the physical
+system or the operation processes of the physical system.</p>
+
+<div class="row" style="text-align: center; margin: 20px 0;">
+    <div class="col-sm mt-3 mt-md-0">
+        
+            <picture>
+                <img class="img-fluid rounded z-depth-1" style="width:  70%; 
+                 " src="/assets/img/research/digitalTwins/DTC.Process.png">
+            </picture>
+        
+        
+    </div>
+</div>
+
+<p>A specific kind of a digital twin cockpits is a
+<strong>Process-Aware Digital Twin Cockpit (PADTC)</strong>.</p>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Definition: Digital Twin Cockpit </h4>
+    <p>
+
+    </p>
+<p>A <strong>Process-Aware Digital Twin Cockpit (PADTC)</strong> is a
+digital twin cockpit that additionally provides functionality to handle
+explicated processes of the
+physical object and its’ context.</p>
+
+    <p>(originally published in <a href="#BMR+22">[BMR+22]</a>)</p>
+
+  
+</div>
+
+<p>A PADTC is also a digital twin cockpit but has a stronger focus on 
+processes, which
+are explicitly defined using appropriate process definition languages.
+A PADTC knows the allowed processes (in the form of models), the current status
+of these processes (in the form of status data), and
+the history of these processes states and executed actions (in the forms of 
+data lakes).
+Processes describe the steps needed to be carried out by (1) the physical 
+object, (2) the digital twin, or (3) are expected to be executed by the 
+context, which includes humans and other physical objects respectively their 
+digital twins.
+A process may have several active participants, but not all of those need to be 
+participating in each process definition, which allows various forms of 
+automation of processes. Thus, a process step may be executed 
+automatically by the 
+physical and digital twiins together, 
+or even by one of them only.
+Data processing, e.g., is digital twin only activity.
+In addition, it a process step may be executed by physical objects 
+of the neighboring context,
+may be executed by humans involved, or
+may be executed by humans together with both twins.</p>
+
+<p>Besides these foundations of digital twins, we have further investigated 
+which DSLs are relevant for the engineering of Digital Twins,
+self-adaptive digital twin architectures <a href="#BBD+21a">[BBD+21a]</a>,
+how to use 
+<a href="/research/Generative-SE">Generative Software Engineering</a> for 
+creating digital twin architectures <a href="#BDH+20">[BDH+20]</a>,
+how to generate
+interfaces between a cyber-physical system and its DT <a href="#KMR+20">[KMR+20]</a>,
+how to derive digital twin cockpits <a href="#DMR+20">[DMR+20]</a> from models using 
+the <a href="/research/MontiGem">MontiGem</a> generator, and
+how to use process prediction within digital twins <a href="#BHK+21">[BHK+21]</a>. 
+Other research focuses on the creation of
+low-code platforms for model-driven digital twins <a href="#DHM+22">[DHM+22]</a> or
+sustainable digital twin engineering for the production domain.</p>
+
+<p>To realize digital twins and their cockpits is an increasingly complex task
+that enforces a high degree of automation for
+creating them. Within <a href="#BMR+22">[BMR+22]</a>, we have presented a
+low-code development approach
+that reduces the amount of hand-written code needed and uses
+process mining techniques to derive PADTCs.</p>
+
+<div class="row" style="text-align: center; margin: 20px 0;">
+    <div class="col-sm mt-3 mt-md-0">
+        
+            <picture>
+                <img class="img-fluid rounded z-depth-1" style="width:  70%; 
+                 " src="/assets/img/research/digitalTwins/DT.SoS.png">
+            </picture>
+        
+        
+    </div>
+</div>
+
+<p>As such digital twins can exist for various domains, perspectives and
+levels of detail, it is interesting to investigate how to combine
+such digital twins in systems-of-systems.
+Integration challenges
+for digital twin systems-of-systems <a href="#MPRW22">[MPRW22]</a>
+include, e.g., the horizontal integration of
+digital twin parts, the composition of DTs for different perspectives, or
+how to handle different lifecycle representations of the original system.</p>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h2 id="key-statements">Key Statements</h2>
+
+<ol>
+  <li>A digital twin of a system consists of a set of models of the system,
+ a set of digital shadows, and
+ provides a set of services to use the data and models purposefully
+  with respect to the original system.</li>
+  <li>A digital shadow includes
+a set of contextual data-traces and/or their aggregation and abstraction
+collected concerning a system for a specific purpose with respect to the
+original system.</li>
+  <li>To use model-driven methods for the engineering of digital twins 
+reduces the development time and increases reuse.</li>
+  <li>To use low-code platforms to create model-driven digital twins 
+allows us to reuse models and fastens the engineering of digital twins.</li>
+</ol>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h2 id="selected-topic-specific-publications">Selected Topic-Specific Publications</h2>
+
+<div class="publications">
+  <ol class="bibliography">
+<li>
+<div class="row">
+
+  <div id="BMR+22" class="col-sm-11">
+    <!-- Entry bib key -->
+    [BMR+22]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              D.
+            
+          
+        
+        
+           Bano,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Michael,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Varga,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Weske:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Process-Aware-Digital-Twin-Cockpit-Synthesis-from-Event-Logs.pdf">Process-Aware Digital Twin Cockpit Synthesis from Event Logs</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+        
+          In: Journal of Computer Languages (COLA),
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 70,
+        
+      
+      
+      
+        Art. 101121,
+      
+      
+      
+      
+      
+        DOI 10.1016/j.cola.2022.101121,
+      
+      
+        Elsevier,
+      
+      
+      
+      
+        Jun.
+      
+      
+        2022.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="DHM+22" class="col-sm-11">
+    <!-- Entry bib key -->
+    [DHM+22]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Dalibor,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Heithoff,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Michael,
+        
+      
+        
+        
+          
+          
+            
+              L.
+            
+          
+        
+        
+           Netz,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Pfeiffer,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Varga,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Generating-Customized-Low-Code-Development-Platforms-for-Digital-Twins.pdf">Generating Customized Low-Code Development Platforms for Digital 
+      Twins</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+        
+          In: Journal of Computer Languages (COLA),
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 70,
+        
+      
+      
+      
+        Art. 101117,
+      
+      
+      
+      
+      
+      
+        Elsevier,
+      
+      
+      
+      
+        Jun.
+      
+      
+        2022.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="MPRW22" class="col-sm-11">
+    <!-- Entry bib key -->
+    [MPRW22]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Michael,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Pfeiffer,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Integration-Challenges-for-Digital-Twin-Systems-of-Systems.pdf">Integration Challenges for Digital Twin Systems-of-Systems</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: 10th IEEE/ACM International Workshop on Software Engineering 
+      for Systems-of-Systems and Software Ecosystems,
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 9-12,
+      
+      
+      
+      
+      
+        ACM,
+      
+      
+      
+      
+        May
+      
+      
+        2022.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="BDJ+22" class="col-sm-11">
+    <!-- Entry bib key -->
+    [BDJ+22]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              P.
+            
+          
+        
+        
+           Brauner,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Dalibor,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Jarke,
+        
+      
+        
+        
+          
+          
+            
+              I.
+            
+          
+        
+        
+           Kunze,
+        
+      
+        
+        
+          
+          
+            
+              I.
+            
+          
+        
+        
+           Koren,
+        
+      
+        
+        
+          
+          
+            
+              G.
+            
+          
+        
+        
+           Lakemeyer,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Liebenberg,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Michael,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Pennekamp,
+        
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Quix,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              W.
+            
+          
+        
+        
+          van der Aalst,
+        
+      
+        
+        
+          
+          
+            
+              K.
+            
+          
+        
+        
+           Wehrle,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Ziefle:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/A-Computer-Science-Perspective-on-Digital-Transformation-in-Production.pdf">A Computer Science Perspective on Digital Transformation in 
+      Production</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+        
+          In: Journal ACM Transactions on Internet of Things,
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 3,
+        
+      
+      
+      
+      
+        pp. 1-32,
+      
+      
+      
+      
+        DOI 10.1145/3502265,
+      
+      
+        ACM,
+      
+      
+      
+      
+        Feb.
+      
+      
+        2022.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="BHK+21" class="col-sm-11">
+    <!-- Entry bib key -->
+    [BHK+21]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              T.
+            
+          
+        
+        
+           Brockhoff,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Heithoff,
+        
+      
+        
+        
+          
+          
+            
+              I.
+            
+          
+        
+        
+           Koren,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Michael,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Pfeiffer,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Uysal,
+        
+      
+        
+        
+          
+          
+            
+              W.
+            
+          
+        
+          
+          
+            
+              M.
+            
+          
+        
+          
+          
+            
+              P.
+            
+          
+        
+        
+           van der Aalst,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Process-Prediction-with-Digital-Twins.pdf">Process Prediction with Digital Twins</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Int. Conf. on Model Driven Engineering Languages and Systems 
+      Companion (MODELS-C),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 182-187,
+      
+      
+      
+      
+      
+        ACM/IEEE,
+      
+      
+      
+      
+        Oct.
+      
+      
+        2021.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="BBD+21b" class="col-sm-11">
+    <!-- Entry bib key -->
+    [BBD+21b]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              F.
+            
+          
+        
+        
+           Becker,
+        
+      
+        
+        
+          
+          
+            
+              P.
+            
+          
+        
+        
+           Bibow,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Dalibor,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Gannouni,
+        
+      
+        
+        
+          
+          
+            
+              V.
+            
+          
+        
+        
+           Hahn,
+        
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Hopmann,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Jarke,
+        
+      
+        
+        
+          
+          
+            
+              I.
+            
+          
+        
+        
+           Koren,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Kröger,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Lipp,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Maibaum,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Michael,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              P.
+            
+          
+        
+        
+           Sapel,
+        
+      
+        
+        
+          
+          
+            
+              N.
+            
+          
+        
+        
+           Schäfer,
+        
+      
+        
+        
+          
+          
+            
+              G.
+            
+          
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Schmitz,
+        
+      
+        
+        
+          
+          
+            
+              G.
+            
+          
+        
+        
+           Schuh,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/A-Conceptual-Model-for-Digital-Shadows-in-Industry-and-its-Application.pdf">A Conceptual Model for Digital Shadows in Industry and its 
+      Application</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Conceptual Modeling, ER 2021,
+        
+      
+
+      
+        
+          
+          
+            
+            
+              
+                A.
+              
+            
+          
+          
+             Ghose,
+          
+        
+          
+          
+            
+            
+              
+                J.
+              
+            
+          
+          
+             Horkoff,
+          
+        
+          
+          
+            
+            
+              
+                V.
+              
+            
+          
+            
+            
+              
+                E.
+              
+            
+          
+          
+             Silva Souza,
+          
+        
+          
+          
+            
+            
+              
+                J.
+              
+            
+          
+          
+             Parsons,
+          
+        
+          
+          
+            
+            
+              
+                J.
+              
+            
+          
+          
+             Evermann (Eds.),
+          
+        
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 271-281,
+      
+      
+      
+      
+      
+        Springer,
+      
+      
+      
+      
+        Oct.
+      
+      
+        2021.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="BDR+21" class="col-sm-11">
+    <!-- Entry bib key -->
+    [BDR+21]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Brecher,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Dalibor,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              K.
+            
+          
+        
+        
+           Schilling,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/An-Ecosystem-for-Digital-Shadows-in-Manufacturing.pdf">An Ecosystem for Digital Shadows in Manufacturing</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: 54th CIRP CMS 2021 - Towards Digitalized Manufacturing 4.0,
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        Elsevier,
+      
+      
+      
+      
+        Sep.
+      
+      
+        2021.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="BBD+21a" class="col-sm-11">
+    <!-- Entry bib key -->
+    [BBD+21a]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              T.
+            
+          
+        
+        
+           Bolender,
+        
+      
+        
+        
+          
+          
+            
+              G.
+            
+          
+        
+        
+           Bürvenich,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Dalibor,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Self-Adaptive-Manufacturing-with-Digital-Twins.pdf">Self-Adaptive Manufacturing with Digital Twins</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: 2021 International Symposium on Software Engineering for 
+      Adaptive and Self-Managing Systems (SEAMS),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 156-166,
+      
+      
+      
+      
+      
+        IEEE Computer Society,
+      
+      
+      
+      
+        May
+      
+      
+        2021.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="DMR+20" class="col-sm-11">
+    <!-- Entry bib key -->
+    [DMR+20]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Dalibor,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Michael,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Varga,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Towards-a-Model-Driven-Architecture-for-Interactive-Digital-Twin-Cockpits.pdf">Towards a Model-Driven Architecture for Interactive Digital Twin
+      Cockpits</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Conceptual Modeling,
+        
+      
+
+      
+        
+          
+          
+            
+            
+              
+                G.
+              
+            
+          
+          
+             Dobbie,
+          
+        
+          
+          
+            
+            
+              
+                U.
+              
+            
+          
+          
+             Frank,
+          
+        
+          
+          
+            
+            
+              
+                G.
+              
+            
+          
+          
+             Kappel,
+          
+        
+          
+          
+            
+            
+              
+                S.
+              
+            
+          
+            
+            
+              
+                W.
+              
+            
+          
+          
+             Liddle,
+          
+        
+          
+          
+            
+            
+              
+                H.
+              
+            
+          
+            
+            
+              
+                C.
+              
+            
+          
+          
+             Mayr (Eds.),
+          
+        
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 377-387,
+      
+      
+      
+      
+      
+        Springer International Publishing,
+      
+      
+      
+      
+        Oct.
+      
+      
+        2020.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row" style="background: #CFE2F3; padding: 6px 0; margin: 0;">
+
+  <div id="KMR+20" class="col-sm-11">
+    <!-- Entry bib key -->
+    [KMR+20]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Kirchhof,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Michael,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Varga,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Model-driven-Digital-Twin-Construction-Synthesizing-the-Integration-of-Cyber-Physical-Systems-with-Their-Information-Systems.pdf">Model-driven Digital Twin Construction: Synthesizing the 
+      Integration of Cyber-Physical Systems with Their Information Systems</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Proceedings of the 23rd ACM/IEEE International Conference on 
+      Model Driven Engineering Languages and Systems,
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 90-101,
+      
+      
+      
+      
+      
+        ACM,
+      
+      
+      
+      
+        Oct.
+      
+      
+        2020.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row" style="background: #CFE2F3; padding: 6px 0; margin: 0;">
+
+  <div id="BDH+20" class="col-sm-11">
+    <!-- Entry bib key -->
+    [BDH+20]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              P.
+            
+          
+        
+        
+           Bibow,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Dalibor,
+        
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Hopmann,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Mainz,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              D.
+            
+          
+        
+        
+           Schmalzing,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Schmitz,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Model-Driven-Development-of-a-Digital-Twin-for-Injection-Molding.pdf">Model-Driven Development of a Digital Twin for Injection 
+      Molding</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: International Conference on Advanced Information Systems 
+      Engineering (CAiSE’20),
+        
+      
+
+      
+        
+          
+          
+            
+            
+              
+                S.
+              
+            
+          
+          
+             Dustdar,
+          
+        
+          
+          
+            
+            
+              
+                E.
+              
+            
+          
+          
+             Yu,
+          
+        
+          
+          
+            
+            
+              
+                C.
+              
+            
+          
+          
+             Salinesi,
+          
+        
+          
+          
+            
+            
+              
+                D.
+              
+            
+          
+          
+             Rieu,
+          
+        
+          
+          
+            
+            
+              
+                V.
+              
+            
+          
+          
+             Pant (Eds.),
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 12127,
+        
+      
+      
+      
+      
+        pp. 85-100,
+      
+      
+        Lecture Notes in Computer Science,
+      
+      
+      
+      
+        Springer International Publishing,
+      
+      
+      
+      
+        Jun.
+      
+      
+        2020.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+</ol>
+</div>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h2 id="related-topics">Related Topics</h2>
+<ul>
+  <li><a href="/research/Agile-MBSE">Agile Model-Based Software Engineering</a></li>
+  <li><a href="/research/Cyber-Physical-Systems">Cyber Physical Systems (CPS)</a></li>
+  <li><a href="/research/Generative-SE">Generative Software Engineering</a></li>
+  <li><a href="/research/MontiCore">MontiCore - Language Workbench</a></li>
+  <li><a href="/research/UML-P">UML for Programming - UML/P</a></li>
+  <li><a href="/research/Unified-Modeling-Language">Unified Modeling Language (UML)</a></li>
+  <li><a href="/research/Model-Based-Assistive-Systems">Model-Based Assistive Systems</a></li>
+  <li><a href="/research/Enterprise-Information-Systems">Models in Enterprise Information System Development</a></li>
+  <li><a href="/research/MontiGem">MontiGem - Generating Enterprise Management Systems</a></li>
+  <li><a href="/research/MontiThings">MontiThings</a></li>
+</ul>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h4 id="further-links">Further links:</h4>
+
+<ul>
+  <li><a href="/publications">Publications</a></li>
+  <li><a href="/research">Topic sorted list of most interesting publications</a></li>
+  <li><a href="/books">Books</a></li>
+  <li><a href="/phdtheses">Aachener Informatik-Berichte, Software Engineering / Ph.D. Theses</a></li>
+  <li><a href="https://www.se-rwth.de">Website of the SE</a></li>
+</ul>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+      <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+let scrollButton = document.getElementById("btn-back-to-top");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
+  }
+}
+
+scrollButton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+    
+
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="sticky-bottom mt-5">
+  <div class="container">
+    <!-- &copy; Copyright 2025   . -->
+    
+    
+    <a href="https://www.se-rwth.de/impressum/">Impressum</a>.
+    
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="/assets/js/jquery.min.js" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/popper.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/mdb.min.js" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="/assets/js/masonry.pkgd.min.js"></script>
+<script defer src="/assets/js/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="/assets/js/medium-zoom.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+  
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer src="/assets/js/tex-mml-chtml.js" type="text/javascript" id="MathJax-script"></script>
+<script defer src="/assets/js/polyfill.min.js"></script>
+
+
+  <script src="/assets/js/toc.js" crossorigin="anonymous"></script>
+  <script async src="/assets/js/widgets.js" charset="utf-8"></script>
+
+</html>

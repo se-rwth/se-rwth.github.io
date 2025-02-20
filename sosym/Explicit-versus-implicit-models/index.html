@@ -1,0 +1,2016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Explicit versus Implicit Models: What are good Languages for Modeling? |
+
+
+
+  SE@RWTH
+
+</title>
+<meta name="description" content="Website of the Chair of Software Engineering at RWTH Aachen
+">
+
+<!-- Google Verification -->
+
+
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css" integrity="oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/mdb.min.css" integrity="Y3+zUQCTOSqaSbyEFKLA6oQi8oF3I2xzkIR+ywroD3fkLG3LF2DJq/mU03KQqSZv/nGQDC2Upf73IZYZYMX4GQ==" crossorigin="anonymous" type="text/css"/>
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="/assets/css/all.min.css" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css" integrity="pOZ6Cz1wopk9RluJMvHM1AEMkPCS+ihnGztyD0kI991jgZ8hj9YQ61k4ouvGNvLHE0z6Vifp3ytAmeeW8sbbZQ==" crossorigin="anonymous" type="text/css">
+
+<!-- Styles -->
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon.png">
+<link rel="stylesheet" href="/assets/css/main.css" type="text/css">
+<!--<link rel="canonical" href="https://www.se-rwth.de/sosym/Explicit-versus-implicit-models/">-->
+
+
+
+
+
+
+    <!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['addDownloadExtensions', "bib"]);
+    _paq.push(['disableCookies']);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="https://stats.fh-aachen.de/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '34']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+<!-- End Matomo Code -->
+
+  </head>
+
+  <body class=" sticky-bottom-footer">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand title font-weight-lighter" href="/">
+        
+          <img src="/assets/img/icons/rwth_se_rgb.png" height="70px">
+        
+        
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <!-- <li class="nav-item ">
+            <a class="nav-link" href="/">
+              About
+              
+            </a>
+          </li> -->
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Essays
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essays/">Essay List</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Definition/">Digital Twin</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Companion/">Digital Companion</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Maturity-Model/">Digital Twin Maturity Model</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Explicit-versus-implicit-models/">Explicit versus Implicit Models</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Gesetze-DSL/">DSLs für Gesetze und Ordnungen (in D)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Research-Software-Engineering/">Research Software Engineering (RSE)</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Modeling-in-advanced-systems-engineering/">Modeling in Advanced Systems Engineering</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Model-Definitions/">Model-Based Definitions</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Low-Code/">Low Code</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Reference-Models/">Reference Models</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Research
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/">Research Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#foundations">MBSE Foundations</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#applications">Application Domains</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#tools">Software Tools</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Publications
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/publications/">All Publications</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/books/">Books</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/phdtheses/">Ph.D. Theses</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/assets/bibliography/all-software-engineering-rwth-references.bib">Bibtex</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Teaching
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/">Teaching</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/teaching-overview/">Teaching Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/#currentsem">Current Semester</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/archive/">Course archive (starting WS 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="https://www.se-rwth.de/teaching/indexArchiv.php">Course archive (until SoSe 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/theses/">BA/MA Theses</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/">Major project overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/22.09.MontiGem.Ford.Press.Release/">MontiGem Ford Press Release</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiCore/">MontiCore</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiGem/">MontiGem</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+          <li class="nav-item ">
+              <a class="nav-link" href="/jobs/">
+                Jobs
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About us
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/about/">About us</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/staff/">Staff</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/activities/">Activities</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teams/">Teams</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/contact/">Contact &amp; Arrival</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Explicit versus Implicit Models: What are good Languages for Modeling?</h1>
+    <p class="post-description"></p>
+  </header>
+
+  <article>
+    
+
+    <div class="toc_content">
+      
+    </div>
+    <div class="clearfix">
+      <p>Modeling is nowadays used in almost all science and engineering
+disciplines. But, the explicit definition of modeling languages is
+an invention of modern computing technology. It
+was necessary to define modeling languages precisely so that
+computers could process the models described in the
+languages, as a way to support various analysis and synthesis
+needs (e.g., model analysis and code generation). However,
+these were not the first languages that were defined
+precisely. Natural languages, for example, English in the Oxford
+dictionary and German in the Duden, received a rather
+formal definition prior to digital automation with computers.
+The ideas of grammars and related lexicographic definitions
+were transferred from the natural language context to the
+first computer languages, namely programming languages
+and specification languages, where it received much more
+precision. And for diagrammatic modeling languages, the
+concept of a meta-model was popularized, often as a variant
+of a class diagram.</p>
+
+<p>The <strong>precise definition</strong> of modeling languages allows us
+to make models explicit. The <strong>advantages</strong> of precise
+modeling languages are well-known, namely</p>
+
+<ul>
+  <li>(E1) support for syntactically concise descriptions of the system under
+development or study,</li>
+  <li>(E2) attachment of precise semantics (in terms of meaning <a href="#HR04">[HR04]</a>),</li>
+  <li>(E3) a human-readable representation that provides a language summary,</li>
+  <li>(E4) models defined by a
+language can be processed by computers to help identify
+inconsistencies, incompleteness, and other issues, and also</li>
+  <li>(E5) provide the foundation for high-level analysis
+techniques as promoted in various forms by the formal methods
+community.</li>
+</ul>
+
+<p>Finally of course, for the development / engineering community
+the most relevant benefits also include
+constructive use, including</p>
+
+<ul>
+  <li>(E6) automatically deriving code,
+tests, and related artifacts from the models, and</li>
+  <li>(E7) the ability to interpret a model.</li>
+</ul>
+
+<p>Over time, a larger set of modeling and specification
+languages have been defined, among them the standards
+UML and SysML (with all their benefits and deficits),
+but also many logic-based languages, architectural
+modeling languages, testing notations, as well as deployment
+and configuration languages. Currently, we also can find
+requirements-capturing languages that are a mixture between
+traditional natural languages and structurally constrained
+textual languages, which can be regarded as precise modeling
+languages in a textual syntactic form.</p>
+
+<p>However, there are also approaches to embedding models
+within existing languages. A famous example is the use of the
+State Pattern as one of the initial 23 design patterns from the
+Gang of Four in the early 1990s <a href="#GHJV95">[GHJV95]</a>, where an efficient encoding
+of state machines in an ordinary, general-purpose
+programming language (GPL) is described. This embedding is very
+useful and can be defined directly in the GPL. When describing
+the layout, e.g., as a grid of a GUI AWT/Swing window,
+we actually specify the grid layout in a high-level abstraction,
+but do that within the Java PL. As a third example, class
+diagrams can also be encoded directly as GPL classes, with
+the exception of associations that need additional encoding
+decisions.</p>
+
+<p>Modern programming languages with enhanced forms of
+syntactic compactness, such as Scala, support the definition
+of APIs in such a way that the resulting code even looks like
+it is not a traditional program, but rather an explicitly defined
+domain-specific modeling language. As one example, the
+toolchain integration DSL of Gradle is such an interesting
+approach. Like the makefile language, it looks like a DSL,
+but actually is an ordinary Groovy program using the Gradle
+library functions. Similar observations can be made with
+other forms of modeling languages, where a model is sometimes
+encoded directly in appropriate concepts of the GPL.
+In other examples, a model may conform to a specific
+style of programming (i.e., a kind of design pattern), assisted
+by an appropriate predefined and reusable API, which itself
+is realized in a generic library and allows a relatively compact
+encoding of the “model.” These encodings are often so
+straightforward that a direct decoding, also called
+reverse-engineering, is possible such that the original model can be
+extracted from the code. Yet, the extracted model still needs
+an explicit representation form and thus must become an
+explicit member of a modeling language.</p>
+
+<p>Other forms of models remain completely implicit. For
+example, the task dependency graph defined in Gradle and the
+grid layout presentation in Java Swing are just data structures
+that do not have explicitly modeled representations beyond the
+encoding in the GPL. They only come to life when the code is
+executed, but are usually rather invisible in the code structure.
+Traditional reverse-engineering does not help. We thus can
+distinguish implicit models from statically extractable vs.
+constructed through execution, even though the classification
+might have some overlaps.</p>
+
+<p><strong>Implicit models</strong> embedded in the code of a GPL also have
+<strong>advantages</strong>:</p>
+
+<ul>
+  <li>(I1) the toolchain only consists of an ordinary
+compiler (and a runtime library), which can</li>
+  <li>(I2) efficiently
+be used to generate running and testable systems as well as
+simulations, and</li>
+  <li>(I3) dynamic reconfigurations are possible.</li>
+</ul>
+
+<p>This supports the addition of new states or redirected transitions
+in the State Pattern or changes in the grid layout of
+AWT.</p>
+
+<p>Arguably, dynamic reconfiguration can also be seen as a
+serious challenge because analytical considerations of how
+a system will behave can be invalidated when arbitrary
+dynamic reconfigurations are possible. But there is a serious
+second disadvantage, namely embedded models are not
+amenable for explicit analysis at design time. As an example,
+a compiler or classic code analyzer normally does not
+know about a project-specific embedding of a state machine
+or an activity diagram in the code, and thus cannot analyze
+the embedded model for desired properties like completeness
+and consistency. It does not make a difference if the
+model has been defined in an explicit modeling language and
+code was generated, or whether the implicitly defined model
+was extracted into the explicit presentation. In both cases,
+an explicit modeling language is involved to be able to analyze
+the model. For analysis purposes, it may be sufficient to
+define the modeling language only through abstract syntax,
+such as a meta-model, which would allow us to actually consider
+the data structure of the State pattern an (incomplete)
+meta-model of state machines.</p>
+
+<p>The most important challenge with dynamic reconfiguration
+is when a modeling language that is applicable to all
+activities of development must allow controlled underspecification
+of various forms. This is a necessary prerequisite
+for modeling, because during development we often do not
+know all of the technical details, and more importantly, we
+do not want to predefine design decisions too early so that we
+can explore the possible design space in later phases of the
+development.</p>
+
+<p><strong>Modeling languages must allow underspecification</strong>
+and can do that in various forms, among others via offering</p>
+
+<ul>
+  <li>(U1) variability mechanisms to define alternatives,</li>
+  <li>(U2) parameters and configuration options that parameterize
+models,</li>
+  <li>(U3) logical constraints to relate such parameters
+and the system behavior/structure,</li>
+  <li>(U4) logic-based pre- and
+post-conditions to describe bandwidths of possible realizations
+of behavior,</li>
+  <li>(U5) non-determinism/choice within
+behavioral notations that help in describing alternative behavioral
+options, and</li>
+  <li>(U5) choice within
+structure notations that help in describing alternative
+architectural layouts or optional components.</li>
+</ul>
+
+<p>All of these concepts can be implicitly embedded in a GPL.
+However, programs are executable and their embedded models
+also are executable. In execution, a deterministic and
+completely defined behavior occurs. The underspecification
+forms noted above as (U1), (U2), (U5) and (U6) can typically be
+executed through either random choice (e.g., calling a <code class="language-plaintext highlighter-rouge">random()</code>
+function) or default behavior selections (e.g., always
+take the first available option). The other forms of underspecification
+described as (U3) and (U4) can fail in constructive
+executions because solutions for potentially
+undecidable logical expressions
+must be found. In all cases the “executed” model is not
+equivalent with the intended model and further design decisions
+may force other “executed” behavior that was specified,
+but never seen and anticipated in earlier tests.</p>
+
+<p>Underspecification is relevant and cannot be handled only
+by executable models. However, there are solutions that
+have been intensively investigated by the Formal Methods
+community (e.g., logic reasoning, model checking, data and
+control flow analyses, abstract interpretation, etc.). These
+approaches can help to explore many or even all behavioral
+paths and configurations “in parallel” and can be applied
+when using explicit models in dedicated modeling languages.</p>
+
+<p>As a consequence, however, we should accept that
+some modeling languages do <em>not</em> allow developers to
+describe all kinds of system properties, but restrict themselves
+in their expressivity. In general, the more restrictive a
+modeling language is, the greater the ability to offer effective
+and efficient analysis techniques. Thus, it is often a complicated
+balancing act between the expressivity of models and
+the power of available analysis techniques. At least it is clear
+that with pure embedding of models in a general-purpose
+language, i.e., implicit models, we get the advantage of simulation,
+but usually lose all advantages of explicit analysis.</p>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h2 id="summary">Summary</h2>
+
+<ol>
+  <li>Explicit models are models that are represented in a
+dedicated modeling language (and not embedded in an executable GPL
+or a trained neuronal network).</li>
+  <li>Only explicit models allow <em>advanced analysis, architectural design,
+test case generation</em>, etc. Implicit models only allow execution.</li>
+  <li>
+<em>Underspecification</em> in various forms is an intrinsic property that
+only explicit models can provide.</li>
+</ol>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<p>This essay is an update from <a href="https://www.sosym.org/" target="_blank" rel="noopener noreferrer">SoSyM</a> editorial
+<a href="#GR22b">[GR22b]</a>, which is published under the
+<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons license</a>.</p>
+
+<div class="publications">
+  <ol class="bibliography">
+<li>
+<div class="row">
+
+  <div id="GR22b" class="col-sm-11">
+    <!-- Entry bib key -->
+    [GR22b]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Gray,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="https://www.sosym.org/editorials/files/GR22b.pdf" target="_blank" rel="noopener noreferrer">Explicit versus implicit models: What are good languages for 
+      modeling?</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+        
+          In: Journal Software and Systems Modeling (SoSyM),
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 21(3),
+        
+      
+      
+      
+      
+        pp. 839-841,
+      
+      
+      
+      
+      
+        Springer Berlin / Heidelberg,
+      
+      
+      
+      
+        Apr.
+      
+      
+        2022.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="HR04" class="col-sm-11">
+    <!-- Entry bib key -->
+    [HR04]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              D.
+            
+          
+        
+        
+           Harel,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/staff/rumpe/publications20042008/Meaningful-Modeling-Whats-the-Semantics-of-Semantics.pdf">Meaningful Modeling: What’s the Semantics of
+    ”Semantics”?</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+        
+          In: IEEE Computer Journal,
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 37(10),
+        
+      
+      
+      
+      
+        pp. 64-72,
+      
+      
+      
+      
+      
+      
+      
+      
+        Oct.
+      
+      
+        2004.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="GHJV95" class="col-sm-11">
+    <!-- Entry bib key -->
+    [GHJV95]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              E.
+            
+          
+        
+        
+           Gamma,
+        
+      
+        
+        
+          
+          
+            
+              R.
+            
+          
+        
+        
+           Helm,
+        
+      
+        
+        
+          
+          
+            
+              R.
+            
+          
+        
+        
+           Johnson,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Vlissides:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="">Design patterns: elements of reusable object-oriented software</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        Addison-Wesley Professional,
+      
+      
+      
+      
+      
+        1995.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+</ol>
+</div>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h4 id="further-links">Further links:</h4>
+
+<ul>
+  <li><a href="/essays">Essays, Comments, Definitions around Modeling</a></li>
+  <li><a href="/publications">Publications</a></li>
+  <li><a href="/research">Topic sorted list of most interesting publications</a></li>
+  <li><a href="/books">Books</a></li>
+  <li><a href="https://www.se-rwth.de">Website of the SE</a></li>
+</ul>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+      <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+let scrollButton = document.getElementById("btn-back-to-top");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
+  }
+}
+
+scrollButton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+    
+
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="sticky-bottom mt-5">
+  <div class="container">
+    <!-- &copy; Copyright 2025   . -->
+    
+    
+    <a href="https://www.se-rwth.de/impressum/">Impressum</a>.
+    
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="/assets/js/jquery.min.js" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/popper.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/mdb.min.js" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="/assets/js/masonry.pkgd.min.js"></script>
+<script defer src="/assets/js/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="/assets/js/medium-zoom.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+  
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer src="/assets/js/tex-mml-chtml.js" type="text/javascript" id="MathJax-script"></script>
+<script defer src="/assets/js/polyfill.min.js"></script>
+
+
+  <script src="/assets/js/toc.js" crossorigin="anonymous"></script>
+  <script async src="/assets/js/widgets.js" charset="utf-8"></script>
+
+</html>

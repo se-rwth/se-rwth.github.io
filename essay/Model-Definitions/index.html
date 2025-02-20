@@ -1,0 +1,2829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Model-Based Definitions |
+
+
+
+  SE@RWTH
+
+</title>
+<meta name="description" content="Website of the Chair of Software Engineering at RWTH Aachen
+">
+
+<!-- Google Verification -->
+
+
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css" integrity="oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/mdb.min.css" integrity="Y3+zUQCTOSqaSbyEFKLA6oQi8oF3I2xzkIR+ywroD3fkLG3LF2DJq/mU03KQqSZv/nGQDC2Upf73IZYZYMX4GQ==" crossorigin="anonymous" type="text/css"/>
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="/assets/css/all.min.css" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css" integrity="pOZ6Cz1wopk9RluJMvHM1AEMkPCS+ihnGztyD0kI991jgZ8hj9YQ61k4ouvGNvLHE0z6Vifp3ytAmeeW8sbbZQ==" crossorigin="anonymous" type="text/css">
+
+<!-- Styles -->
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon.png">
+<link rel="stylesheet" href="/assets/css/main.css" type="text/css">
+<!--<link rel="canonical" href="https://www.se-rwth.de/essay/Model-Definitions/">-->
+
+
+
+
+
+
+    <!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['addDownloadExtensions', "bib"]);
+    _paq.push(['disableCookies']);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="https://stats.fh-aachen.de/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '34']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+<!-- End Matomo Code -->
+
+  </head>
+
+  <body class=" sticky-bottom-footer">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand title font-weight-lighter" href="/">
+        
+          <img src="/assets/img/icons/rwth_se_rgb.png" height="70px">
+        
+        
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <!-- <li class="nav-item ">
+            <a class="nav-link" href="/">
+              About
+              
+            </a>
+          </li> -->
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Essays
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essays/">Essay List</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Definition/">Digital Twin</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Companion/">Digital Companion</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Maturity-Model/">Digital Twin Maturity Model</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Explicit-versus-implicit-models/">Explicit versus Implicit Models</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Gesetze-DSL/">DSLs für Gesetze und Ordnungen (in D)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Research-Software-Engineering/">Research Software Engineering (RSE)</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Modeling-in-advanced-systems-engineering/">Modeling in Advanced Systems Engineering</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Model-Definitions/">Model-Based Definitions</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Low-Code/">Low Code</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Reference-Models/">Reference Models</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Research
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/">Research Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#foundations">MBSE Foundations</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#applications">Application Domains</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#tools">Software Tools</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Publications
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/publications/">All Publications</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/books/">Books</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/phdtheses/">Ph.D. Theses</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/assets/bibliography/all-software-engineering-rwth-references.bib">Bibtex</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Teaching
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/">Teaching</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/teaching-overview/">Teaching Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/#currentsem">Current Semester</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/archive/">Course archive (starting WS 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="https://www.se-rwth.de/teaching/indexArchiv.php">Course archive (until SoSe 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/theses/">BA/MA Theses</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/">Major project overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/22.09.MontiGem.Ford.Press.Release/">MontiGem Ford Press Release</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiCore/">MontiCore</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiGem/">MontiGem</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+          <li class="nav-item ">
+              <a class="nav-link" href="/jobs/">
+                Jobs
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About us
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/about/">About us</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/staff/">Staff</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/activities/">Activities</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teams/">Teams</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/contact/">Contact &amp; Arrival</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Model-Based Definitions</h1>
+    <p class="post-description">White Paper by Bernhard Rumpe, Judith Michael, Software Engineering, RWTH Aachen, May 2023</p>
+  </header>
+
+  <article>
+    
+
+    <div class="toc_content">
+      <ul id="toc" class="toc__list">
+<li class="toc-entry toc-h3"><a href="#core-definition">Core Definition</a></li>
+<li class="toc-entry toc-h3">
+<a href="#classification-of-model-kinds">Classification of Model Kinds</a>
+<ul class="toc__sublist">
+<li class="toc-entry toc-h5"><a href="#which-scope-a-model-describes">Which scope a model describes</a></li>
+<li class="toc-entry toc-h5"><a href="#which-aspect-of-a-system-a-model-describes">Which aspect of a system a model describes</a></li>
+<li class="toc-entry toc-h5"><a href="#in-which-development-activityphase-a-model-is-defined-and-used">In which development activity/phase a model is defined and used</a></li>
+<li class="toc-entry toc-h5"><a href="#form-and-representation-of-the-model">Form and representation of the model</a></li>
+<li class="toc-entry toc-h5"><a href="#how-the-model-came-into-existence">How the model came into existence</a></li>
+<li class="toc-entry toc-h5"><a href="#what-the-model-is-used-for">What the model is used for</a></li>
+<li class="toc-entry toc-h5"><a href="#what-the-model-is-applied-on">What the model is applied on</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3">
+<a href="#language">Language</a>
+<ul class="toc__sublist">
+<li class="toc-entry toc-h5"><a href="#parts-of-a-language">Parts of a language</a></li>
+<li class="toc-entry toc-h5"><a href="#syntax">Syntax</a></li>
+<li class="toc-entry toc-h5"><a href="#semantics">Semantics</a></li>
+<li class="toc-entry toc-h5"><a href="#model-library">Model Library</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#tools">Tools</a></li>
+<li class="toc-entry toc-h3">
+<a href="#model-engineering-and-its-activities">Model Engineering and its Activities</a>
+<ul class="toc__sublist">
+<li class="toc-entry toc-h5"><a href="#forms-of-model-operations-and-relations">Forms of Model Operations and Relations</a></li>
+<li class="toc-entry toc-h5"><a href="#development-activities">Development Activities</a></li>
+<li class="toc-entry toc-h5"><a href="#development-processes">Development Processes</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#further-links">Further links</a></li>
+</ul>
+    </div>
+    <div class="clearfix">
+      <p>It is always relevant to have a precise and
+commonly shared understanding of the relevant concepts.
+Here come ours on modeling – compact, not many explanations,
+no examples. For those extra materials you may look at our
+<a href="/publications">publications</a>.</p>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h3 id="core-definition">Core Definition</h3>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Definition: Model </h4>
+    <p>
+
+    </p>
+<p>A <strong>model</strong> is characterized through three properties:</p>
+
+    <ul>
+      <li>A model describes some original, real system/entity that exists or is intended to exist in the future.</li>
+      <li>A model is an abstraction of the original.</li>
+      <li>A model has a purpose with respect to the original.</li>
+    </ul>
+
+    <p>(based on Stachowiak <a href="#Sta73">[Sta73]</a>)</p>
+  
+</div>
+
+<p>For a detailed discussion of the possible implications of this definition,
+please consult our various publications.
+Highlights are, e.g., the discussion on <strong>semantics</strong> of models <a href="#HR04">[HR04]</a>,
+the way how to <strong>construct modeling languages</strong>
+using the MontiCore language workbench <a href="#HKR21">[HKR21]</a>,
+and especially the discussion on <strong>underspecification</strong> as an intrinsic
+part of models as opposed to programs <a href="#RW18">[RW18]</a>.</p>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h3 id="classification-of-model-kinds">Classification of Model Kinds</h3>
+
+<p>Models can be classified in various ways, as shown below, even though
+not all classifications are equally relevant.</p>
+
+<h5 id="which-scope-a-model-describes"><strong><em>Which scope a model describes</em></strong></h5>
+
+<ul>
+  <li>
+<strong>System model</strong> describes the overall system.</li>
+  <li>
+<strong>Test model</strong> describes one or several tests and is used for testing.</li>
+  <li>
+<strong>Component model</strong> describes a system component.</li>
+  <li>
+<strong>Context model</strong> describes the context of a system or component
+under consideration. It is not to be confused with “context condition”
+introduced below.
+The context model is dependent on the scope of the development, 
+i.e., which system
+components belong to the context. When the scope changes,
+e.g., to the next level sub-system, then system components and their models
+become context elements.</li>
+</ul>
+
+<h5 id="which-aspect-of-a-system-a-model-describes"><strong><em>Which aspect of a system a model describes</em></strong></h5>
+
+<ul>
+  <li>
+<strong>Behavior model</strong>, <strong>structure model</strong>,
+<strong>architecture model</strong>, <strong>interaction model</strong>,
+<strong>state model</strong>, <strong>communication model</strong>, <strong>data model</strong>, etc.,
+are models that serve the purpose of describing
+a respective aspect of a system or component.</li>
+</ul>
+
+<h5 id="in-which-development-activityphase-a-model-is-defined-and-used"><strong><em>In which development activity/phase a model is defined and used</em></strong></h5>
+
+<ul>
+  <li>
+<strong>Requirements model</strong>, <strong>functional model</strong>,
+<strong>logical model</strong>, <strong>technical model</strong>, and <strong>implementation model</strong>,
+but also <strong>architecture model</strong>, <strong>test model</strong>, etc.
+are models that are mainly developed and used in the
+respective activity of a development project.</li>
+  <li>Note that many models are used for other purposes, e.g.,
+scientific models or data models.</li>
+</ul>
+
+<h5 id="form-and-representation-of-the-model"><strong><em>Form and representation of the model</em></strong></h5>
+
+<ul>
+  <li>
+<strong>Conceptual model</strong> is a representation of entities and their relationships.
+This is a broadly applicable term for many kinds of models.
+It is prominent in the database and the ontology/logical communities
+and very much depends on the term “entity”.</li>
+  <li>
+<strong>Physical model</strong> is a physical, touchable model (it hurts when
+it falls on your feet).</li>
+  <li>
+<strong>Thought model</strong> (<strong>mental model</strong>) is the mental construction of a person to gain
+an understanding of the system of interest.
+It is argued that any explicit model is translated by the reading
+person into an internal thought model.</li>
+  <li>
+<strong>Paper model</strong> (<strong>blackboard model</strong>)
+is an informal drawing denoted on paper, a wall, or a board.</li>
+  <li>
+<strong>Explicit</strong> model is a model denoted in an <strong>explicit modeling language</strong>,
+such as UML, SysML, or a domain-specific language.</li>
+  <li>
+<strong>Diagram</strong> is an explicit model denoted in a diagrammatic
+modeling language, such as UML’s class diagrams or Statecharts.</li>
+  <li>
+<strong>Text model</strong> is an explicit model denoted in a textual
+modeling language, such as UML’s OCL or MontiCore’s CD4A.</li>
+  <li>
+<strong>Programmed</strong> model is an implicit model that is encoded
+in an executable program. The model is hidden in the code and mainly
+usable for simulation. The programming language is not
+to be confused with the (nonexisting) modeling language.</li>
+</ul>
+
+<h5 id="how-the-model-came-into-existence"><strong><em>How the model came into existence</em></strong></h5>
+
+<ul>
+  <li>
+<strong>Designed model</strong> is a model that has been created through human activity.</li>
+  <li>
+<strong>Learnt model</strong> is a model that has been constructed from data,
+e.g., using one of the various machine learning techniques.</li>
+  <li>
+<strong>Derived model</strong> is a model that has been derived by some algorithm,
+e.g., through abstraction, composition, transformation,
+refinement, and other
+algorithmically assistable derivation techniques.</li>
+</ul>
+
+<h5 id="what-the-model-is-used-for"><strong><em>What the model is used for</em></strong></h5>
+
+<p>A similar categorization that however addresses a mixture between usage 
+and origin:</p>
+
+<ul>
+  <li>
+    <p><strong>Prescriptive model</strong> describes the system under
+development before the system actually is developed.
+This is typically a designed engineering model or it has been derived 
+from designed models.</p>
+  </li>
+  <li>
+    <p><strong>Descriptive model</strong> describes a system that already 
+exists. 
+This is typically a designed scientific model, but also an
+engineering model, 
+when the system has been realized. Descriptive engineering models
+allow to understand examine and optimize the already built system.</p>
+  </li>
+  <li>
+    <p><strong>Prescriptive model</strong> also describes a system that already 
+exists, but it has its origin in observations on the system. 
+It is learnt from these observations and related forms of data and
+has a rather implicit form, so that it cannot directly be examined, 
+but executions, respectively queries produce answers, 
+mainly to predict future behavior.
+Machine learning is based on statistic correlations and does not
+necessarily imply causality in such as form as covered by 
+descriptive models.</p>
+  </li>
+</ul>
+
+<h5 id="what-the-model-is-applied-on"><strong><em>What the model is applied on</em></strong></h5>
+
+<ul>
+  <li>
+<strong>Engineering model</strong> (<strong>Development model</strong>) is a model
+that is used in a development project and denotes
+the system under development. This includes software,
+biological, mechanical,
+chemical systems as well as social, economic, or producing processes.</li>
+  <li>
+<strong>Scientific model</strong> is a model that describes real-world phenomena
+and is used to understand the existing world and its processes.</li>
+</ul>
+
+<p>“When the model doesn’t fit the modeled system, then the scientist says 
+that the model is incorrect, while the engineer says the system was 
+badly constructed.” (well known, true joke). We, however, observe 
+models may serve both purposes because, e.g., biological science models 
+may become bio-engineering models. In Computer Science, the situation 
+is even more complicated because the existence of generators may change 
+the purpose of a model from (scientific) understanding to constructive 
+use and even to the implementation itself.</p>
+
+<ul>
+  <li>
+<strong>Metamodel</strong><br>
+is a model describing some kind of meta-structure.
+A common use is to define the abstract syntax of a modeling
+language, which makes each model (or. to be exact: the model’s AST) 
+an instance of the metamodel.
+The MOF provides a hierarchy of metamodels, where finally,
+the meta-meta-meta-model is an instance of itself.</li>
+</ul>
+
+<p>In the domain of language engineering, we thus
+abandon fuzzy forms of uses and
+only use the more narrow definition:</p>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Definition: Metamodel (syn.: Meta-Model) </h4>
+    <p>
+
+    </p>
+<p>A <strong>metamodel</strong> is a model describing the
+abstract syntax of a language.</p>
+
+    <p>(definition from <a href="#CFJ+16">[CFJ+16]</a>)</p>
+  
+</div>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h3 id="language">Language</h3>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Definition: Software Language </h4>
+    <p>
+
+    </p>
+<p>A <strong>software language</strong> is a human-readable and 
+computer-processable language addressing a particular problem.</p>
+
+  
+</div>
+
+<p>Programming languages, configuration languages, but also
+modeling languages are such languages that are understandable
+for both kinds of stakeholders, namely humans and computers.</p>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Definition: Modeling Language </h4>
+    <p>
+
+    </p>
+<p>A <strong>modeling language</strong> defines a set of models that can be 
+used for modeling purposes. Its definition consists of</p>
+
+    <ul>
+      <li>the syntax, describing how its models appear,</li>
+      <li>the semantics, describing what each of its models means,
+and</li>
+      <li>its pragmatics, describing how to use its models according
+to their purpose.</li>
+    </ul>
+
+    <p>(definition from <a href="#CFJ+16">[CFJ+16]</a>)</p>
+  
+</div>
+
+<p>UML and SysML are prominent modeling languages with relatively
+general applicability in various domains.</p>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Definition: Domain-Specific Language (DSL) </h4>
+    <p>
+
+    </p>
+<p>A <strong>domain-specific language (DSL)</strong> is a software
+language specialized for a particular application domain.</p>
+
+  
+</div>
+
+<p>E.g., the <a href="https://monticore.de/" target="_blank" rel="noopener noreferrer">MontiCore language workbench</a>
+provides techniques to define domain-specific languages
+and offers a set of
+<a href="https://monticore.github.io/monticore/docs/Languages/" target="_blank" rel="noopener noreferrer">predefined domain-specific languages</a>.</p>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<h5 id="parts-of-a-language"><strong><em>Parts of a language</em></strong></h5>
+
+<p>A language is described by the following concepts:</p>
+<ul>
+  <li>(1) <strong>Syntax</strong> (“representation” and “structure”)</li>
+  <li>(2) <strong>Semantics</strong> (“meaning”)</li>
+  <li>(3) <strong>Model library</strong> (“vocabulary”)</li>
+  <li>(4) <strong>Pragmatics</strong> (“forms of use”)</li>
+</ul>
+
+<p>The syntax of a language can be divided into the following aspects:</p>
+
+<ul>
+  <li>(1.1) <strong>Concrete syntax</strong>
+</li>
+  <li>(1.2) <strong>Abstract syntax (AST)</strong>
+</li>
+  <li>(1.2) <strong>Context conditions (CoCos)</strong>
+</li>
+</ul>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<h5 id="syntax"><strong><em>Syntax</em></strong></h5>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Definition: Concrete Syntax </h4>
+    <p>
+
+    </p>
+<p>The <strong>concrete syntax</strong> of a modeling language is used to
+describe the concrete representation of the models and is
+used by humans to read, understand, and create models. The
+concrete syntax must be sufficiently formal to be
+processible by tools.</p>
+
+    <p>(definition from <a href="#CFJ+16">[CFJ+16]</a>)</p>
+  
+</div>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Definition: Abstract Syntax </h4>
+    <p>
+
+    </p>
+<p>The <strong>abstract syntax</strong> of a modeling language contains the
+essential information of a model, disregarding all details
+of the concrete syntax that do not contribute to the model’s
+purpose. It is of particular interest for use by software
+tools.</p>
+
+    <p>(definition from <a href="#CFJ+16">[CFJ+16]</a>)</p>
+  
+</div>
+
+<p>The abstract syntax (AST) of a model is then a 
+concrete value of the AST of the language.</p>
+
+<p>The abstract syntax is usually defined using context-free grammars or
+class diagrams (also called “metamodels”). Both notations are limited
+in their expressiveness, and thus, it is usually necessary to add
+additional constraints to restrict the set of models to 
+define the <strong>well-formed models</strong>:</p>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Definition: Context Conditions </h4>
+    <p>
+
+    </p>
+<p><strong>Context conditions</strong>
+are boolean predicates constraining
+the set of models to the subset of well-formed models.</p>
+
+  
+</div>
+
+<p>Context conditions are thus also called <strong>well-formedness rules</strong>.
+Sometimes also, “static semantics” is used, but we regard this term
+as misleading because context conditions do not tell us anything about
+the meaning (i.e. semantics) but purely constrain the syntax.</p>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<h5 id="semantics"><strong><em>Semantics</em></strong></h5>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Definition: Semantics </h4>
+    <p>
+
+    </p>
+<p>The <strong>semantics</strong> of a modeling
+language captures the essential information of its models in
+the form of an explicitly defined</p>
+
+    <ul>
+      <li>syntactic domain that describes all well-formed models,</li>
+      <li>a semantic domain that captures all essential information
+that the models can describe, and</li>
+      <li>a semantic mapping that relates the syntactic constructs
+of the models to the semantic domain.</li>
+    </ul>
+
+    <p>(definition from <a href="#CFJ+16">[CFJ+16]</a>)</p>
+  
+</div>
+
+<p>Special forms of semantics are (1) <strong>denotational semantics</strong>,
+(2) <strong>axiomatic semantics</strong>, and (3) <strong>operational semantics</strong>
+using different techniques and serving different purposes.
+We only look further at denotational semantics.
+It describes what a model means without talking
+about how this meaning is actually achieved. Denotational semantics
+is typically defined using mathematical constructs. As a result, it is
+quite abstract and typically requires some training in mathematics to
+understand. Its advantage is that because we have the full power of
+mathematics at hand, we do not have to suffer from computational
+limitations and can, e.g., adequately address the principle of
+underspecification.</p>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<h5 id="model-library"><strong><em>Model Library</em></strong></h5>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Definition: Model Library </h4>
+    <p>
+
+    </p>
+<p>A <strong>model library</strong>
+is a collection of relatively independent models that are</p>
+    <ul>
+      <li>defined for use in other models through 
+language-specific forms of import (reference),
+refinement, or adaptation and</li>
+      <li>that can be composed with other models.</li>
+    </ul>
+
+  
+</div>
+
+<p>The existence of a library of reusable models is one key success
+factor for a language to become used in practice.
+Models only become reusable as independent, modular
+artifacts that can be
+somehow “imported”, “waved”, “merged”, or otherwise <strong>composed</strong>
+if appropriate operators exist.
+While modularity and, thus, extensive libraries
+are a standard in modern programming languages,
+many modeling languages
+suffer from inadequate or even missing composition operators and
+missing reusable libraries.
+Sometimes this is due to a lack of modularity in the
+modeling language itself.</p>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h3 id="tools">Tools</h3>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Definition: Tool </h4>
+    <p>
+
+    </p>
+<p>A <strong>(software) tool</strong> is a program that is employed in
+the development, repair, or enhancement of software programs.</p>
+
+  
+</div>
+
+<p>Software tools can assist developers in all activities of all phases
+of a software life cycle, including management, quality assurance,
+requirements elicitation, design, implementation, integration,
+deployment, evolution, optimization, and automation activities.
+Software tools can also be used during the operation of the
+developed software program for its monitoring, debugging, repair, 
+configuration, or other forms of analysis.</p>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Definition: Language Workbench </h4>
+    <p>
+
+    </p>
+<p>A <strong>language workbench</strong> is a tool
+that provides a set of techniques supporting the development and
+evolution of a language and its associated tooling, including design,
+implementation, deployment, evolution, reuse, and maintenance.</p>
+
+  
+</div>
+
+<p><a href="https://monticore.de/" target="_blank" rel="noopener noreferrer">MontiCore</a>, as described in
+<a href="#HKR21">[HKR21]</a>, is such a language workbench.</p>
+
+<p>A language workbench can also be called a “<em>meta-tool</em>” as its focus are
+tools as products. A language workbench can also be used to recursively
+develop parts of itself.</p>
+
+<p>Tools can be categorized according to the following options:</p>
+
+<ul>
+  <li>An <strong>API-based tool</strong> is essentially a set of methods that can be
+called to execute the functionality within an already existing process.
+The set of methods is specific to the tool’s functionality.</li>
+  <li>A <strong>command-line tool</strong> is an executable artifact that can be called
+from a command-line shell or a script and runs in its own virtual
+process space.</li>
+  <li>A <strong>plugin</strong> is a special form of API-based tool, where the API
+is predefined by an integrated development environment (IDE),
+in which a tool is pluggable when it realizes that API.
+The tool’s API is IDE-dependent but rather independent of the tool’s 
+functionality.</li>
+</ul>
+
+<p>Accordingly, there are several kinds of sources used, and results
+tools can produce:</p>
+
+<ul>
+  <li>The data may be available as an object structure within the program,
+which may be manipulated directly (API-based tools only).</li>
+  <li>The data may be available as an artifact (file) in the directory
+and thus must be loaded or parsed into an internal representation.</li>
+  <li>The data may be stored in a database and needs retrieval.</li>
+</ul>
+
+<p>Although every set of methods might be regarded as an API and, therefore,
+as an API-based tool,
+we suggest that certain forms of coherent functionalities
+with adequate granularity should be called a tool.
+In practice, many tools come with both API and CLI interfaces because, 
+typically,
+a <em>main</em> class method translates external invocation to internal
+API calls.</p>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Definition: Tool Workflow </h4>
+    <p>
+
+    </p>
+<p>A <strong>tool workflow</strong> is a combination of tool executions in a
+predefined order used to produce certain results in a
+fully automated form.</p>
+
+  
+</div>
+
+<p>Development workflows, in general, may also involve developers, testers, or
+lead users, and there are some development processes where these workflows
+are made explicit.
+A tool workflow focuses only on the automation aspect, allowing
+the workflow to be executed fully automatically.
+This may happen upon each relevant software change (e.g., version commit),
+daily overnight, when certain stages, e.g., release, are reached, etc.
+Essentially a dual workflow can be defined using a purely sequential
+script, but various efficiency optimizations are very helpful:</p>
+
+<ul>
+  <li>(1) the workflow should be executed incrementally, where only the
+necessary actions are repeated, and earlier intermediate results are reused,</li>
+  <li>(2) the users don’t have to care about the action dependencies,
+but the workflow manager itself knows how to sequentialize
+the defined actions and also
+when actions can be executed in parallel.</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">Gradle</code> and <code class="language-plaintext highlighter-rouge">make</code> are such workflow managers if configured well.</p>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h3 id="model-engineering-and-its-activities">Model Engineering and its Activities</h3>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Definition: Model Engineering </h4>
+    <p>
+
+    </p>
+<p><strong>Model Engineering</strong> comprises all
+activities around the creation, transformation, analysis,
+and management of models and
+their related artifacts
+with the purpose of assisting software and systems
+development or real-world understanding.</p>
+
+  
+</div>
+
+<p>To better support the use of models during development, it
+will become necessary to further understand models in terms
+of how they can be transformed and analyzed, as well as
+understand the impact of software size and complexity on
+model creation, management, and evolution. We expect that
+“Model Engineering” will become a new and highly interesting
+sub-discipline in the Software Engineering discipline.</p>
+
+<p>As a consequence: <strong>Model Engineering</strong> might be considered a
+new subdiscipline of Software Engineering.</p>
+
+<p>The following definitions describe a number of operations on models.</p>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<h5 id="forms-of-model-operations-and-relations"><strong><em>Forms of Model Operations and Relations</em></strong></h5>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Model Transformation </h4>
+    <p>
+
+    </p>
+<p>A <strong>model transformation</strong>
+applies to one or more source models and transforms them
+into one or more target models.</p>
+
+    <p>(definition from <a href="#CFJ+16">[CFJ+16]</a>)</p>
+  
+</div>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Refactoring </h4>
+    <p>
+
+    </p>
+<p><strong>Refactoring</strong> is a relation between two models. Model B is
+a refactoring of model A if all information that model A
+contains about the modeled system can also be derived from
+model B, but not more.</p>
+
+    <p>(definition from <a href="#CFJ+16">[CFJ+16]</a>)</p>
+  
+</div>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Refinement </h4>
+    <p>
+
+    </p>
+<p><strong>Refinement</strong> is a relation between two models. Model B is
+a refinement of model A if all information that can be
+derived from model A can also be derived from model B.</p>
+
+    <p>(definition from <a href="#CFJ+16">[CFJ+16]</a>)</p>
+  
+</div>
+
+<p>While refactoring is typically regarded as “horizontal”, i.e.,
+remaining on the level of abstraction, refinement is regarded as
+“vertical”, i.e., downstream from abstract requirements to concrete
+realization. Refactoring enables evolution.</p>
+
+<p>Refinement is only possible if the modeling language itself provides
+forms of abstractions, which allow the omission of details, but also 
+through explicit <strong>underspecification</strong> by using special 
+language constructs.</p>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Model Composition </h4>
+    <p>
+
+    </p>
+<p>Given two independently defined models, <strong>model
+composition</strong> is an operator to combine both models into
+one, such that their individual semantics is retained and
+certain details of the models are encapsulated.</p>
+
+    <p>(definition from <a href="#CFJ+16">[CFJ+16]</a>)</p>
+
+  
+</div>
+
+<p>Composition of models
+enables developers to decompose a problem and solve the resulting
+smaller problems separately, in parallel, and in a modular form.
+Even more, composition of models enables reusing predefined solutions, i.e. 
+through reuse of models for example from a library.</p>
+
+<p>It is noteable that composition may not only be applied to models.
+Related, but also to some extent orthogonal are
+<em>component composition</em>, <em>tool composition</em>, tool <em>workflow composition</em>,
+and <em>language composition</em>.</p>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<h5 id="development-activities"><strong><em>Development Activities</em></strong></h5>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Code Generation </h4>
+    <p>
+
+    </p>
+<p><strong>Code generation</strong> is the process of translating
+a source model into artifacts of an executable language.</p>
+
+  
+</div>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Model Analysis </h4>
+    <p>
+
+    </p>
+<p><strong>Model analysis</strong> comprises all
+activities</p>
+
+    <ul>
+      <li>to understand or query the properties and consequences
+defined in a model,</li>
+      <li>to ensure the model quality, and</li>
+      <li>to understand the properties of the modeled software,
+system, or real world.</li>
+    </ul>
+
+  
+</div>
+
+<p>Code generation comprises all constructive activities, including the
+generation of tests, reports, documentation, and configurations,
+while model analysis comprises all analytic activities, including
+static analysis with formal methods on certain possible deficiencies,
+simulation of executable models for analyzing dynamic behavior
+in a relevant subset of scenarios, or testing.
+We distinguish high-level, complex analysis, e.g., with metric results
+from simple context conditions, which at this point have already 
+been checked.</p>
+
+<p>Model analysis deals with the questions of</p>
+<ul>
+  <li>(1) whether the model itself is of high quality,</li>
+  <li>(2) whether the model fits the modeled software,
+system, or real world, and</li>
+  <li>(3) what analysis techniques must be provided for developers
+to enable them to retrieve useful information from the model.</li>
+</ul>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<h5 id="development-processes"><strong><em>Development Processes</em></strong></h5>
+
+<p>Development activities are organized in development processes,
+which are classifiable according to the following definitions.</p>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Model-Based Software Engineering (MBSE) </h4>
+    <p>
+
+    </p>
+<p><strong>Model-based Software Engineering</strong> (MBSE) is the use
+of explicit models and modeling techniques
+to support software requirements elicitation,
+design, analysis, testing, integration,
+verification, validation, configuration, and deployment activities
+beginning in the conceptual design phase and continuing
+throughout the development and later life cycle phases.</p>
+
+    <p>(our definition)</p>
+  
+</div>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Model-Based Systems Engineering (MBSysE) </h4>
+    <p>
+
+    </p>
+<p><strong>Model-based Systems Engineering</strong> (MBSysE) is the formalized
+application of modeling to support system requirements,
+design, analysis, verification, and validation activities
+beginning in the conceptual design phase and continuing
+throughout development and later life cycle phases.</p>
+
+    <p>(from INCOSE SE Vision 2020)</p>
+  
+</div>
+
+<ul>
+  <li>In <strong>Model-based development (MBD)</strong>,
+models are used in some activities of development, but the
+activities and their order basically remain the traditional
+development activities.</li>
+  <li>In <strong>Model-driven development (MDD)</strong>, models also drive and guide
+the development process, and thus, models are the primary
+engineering artifacts.</li>
+</ul>
+
+<p>Model-driven development is much more helpful because the use of
+models must drive the process in such a way that other activities can
+be omitted or at least considerably reduced, such that the overall
+process becomes more efficient, more timely, and produces better
+results.</p>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<div class="publications">
+  <ol class="bibliography">
+<li>
+<div class="row">
+
+  <div id="HKR21" class="col-sm-11">
+    <!-- Entry bib key -->
+    [HKR21]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              K.
+            
+          
+        
+        
+           Hölldobler,
+        
+      
+        
+        
+          
+          
+            
+              O.
+            
+          
+        
+        
+           Kautz,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.monticore.de/handbook.pdf" target="_blank" rel="noopener noreferrer">MontiCore Language Workbench and Library Handbook: Edition 2021</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+        Aachener Informatik-Berichte, Software Engineering, Band 48,
+      
+      
+        ISBN 978-3-8440-8010-0,
+      
+      
+      
+        Shaker Verlag,
+      
+      
+      
+      
+        May
+      
+      
+        2021.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="RW18" class="col-sm-11">
+    <!-- Entry bib key -->
+    [RW18]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Abstraction-and-Refinement-in-Hierarchically-Decomposable-and-Underspecified-CPS-Architectures.pdf">Abstraction and Refinement in Hierarchically Decomposable and Underspecified CPS-Architectures</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Principles of Modeling: Essays Dedicated to Edward A. Lee on the Occasion of His 60th Birthday,
+        
+      
+
+      
+        
+          
+          
+          
+             Lohstroh, Marten and Derler, Patricia  Sirjani, Marjan (Eds.),
+          
+        
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 383-406,
+      
+      
+        LNCS 10760,
+      
+      
+        ISBN 978-3-319-95246-8,
+      
+      
+      
+        Springer,
+      
+      
+      
+      
+      
+        2018.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="CFJ+16" class="col-sm-11">
+    <!-- Entry bib key -->
+    [CFJ+16]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Combemale,
+        
+      
+        
+        
+          
+          
+            
+              R.
+            
+          
+        
+        
+           France,
+        
+      
+        
+        
+          
+          
+            
+              J.-
+            
+          
+            
+              M.
+            
+          
+        
+        
+           Jézéquel,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Steel,
+        
+      
+        
+        
+          
+          
+            
+              D.
+            
+          
+        
+        
+           Vojtisek:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="https://www.crcpress.com/Engineering-Modeling-Languages/Combemale-France-Jezequel-Rumpe-Steel-Vojtisek/p/book/9781466583733" target="_blank" rel="noopener noreferrer">Engineering Modeling Languages: Turning Domain Knowledge
+    into Tools</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        Chapman &amp; Hall/CRC Innovations in Software
+    Engineering and Software Development Series,
+      
+      
+      
+      
+        Nov.
+      
+      
+        2016.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="HR04" class="col-sm-11">
+    <!-- Entry bib key -->
+    [HR04]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              D.
+            
+          
+        
+        
+           Harel,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/staff/rumpe/publications20042008/Meaningful-Modeling-Whats-the-Semantics-of-Semantics.pdf">Meaningful Modeling: What’s the Semantics of
+    ”Semantics”?</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+        
+          In: IEEE Computer Journal,
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 37(10),
+        
+      
+      
+      
+      
+        pp. 64-72,
+      
+      
+      
+      
+      
+      
+      
+      
+        Oct.
+      
+      
+        2004.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="Sta73" class="col-sm-11">
+    <!-- Entry bib key -->
+    [Sta73]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              H.
+            
+          
+        
+        
+           Stachowiak:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="">Allgemeine Modelltheorie</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        Springer Verlag,
+      
+      
+      
+        Wien, New York,
+      
+      
+      
+        1973.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+</ol>
+</div>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h3 id="further-links">Further links</h3>
+
+<ul>
+  <li><a href="/essays">Essays, Comments, Definitions around Modeling</a></li>
+  <li><a href="/publications">Publications</a></li>
+  <li><a href="/research">Topic sorted list of most interesting publications</a></li>
+  <li><a href="/books">Books</a></li>
+  <li><a href="https://www.se-rwth.de">Website of the SE</a></li>
+</ul>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+      <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+let scrollButton = document.getElementById("btn-back-to-top");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
+  }
+}
+
+scrollButton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+    
+
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="sticky-bottom mt-5">
+  <div class="container">
+    <!-- &copy; Copyright 2025   . -->
+    
+    
+    <a href="https://www.se-rwth.de/impressum/">Impressum</a>.
+    
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="/assets/js/jquery.min.js" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/popper.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/mdb.min.js" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="/assets/js/masonry.pkgd.min.js"></script>
+<script defer src="/assets/js/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="/assets/js/medium-zoom.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+  
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer src="/assets/js/tex-mml-chtml.js" type="text/javascript" id="MathJax-script"></script>
+<script defer src="/assets/js/polyfill.min.js"></script>
+
+
+  <script src="/assets/js/toc.js" crossorigin="anonymous"></script>
+  <script async src="/assets/js/widgets.js" charset="utf-8"></script>
+
+</html>
