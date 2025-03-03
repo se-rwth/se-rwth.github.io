@@ -1,0 +1,3346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Reference Models and Conformance: Definition and Example |
+
+
+
+  SE@RWTH
+
+</title>
+<meta name="description" content="Website of the Chair of Software Engineering at RWTH Aachen
+">
+
+<!-- Google Verification -->
+
+
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css" integrity="oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/mdb.min.css" integrity="Y3+zUQCTOSqaSbyEFKLA6oQi8oF3I2xzkIR+ywroD3fkLG3LF2DJq/mU03KQqSZv/nGQDC2Upf73IZYZYMX4GQ==" crossorigin="anonymous" type="text/css"/>
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="/assets/css/all.min.css" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css" integrity="pOZ6Cz1wopk9RluJMvHM1AEMkPCS+ihnGztyD0kI991jgZ8hj9YQ61k4ouvGNvLHE0z6Vifp3ytAmeeW8sbbZQ==" crossorigin="anonymous" type="text/css">
+
+<!-- Styles -->
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon.png">
+<link rel="stylesheet" href="/assets/css/main.css" type="text/css">
+<!--<link rel="canonical" href="https://www.se-rwth.de/essay/Reference-Models/">-->
+
+
+
+
+
+
+    <!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['addDownloadExtensions', "bib"]);
+    _paq.push(['disableCookies']);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="https://stats.fh-aachen.de/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '34']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+<!-- End Matomo Code -->
+
+  </head>
+
+  <body class=" sticky-bottom-footer">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand title font-weight-lighter" href="/">
+        
+          <img src="/assets/img/icons/rwth_se_rgb.png" height="70px">
+        
+        
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <!-- <li class="nav-item ">
+            <a class="nav-link" href="/">
+              About
+              
+            </a>
+          </li> -->
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Essays
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essays/">Essay List</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Definition/">Digital Twin</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Companion/">Digital Companion</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Maturity-Model/">Digital Twin Maturity Model</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Explicit-versus-implicit-models/">Explicit versus Implicit Models</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Gesetze-DSL/">DSLs für Gesetze und Ordnungen (in D)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Research-Software-Engineering/">Research Software Engineering (RSE)</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Modeling-in-advanced-systems-engineering/">Modeling in Advanced Systems Engineering</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Model-Definitions/">Model-Based Definitions</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Low-Code/">Low Code</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Reference-Models/">Reference Models</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Research
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/">Research Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#foundations">MBSE Foundations</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#applications">Application Domains</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#tools">Software Tools</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Publications
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/publications/">All Publications</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/books/">Books</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/phdtheses/">Ph.D. Theses</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/assets/bibliography/all-software-engineering-rwth-references.bib">Bibtex</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Teaching
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/">Teaching</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/teaching-overview/">Teaching Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/#currentsem">Current Semester</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/archive/">Course archive (starting WS 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="https://www.se-rwth.de/teaching/indexArchiv.php">Course archive (until SoSe 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/theses/">BA/MA Theses</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/">Major project overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/22.09.MontiGem.Ford.Press.Release/">MontiGem Ford Press Release</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiCore/">MontiCore</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiGem/">MontiGem</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+          <li class="nav-item ">
+              <a class="nav-link" href="/jobs/">
+                Jobs
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About us
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/about/">About us</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/staff/">Staff</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/activities/">Activities</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teams/">Teams</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/contact/">Contact &amp; Arrival</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Reference Models and Conformance: Definition and Example</h1>
+    <p class="post-description">White Paper by Bernhard Rumpe, Judith Michael, Software Engineering, RWTH Aachen, June 2023</p>
+  </header>
+
+  <article>
+    
+
+    <div class="toc_content">
+      
+    </div>
+    <div class="clearfix">
+      <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<h3 id="why-reference-models">Why Reference Models?</h3>
+
+<p>In many discussions and publications, we recognize the use of the term 
+“<strong>reference model</strong>”.
+There are “technical reference models”, “business reference models”,
+the “ISO/OSE 7 layer communication reference model”, 
+“enterprise architecture reference models”, “performance reference models”,
+and many more.
+Occasionally even meta-models seem to be used as reference models.</p>
+
+<p>In <a href="#GR21d">[GR21d]</a>, we have raised the question of whether
+it is possible to leverage this notion of a reference model.
+In particular:</p>
+
+<p>How can the notion of a
+reference model, explicitly denoted in a given modeling
+language, be formalized together with a precisely defined
+and tool-assisted notion of a conformance relation that
+would enable concrete realizations of the reference model?</p>
+
+<p>And here would like to give some comments on this discussion.</p>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<h3 id="reference-model-in-the-common-literature">Reference Model in the Common Literature</h3>
+
+<p>The definition from <a href="https://en.wikipedia.org/wiki/Reference_model" target="_blank" rel="noopener noreferrer">[Wikipedia]</a>
+is (as of Sept. 2022):
+<em>“A reference model—in systems,
+    enterprise, and software engineering—is an abstract
+    framework or domain-specific ontology consisting of an
+    interlinked set of clearly defined concepts produced by an
+    expert or body of experts to encourage clear communication.
+    A reference model can represent the component parts of any
+    consistent idea, from business functions to system
+    components, as long as it represents a complete set. This
+    frame of reference can then be used to communicate ideas
+    clearly among members of the same community.”</em></p>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<h5 id="critics-on-the-above-definition-of-reference-model">Critics on the above Definition of Reference Model</h5>
+
+<p>In full consideration, we are not completely satisfied with this
+definition. Firstly, even a reference model is a “model.”
+According to our understanding of the <strong>general definition of
+“model”</strong> (which is based on Stachowiak <a href="#Sta73">[Sta73]</a>,</p>
+<ul>
+  <li>(1) there should
+  be an original, real system/entity that is being modeled,</li>
+  <li>(2) the model should be an abstraction of the original, and</li>
+  <li>(3) the model has something to do with the original system.</li>
+</ul>
+
+<p>Secondly, in the definition, the term “reference model” shares a lot 
+of similarities to “conceptual model” and “ontology”, which should 
+probably be distinguishable. Third, the reference model “represents a 
+complete set”, without clarifying what representation or completeness 
+in this context is.</p>
+
+<p>We draw the following consequences:</p>
+
+<ul>
+  <li>
+    <p>(C1) A model can be <strong>used as a substitution</strong> for
+the real system: The <strong>Principle of Substitution</strong> then applies 
+to reference models as well. It states that a
+useful subset of questions about the original can be answered by
+querying the model. This seems to fit the definition of a reference 
+model because such a model should be a reference
+for many (similar) systems, even though there is typically
+a concretization development step between the definition of
+the reference model and the finalization of the system.</p>
+  </li>
+  <li>
+    <p>(C2) A model is usually defined <strong>explicitly in 
+an appropriate modeling 
+language</strong>. For example, if we design a
+reference model for some data standard, we can use class diagrams as 
+a language for its expression.</p>
+  </li>
+  <li>
+    <p>(C3) It is
+often feasible to <strong>use a similar or the same 
+language for both reference and
+concrete models</strong>, even though sometimes specific language
+constructs may only be used in the reference model, respectively, the
+concrete model. – This may be a restriction for the general notion 
+of the reference model because, in principle, it might be possible to actually 
+use different modeling languages for reference models and their concrete 
+realizations, but we ignore this possibility for now.</p>
+  </li>
+  <li>
+    <p>(C4) As a consequence, it is often not easy to recognize a reference
+model from the concrete realizations that are possible.
+It may be that the same model may serve as concrete model or as reference 
+model in different contexts.</p>
+  </li>
+  <li>
+    <p>(C5) Given a concrete model that is used for realization within
+a concrete system, it must be clearly decidable whether and
+how far the <strong>concrete model actually conforms to the reference model</strong>. 
+A somewhat unclear conformance relation is not necessarily a problem when the
+reference model serves education, communication, or an
+otherwise informal purpose.
+However, when there is <strong>tool assistance</strong> available or needed, 
+the question of 
+whether a concrete model conforms to its reference
+becomes more critical. When the <strong>reference model is defined from 
+a legal or standard context</strong>, the conformance
+question also becomes relevant for <strong>certification</strong>.</p>
+  </li>
+</ul>
+
+<p>While the word “reference model” is used quite frequently,
+to our understanding, many domains and their communities
+have different and mostly informal understandings of the significance 
+of a reference model and, consequently, different
+approaches to using reference models in a particular domain.</p>
+
+<p>We posit that a more concise and formal understanding of
+the concept of a reference model is needed that
+improves the tool-assisted relationship between a general
+“reference model” and the set of concrete realizations that
+conform to that reference model.</p>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<h3 id="our-definition-of-reference-model">Our Definition of Reference Model</h3>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Definition: Reference Model </h4>
+    <p>
+
+    </p>
+<p>A <strong>reference model</strong> 
+    in systems, enterprise, and software engineering is</p>
+
+    <ul>
+      <li>a model in a given language</li>
+      <li>used to describe a set of domain concepts and their
+domain-specific relations and</li>
+      <li>is equipped with a <strong>conformance relation</strong> that precisely
+identifies the set of conforming models within the same
+language.</li>
+    </ul>
+
+  
+</div>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<h5 id="rationale-for-this-definition-of-a-reference-model"><em>Rationale for this Definition of a Reference Model</em></h5>
+
+<p>To some extent, we have given the rationale already in the motivation above.
+Here are additional arguments.</p>
+
+<p>The main difference between a reference model and a concrete model
+is not purely a syntactical issue but based on the purpose of the model.
+Or to be more precise on the multiple purposes in the various activities of a 
+development process. We identify these main purposes for reference models,
+where not all purposes must be addressed with each model:</p>
+
+<ul>
+  <li>(P1) The introduction of <strong>domain concepts</strong> (which itself 
+  could be regarded as a fuzzy term). We assume that a
+  domain concept has a name and potentially a number of properties that,
+  together, can somehow be represented in our modeling language.
+  These domain concepts are (and this is again somewhat informal) 
+  of general interest and, thus, typically also can be regarded as
+  elements of a glossary or an ontology of a certain domain.</li>
+  <li>(P2) <strong>Domain-specific relations</strong> connect these domain concepts.
+  These relations are also described in the reference model.</li>
+  <li>(P3) The <strong>reference model itself</strong> usually also has a name and, thus, allows 
+  us to talk about the overall system structure.</li>
+  <li>(P4) There is <strong>additional information</strong> or <strong>methodical development advice</strong> 
+  available that fits the domain concepts and, thus, can be manually reused
+  in a development process.</li>
+  <li>(P5) There is a <strong>predefined implementation</strong> available 
+  that fits the domain concepts and, thus, can be automatically
+  reused directly or mapped to the concrete model and its implementation
+  via smart tooling.</li>
+</ul>
+
+<p>(P1) and (P2) are usually the case in data models describing the 
+application data of a domain, such as <code class="language-plaintext highlighter-rouge">Person</code> or <code class="language-plaintext highlighter-rouge">Account</code>, and their 
+relation, like <code class="language-plaintext highlighter-rouge">owns</code>. (P3) is, e.g., the case in the ISO/OSE 7 Layer 
+Communication model or in various Design Patterns. 
+Another example is a traffic light model
+with two states, <code class="language-plaintext highlighter-rouge">green</code> and <code class="language-plaintext highlighter-rouge">red</code>, and the according 
+transitions between those states as a reference model 
+probably serves all three purposes (P1-3), if refinable, e.g., to 
+traffic lights with third state <code class="language-plaintext highlighter-rouge">yellow</code>.</p>
+
+<p>Using reference models, however, becomes really interesting if (P4) 
+or even (P5) can be leveraged.
+In adequate tooling, for example, the concept <code class="language-plaintext highlighter-rouge">User</code> may be equipped with 
+possibilities for a user to administrate her own setting, acquire roles, receive 
+rights to read/write data, etc.</p>
+
+<p>It all depends on the conformance relation and the tooling that 
+(a) checks conformance and (b) has smart ideas on how to transfer 
+predefined functionality from the reference model to the concrete
+model, respectively, its implementation.</p>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<h3 id="definition-of-the-conformance-relation">Definition of the Conformance Relation</h3>
+
+<div class="definition no_toc_section">
+    
+    <h4 class="no_toc"> Definition: Conformance Relation between Reference Model and Concrete Model </h4>
+    <p>
+
+    </p>
+<p>The <strong>conformance relation</strong> between two models <code class="language-plaintext highlighter-rouge">A</code>, <code class="language-plaintext highlighter-rouge">B</code></p>
+
+    <ul>
+      <li>is a binary, reflexive, transitive relation that</li>
+      <li>describes whether concrete model <code class="language-plaintext highlighter-rouge">B</code> is a concretization of 
+reference model <code class="language-plaintext highlighter-rouge">A</code>.</li>
+    </ul>
+
+  
+</div>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<h5 id="rationale-for-this-definition-of-the-conformance-relation"><em>Rationale for this Definition of the Conformance Relation</em></h5>
+
+<p>The conformance relation is defined as a binary relation because, in 
+practice, we only need to look at the reference model describing 
+relevant concepts and its implementation, respectively, the concrete 
+system model describing the implementation.</p>
+
+<ul>
+  <li>(CR1) The conformance relation generally relates more abstract models 
+  with more concrete models.</li>
+  <li>(CR2) Because the reference model and concrete model belong to the same 
+  language, we may accept that a reference model can also be a concrete 
+  implementation, which means conformance is <strong>reflexive</strong>. 
+  Transitivity is probably not an important property for the conformance 
+  relation, but (in the tradition of mathematical properties), we find it 
+  a pretty clean approach when conformance can be applied 
+  <strong>transitively</strong>. It, however, is also relatively clear that the 
+  conformance relation is not symmetric but relates the more abstract to 
+  the more concrete models. But it may be that it is not fully asymmetric 
+  either.</li>
+  <li>(CR3) As a consequence, the sets of reference models and concrete 
+  models of language are not disjoint but may have a large overlap.
+  However, they don’t necessarily have to be identical, i.e., there may be 
+  models that only can be used as reference models (e.g., because certain 
+  abstract concepts (e.g., abstract classes) in the models do not have
+  concretizations yet).</li>
+</ul>
+
+<p>In a development project that uses a reference model, the conformance 
+relation is potentially a development artifact on its own. It may even 
+be that it is necessary to explicitly write down a <strong>mapping</strong> to 
+connect abstract domain concepts of the reference model with concrete 
+realization concepts in the concrete model. These kinds of mappings may 
+be of complex forms, and it could well be that there is no generalized form
+for all purposes. 
+However, we expect at least the following property to hold</p>
+
+<ul>
+  <li>(CR4) The conformance relation between abstract and concrete models 
+can be effectively checked by an algorithm. This must hold in both cases, 
+(CR4.1), where the mapping can be constructed automatically from two given 
+models, and (CR4.2), where the mapping is explicitly given as some kind of 
+parameter of the conformance relation.</li>
+</ul>
+
+<p>Please note that we do not enforce that a reference model describes a 
+structure, such as a data structure or a communication infrastructure. 
+We can perfectly understand that people use Statecharts, BPMN 
+models, Petri Nets, or activity diagrams as reference models. 
+Furthermore, it may well be that a domain-specific language created 
+for a specific purpose also comes along with the construct of reference 
+models within the language.</p>
+
+<p>However, we assume that the construction of reference models 
+and, in particular, the conformance relation needed is highly driven
+by the semantics of the particular language and, thus, a general,
+purely syntax-based conformance relation will not be sufficient.
+As a consequence, conformance relations need to be defined for
+modeling languages individually.</p>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<h3 id="reference-models-for-data-using-the-class-diagram-language">Reference Models for Data (using the Class Diagram Language)</h3>
+
+<p>Let us explain a possible conformance relation for class diagrams as 
+known from the UML <a href="#Rum17">[Rum17]</a> using an example. 
+As usual, a class 
+diagram has classes, interfaces, enumerations, attributes, methods, 
+constants, and binary associations and compositions of various forms.
+Consider the following 
+class diagram in textual form, i.e., a model of 
+<a href="https://github.com/MontiCore/cd4analysis" target="_blank" rel="noopener noreferrer">MontiCore’s CD4A language</a>,
+which we regard as a reference model:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// reference model                              as CD4A model
+classdiagram AccessRights {
+  class User;
+  class Role;
+  class Permission;
+  class Create extends Permission;
+  class Update extends Permission;
+  association userroles User -&gt; Role [*];
+  association Role -&gt; Permission [*];
+}
+</code></pre></div></div>
+
+<p>A realization could be:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// concrete model                              as CD4A model
+classdiagram Flensburg {
+  class Person;
+  class Admin;
+  class CarOwner;
+  association Person -&gt; Admin [0..1];
+  association myCars   Person -&gt; CarOwnerRole [*];
+  class Permission;
+  class CreateCar extends Permission;
+  class UpdateCar extends Permission;
+  association allowed  [1] CarOwnerRole &lt;-&gt; Permission [1..3];
+}
+</code></pre></div></div>
+
+<p>For clarification, we talk about <em>concrete classes</em> <code class="language-plaintext highlighter-rouge">C</code> and <em>concrete 
+associations</em> <code class="language-plaintext highlighter-rouge">A</code> when referring to the <em>concrete model</em> and <em>reference 
+classes</em> <code class="language-plaintext highlighter-rouge">R</code>, <em>reference association</em> <code class="language-plaintext highlighter-rouge">S</code>, etc. when referring to the <em>reference 
+model</em>. We regard concrete elements as <em>incarnated</em> reference elements.</p>
+
+<p>It is worthwhile to clarify that the term “<em>incarnation</em>” shares some
+characteristics of “instantiation”, but there are
+also substantial differences: (1) Incarnation relates models elements 
+of the same kind, here classes with classes and associations with associations,
+while instantiation normally relates different kinds, e.g., objects with classes.
+(2) Incarnation is transitive and reflexive 
+on the model elements (similar to the conformance relation
+on models itself), while instantiation is not.</p>
+
+<p>A conformation relation between the above models can (informally) be defined as:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// list of incarnations for model elements                     (informal)
+  Person                                       ===&gt;  User
+  Admin, CarOwner                              ===&gt;  Role
+  Permission, CreateCar, UpdateCar             ===&gt;  Permission
+  (Person -&gt; Admin), (Person -&gt; CarOwnerRole)  ===&gt;  userroles
+  allowed                                      ===&gt;  (Role -&gt; Permission)
+</code></pre></div></div>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<h5 id="requirements-on-conformance-relations">Requirements on Conformance Relations</h5>
+
+<p>We can argue that the above model <code class="language-plaintext highlighter-rouge">Flensburg</code> is a conforming 
+implementation of <code class="language-plaintext highlighter-rouge">AccessRights</code> when using the incarnation mapping given here. 
+It does have a 
+number of specialities, which are worthwhile discussing:</p>
+
+<ul>
+  <li>(R1) A concrete class <code class="language-plaintext highlighter-rouge">C</code> incarnates (at most) one reference class <code class="language-plaintext highlighter-rouge">R</code>
+      (e.g., <code class="language-plaintext highlighter-rouge">Person</code> incarnates <code class="language-plaintext highlighter-rouge">User</code>).
+      In general, it is also possible that additional new classes
+      exist in the concrete model.</li>
+  <li>(R2) The same reference class <code class="language-plaintext highlighter-rouge">R</code> may be incarnated by many concrete classes
+      (e.g., <code class="language-plaintext highlighter-rouge">Role</code> by <code class="language-plaintext highlighter-rouge">Admin, CarOwner</code>).</li>
+  <li>(R3) Subclassing relations are preserved, i.e., the
+     concrete class <code class="language-plaintext highlighter-rouge">C2 extends C1</code> exactly if their reference classes
+     <code class="language-plaintext highlighter-rouge">R2 extends R1</code>. Class <code class="language-plaintext highlighter-rouge">C2</code>need not necessarily be a direct subclass
+     but can be found in the subclassing hierarchy of <code class="language-plaintext highlighter-rouge">C1</code>.</li>
+  <li>(R4) A concrete association <code class="language-plaintext highlighter-rouge">A</code> incarnates (at most) one reference association <code class="language-plaintext highlighter-rouge">S</code>
+      (e.g., <code class="language-plaintext highlighter-rouge">allowed</code> incarnates <code class="language-plaintext highlighter-rouge">(Role -&gt; Permission)</code>).
+      Again it is possible that additional associations exist in the 
+      concrete model.</li>
+  <li>(R5) In analogy to classes, the same reference association <code class="language-plaintext highlighter-rouge">S</code>
+     may be incarnated by many concrete associations.
+      (e.g., <code class="language-plaintext highlighter-rouge">userroles</code> has two independent incarnations).</li>
+  <li>(R6) Reference associations are preserved. That means given concrete 
+      classes <code class="language-plaintext highlighter-rouge">C1</code> and <code class="language-plaintext highlighter-rouge">C2</code>, their reference classes <code class="language-plaintext highlighter-rouge">R1</code> and <code class="language-plaintext highlighter-rouge">R2</code>,
+      and a reference association <code class="language-plaintext highlighter-rouge">S: R1 -&gt; R2</code>, then
+      there must also be a concrete association <code class="language-plaintext highlighter-rouge">A: C1 -&gt; C2</code>, such that
+      <code class="language-plaintext highlighter-rouge">A</code> incarnates <code class="language-plaintext highlighter-rouge">S</code>
+      (in our example all concrete classes have respective concrete associations 
+       attached
+       except the <code class="language-plaintext highlighter-rouge">Admin</code>, which violates this condition.
+       We could argue that admin doesn’t need explicit permissions because,
+       in our application, she has all permissions anyway, but it does 
+       violate the conformance rule).</li>
+</ul>
+
+<p>The above example is only an abstract example. The really interesting part is 
+the transfer of an also existing standard implementation for <code class="language-plaintext highlighter-rouge">AccessRights</code>, either in 
+the form of a methodological approach, a framework, or even a generator 
+that adds all the technical details, such as rights management, 
+database storage, etc., for such a reference model. 
+<strong>The applicable conformance relation normally depends on the available standard 
+implementation or, respectively, the generator functionality</strong>. Or in other 
+words: even if a general conformance relation is available, it may be 
+that concrete usage has to restrict the conformance relation according 
+to specific needs or may relax it with certain respects.</p>
+
+<p>[<a href="#NRSS22">[NRSS22]</a>, <a href="#MRR11b">[MRR11b]</a> provides <em>semantic differencing</em> 
+as an advanced analysis technique to understand the differences between two 
+class diagrams on the basis of the actual object structures that are 
+allowed in one but not the other model. 
+This kind of semantic difference uses identical class, attribute, and 
+association names to identify
+comparable classes. Semantic differencing, however, can be extended to
+reference models and their incarnations to understand 
+the differences between the concrete realization and the original 
+reference model when incorporating the conformance relation
+into the semantic difference calculation.</p>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<h5 id="variants-of-conformance-relations">Variants of Conformance Relations</h5>
+
+<p>Let us give several examples:</p>
+<ul>
+  <li>The reference model uses attribute <code class="language-plaintext highlighter-rouge">long ident</code> 
+as an internal identification mechanism. It may be allowed to 
+incarnate that attribute by <code class="language-plaintext highlighter-rouge">String ident</code>, because strings also have a linear 
+order or by <code class="language-plaintext highlighter-rouge">int id</code> because we know that the reduced range is sufficient.
+In case a framework implementation, however, already relies on data type
+<code class="language-plaintext highlighter-rouge">long</code>, such a change would be illegal.</li>
+  <li>The reference model uses a certain cardinality for association
+<code class="language-plaintext highlighter-rouge">S: C1 -&gt; C2 [card]</code>. Cardinality can, in principle, be restricted
+because we know from the domain that certain restrictions are okay or 
+extended, e.g., from <code class="language-plaintext highlighter-rouge">[1]</code> to <code class="language-plaintext highlighter-rouge">[*]</code>, because that is needed in the domain.
+It may be that both changes are okay, or neither of them.</li>
+  <li>The reference model has a direct subclass relationship between classes
+<code class="language-plaintext highlighter-rouge">R1</code> and subclass <code class="language-plaintext highlighter-rouge">R2</code>. In the concrete model, there may be many 
+incarnations of <code class="language-plaintext highlighter-rouge">R2</code> arranged in a deep hierarchy.</li>
+  <li>Furthermore, it may be that adding additional attributes or associations 
+is restricted because there are predefined implementations (or 
+predefined generative techniques) of certain reference classes.</li>
+</ul>
+
+<p>Potentially there are many more details to be handled, such as
+freely choosable independent names or attribute types, how to deal with
+enumerations, what are valid or necessary incarnations of interfaces 
+and abstract classes, etc. 
+Ane specifically interesting question is, for example, whether a 
+reference attribute <code class="language-plaintext highlighter-rouge">X</code> or a reference association <code class="language-plaintext highlighter-rouge">S</code> can be incarnated in the 
+concrete model by a derived attribute or a composed association.
+In both cases, the realization is hidden in the combination of data 
+structure and algorithmic functionality, such as getters 
+with calculation bodies for 
+derived attributes or an OCL-like logic formula describing how to derive a
+composed association from basic ones.</p>
+
+<p>To summarize, we would argue that there is no such thing as one single
+conformance relation even for class diagrams, but there may be a core,
+as shown in the requirements (R1) to (R6), plus a number of
+additional or optional relaxations, who are, however, dependent
+on the actually available tooling behind the reference model
+and therefore need to be defined together with the reference model.</p>
+
+<p>When looking at other kinds of languages, for example, Statecharts, 
+the very same observations apply. There we have to map states, 
+transitions, nesting of states, preconditions, entry and exit actions, 
+etc. Preconditions may, for example, be relaxed or strengthened, or 
+alternative transitions in nondeterministic Statecharts may be 
+removed. A simulation relation for Statecharts or, more precisely, a 
+refinement calculus like in <a href="#Rum96">[Rum96]</a> or <a href="#PR94">[PR94]</a>
+could be applied here. 
+Especially challenging is the question of whether a reference 
+transition may be realized by a sequence of concrete transitions and 
+what happens if the sequence can be interrupted in the middle.</p>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<h5 id="representations-of-the-conformance-relation-mapping">Representations of the Conformance Relation Mapping</h5>
+
+<p>An interesting question is what an explicit representation 
+for a conformance relation looks like if needed. Above, we have given an informal 
+list to describe this mapping. The list contains explicitly given names 
+for classes and associations but also maps unnamed associations by 
+using the <code class="language-plaintext highlighter-rouge">(C1 -&gt; C2)</code> notation.</p>
+
+<p>We actually see several options for dealing with such mappings:</p>
+
+<ul>
+  <li>(O1) An explicit mapping language similar to the above shown informal 
+  artifact can be used.</li>
+  <li>(O2) The mapping can be extracted from the two 
+  models by using naming conventions.</li>
+  <li>(O3) The concrete model explicitly 
+  refers to the reference model by using the domain concepts introduced in the 
+  reference model as stereotypes, labels, or flags.</li>
+  <li>(O4) The concrete 
+  model is actually an extension of the reference model, which means that 
+  all model elements (here, classes and associations) 
+  defined in the reference model are 
+  explicitly included and therefore used in the concrete model.</li>
+</ul>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<h5 id="conformance-relation-when-using-a-framework">Conformance Relation when using a Framework</h5>
+
+<p>Option (O4) is quite common, especially if the reference model has a
+framework implementation, where the classes of the reference model are 
+already and explicitly implemented under the very same names.
+Using different names is then not a possibility. 
+The concrete model then would then have to be:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// concrete model as extension                          as CD4A model
+classdiagram Flensburg extends AccessRights {
+  class Person extends User;
+  class Admin extends Role;
+  class CarOwner extends Role;
+  class CreateCar extends Permission;
+  class UpdateCar extends Permission;
+}
+</code></pre></div></div>
+
+<p>This model is relatively compact because associations need not be
+mentioned explicitly again but are inherited from <code class="language-plaintext highlighter-rouge">AccessRights</code>.
+However, this approach does neither allow for adapting 
+cardinalities of associations nor building multiple incarnations of associations.</p>
+
+<p>A similar approach could be to develop the concrete model independently 
+at first and then apply a generalized merge algorithm, similar to
+the one provided by 
+<a href="https://github.com/MontiCore/cd4analysis" target="_blank" rel="noopener noreferrer">MontiCore’s CD4A language</a>,
+and merge the framework classes, associations, and, thus, infrastructure
+into the concrete model.</p>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<h5 id="conformance-relation-when-using-a-flexible-generator">Conformance Relation when using a flexible Generator</h5>
+
+<p>If a generator is available (O3), then a feasible and, therefore, also quite 
+common alternative would be to label the concrete model elements like 
+in the following example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// concrete model using stereotypes                      as CD4A model 
+classdiagram &lt;&lt;labels:"AccessRights"&gt;&gt; Flensburg { 
+  class &lt;&lt;User&gt;&gt; Person;
+  class &lt;&lt;Role&gt;&gt; Admin;
+  class &lt;&lt;Role&gt;&gt; CarOwner;
+  association &lt;&lt;userroles&gt;&gt; Person -&gt; Admin [0..1];
+  association &lt;&lt;userroles&gt;&gt; myCars   Person -&gt; CarOwnerRole [*];
+  class Permission;
+  class &lt;&lt;Create&gt;&gt; CreateCar extends Permission;
+  class &lt;&lt;Update&gt;&gt; UpdateCar extends Permission;
+  association allowed  [1] CarOwnerRole &lt;-&gt; Permission [1..3];
+} 
+</code></pre></div></div>
+
+<p>Here a lot of stereotypes pollute the otherwise clean analysis model. 
+Using a number of conventions, it may be that certain labels have not 
+been defined explicitly but can be reconstructed. This is regularly 
+the case for a concrete association when both its concrete classes 
+have been stereotyped.</p>
+
+<p>Another possibility is to combine the explicit labeling with the 
+implicit use of naming conventions, as described in Option (O2), such 
+as (1) same name (see <code class="language-plaintext highlighter-rouge">Permission</code>), or (2) a shared prefix (see 
+<code class="language-plaintext highlighter-rouge">UpdateCar</code>) or analogously a shared postfix (like <code class="language-plaintext highlighter-rouge">StopState</code>). This, 
+of course, shares the problem of unwanted, coincidental matches 
+but largely reduces the amount of labeling 
+necessary. This is a common approach when applying design patterns, 
+which we also regard as a special form of reference models
+denoted as class diagrams, e.g., in <a href="#GHJV95">[GHJV95]</a>,
+where often the roles of the individually participating classes are used as
+parts of the actual class names.</p>
+
+<p>To prevent potential pollution with stereotypes from various 
+technological spaces, we have in <a href="#GLRR15">[GLRR15]</a> explored the 
+possibility of using an extra tagging language that allows 
+labeling model elements without invasively changing the original model 
+stored in extra artifacts. Tagging models can be applied in various domains 
+<a href="#DJK+19a">[DJK+19a]</a>, <a href="#MRRW16">[MRRW16]</a>.</p>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<h3 id="reference-model-as-ontology">Reference Model as Ontology</h3>
+
+<p>Let us take a slightly different look at reference models:
+A reference model defines 
+a number of domain concepts, usually with explicit names, which 
+actually constitute an ontology (e.g., including a set of terms 
+and their relations) within the modeling language. This viewpoint 
+enables 
+an interesting connection between modeling languages and ontologies,
+where the modeling language acts as a carrier for the ontology.
+The language provides the modeling elements, and the ontology
+provides a library of terms and relations. This is completely compatible 
+with the way how natural languages are defined through the grammar
+for the syntactic structure and the dictionary for the wording.</p>
+
+<p>Such a connection is obvious for class diagrams, and, thus, we give<br>
+different examples:</p>
+
+<ul>
+  <li>Encoding a reference model for the behavior of
+smartphone apps using a Statechart and realizing specific
+apps using a refined number of states in a
+concrete Statechart,</li>
+  <li>providing a reference model for production and billing
+processes using BPMN within a car manufacturer
+with country-specific incarnations, and even</li>
+  <li>building a (physical or simulated digital) reference model for a factory of 
+a manufacturer with the possibility to incarnate this reference model
+in various concrete factories around the world.</li>
+</ul>
+
+<p>Wikipedia mentions several uses of reference models,
+such as: (1) Creating standards, (2) education,
+(3) improving communication between stakeholders, and
+(4) facilitating comparison.
+A tool-based approach, however, with a clear relationship
+between reference and concrete realization model is not 
+(yet) included in the Wikipedia definition but should be added when
+we are able to provide appropriate tool-assisted cases for reference models.</p>
+
+<p>We are aware that there is already much scientific work on
+this topic, but using reference models is by far not where 
+it should be.</p>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<p>This essay is partially adapted from  <a href="https://www.sosym.org/" target="_blank" rel="noopener noreferrer">SoSyM</a> editorial
+<a href="#GR21d">[GR21d]</a>, which is published under the 
+<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons license</a>.</p>
+
+<div class="publications">
+  <ol class="bibliography">
+<li>
+<div class="row">
+
+  <div id="NRSS22" class="col-sm-11">
+    <!-- Entry bib key -->
+    [NRSS22]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              I.
+            
+          
+        
+        
+           Nachmann,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Stachon,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Stüber:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="https://www.se-rwth.de/publications/Open-World-Loose-Semantics-of-Class-Diagrams-as-Basis-for-Semantic-Differences.pdf">Open-World Loose Semantics of Class Diagrams as Basis for Semantic
+      Differences</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Modellierung 2022,
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 111-127,
+      
+      
+      
+      
+        DOI 10.18420/modellierung2022-016,
+      
+      
+        Gesellschaft für Informatik,
+      
+      
+      
+      
+        Jun.
+      
+      
+        2022.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="GR21d" class="col-sm-11">
+    <!-- Entry bib key -->
+    [GR21d]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Gray,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="https://www.sosym.org/editorials/files/GR21d.pdf" target="_blank" rel="noopener noreferrer">Reference models: how can we leverage them?</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+        
+          In: Journal Software and Systems Modeling (SoSyM),
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 20(6),
+        
+      
+      
+      
+      
+        pp. 1775-1776,
+      
+      
+      
+      
+      
+        Springer Berlin / Heidelberg,
+      
+      
+      
+      
+      
+        2021.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="DJK+19a" class="col-sm-11">
+    <!-- Entry bib key -->
+    [DJK+19a]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Dalibor,
+        
+      
+        
+        
+          
+          
+            
+              N.
+            
+          
+        
+        
+           Jansen,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Kirchhof,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              D.
+            
+          
+        
+        
+           Schmalzing,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Tagging-Model-Properties-for-Flexible-Communication.pdf">Tagging Model Properties for Flexible Communication</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Proceedings of MODELS 2019. Workshop MDE4IoT,
+        
+      
+
+      
+        
+          
+          
+            
+            
+              
+                N.
+              
+            
+          
+          
+             Ferry,
+          
+        
+          
+          
+            
+            
+              
+                A.
+              
+            
+          
+          
+             Cicchetti,
+          
+        
+          
+          
+            
+            
+              
+                F.
+              
+            
+          
+          
+             Ciccozzi,
+          
+        
+          
+          
+            
+            
+              
+                A.
+              
+            
+          
+          
+             Solberg,
+          
+        
+          
+          
+            
+            
+              
+                M.
+              
+            
+          
+          
+             Wimmer,
+          
+        
+          
+          
+            
+            
+              
+                A.
+              
+            
+          
+          
+             Wortmann (Eds.),
+          
+        
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 39-46,
+      
+      
+      
+      
+      
+        CEUR Workshop Proceedings,
+      
+      
+      
+      
+        Sep.
+      
+      
+        2019.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="Rum17" class="col-sm-11">
+    <!-- Entry bib key -->
+    [Rum17]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="https://mbse.se-rwth.de/" target="_blank" rel="noopener noreferrer">Agile Modeling with UML: Code Generation, Testing, Refactoring</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        Springer International,
+      
+      
+      
+      
+        May
+      
+      
+        2017.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="MRRW16" class="col-sm-11">
+    <!-- Entry bib key -->
+    [MRRW16]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Maoz,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+          
+          
+            
+              O.
+            
+          
+        
+        
+           Ringert,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+          
+          
+            
+              v.
+            
+          
+        
+        
+           Wenckstern:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Consistent-Extra-Functional-Properties-Tagging-for-Component-and-Connector-Models.pdf">Consistent Extra-Functional Properties Tagging for
+    Component and Connector Models</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Workshop on Model-Driven Engineering for
+    Component-Based Software Systems (ModComp’16),
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 1723,
+        
+      
+      
+      
+      
+        pp. 19-24,
+      
+      
+        CEUR Workshop Proceedings,
+      
+      
+      
+      
+      
+      
+      
+        Oct.
+      
+      
+        2016.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="GLRR15" class="col-sm-11">
+    <!-- Entry bib key -->
+    [GLRR15]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              T.
+            
+          
+        
+        
+           Greifenberg,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Look,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Roidl,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Engineering-Tagging-Languages-for-DSLs.pdf">Engineering Tagging Languages for DSLs</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Conference on Model Driven Engineering Languages and
+    Systems (MODELS’15),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 34-43,
+      
+      
+      
+      
+      
+        ACM/IEEE,
+      
+      
+      
+      
+      
+        2015.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="MRR11b" class="col-sm-11">
+    <!-- Entry bib key -->
+    [MRR11b]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Maoz,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+          
+          
+            
+              O.
+            
+          
+        
+        
+           Ringert,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="https://se-rwth.de/publications/CDDiff-Semantic-Differencing-for-Class-Diagrams.pdf" target="_blank" rel="noopener noreferrer">CDDiff: Semantic Differencing for Class Diagrams</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: ECOOP 2011 - Object-Oriented Programming,
+        
+      
+
+      
+        
+          
+          
+            
+            
+              
+                M.
+              
+            
+          
+          
+             Mezini (Eds.),
+          
+        
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 230-254,
+      
+      
+      
+      
+      
+        Springer Berlin Heidelberg,
+      
+      
+      
+      
+      
+        2011.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="Rum96" class="col-sm-11">
+    <!-- Entry bib key -->
+    [Rum96]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/staff/rumpe/publications/Formale-Methodik-des-Entwurfs-verteilter-objektorientierter-Systeme-Dissertation.pdf">Formale Methodik des Entwurfs verteilter
+    objektorientierter Systeme</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+      
+        ISBN 3-89675-149-2,
+      
+      
+      
+        Herbert Utz Verlag Wissenschaft,
+      
+      
+      
+        München, Deutschland,
+      
+      
+      
+        1996.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="GHJV95" class="col-sm-11">
+    <!-- Entry bib key -->
+    [GHJV95]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              E.
+            
+          
+        
+        
+           Gamma,
+        
+      
+        
+        
+          
+          
+            
+              R.
+            
+          
+        
+        
+           Helm,
+        
+      
+        
+        
+          
+          
+            
+              R.
+            
+          
+        
+        
+           Johnson,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Vlissides:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="">Design patterns: elements of reusable object-oriented software</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        Addison-Wesley Professional,
+      
+      
+      
+      
+      
+        1995.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="PR94" class="col-sm-11">
+    <!-- Entry bib key -->
+    [PR94]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Paech,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/staff/rumpe/publications/A-new-Concept-of-Refinement-used-for-Behaviour-Modelling-with-Automata-FME.pdf">A new Concept of Refinement used for Behaviour Modelling
+    with Automata</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Proceedings of the Industrial Benefit of Formal
+    Methods (FME’94),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 154-174,
+      
+      
+        LNCS 873,
+      
+      
+      
+      
+        Springer,
+      
+      
+      
+      
+      
+        1994.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="Sta73" class="col-sm-11">
+    <!-- Entry bib key -->
+    [Sta73]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              H.
+            
+          
+        
+        
+           Stachowiak:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="">Allgemeine Modelltheorie</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        Springer Verlag,
+      
+      
+      
+        Wien, New York,
+      
+      
+      
+        1973.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+</ol>
+</div>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<h3 id="further-links">Further links</h3>
+
+<ul>
+  <li><a href="/essays">Essays, Comments, Definitions around Modeling</a></li>
+  <li><a href="/publications">Publications</a></li>
+  <li><a href="/research">Topic sorted list of most interesting publications</a></li>
+  <li><a href="/books">Books</a></li>
+  <li><a href="https://www.se-rwth.de">Website of the SE</a></li>
+</ul>
+
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+      <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+let scrollButton = document.getElementById("btn-back-to-top");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
+  }
+}
+
+scrollButton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+    
+
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="sticky-bottom mt-5">
+  <div class="container">
+    <!-- &copy; Copyright 2025   . -->
+    
+    
+    <a href="https://www.se-rwth.de/impressum/">Impressum</a>.
+    
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="/assets/js/jquery.min.js" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/popper.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/mdb.min.js" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="/assets/js/masonry.pkgd.min.js"></script>
+<script defer src="/assets/js/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="/assets/js/medium-zoom.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+  
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer src="/assets/js/tex-mml-chtml.js" type="text/javascript" id="MathJax-script"></script>
+<script defer src="/assets/js/polyfill.min.js"></script>
+
+
+  <script src="/assets/js/toc.js" crossorigin="anonymous"></script>
+  <script async src="/assets/js/widgets.js" charset="utf-8"></script>
+
+</html>

@@ -1,0 +1,3826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Sebastian Stüber, M.Sc. |
+
+
+
+  SE@RWTH
+
+</title>
+<meta name="description" content="I am a Doctoral Candidate at the Chair of Software Engineering. My interests include Formal Verification, Analysis of Models, and Model Driven Development">
+
+<!-- Google Verification -->
+
+
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css" integrity="oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/mdb.min.css" integrity="Y3+zUQCTOSqaSbyEFKLA6oQi8oF3I2xzkIR+ywroD3fkLG3LF2DJq/mU03KQqSZv/nGQDC2Upf73IZYZYMX4GQ==" crossorigin="anonymous" type="text/css"/>
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="/assets/css/all.min.css" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css" integrity="pOZ6Cz1wopk9RluJMvHM1AEMkPCS+ihnGztyD0kI991jgZ8hj9YQ61k4ouvGNvLHE0z6Vifp3ytAmeeW8sbbZQ==" crossorigin="anonymous" type="text/css">
+
+<!-- Styles -->
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon.png">
+<link rel="stylesheet" href="/assets/css/main.css" type="text/css">
+<!--<link rel="canonical" href="https://www.se-rwth.de/staff/Sebastian.Stueber/">-->
+
+
+
+
+
+
+    <!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['addDownloadExtensions', "bib"]);
+    _paq.push(['disableCookies']);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="https://stats.fh-aachen.de/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '34']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+<!-- End Matomo Code -->
+
+  </head>
+
+  <body class=" sticky-bottom-footer">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand title font-weight-lighter" href="/">
+        
+          <img src="/assets/img/icons/rwth_se_rgb.png" height="70px">
+        
+        
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <!-- <li class="nav-item ">
+            <a class="nav-link" href="/">
+              About
+              
+            </a>
+          </li> -->
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Essays
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essays/">Essay List</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Definition/">Digital Twin</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Companion/">Digital Companion</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Maturity-Model/">Digital Twin Maturity Model</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Explicit-versus-implicit-models/">Explicit versus Implicit Models</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Gesetze-DSL/">DSLs für Gesetze und Ordnungen (in D)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Research-Software-Engineering/">Research Software Engineering (RSE)</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Modeling-in-advanced-systems-engineering/">Modeling in Advanced Systems Engineering</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Model-Definitions/">Model-Based Definitions</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Low-Code/">Low Code</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Reference-Models/">Reference Models</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Research
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/">Research Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#foundations">MBSE Foundations</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#applications">Application Domains</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#tools">Software Tools</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Publications
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/publications/">All Publications</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/books/">Books</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/phdtheses/">Ph.D. Theses</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/assets/bibliography/all-software-engineering-rwth-references.bib">Bibtex</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Teaching
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/">Teaching</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/teaching-overview/">Teaching Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/#currentsem">Current Semester</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/archive/">Course archive (starting WS 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="https://www.se-rwth.de/teaching/indexArchiv.php">Course archive (until SoSe 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/theses/">BA/MA Theses</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/">Major project overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/22.09.MontiGem.Ford.Press.Release/">MontiGem Ford Press Release</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiCore/">MontiCore</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiGem/">MontiGem</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+          <li class="nav-item ">
+              <a class="nav-link" href="/jobs/">
+                Jobs
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About us
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/about/">About us</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/staff/">Staff</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/activities/">Activities</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teams/">Teams</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/contact/">Contact &amp; Arrival</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Sebastian Stüber, M.Sc.</h1>
+    <p class="post-description"></p>
+  </header>
+
+  <article>
+    
+
+    <div class="toc_content">
+      
+    </div>
+    <div class="clearfix">
+      <div class="container staff-info">
+  <div class="row">
+    
+    <div class="col-lg-4">
+      Software Engineering<br>
+      Department of Computer Science 3<br>
+      RWTH Aachen University<br>
+      Ahornstraße 55<br>
+      D-52074 Aachen<br>
+      <br>
+      +49 (241) 80-21352<br>
+      <a href="mailto:stueber@se-rwth.de">stueber@se-rwth.de</a><br>
+      <br>
+      Raum 4221, Erweiterungsbau 1<br>
+    </div>
+  </div>
+</div>
+
+<p><br></p>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h3 id="field-of-work">Field of Work</h3>
+
+<ul>
+  <li>Formal Verification of Distributed Systems</li>
+  <li>Semantic Difference of Models</li>
+  <li>Compositional Analysis of Systems</li>
+  <li>Model Driven Development</li>
+  <li>Software Architectures</li>
+</ul>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h3 id="projects">Projects</h3>
+<ul>
+  <li>
+<a href="/projects/#SemanticDiff">SemanticDiff</a>: Semantic differencing is a method used in model-based software development to compare two different models and identify the elements in the first model that are not present in the second model. This approach helps us understand the changes made to the original model to create a newer version. By revealing the semantic differences, we can gain insight into the impact of the syntactic modifications on the overall meaning and functionality of the model. This analysis is crucial because it allows developers to comprehend the effects of their changes and ensure that the updated model aligns with the desired objectives. Ultimately, semantic differencing aids in enhancing the quality and effectiveness of model-based software development processes.</li>
+  <li>
+<a href="https://fecomass.github.io/fecomass/" target="_blank" rel="noopener noreferrer">FeCoMASS</a>: Compositional analysis is an important aspect of model-driven engineering that aims to provide more flexibility in analyzing complex systems. It involves breaking down a system into smaller components and analyzing them individually to gain a better understanding of the overall system behavior. This approach is crucial because as systems become more heterogeneous and complex, traditional analysis techniques may not be sufficient to accurately assess their performance and behavior. By decomposing the system and analyzing its components separately, we can ensure sound analysis results and also enable the flexible use and reuse of model-based analyses. This means that the analysis techniques can be easily configured and adapted to different scenarios, making it a valuable tool for engineers and researchers working on complex systems. The FeCoMASS project aims to investigate the foundations of compositional analysis to develop more efficient and effective analysis techniques for the systems of tomorrow.</li>
+  <li>
+<a href="/projects/#ADD">Agile Data Development</a>: The “Agile Data Dev” project aims to develop a guideline for implementing an agile development process that integrates both agile and plan-driven methods, with a focus on data-based support. The project aims to achieve several goals: (1) increase effectiveness by addressing requirements in an agile manner, (2) improve efficiency by avoiding unnecessary iterations through improved data transparency, (3) enable data-based decision support through an integrated data and system architecture, and (4) reduce time-to-market while increasing market share. This project is important because it aims to increase the overall profitability of the windmill portfolio in the medium to long term, improve efficiency in developing new plants, and reduce costs of parts, components, and modules used across projects. The project is part of <a href="/research/MontiGem/">MontiGem</a>, which aims to generate enterprise management systems.</li>
+  <li>
+<a href="/projects/#MontiBelle">MontiBelle</a>: The “MontiBelle” project aims to reduce certification costs for critical systems such as intelligent flight control or traffic management systems. By applying mathematical dataflow theory, knowledge representation, and intelligent reasoning to software engineering, the project uses the theoremprover Isabelle to perform correctness proofs or find counterexamples. To make Isabelle more user-friendly, the project provides a high-level API and a domain-specific modeling language as a front end, along with code generator to Isabelle. This project is important because it has the potential to greatly reduce the costs associated with certifying critical systems, making them more reliable and safer for use in areas such as air and road traffic management.</li>
+  <li>Energy Information System: This project aims to visualize data collected by sensors in buildings, such as temperature measurements. The project team has developed a web interface that presents this data in an easily understandable format, making it more accessible to users. By providing a visual representation of the information, the project facilitates a better understanding of energy usage in buildings. This is crucial because it enables users to monitor and manage energy consumption effectively, leading to more efficient energy usage and potential cost savings.</li>
+  <li>Big Data in Building Automation: The aim of the project is to develop and evaluate methods for applying Big Data analysis methods to building automation data in order to identify potentials for optimizing the energy operation of existing buildings. The innovative focus lies in the application of analysis methods for large and complex data sets (Big Data) to the enormous amount of operating data of building and component automation in modern buildings. Today, these are generally only used for the direct operational management of the buildings and systems. Only a minimal amount of data is used for visual inspections, alarms, or the most basic analysis and reporting. Most data is not stored or evaluated. The approach taken here is to systematically apply powerful Big Data methods, in particular through visualization/mapping and algorithms for data analysis, to historicized and real-time data from building automation systems and individual building technology components such as heat pumps, boilers, ventilation units or pumps, in order to analyze the potential of this data and develop utilization concepts.
+<!-- Baukasten an Funktionalität. Siehe hier: https://www.se-rwth.de/publications/Big-Data-in-der-Gebaeudeautomation-Schlussbericht.pdf -->
+</li>
+</ul>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h3 id="teaching">Teaching</h3>
+<ul>
+  <li>SoSe23: Lecture “Software Language Engineering” Studentproject “GuiDSL to Flutter - Model Driven Development for all Devices”</li>
+  <li>SoSe22: Lecture “Software Language Engineering” Studentproject “Analysis of MontiArc Automata”</li>
+  <li>SoSe22: Seminar “Applying Formal Methods in Software Engineering”</li>
+  <li>SoSe21: Teaching Assistant “Software Architectures”</li>
+  <li>WiSe20/21: Practical Course “Software Engineering for Connected Vehicle Platforms”</li>
+  <li>SoSe20: Teaching Assistant “Software Architectures”</li>
+  <li>WiSe19/20: Seminar “Generated Information Systems”</li>
+  <li>WiSe19/20: Two lectures of “Innovationen im Software Engineering”</li>
+</ul>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h3 id="publications">Publications</h3>
+
+<div class="publications">
+  <ol class="bibliography">
+<li>
+<div class="row">
+
+  <div id="RSSV24" class="col-sm-11">
+    <!-- Entry bib key -->
+    [RSSV24]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Stachon,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Stüber,
+        
+      
+        
+        
+          
+          
+            
+              V.
+            
+          
+        
+        
+           Voufo:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Semantic-Difference-Analysis-with-Invariant-Tracing-for-Class-Diagrams-Extended-by-OCL.pdf">Semantic Difference Analysis with Invariant Tracing for Class 
+      Diagrams Extended by OCL</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Workshop on Model Driven Engineering, Verification and 
+      Validation, MODELS Companion ’24: International Conference on Model Driven
+      Engineering Languages and Systems (MoDeVVa),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 1066–1075,
+      
+      
+      
+      
+        DOI 10.1145/3652620.3687818,
+      
+      
+        Association for Computing Machinery (ACM),
+      
+      
+      
+      
+        Oct.
+      
+      
+        2024.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="WHT+24" class="col-sm-11">
+    <!-- Entry bib key -->
+    [WHT+24]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Weber,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Henß,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Taghavi,
+        
+      
+        
+        
+          
+          
+            
+              T.
+            
+          
+        
+        
+           Weber,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Stüber,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Marin,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              R.
+            
+          
+        
+        
+           Heinrich:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="https://www.se-rwth.de/publications/Semantics-Enhancing-Model-Transformation-for-Automated-Constraint-Validation-of-Palladio-Software-Architecture-to-MontiArc-Models.pdf">Semantics Enhancing Model Transformation for Automated Constraint 
+      Validation of Palladio Software Architecture to MontiArc Models</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Software Architecture. ECSA 2024 Tracks and Workshops,
+        
+      
+
+      
+        
+          
+          
+            
+            
+              
+                A.
+              
+            
+          
+          
+             Ampatzoglou,
+          
+        
+          
+          
+            
+            
+              
+                J.
+              
+            
+          
+          
+             Pérez,
+          
+        
+          
+          
+            
+            
+              
+                B.
+              
+            
+          
+          
+             Buhnova,
+          
+        
+          
+          
+            
+            
+              
+                V.
+              
+            
+          
+          
+             Lenarduzzi,
+          
+        
+          
+          
+            
+            
+              
+                C.
+              
+            
+          
+            
+            
+              
+                C.
+              
+            
+          
+          
+             Venters,
+          
+        
+          
+          
+            
+            
+              
+                U.
+              
+            
+          
+          
+             Zdun,
+          
+        
+          
+          
+            
+            
+              
+                K.
+              
+            
+          
+          
+             Drira,
+          
+        
+          
+          
+            
+            
+              
+                L.
+              
+            
+          
+          
+             Rebelo,
+          
+        
+          
+          
+            
+            
+              
+                D.
+              
+            
+          
+          
+             Di Pompeo,
+          
+        
+          
+          
+            
+            
+              
+                M.
+              
+            
+          
+          
+             Tucci,
+          
+        
+          
+          
+            
+            
+              
+                E.
+              
+            
+          
+            
+            
+              
+                Y.
+              
+            
+          
+          
+             Nakagawa,
+          
+        
+          
+          
+            
+            
+              
+                E.
+              
+            
+          
+          
+             Navarro (Eds.),
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 14937,
+        
+      
+      
+      
+      
+        pp. 30-38,
+      
+      
+        LNCS,
+      
+      
+      
+        DOI 10.1007/978-3-031-71246-3_4,
+      
+      
+        Springer Nature Switzerland,
+      
+      
+      
+        Cham,
+      
+      
+        Sep.
+      
+      
+        2024.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="KRS+24" class="col-sm-11">
+    <!-- Entry bib key -->
+    [KRS+24]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Konersmann,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Stachon,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Stüber,
+        
+      
+        
+        
+          
+          
+            
+              V.
+            
+          
+        
+        
+           Voufo:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Towards-a-Semantically-Useful-Definition-of-Conformance-with-a-Reference-Model.pdf">Towards a Semantically Useful Definition of Conformance with a 
+      Reference Model</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+        
+          In: Journal of Object Technology (JOT),
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 23(3),
+        
+      
+      
+      
+      
+        pp. 1-14,
+      
+      
+      
+      
+        DOI 10.5381/jot.2024.23.3.a5,
+      
+      
+        AITO - Association Internationale pour les Technologies 
+      Objets,
+      
+      
+      
+      
+        Jul.
+      
+      
+        2024.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="BGK+24" class="col-sm-11">
+    <!-- Entry bib key -->
+    [BGK+24]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Buschhaus,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Gerasimov,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Kirchhof,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Michael,
+        
+      
+        
+        
+          
+          
+            
+              L.
+            
+          
+        
+        
+           Netz,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Stüber:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="https://www.se-rwth.de/publications/Lessons-learned-from-applying-model-driven-engineering-in-5-domains-The-success-story-of-the-MontiGem-generator-framework.pdf">Lessons Learned from Applying Model-Driven Engineering in 5 
+      Domains: The Success Story of the MontiGem Generator Framework</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+        
+          In: Science of Computer Programming,
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 232,
+        
+      
+      
+      
+      
+        pp. 103033,
+      
+      
+      
+      
+        DOI 10.1016/j.scico.2023.103033,
+      
+      
+      
+      
+      
+        Jan.
+      
+      
+        2024.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="KRW+23" class="col-sm-11">
+    <!-- Entry bib key -->
+    [KRW+23]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Koch,
+        
+      
+        
+        
+          
+          
+            
+              F.
+            
+          
+        
+        
+           Reiche,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Weber,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Konersmann,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Stüber,
+        
+      
+        
+        
+          
+          
+            
+              L.
+            
+          
+        
+        
+           Wollenhaupt,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Taghavi,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              R.
+            
+          
+        
+        
+           Heinrich:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/A-Collection-of-Scenarios-for-the-Decomposition-and-Composition-of-Model-based-Analyses.pdf">A Collection of Scenarios for the Decomposition and Composition of
+      Model-based Analyses</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+
+      
+
+      
+        Karlsruher Institut für Technologie (KIT),
+      
+
+      
+
+      
+        
+          Technical Report,
+        
+      
+
+      
+      
+        
+          Volume 2023(2),
+        
+      
+      
+      
+      
+      
+        Karlsruhe Reports in Informatics,
+      
+      
+      
+        DOI 10.5445/IR/1000161276,
+      
+      
+      
+      
+      
+        Aug.
+      
+      
+        2023.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="LRSS23" class="col-sm-11">
+    <!-- Entry bib key -->
+    [LRSS23]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Lindt,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Stachon,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Stüber:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/CDMerge-Semantically-Sound-Merging-of-Class-Diagrams-for-Software-Component-Integration.pdf">CDMerge: Semantically Sound Merging of Class Diagrams for Software
+      Component Integration</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+        
+          In: Journal of Object Technology (JOT),
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 22(2),
+        
+      
+      
+      
+      
+        pp. 2:1-14,
+      
+      
+      
+      
+        DOI 10.5381/jot.2023.22.2.a1,
+      
+      
+        AITO - Association Internationale pour les Technologies 
+      Objets,
+      
+      
+      
+      
+        Jul.
+      
+      
+        2023.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="MNN+22" class="col-sm-11">
+    <!-- Entry bib key -->
+    [MNN+22]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Michael,
+        
+      
+        
+        
+          
+          
+            
+              I.
+            
+          
+        
+        
+           Nachmann,
+        
+      
+        
+        
+          
+          
+            
+              L.
+            
+          
+        
+        
+           Netz,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Stüber:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Generating-Digital-Twin-Cockpits-for-Parameter-Management-in-the-Engineering-of-Wind-Turbines.pdf">Generating Digital Twin Cockpits for Parameter Management in the 
+      Engineering of Wind Turbines</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Modellierung 2022,
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 33-48,
+      
+      
+      
+      
+        DOI 10.18420/modellierung2022-012,
+      
+      
+        Gesellschaft für Informatik,
+      
+      
+      
+      
+        Jun.
+      
+      
+        2022.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="NRSS22" class="col-sm-11">
+    <!-- Entry bib key -->
+    [NRSS22]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              I.
+            
+          
+        
+        
+           Nachmann,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Stachon,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Stüber:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="https://www.se-rwth.de/publications/Open-World-Loose-Semantics-of-Class-Diagrams-as-Basis-for-Semantic-Differences.pdf">Open-World Loose Semantics of Class Diagrams as Basis for Semantic
+      Differences</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Modellierung 2022,
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 111-127,
+      
+      
+      
+      
+        DOI 10.18420/modellierung2022-016,
+      
+      
+        Gesellschaft für Informatik,
+      
+      
+      
+      
+        Jun.
+      
+      
+        2022.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="LHA+20" class="col-sm-11">
+    <!-- Entry bib key -->
+    [LHA+20]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              L.
+            
+          
+        
+        
+           Lauss,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Heissler,
+        
+      
+        
+        
+          
+          
+            
+              T.
+            
+          
+        
+        
+           Auer,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Mehnert,
+        
+      
+        
+        
+          
+          
+            
+              D.
+            
+          
+        
+        
+           Reiß,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Stüber:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Forschungsprojekt-Big-Data-fuer-EnBop.pdf">Forschungsprojekt Big Data für EnBop</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: ENERGIEWENDEBAUEN - Forschungserkenntnisse von der Komponente 
+      bis zum Quartier,
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 143-150,
+      
+      
+      
+        ISBN 978-3-948234-88-1,
+      
+      
+      
+        Fraunhofer IRB Verlag, Stuttgart,
+      
+      
+      
+      
+        Jul.
+      
+      
+        2020.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="ALH+20" class="col-sm-11">
+    <!-- Entry bib key -->
+    [ALH+20]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              T.
+            
+          
+        
+        
+           Auer,
+        
+      
+        
+        
+          
+          
+            
+              L.
+            
+          
+        
+        
+           Lauss,
+        
+      
+        
+        
+          
+          
+            
+              K.
+            
+          
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Heissler,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Maderspacher,
+        
+      
+        
+        
+          
+          
+            
+              D.
+            
+          
+        
+        
+           Reiß,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Mehnert,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Stüber,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Hannen,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Plesser,
+        
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Pinkernell,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Kröker,
+        
+      
+        
+        
+          
+          
+            
+              R.
+            
+          
+        
+        
+           Gentemann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Big-Data-in-der-Gebaeudeautomation-Schlussbericht.pdf">Big Data in der Gebäudeautomation Schlussbericht</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+
+      
+
+      
+        Bundesministerium für Wirtschaft und Energie,
+      
+
+      
+        
+      
+
+      
+        
+          Technical Report,
+        
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+        DOI 10.14459/2020md1546757,
+      
+      
+      
+      
+        Munich,
+      
+      
+        Jun.
+      
+      
+        2020.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="BKR+20" class="col-sm-11">
+    <!-- Entry bib key -->
+    [BKR+20]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Bürger,
+        
+      
+        
+        
+          
+          
+            
+              H.
+            
+          
+        
+        
+           Kausch,
+        
+      
+        
+        
+          
+          
+            
+              D.
+            
+          
+        
+        
+           Raco,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+          
+          
+            
+              O.
+            
+          
+        
+        
+           Ringert,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Stüber,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Wiartalla:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Towards-an-Isabelle-Theory-for-distributed-interactive-systems-the-untimed-case.pdf">Towards an Isabelle Theory for distributed, interactive systems
+      - the untimed case</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+        Aachener Informatik Berichte, Software Engineering, Band 45,
+      
+      
+      
+      
+        Shaker Verlag,
+      
+      
+      
+      
+        Mar.
+      
+      
+        2020.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="KPRS19" class="col-sm-11">
+    <!-- Entry bib key -->
+    [KPRS19]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              E.
+            
+          
+        
+        
+           Kusmenko,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Pavlitskaya,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Stüber:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/On-the-Engineering-of-AI-Powered-Systems.pdf">On the Engineering of AI-Powered Systems</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: ASE19. Software Engineering Intelligence Workshop (SEI19),
+        
+      
+
+      
+        
+          
+          
+            
+            
+              
+                L.
+              
+            
+          
+          
+             O’Conner (Eds.),
+          
+        
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 126-133,
+      
+      
+      
+      
+        DOI 10.1109/ASEW.2019.00042,
+      
+      
+        IEEE,
+      
+      
+      
+      
+        Nov.
+      
+      
+        2019.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="KRRS19" class="col-sm-11">
+    <!-- Entry bib key -->
+    [KRRS19]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Kriebel,
+        
+      
+        
+        
+          
+          
+            
+              D.
+            
+          
+        
+        
+           Raco,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Stüber:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Model-Based-Engineering-for-Avionics-Will-Specification-and-Formal-Verification-Based-on-Broys-Streams-Become-Feasible.pdf">Model-Based Engineering for Avionics: Will Specification and Formal Verification e.g. Based on Broy’s Streams Become Feasible?</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Proceedings of the Workshops of the Software Engineering Conference. Workshop on Avionics Systems and Software Engineering (AvioSE’19),
+        
+      
+
+      
+        
+          
+          
+            
+            
+              
+                S.
+              
+            
+          
+          
+             Krusche,
+          
+        
+          
+          
+            
+            
+              
+                K.
+              
+            
+          
+          
+             Schneider,
+          
+        
+          
+          
+            
+            
+              
+                M.
+              
+            
+          
+          
+             Kuhrmann,
+          
+        
+          
+          
+            
+            
+              
+                R.
+              
+            
+          
+          
+             Heinrich,
+          
+        
+          
+          
+            
+            
+              
+                R.
+              
+            
+          
+          
+             Jung,
+          
+        
+          
+          
+            
+            
+              
+                M.
+              
+            
+          
+          
+             Konersmann,
+          
+        
+          
+          
+            
+            
+              
+                E.
+              
+            
+          
+          
+             Schmieders,
+          
+        
+          
+          
+            
+            
+              
+                S.
+              
+            
+          
+          
+             Helke,
+          
+        
+          
+          
+            
+            
+              
+                I.
+              
+            
+          
+          
+             Schaefer,
+          
+        
+          
+          
+            
+            
+              
+                A.
+              
+            
+          
+          
+             Vogelsang,
+          
+        
+          
+          
+            
+            
+              
+                B.
+              
+            
+          
+          
+             Annighöfer,
+          
+        
+          
+          
+            
+            
+              
+                A.
+              
+            
+          
+          
+             Schweiger,
+          
+        
+          
+          
+            
+            
+              
+                M.
+              
+            
+          
+          
+             Reich,
+          
+        
+          
+          
+            
+            
+              
+                A.
+              
+            
+          
+          
+            van Hoorn (Eds.),
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 2308,
+        
+      
+      
+      
+      
+        pp. 87-94,
+      
+      
+        CEUR Workshop Proceedings,
+      
+      
+      
+      
+        CEUR Workshop Proceedings,
+      
+      
+      
+      
+        Feb.
+      
+      
+        2019.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+</ol>
+</div>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="sticky-bottom mt-5">
+  <div class="container">
+    <!-- &copy; Copyright 2025   . -->
+    
+    
+    <a href="https://www.se-rwth.de/impressum/">Impressum</a>.
+    
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="/assets/js/jquery.min.js" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/popper.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/mdb.min.js" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="/assets/js/masonry.pkgd.min.js"></script>
+<script defer src="/assets/js/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="/assets/js/medium-zoom.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+  
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer src="/assets/js/tex-mml-chtml.js" type="text/javascript" id="MathJax-script"></script>
+<script defer src="/assets/js/polyfill.min.js"></script>
+
+
+  <script src="/assets/js/toc.js" crossorigin="anonymous"></script>
+  <script async src="/assets/js/widgets.js" charset="utf-8"></script>
+
+</html>
