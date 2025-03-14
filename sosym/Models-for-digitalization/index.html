@@ -1,0 +1,1896 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Models for Digitalization |
+
+
+
+  SE@RWTH
+
+</title>
+<meta name="description" content="Website of the Chair of Software Engineering at RWTH Aachen
+">
+
+<!-- Google Verification -->
+
+
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css" integrity="oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/mdb.min.css" integrity="Y3+zUQCTOSqaSbyEFKLA6oQi8oF3I2xzkIR+ywroD3fkLG3LF2DJq/mU03KQqSZv/nGQDC2Upf73IZYZYMX4GQ==" crossorigin="anonymous" type="text/css"/>
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="/assets/css/all.min.css" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css" integrity="pOZ6Cz1wopk9RluJMvHM1AEMkPCS+ihnGztyD0kI991jgZ8hj9YQ61k4ouvGNvLHE0z6Vifp3ytAmeeW8sbbZQ==" crossorigin="anonymous" type="text/css">
+
+<!-- Styles -->
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon.png">
+<link rel="stylesheet" href="/assets/css/main.css" type="text/css">
+<!--<link rel="canonical" href="https://www.se-rwth.de/sosym/Models-for-digitalization/">-->
+
+
+
+
+
+
+    <!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['addDownloadExtensions', "bib"]);
+    _paq.push(['disableCookies']);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="https://stats.fh-aachen.de/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '34']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+<!-- End Matomo Code -->
+
+  </head>
+
+  <body class=" sticky-bottom-footer">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand title font-weight-lighter" href="/">
+        
+          <img src="/assets/img/icons/rwth_se_rgb.png" height="70px">
+        
+        
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <!-- <li class="nav-item ">
+            <a class="nav-link" href="/">
+              About
+              
+            </a>
+          </li> -->
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Essays
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essays/">Essay List</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Definition/">Digital Twin</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Companion/">Digital Companion</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Maturity-Model/">Digital Twin Maturity Model</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Explicit-versus-implicit-models/">Explicit versus Implicit Models</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Gesetze-DSL/">DSLs für Gesetze und Ordnungen (in D)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Research-Software-Engineering/">Research Software Engineering (RSE)</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Modeling-in-advanced-systems-engineering/">Modeling in Advanced Systems Engineering</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Model-Definitions/">Model-Based Definitions</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Low-Code/">Low Code</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Reference-Models/">Reference Models</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Research
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/">Research Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#foundations">MBSE Foundations</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#applications">Application Domains</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#tools">Software Tools</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Publications
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/publications/">All Publications</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/books/">Books</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/phdtheses/">Ph.D. Theses</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/assets/bibliography/all-software-engineering-rwth-references.bib">Bibtex</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Teaching
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/">Teaching</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/teaching-overview/">Teaching Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/#currentsem">Current Semester</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/archive/">Course archive (starting WS 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="https://www.se-rwth.de/teaching/indexArchiv.php">Course archive (until SoSe 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/theses/">BA/MA Theses</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/">Major project overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/22.09.MontiGem.Ford.Press.Release/">MontiGem Ford Press Release</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiCore/">MontiCore</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiGem/">MontiGem</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+          <li class="nav-item ">
+              <a class="nav-link" href="/jobs/">
+                Jobs
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About us
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/about/">About us</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/staff/">Staff</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/activities/">Activities</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teams/">Teams</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/contact/">Contact &amp; Arrival</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Models for Digitalization</h1>
+    <p class="post-description"></p>
+  </header>
+
+  <article>
+    
+
+    <div class="toc_content">
+      
+    </div>
+    <div class="clearfix">
+      <h5 id="digitalization">Digitalization</h5>
+
+<p>“Digitalization” is an emerging trend, which
+represents the integration of multiple technologies into all
+aspects of daily life that can be digitized. A few examples
+of digitalization include smart homes (for entertainment,
+security, childcare, electrical, and heating), e-healthcare,
+smart mobility, and smart cities. The widespread impact of
+digitalization affects everything from personal
+relationships augmented by social media and their services,
+to other relationships such as how citizens interact with
+support services in e-government.</p>
+
+<p>Gartner defines digitalization with a more business-oriented
+focus: “Digitalization is the use of digital technologies to
+change a business model and provide new revenue and
+value-producing opportunities; it is the process of moving
+to a digital business.” (gartner.com/it-glossary in August
+2015). This definition spans relationships between different
+businesses, in addition to business and government, and the
+vital relationship to customers. A goal is to realize
+digitalization such that there is a clear relationship
+between the services offered by businesses and the actual
+needs of customers.</p>
+
+<p>There are many domains that will benefit greatly from
+digitalization: cultural artifacts and assets (e.g.,
+artwork, historical relics, and documents) can be digitized
+and therefore preserved and shown to the masses, even if
+they were stolen, destroyed, or are just not directly
+accessible. Scientists can now digitize their experiments,
+such that their experimental setup and results can be
+repeated much more easily to allow for further analysis and
+scrutiny.</p>
+
+<h5 id="digitalization-includes-abstraction">Digitalization includes Abstraction</h5>
+
+<p>At a first glance, digitalization seems to concentrate on
+data, such as the trend toward Big Data where large amounts
+of data are made available through the Internet and
+analyzable in the cloud. This kind of digital data itself
+represents a model of the world that it describes. Most of
+the data collected explicitly describe artifacts of the real
+world, often in a raw and unstructured format. However, if
+we want to draw information and knowledge from these data
+sets (beyond a mere observation), we need to aggregate
+relevant characteristics and abstract from many irrelevant
+details to answer general questions. These aggregated
+abstractions are also models that can describe the shared
+and thus generalizable phenomena of artifacts, mechanisms,
+and situations, as well as their individual unique
+characteristics that allow scientists and the general
+citizenry to understand specific aspects of the world.</p>
+
+<p>This is true for the world, in general, as well as for
+individual domains. For example, in the business domains,
+digitalization often informs what and where to buy and sell,
+how to advertise, how to efficiently produce and transport,
+and how to keep contact with the customer. In production
+mode, digitalization also means to design products in a
+digital form, to virtually compose and exercise components
+before producing the product, and to maintain the
+relationship between a sold or rented product, its users,
+and the producing company. In water and energy supply, as
+well as transportation domains, digitalization can inform
+the status, physical distribution, or position of the things
+and people of interest, providing analytical capabilities
+about necessary and future capacities related to
+sustainability and scalability within a specific domain.</p>
+
+<p>It is obvious that digitized data
+describe a model that represents a part of the real world.
+Models will be needed to store knowledge about all
+interesting things, people, and events and their
+relationships. Models are needed to describe procedural
+knowledge, such as calculation algorithms, business
+processes, critical loads or capacities, and their typical
+appearance, among many other needs.</p>
+
+<h5 id="digitalization-relies-on-models">Digitalization relies on Models</h5>
+
+<p>Although we may agree that models are an important asset for
+future digitalization efforts, the questions remain
+regarding where do the models come from and how are they
+denoted? In the Big Data context, models are extracted from
+an abundant volume of data that is represented in a variety
+of formats, where models may not be very explicit. Often,
+this also means that the underlying modeling language is
+relatively implicit, even though many modeling languages
+share a lot of similarities with either state machine for
+behavior and object diagrams for structural elements and
+their relationships. These implicit modeling languages will
+differ in details, because some models will need more
+expressivity. Other models may explicitly incorporate
+uncertainty or non-determinism of their underlying data. We
+think it is necessary to investigate appropriate approaches
+for language definition to describe the principal and
+possible forms of the models, which will then describe the
+real-world assets or derivations of interesting knowledge
+that can be inferred from the data represented in the
+models.</p>
+
+<h5 id="digital-transformation">Digital Transformation</h5>
+
+<p>“Digital transformation” is meaning the active act of transforming
+a business, process, or product towards becoming increasingly digital.
+The phrase is also emerging as a buzzword that allows different
+stakeholders to inject various forms of innovation into
+their respective company, business, government, academic
+institution, or other public services. The nuances of
+digital transformation are broad and have not yet been
+defined precisely, but even job advertisements often contain
+the phrase.</p>
+
+<p>Deconstructing the term from its two primary words, we
+identify two well-known concepts. “Transformation” describes
+a general process that starts with some initial situation
+that moves toward a changed, and supposedly better
+situation. May be that in this case the word transformation
+is not the best word choice because the underlying
+transformation may never meet a stable end, but rather
+undergo a continual set of evolutionary optimizations
+related to new forms of business, production, logistics,
+medicine or other changes within the targeted domain.
+“Digital” suggests that many changes in society, business
+and industry will be driven by information technologies that
+allow data to be processed in real-time and even used to
+intelligently derive information to finally to provide
+stakeholders with improved knowledge about their processes
+and products. Downstream digitization would also allow
+optimization, automation activities and production
+techniques of various forms.</p>
+
+<p>We already discussed, models have much potential
+toward achieving the goals of digital transformation.
+Below
+are a few possible contexts for application:</p>
+
+<ul>
+  <li>(M1) One of our colleagues, Ulrich Frank, recently stated that
+models can be used beneficially to mitigate the
+differences and challenges that emerge between different
+worlds that speak very unique languages. This becomes
+obvious when considering the various stakeholders that
+come into contact with Digital Products or services. Each
+stakeholder may have individual domain-specific terms to
+describe his or her needs, capabilities, and unique
+information resources.</li>
+  <li>(M2) Digital transformation often co-exists with large data
+sets that are associated with some processing need of the
+transformation context. Data has structure. For an
+explicit, well-founded handling of this data, models are
+necessary to describe the data structure, but also how to
+manipulate the data and retrieve it efficiently.
+Transformation models describe how to slice, select, join,
+or aggregate data to retrieve useful information. Beyond
+manipulation of data, there is much software that is
+necessary to handle, manage and visualize this data. In
+the future, traditional software engineering techniques
+may use models to design such systems, or models at
+runtime will describe specific techniques within a rather
+generic software package (e.g., database, statistics
+packages or visualization components).</li>
+  <li>(M3) The design of digital products and the development of
+product lines using digital technologies will lead to a
+very challenging integration problem for the physical
+components of a system, as well as the development
+methodologies and their tools. Many of these tools use
+very specific forms of models, written in proprietary or
+semi-standardized modeling languages, that will need a
+syntactic, semantic and tool-based integration.</li>
+  <li>(M4) While traditional engineering uses human-generated
+models to prescribe aspects of the system under
+development, machine learning and data mining techniques
+have the potential to reverse this relation by extracting
+models from sets of running data. It will be interesting
+to see how prescriptive and extracted models fit together,
+if at all.</li>
+</ul>
+
+<p>There is a deep list of research topics that need to be
+explored in order to derive the understanding that will
+bring a pure data-driven world together with prescriptive
+design models. Particularly, the application of machine
+learning currently too often relearns already well-known
+models, because prescriptive models and machine learning are
+not well integrated. Colleagues recently applied big data
+analytics in a larger industrial project that at first and
+foremost re-uncovered basic physical laws from a set of
+production data. While this result may be interesting from a
+machine learning perspective, the end result was not very
+helpful given the physical laws were already well-known.</p>
+
+<h5 id="digitalization-relies-on-model-standards">Digitalization relies on Model Standards</h5>
+
+<p>Currently, several standards for describing various physical
+or behavioral assets of the real world are in development.
+Such standards contain a meta-model that shapes the models
+allowed by the standard. For example, buildings are
+described through building information models using one of
+the various BIM standards. Furthermore, models of electrical
+circuits as well as mechanical machines and business
+processes are standardized in a series of partially still-evolving standards. However, these standards are now
+becoming digitalized, allowing the models to be accessible
+in digitalized form to analyze, synthesize, evolve, compose,
+and compare them before buying or developing the product.</p>
+
+<p>The modeling community needs to embrace the move toward
+digitalization by helping in the definition of new and
+evolving standards. The modeling community also needs to
+help in shaping the tooling infrastructure for these
+standards, such as the creation of meta-models for specific
+domains of the digitalized world. We firmly believe that all
+the effort that the modeling community has undertaken to
+define modeling languages, semantics, and pragmatics, to
+understand what makes a good model, and to analyze,
+synthesize, compose, merge, slice, and transform models,
+will give us a great opportunity to contribute to the
+digitization of the world and its assets.</p>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<p>This essay is an excerpt of <a href="https://www.sosym.org/" target="_blank" rel="noopener noreferrer">SoSyM</a> editorials
+<a href="#GR17a">[GR17a]</a> and <a href="#GR15b">[GR15b]</a>, which are published under the
+<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">Creative Commons licence</a>.</p>
+
+<div class="publications">
+  <ol class="bibliography">
+<li>
+<div class="row">
+
+  <div id="GR17a" class="col-sm-11">
+    <!-- Entry bib key -->
+    [GR17a]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Gray,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="https://www.sosym.org/editorials/files/GR17a.pdf" target="_blank" rel="noopener noreferrer">Models for the digital transformation</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+        
+          In: Journal Software and Systems Modeling (SoSyM),
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 16(2),
+        
+      
+      
+      
+      
+        pp. 307-308,
+      
+      
+      
+      
+      
+        Springer Berlin / Heidelberg,
+      
+      
+      
+      
+      
+        2017.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="GR15b" class="col-sm-11">
+    <!-- Entry bib key -->
+    [GR15b]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Gray,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="https://www.sosym.org/editorials/files/GR15b.pdf" target="_blank" rel="noopener noreferrer">Models for digitalization</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+        
+          In: Journal Software and Systems Modeling (SoSyM),
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 14(4),
+        
+      
+      
+      
+      
+        pp. 1319-1320,
+      
+      
+      
+      
+      
+        Springer Berlin / Heidelberg,
+      
+      
+      
+      
+      
+        2015.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+</ol>
+</div>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h4 id="further-links">Further links:</h4>
+
+<ul>
+  <li><a href="/essays">Essays, Comments, Definitions around Modeling</a></li>
+  <li><a href="/publications">Publications</a></li>
+  <li><a href="/research">Topic sorted list of most interesting publications</a></li>
+  <li><a href="/books">Books</a></li>
+  <li><a href="https://www.se-rwth.de">Website of the SE</a></li>
+</ul>
+
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+      <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+let scrollButton = document.getElementById("btn-back-to-top");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
+  }
+}
+
+scrollButton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+    
+
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="sticky-bottom mt-5">
+  <div class="container">
+    <!-- &copy; Copyright 2025   . -->
+    
+    
+    <a href="https://www.se-rwth.de/impressum/">Impressum</a>.
+    
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="/assets/js/jquery.min.js" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/popper.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/mdb.min.js" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="/assets/js/masonry.pkgd.min.js"></script>
+<script defer src="/assets/js/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="/assets/js/medium-zoom.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+  
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer src="/assets/js/tex-mml-chtml.js" type="text/javascript" id="MathJax-script"></script>
+<script defer src="/assets/js/polyfill.min.js"></script>
+
+
+  <script src="/assets/js/toc.js" crossorigin="anonymous"></script>
+  <script async src="/assets/js/widgets.js" charset="utf-8"></script>
+
+</html>

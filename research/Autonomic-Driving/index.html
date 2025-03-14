@@ -1,0 +1,2758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Autonomous Driving and Driver Intelligence |
+
+
+
+  SE@RWTH
+
+</title>
+<meta name="description" content="Website of the Chair of Software Engineering at RWTH Aachen
+">
+
+<!-- Google Verification -->
+
+
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css" integrity="oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/mdb.min.css" integrity="Y3+zUQCTOSqaSbyEFKLA6oQi8oF3I2xzkIR+ywroD3fkLG3LF2DJq/mU03KQqSZv/nGQDC2Upf73IZYZYMX4GQ==" crossorigin="anonymous" type="text/css"/>
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="/assets/css/all.min.css" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css" integrity="pOZ6Cz1wopk9RluJMvHM1AEMkPCS+ihnGztyD0kI991jgZ8hj9YQ61k4ouvGNvLHE0z6Vifp3ytAmeeW8sbbZQ==" crossorigin="anonymous" type="text/css">
+
+<!-- Styles -->
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon.png">
+<link rel="stylesheet" href="/assets/css/main.css" type="text/css">
+<!--<link rel="canonical" href="https://www.se-rwth.de/research/Autonomic-Driving/">-->
+
+
+
+
+
+
+    <!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['addDownloadExtensions', "bib"]);
+    _paq.push(['disableCookies']);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="https://stats.fh-aachen.de/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '34']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+<!-- End Matomo Code -->
+
+  </head>
+
+  <body class=" sticky-bottom-footer">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand title font-weight-lighter" href="/">
+        
+          <img src="/assets/img/icons/rwth_se_rgb.png" height="70px">
+        
+        
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <!-- <li class="nav-item ">
+            <a class="nav-link" href="/">
+              About
+              
+            </a>
+          </li> -->
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Essays
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essays/">Essay List</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Definition/">Digital Twin</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Companion/">Digital Companion</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Maturity-Model/">Digital Twin Maturity Model</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Explicit-versus-implicit-models/">Explicit versus Implicit Models</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Gesetze-DSL/">DSLs für Gesetze und Ordnungen (in D)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Research-Software-Engineering/">Research Software Engineering (RSE)</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Modeling-in-advanced-systems-engineering/">Modeling in Advanced Systems Engineering</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Model-Definitions/">Model-Based Definitions</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Low-Code/">Low Code</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Reference-Models/">Reference Models</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Research
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/">Research Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#foundations">MBSE Foundations</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#applications">Application Domains</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#tools">Software Tools</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Publications
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/publications/">All Publications</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/books/">Books</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/phdtheses/">Ph.D. Theses</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/assets/bibliography/all-software-engineering-rwth-references.bib">Bibtex</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Teaching
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/">Teaching</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/teaching-overview/">Teaching Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/#currentsem">Current Semester</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/archive/">Course archive (starting WS 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="https://www.se-rwth.de/teaching/indexArchiv.php">Course archive (until SoSe 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/theses/">BA/MA Theses</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/">Major project overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/22.09.MontiGem.Ford.Press.Release/">MontiGem Ford Press Release</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiCore/">MontiCore</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiGem/">MontiGem</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+          <li class="nav-item ">
+              <a class="nav-link" href="/jobs/">
+                Jobs
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About us
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/about/">About us</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/staff/">Staff</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/activities/">Activities</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teams/">Teams</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/contact/">Contact &amp; Arrival</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Autonomous Driving and Driver Intelligence</h1>
+    <p class="post-description"></p>
+  </header>
+
+  <article>
+    
+
+    <div class="toc_content">
+      
+    </div>
+    <div class="clearfix">
+      <h2 id="summary-of-most-relevant-topic-papers">Summary of Most Relevant Topic Papers</h2>
+
+<p>Quality assurance, especially of safety-related functions, is a highly
+important task. In the Carolo project <a href="#BR12b">[BR12b]</a> <a href="#BR12">[BR12]</a>,
+we built the car <strong>Caroline</strong> as a rigorous test infrastructure for intelligent,
+sensor-based functions through fully-automatic simulation (not only
+visualization) of the car within its surrounding: the city, pedestrians
+and especially other cars <a href="#BBR07">[BBR07]</a>. Beside the simulation of a
+complete autonomous car with its sensors and actors, the simulation
+environment may also be used to test dedicated subsystems without any
+real hardware involved. By producing sensor input from the simulation
+and comparison of expected and actual behavior, subsystems may be
+automatically validated and thus developed in an agile way.</p>
+
+<div class="row" style="text-align: center; margin: 20px 0;">
+    <div class="col-sm mt-3 mt-md-0">
+        
+            <picture>
+                <img class="img-fluid rounded z-depth-1" style="width:  70%; 
+                 " src="/assets/img/research/auto/Caroline-Recognition.png">
+            </picture>
+        
+        
+    </div>
+</div>
+
+<h3 id="driver-intelligence">Driver Intelligence</h3>
+
+<p>From the viewpoint of software engineering, <strong>intelligent driver assistance</strong> 
+and, in particular, <strong>autonomous driving</strong> is an interesting and demanding 
+challenge, because it includes the development of complex software embedded 
+within a distributed, life-critical system (car) and the connection of 
+heterogeneous, autonomous mobile devices (other cars, infrastructure, etc.) into 
+one, large, distributed system. Therefore, we are involved in a number of 
+projects with major European car manufacturers in which we transfer modern 
+software development techniques to the car domain. This transfer is necessary 
+as, with its increasing complexity, software becomes a demanding driver of the 
+overall systems’ development process and not just an add-on.</p>
+
+<p><strong>Caroline</strong>
+is a completely autonomous car, with which we participated in the <a href="https://link.springer.com/book/10.1007/978-3-642-03991-1" target="_blank" rel="noopener noreferrer">Darpa Urban 
+Challenge</a>. There our car was driving 
+autonomously in an urban area for hours. We successfully achieved the best place 
+as newcomers (and best non-Americans). This resulted from a number of facts, 
+including the rigorous application of <strong>agile development methods</strong>, such as XP 
+and Scrum and a simulation for driving scenarios. In
+<a href="#BR12">[BR12]</a>
+we describe the process driven by story cards as a form of use cases, a 
+continuously integrated and running software up to a rigorous test, and 
+simulation infrastructure, called Hesperia.</p>
+
+<div class="row" style="text-align: center; margin: 20px 0;">
+    <div class="col-sm mt-3 mt-md-0">
+        
+            <picture>
+                <img class="img-fluid rounded z-depth-1" style="width:  70%; 
+                 " src="/assets/img/research/auto/Caroline-Finish.png">
+            </picture>
+        
+        
+    </div>
+</div>
+
+<p>In particular, we have developed a <strong>rigorous test infrastructure</strong>
+for intelligent, sensor-based functions through <strong>fully-automatic
+simulation</strong> (not only visualization!) of the car within its
+surrounding: the city, pedestrians and especially other cars <a href="#BBR07">[BBR07]</a>.
+Our simulator is capable of running automatic
+back-to-back tests on the complete software system with no real
+hardware involved by producing sensor input from the simulation and
+acting according to the steering output of the autonomous driving
+software. Every night and, when necessary for every version change, the
+tests are automatically executed.</p>
+
+<p>This technique allows us a <strong>dramatic speedup in development and
+evolution</strong> of autonomous car functionality, and thus, enables us to
+develop software in an agile way <a href="#BR12b">[BR12b]</a>. We have successfully
+shown that agile development of high-quality software is possible and
+very effective in the automotive domain. However, it remains a
+challenge to combine this innovative, modern way of agile, iterative
+systems’ development with the current development standards, such as ISO
+26262, in order to allow the OEMs to benefit both from efficiency and
+quality on one hand and legal issues on the other hand.</p>
+
+<p>As tooling infrastructure, we mainly used an IDE such as Eclipse and in
+particular the SSElab storage, versioning and management services
+<a href="#HKR12">[HKR12]</a>.
+Without those, agile development would not have been
+possible.</p>
+
+<p>In <a href="#MMR10">[MMR10]</a> we give an overview of the state-of-the-art in
+development and evolution on a more general level by considering <strong>any
+kind of critical system</strong> that relies on architectural descriptions.</p>
+
+<p>In recent years, we also investigate in the <strong>next steps of autonomy</strong>, namely
+<strong>cooperatively interacting autonomous vehicles</strong>, allowing e.g., convoys
+with almost no distance to drive very energy efficient <a href="#FIK+18">[FIK+18]</a>,
+as well as virtualization of development of safety algorithms.</p>
+
+<p>With MontiSim, the Chair of Software Engineering developed a full 
+blown autonomous and cooperative driving simulator <a href="#GKR+17">[GKR+17]</a>.
+It enables the developer to test driving software and identify
+errors and potentials in driving behavior. In large driving
+scenarios it can be beneficial to subdivide the simulation
+problem spatially as distant vehicles have no or only a low
+impact on each other <a href="#FIK+18">[FIK+18]</a> <a href="#KKRZ19">[KKRZ19]</a>.
+Furthermore, to render the driving performance more realistic,
+the executing target hardware is emulated and the execution timings
+are estimated. The differences between the planned
+and the simulated trajectories with and without hardware emulation
+are depicted below.</p>
+
+<div class="row" style="text-align: center; margin: 20px 0;">
+    <div class="col-sm mt-3 mt-md-0">
+        
+            <picture>
+                <img class="img-fluid rounded z-depth-1" style="width:  70%; 
+                 " src="/assets/img/research/auto/hwemu.png">
+            </picture>
+        
+        
+    </div>
+</div>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h3 id="team-carolo-at-the-darpa-urban-challenge">Team CarOLO at the DARPA Urban Challenge</h3>
+
+<div id="youtube-video">
+    
+    <div id="ytvideo" data-video="https://www.youtube-nocookie.com/embed/videoseries?list=PLuHxQfNRwKzNir4GfkGkvff1Glal9xOOq&amp;autoplay=1" style="background-image: url('/assets/img/videos-data/Team CarOLO at the DARPA Urban Challenge.png');">
+        <div class="row playbutton">
+            <div class="col-2">
+                <i class="fa-solid fa-play"></i>
+            </div>
+            <div class="col-10">
+                <p>Agree to play <span style="font-style: italic; font-weight: 600; padding-right: 2px; color: #fff;">YouTube</span> video
+                <span style="display: block; color: #fff;">"Team CarOLO at the DARPA Urban Challenge"</span></p>
+
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+<script src="/assets/js/click_privacy.js" crossorigin="anonymous"></script>
+
+<p>Videos in this playlist:</p>
+<ul>
+  <li>one for each day in the Team CarOLO DARPA Urban Challenge 2007</li>
+</ul>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h2 id="key-statements">Key Statements</h2>
+<ol>
+  <li>Automatic, repeatable tests speed up the development process.</li>
+  <li>Testing of sensor-based functions works best by simulating the sensoric input 
+on realistic scenarios.</li>
+  <li>Intelligent driver assistance is tested best by simulating full urban 
+scenarios, which is not that complicated.</li>
+  <li>Software-intensive functions in embedded domains can be developed using agile 
+methods.</li>
+  <li>Hardware emulation is necessary in autonomous driving simulation
+to obtain precise driving results and enable an agile cross-platform development.</li>
+</ol>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h2 id="selected-topic-specific-publications">Selected Topic-Specific Publications</h2>
+
+<div class="publications">
+    <ol class="bibliography">
+<li>
+<div class="row">
+
+  <div id="KKRZ19" class="col-sm-11">
+    <!-- Entry bib key -->
+    [KKRZ19]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Kirchhof,
+        
+      
+        
+        
+          
+          
+            
+              E.
+            
+          
+        
+        
+           Kusmenko,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              H.
+            
+          
+        
+        
+           Zhang:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Simulation-as-a-Service-for-Cooperative-Vehicles.pdf">Simulation as a Service for Cooperative Vehicles</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Proceedings of MODELS 2019. Workshop MASE,
+        
+      
+
+      
+        
+          
+          
+            
+            
+              
+                L.
+              
+            
+          
+          
+             Burgueño,
+          
+        
+          
+          
+            
+            
+              
+                A.
+              
+            
+          
+          
+             Pretschner,
+          
+        
+          
+          
+            
+            
+              
+                S.
+              
+            
+          
+          
+             Voss,
+          
+        
+          
+          
+            
+            
+              
+                M.
+              
+            
+          
+          
+             Chaudron,
+          
+        
+          
+          
+            
+            
+              
+                J.
+              
+            
+          
+          
+             Kienzle,
+          
+        
+          
+          
+            
+            
+              
+                M.
+              
+            
+          
+          
+             Völter,
+          
+        
+          
+          
+            
+            
+              
+                S.
+              
+            
+          
+          
+             Gérard,
+          
+        
+          
+          
+            
+            
+              
+                M.
+              
+            
+          
+          
+             Zahedi,
+          
+        
+          
+          
+            
+            
+              
+                E.
+              
+            
+          
+          
+             Bousse,
+          
+        
+          
+          
+            
+            
+              
+                A.
+              
+            
+          
+          
+             Rensink,
+          
+        
+          
+          
+            
+            
+              
+                F.
+              
+            
+          
+          
+             Polack,
+          
+        
+          
+          
+            
+            
+              
+                G.
+              
+            
+          
+          
+             Engels,
+          
+        
+          
+          
+            
+            
+              
+                G.
+              
+            
+          
+          
+             Kappel (Eds.),
+          
+        
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 28-37,
+      
+      
+      
+      
+      
+        IEEE,
+      
+      
+      
+      
+        Sep.
+      
+      
+        2019.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="FIK+18" class="col-sm-11">
+    <!-- Entry bib key -->
+    [FIK+18]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Frohn,
+        
+      
+        
+        
+          
+          
+            
+              P.
+            
+          
+        
+        
+           Ilov,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Kriebel,
+        
+      
+        
+        
+          
+          
+            
+              E.
+            
+          
+        
+        
+           Kusmenko,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Ryndin:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Distributed-Simulation-of-Cooperatively-Interacting-Vehicles.pdf">Distributed Simulation of Cooperatively Interacting Vehicles</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: International Conference on Intelligent Transportation Systems (ITSC’18),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 596-601,
+      
+      
+      
+      
+      
+        IEEE,
+      
+      
+      
+      
+      
+        2018.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="GKR+17" class="col-sm-11">
+    <!-- Entry bib key -->
+    [GKR+17]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              F.
+            
+          
+        
+        
+           Grazioli,
+        
+      
+        
+        
+          
+          
+            
+              E.
+            
+          
+        
+        
+           Kusmenko,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Roth,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+          von Wenckstern:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Simulation-Framework-for-Executing-Component-and-Connector-Models-of-Self-Driving-Vehicles.pdf">Simulation Framework for Executing Component and Connector Models of Self-Driving Vehicles</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Proceedings of MODELS 2017. Workshop EXE,
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+        CEUR 2019,
+      
+      
+      
+      
+      
+      
+      
+        Sep.
+      
+      
+        2017.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="BR12b" class="col-sm-11">
+    <!-- Entry bib key -->
+    [BR12b]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Berger,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Autonomous-Driving-5-Years-after-the-Urban-Challenge-The-Anticipatory-Vehicle-as-a-Cyber-Physical-System.pdf">Autonomous Driving - 5 Years after the Urban Challenge:
+    The Anticipatory
+    Vehicle as a Cyber-Physical System</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Automotive Software Engineering Workshop (ASE’12),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 789-798,
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        2012.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="HKR12" class="col-sm-11">
+    <!-- Entry bib key -->
+    [HKR12]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Herrmann,
+        
+      
+        
+        
+          
+          
+            
+              T.
+            
+          
+        
+        
+           Kurpick,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/SSELab-A-Plug-In-Based-Framework-for-Web-Based-Project-Portals.pdf">SSELab: A Plug-In-Based Framework for Web-Based Project
+    Portals</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Developing Tools as Plug-Ins Workshop (TOPI’12),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 61-66,
+      
+      
+      
+      
+      
+        IEEE,
+      
+      
+      
+      
+      
+        2012.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="BR12" class="col-sm-11">
+    <!-- Entry bib key -->
+    [BR12]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Berger,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Engineering-Autonomous-Driving-Software.pdf">Engineering Autonomous Driving Software</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Experience from the DARPA Urban Challenge,
+        
+      
+
+      
+        
+          
+          
+            
+            
+              
+                C.
+              
+            
+          
+          
+             Rouff,
+          
+        
+          
+          
+            
+            
+              
+                M.
+              
+            
+          
+          
+             Hinchey (Eds.),
+          
+        
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 243-271,
+      
+      
+      
+      
+      
+        Springer, Germany,
+      
+      
+      
+      
+      
+        2012.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="MMR10" class="col-sm-11">
+    <!-- Entry bib key -->
+    [MMR10]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              T.
+            
+          
+        
+        
+           Mens,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Magee,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Evolving-Software-Architecture-Descriptions-of-Critical-Systems.pdf">Evolving Software Architecture Descriptions of Critical
+    Systems</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+        
+          In: IEEE Computer Journal,
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 43(5),
+        
+      
+      
+      
+      
+        pp. 42-48,
+      
+      
+      
+      
+      
+        IEEE,
+      
+      
+      
+      
+        May
+      
+      
+        2010.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row" style="background: #CFE2F3; padding: 6px 0; margin: 0;">
+
+  <div id="BBR07" class="col-sm-11">
+    <!-- Entry bib key -->
+    [BBR07]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Basarke,
+        
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Berger,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/staff/rumpe/publications20042008/Software-and-Systems-Engineering-Process-and-Tools-for-the-Development-of-Autonomous-Driving-Intelligence.pdf">Software &amp; Systems Engineering Process and Tools for the
+    Development
+    of Autonomous Driving Intelligence</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+        
+          In: Journal of Aerospace Computing, Information, and
+    Communication (JACIC),
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 4(12),
+        
+      
+      
+      
+      
+        pp. 1158-1174,
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        2007.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+</ol>
+</div>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h2 id="related-topics">Related Topics</h2>
+<ul>
+  <li><a href="/research/Automotive">Automotive</a></li>
+  <li><a href="/research/Cyber-Physical-Systems">Cyber-Physical Systems (CPS)</a></li>
+  <li><a href="/research/Model-Driven-Systems-Engineering">Model-Driven Systems Engineering</a></li>
+  <li><a href="/research/Domain-Specific-Languages">Domain-Specific Languages (DSLs)</a></li>
+  <li><a href="/research/Software-Architecture">Modeling Software Architecture</a></li>
+  <li><a href="/research/MontiCore">MontiCore - Language Workbench</a></li>
+  <li><a href="/research/Robotics">Robotics Architectures and Tasks</a></li>
+</ul>
+
+<h2 id="youtube-videos-of-the-darpa-urban-challenge-2007">Youtube Videos of the Darpa Urban Challenge 2007</h2>
+<ul>
+  <li><a href="https://www.youtube.com/user/teamcarolo" target="_blank" rel="noopener noreferrer">Channel of teamcarolo (9 videos)</a></li>
+  <li><a href="https://www.youtube.com/watch?v=aHYRtOvSx-M" target="_blank" rel="noopener noreferrer">Final Event Highlights</a></li>
+  <li><a href="https://www.youtube.com/results?search_query=Darpa%20Urban%20Challenge&amp;sm=3" target="_blank" rel="noopener noreferrer">More videos of the Darpa Urban Challenge 
+2007</a></li>
+</ul>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h4 id="further-links">Further links:</h4>
+
+<ul>
+  <li><a href="/publications">Publications</a></li>
+  <li><a href="/research">Topic sorted list of most interesting publications</a></li>
+  <li><a href="/books">Books</a></li>
+  <li><a href="/phdtheses">Aachener Informatik-Berichte, Software Engineering / Ph.D. Theses</a></li>
+  <li><a href="https://www.se-rwth.de">Website of the SE</a></li>
+</ul>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+      <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+let scrollButton = document.getElementById("btn-back-to-top");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
+  }
+}
+
+scrollButton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+    
+
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="sticky-bottom mt-5">
+  <div class="container">
+    <!-- &copy; Copyright 2025   . -->
+    
+    
+    <a href="https://www.se-rwth.de/impressum/">Impressum</a>.
+    
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="/assets/js/jquery.min.js" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/popper.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/mdb.min.js" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="/assets/js/masonry.pkgd.min.js"></script>
+<script defer src="/assets/js/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="/assets/js/medium-zoom.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+  
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer src="/assets/js/tex-mml-chtml.js" type="text/javascript" id="MathJax-script"></script>
+<script defer src="/assets/js/polyfill.min.js"></script>
+
+
+  <script src="/assets/js/toc.js" crossorigin="anonymous"></script>
+  <script async src="/assets/js/widgets.js" charset="utf-8"></script>
+
+</html>

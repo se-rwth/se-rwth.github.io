@@ -1,0 +1,2435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Artifacts in Complex Development Projects |
+
+
+
+  SE@RWTH
+
+</title>
+<meta name="description" content="Website of the Chair of Software Engineering at RWTH Aachen
+">
+
+<!-- Google Verification -->
+
+
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css" integrity="oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/mdb.min.css" integrity="Y3+zUQCTOSqaSbyEFKLA6oQi8oF3I2xzkIR+ywroD3fkLG3LF2DJq/mU03KQqSZv/nGQDC2Upf73IZYZYMX4GQ==" crossorigin="anonymous" type="text/css"/>
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="/assets/css/all.min.css" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css" integrity="pOZ6Cz1wopk9RluJMvHM1AEMkPCS+ihnGztyD0kI991jgZ8hj9YQ61k4ouvGNvLHE0z6Vifp3ytAmeeW8sbbZQ==" crossorigin="anonymous" type="text/css">
+
+<!-- Styles -->
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon.png">
+<link rel="stylesheet" href="/assets/css/main.css" type="text/css">
+<!--<link rel="canonical" href="https://www.se-rwth.de/research/Artifacts/">-->
+
+
+
+
+
+
+    <!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['addDownloadExtensions', "bib"]);
+    _paq.push(['disableCookies']);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="https://stats.fh-aachen.de/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '34']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+<!-- End Matomo Code -->
+
+  </head>
+
+  <body class=" sticky-bottom-footer">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand title font-weight-lighter" href="/">
+        
+          <img src="/assets/img/icons/rwth_se_rgb.png" height="70px">
+        
+        
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <!-- <li class="nav-item ">
+            <a class="nav-link" href="/">
+              About
+              
+            </a>
+          </li> -->
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Essays
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essays/">Essay List</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Definition/">Digital Twin</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Companion/">Digital Companion</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Maturity-Model/">Digital Twin Maturity Model</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Explicit-versus-implicit-models/">Explicit versus Implicit Models</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Gesetze-DSL/">DSLs für Gesetze und Ordnungen (in D)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Research-Software-Engineering/">Research Software Engineering (RSE)</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Modeling-in-advanced-systems-engineering/">Modeling in Advanced Systems Engineering</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Model-Definitions/">Model-Based Definitions</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Low-Code/">Low Code</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Reference-Models/">Reference Models</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Research
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/">Research Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#foundations">MBSE Foundations</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#applications">Application Domains</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#tools">Software Tools</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Publications
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/publications/">All Publications</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/books/">Books</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/phdtheses/">Ph.D. Theses</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/assets/bibliography/all-software-engineering-rwth-references.bib">Bibtex</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Teaching
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/">Teaching</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/teaching-overview/">Teaching Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/#currentsem">Current Semester</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/archive/">Course archive (starting WS 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="https://www.se-rwth.de/teaching/indexArchiv.php">Course archive (until SoSe 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/theses/">BA/MA Theses</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/">Major project overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/22.09.MontiGem.Ford.Press.Release/">MontiGem Ford Press Release</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiCore/">MontiCore</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiGem/">MontiGem</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+          <li class="nav-item ">
+              <a class="nav-link" href="/jobs/">
+                Jobs
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About us
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/about/">About us</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/staff/">Staff</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/activities/">Activities</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teams/">Teams</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/contact/">Contact &amp; Arrival</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Artifacts in Complex Development Projects</h1>
+    <p class="post-description"></p>
+  </header>
+
+  <article>
+    
+
+    <div class="toc_content">
+      
+    </div>
+    <div class="clearfix">
+      <h2 id="summary-of-most-relevant-topic-papers">Summary of Most Relevant Topic Papers</h2>
+
+<p>Most development projects over time evolve from a simple, understandable
+collection of artifacts, tools, and the way they relate to each other
+into a complex, incomprehensible compound of artifacts, tools, and developers
+who work with them.
+The following figure illustrates this evolution with a simple set of tools and the
+artifacts they produce and edit. The arrows between the tools and artifacts
+represent the relations.</p>
+
+<div class="row" style="text-align: center; margin: 20px 0;">
+    <div class="col-sm mt-3 mt-md-0">
+        
+            <picture>
+                <img class="img-fluid rounded z-depth-1" style="width:  80%; 
+                 " src="/assets/img/research/artifacts/artifacts_complexity.png">
+            </picture>
+        
+        
+    </div>
+</div>
+
+<p>Especially, developing modern software solutions has become an increasingly complex
+and time consuming process. As both the requirements and expectations towards modern
+software increase, the need for the development of increasingly large and
+complex systems arises. In general, the larger the developed system needs to be
+the more developers will be involved in the creation process in order to finish
+the project in an acceptable timespan
+<a href="#BGRW17">[BGRW17]</a>.
+Often problems arise when large groups of people have to cooperate on the same
+project over a longer period of time. For example, architectural decisions made
+years ago, might be difficult to understand once the responsible architect moved
+on to the next project. But even if the original contributors of the project are
+present the complexity of large software systems often becomes overwhelming to a
+point where people can easily lose track of relevant structures, artifacts, and
+their relations.</p>
+
+<p>A good example is Model-driven development (MDD). As a prominent enabler for the
+automatic generation of programming language files for products or for tests
+from explicitly defined models, MDD projects manage a large magnitude of
+artifacts (files, etc.) with various relationships. A large class of artifact
+relations comes from artifacts using others, e.g., via importing types and
+signatures. This form of usage strongly differs from generation dependencies,
+where one artifact is generated, compiled, and transformed from or to other
+artifacts
+<a href="#BGRW18">[BGRW18]</a>.
+An MDD project usually entails a number of potentially dependent process steps,
+where a chain of generating, compiling and packaging artifacts arises.
+During these steps a multitude of artifacts are created, read or even executed.
+Those artifacts are thus related to each other in various ways. The number and
+complexity of occurring dependencies and other relationships between development
+artifacts can lead to several problems, such as poor maintainability and long
+development times of both, MDD tools and the product, in an MDD process. To
+tackle these problems, it is important to understand which artifacts are
+involved and how these artifacts are related to each other in MDD projects.</p>
+
+<p>Leaving the domain of software development and entering the domain of cyber
+physical systems (CPS) engineering the problem of complex project structures
+becomes even more pressing
+<a href="#BHR+18">[BHR+18]</a>.
+Here, development projects have a much wider range. Now, not only the relations
+of processes, structures, and artifacts of one single domain, for instance
+mechanical engineering, need to be understood but their relations within and
+between several domains. At the core is the problem of undocumented knowledge of
+project, process, and artifact structures. Somehow somebody knows what to do at
+a certain point in time of a project. It is known that artifacts of a certain
+type always can be found at a specific place (on a file system, database, etc.).
+It is also known that once artifacts of this type are modified, other artifacts,
+processes or departments might be affected by the change. A first step of
+dealing with this problem is making the implicit knowledge explicit. This step,
+however, needs a precisely defined methodology which provides modeling languages
+and techniques.</p>
+
+<div class="row" style="text-align: center; margin: 20px 0;">
+    <div class="col-sm mt-3 mt-md-0">
+        
+            <picture>
+                <img class="img-fluid rounded z-depth-1" style="width:  80%; 
+                 " src="/assets/img/research/artifacts/artifacts_overview.png">
+            </picture>
+        
+        
+    </div>
+</div>
+
+<p>The previous figure shows how to handle the complexity of model-driven systems
+engineering projects with artifact models. Furthermore, it shows the relations
+between the involved stakeholders and the artifact model, as well as, the
+artifact data. An architect creates the artifact model for a systems engineering
+project shown on the left side of the figure. Its goal is to structure all the
+different kinds of artifacts and their relations within the project created by
+people involved in it, represented by the developer icon shown on the right
+side of the figure. Corresponding to the artifact model, artifact data is
+extracted from the project. This data contains information about all artifacts
+and their relations of the project in its current state. Analysts, shown on
+the right side of the figure, use this data to check the current state of a
+project. Additionally, the artifact data can be used as input for software
+tools for further processing.</p>
+
+<h2 id="modeling-artifacts-and-their-relations">Modeling artifacts and their relations</h2>
+
+<p>At this chair we developed a methodology providing modeling techniques and
+corresponding tooling which help to understand artifacts in complex development
+structures
+<a href="#GHR17">[GHR17]</a>.
+We provide a way to define a custom artifact model for a project, department or
+a company which describes artifacts and their relations. Additionally, we
+provide a customizable tool-chain which extracts artifact information and
+performs analyses on this artifact data. This data then can be further used by
+analysts or software tools to help understand, analyze, and improve complex
+development projects
+<a href="#Gre19">[Gre19]</a>.</p>
+
+<h2 id="understanding-architectures-substructures--erosion">Understanding architectures, substructures &amp; erosion</h2>
+
+<p>One example for an analysis based on the artifacts and their relations is
+understanding architectures and substructures of development projects, as well
+as, analyzing the architectural erosion occurring over time. We used our
+modeling techniques to create tooling which analyzes and calculates the
+architectural drift based on the project’s artifacts and their relation. Once an
+architect defines the concept architecture of a project, the current
+architecture can be automatically check with respect to the concept.</p>
+
+<div class="row" style="text-align: center; margin: 20px 0;">
+    <div class="col-sm mt-3 mt-md-0">
+        
+            <picture>
+                <img class="img-fluid rounded z-depth-1" style="width: 80%; 
+                 " src="/assets/img/research/artifacts/artifacts_architecture.png">
+            </picture>
+        
+        
+    </div>
+</div>
+
+<p>The last figure illustrates the results of such a calculation of the architectural
+drift. After creating the artifact model for the project, a tool-chain
+automatically extracts the artifact data of the project in its current state.
+Additionally, an architect defines which modules exists in the project and which
+relations between them exists (illustrated by the boxes and arrows). A module in
+this case is a conceptual container for artifacts which does not need to
+correspond to any file structure within the project. The architect also adds
+information to the relations between the modules by declaring which relations
+must exists and which are not allowed illustrated by the arrows’ coloring and
+icons. Hence, he defines the concept architecture of the project. This
+architecture is then used to calculate the architectural drift of the the
+current architecture, meaning the current relations between the modules,
+reconstructed from the artifact data of the project. The icons on the arrows
+indicate which relations between modules must exist (green check) and which are
+forbidden (red cross). The arrows represent relations between modules. The
+coloring of the arrows illustrates if the constraints defined by the icons
+whether a constraint is stratified. As an example, a red arrow with a red cross
+from module A to module B means that any relations between artifacts contained
+in module A to artifacts in module B are forbidden, however, in the current
+architecture this is not the case. Moreover, dashed arrows indicate relations
+between modules which are not modeled by the architect.</p>
+
+<h2 id="understanding-project-structures--tooling">Understanding project structures &amp; tooling</h2>
+
+<p>Moving away from the artifact layer, we applied our methodology for modeling
+artifacts and their relations within complex projects to tools and their
+relation. In a first prototype we analyzed the structure and relations of
+repositories, CI/CD, and documentation tooling in an overlapping fashion. This
+way, we were able to understand artifacts and their relation within the tools,
+but also across them, giving us the opportunity to create an overview of our
+project and further analyze it.</p>
+
+<div class="row" style="text-align: center; margin: 20px 0;">
+    <div class="col-sm mt-3 mt-md-0">
+        
+            <picture>
+                <img class="img-fluid rounded z-depth-1" style="width: 80%; 
+                 " src="/assets/img/research/artifacts/artifacts_tools.png">
+            </picture>
+        
+        
+    </div>
+</div>
+
+<p>The figure demonstrates our attempt to leave the layer of a file system to perform
+artifact-based analyses and move to the layer of tools and their relations
+within a project. Based on an artifact model created to understand artifacts
+which are primarily located on the level of a file system, we added the
+information of different tools and their relations to the model. In the figure
+these are the wiki (green), bugtacker (purple), jenkins build server (red), and
+git repositories (blue). The figure shows an overview of all these tools which
+are part of our own MontiCore project. By using the concept of artifact-based
+analyses, we are able to better understand not only the artifacts and their
+relations within a project, but also the type of tools which are involved and
+the artifacts they work with.</p>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h2 id="key-statements">Key Statements</h2>
+
+<ol>
+  <li>Modeling artifacts and their relations tackles two problems of complex
+development systems:</li>
+</ol>
+
+<ul>
+  <li>Making implicit knowledge about process, structures, and artifacts explicit,
+as well as,</li>
+  <li>enabling analyses of the artifact data to understand and improve projects.</li>
+</ul>
+
+<ol>
+  <li>This is even more beneficial once the domain of CPS development is entered
+and projects span across multiple departments and a multitude of tools
+<a href="#HJK+21">[HJK+21]</a>.</li>
+  <li>We have developed a methodology providing modeling techniques to help
+understand artifacts and their relations in complex development projects.
+Furthermore, we created a customizable tool-chain which enables automated
+extraction and analyses of artifact data of model-driven systems engineering
+projects.</li>
+</ol>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h2 id="selected-topic-specific-publications">Selected Topic-Specific Publications</h2>
+
+<div class="publications">
+  <ol class="bibliography">
+<li>
+<div class="row">
+
+  <div id="HJK+21" class="col-sm-11">
+    <!-- Entry bib key -->
+    [HJK+21]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Hillemacher,
+        
+      
+        
+        
+          
+          
+            
+              N.
+            
+          
+        
+        
+           Jäckel,
+        
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Kugler,
+        
+      
+        
+        
+          
+          
+            
+              P.
+            
+          
+        
+        
+           Orth,
+        
+      
+        
+        
+          
+          
+            
+              D.
+            
+          
+        
+        
+           Schmalzing,
+        
+      
+        
+        
+          
+          
+            
+              L.
+            
+          
+        
+        
+           Wachtmeister:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Artifact-Based-Analysis-for-the-Development-of-Collaborative-Embedded-Systems.pdf">Artifact-Based Analysis for the Development of Collaborative 
+      Embedded Systems</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Model-Based Engineering of Collaborative Embedded Systems,
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 315-331,
+      
+      
+      
+      
+      
+        Springer,
+      
+      
+      
+      
+        Jan.
+      
+      
+        2021.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="Gre19" class="col-sm-11">
+    <!-- Entry bib key -->
+    [Gre19]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              T.
+            
+          
+        
+        
+           Greifenberg:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/phdtheses/Diss-Greifenberg-Artefaktbasierte-Analyse-modellgetriebener-Softwareentwicklungsprojekte.pdf">Artefaktbasierte Analyse modellgetriebener Softwareentwicklungsprojekte</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+        Aachener Informatik-Berichte, Software Engineering, Band 42,
+      
+      
+        ISBN 978-3-8440-6879-5,
+      
+      
+      
+        Shaker Verlag,
+      
+      
+      
+      
+        Aug.
+      
+      
+        2019.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="BHR+18" class="col-sm-11">
+    <!-- Entry bib key -->
+    [BHR+18]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Butting,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Hillemacher,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              D.
+            
+          
+        
+        
+           Schmalzing,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Shepherding-Model-Evolution-in-Model-Driven-Development.pdf">Shepherding Model Evolution in Model-Driven Development</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Joint Proceedings of the Workshops at Modellierung 2018 (MOD-WS 2018),
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 2060,
+        
+      
+      
+      
+      
+        pp. 67-77,
+      
+      
+        CEUR Workshop Proceedings,
+      
+      
+      
+      
+        CEUR-WS.org,
+      
+      
+      
+      
+        Feb.
+      
+      
+        2018.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="BGRW18" class="col-sm-11">
+    <!-- Entry bib key -->
+    [BGRW18]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Butting,
+        
+      
+        
+        
+          
+          
+            
+              T.
+            
+          
+        
+        
+           Greifenberg,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/On-the-Need-for-Artifact-Models-in-Model-Driven-Systems-Engineering-Projects.pdf">On the Need for Artifact Models in Model-Driven Systems Engineering Projects</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Software Technologies: Applications and Foundations,
+        
+      
+
+      
+        
+          
+          
+            
+            
+              
+                M.
+              
+            
+          
+          
+             Seidl,
+          
+        
+          
+          
+            
+            
+              
+                S.
+              
+            
+          
+          
+             Zschaler (Eds.),
+          
+        
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 146-153,
+      
+      
+        LNCS 10748,
+      
+      
+      
+      
+        Springer,
+      
+      
+      
+      
+        Jan.
+      
+      
+        2018.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="GHR17" class="col-sm-11">
+    <!-- Entry bib key -->
+    [GHR17]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              T.
+            
+          
+        
+        
+           Greifenberg,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Hillemacher,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Towards-a-Sustainable-Artifact-Model-Artifacts-in-Generator-Based-Model-Driven-Projects.pdf">Towards a Sustainable Artifact Model: Artifacts in Generator-Based Model-Driven Projects</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+        Aachener Informatik-Berichte, Software Engineering, Band 30,
+      
+      
+        ISBN 978-3-8440-5678-5,
+      
+      
+      
+        Shaker Verlag,
+      
+      
+      
+      
+        Dec.
+      
+      
+        2017.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="BGRW17" class="col-sm-11">
+    <!-- Entry bib key -->
+    [BGRW17]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Butting,
+        
+      
+        
+        
+          
+          
+            
+              T.
+            
+          
+        
+        
+           Greifenberg,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Taming-the-Complexity-of-Model-Driven-Systems-Engineering.pdf">Taming the Complexity of Model-Driven Systems Engineering Projects</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Part of the Grand Challenges in Modeling (GRAND’17) Workshop,
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        Jul.
+      
+      
+        2017.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+</ol>
+</div>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h2 id="related-topics">Related Topics</h2>
+
+<ul>
+  <li><a href="/research/Automotive">Automotive</a></li>
+  <li><a href="/research/Autonomic-Driving">Autonomous Driving &amp; Intelligent Driver
+Assistance</a></li>
+  <li><a href="/research/Domain-Specific-Languages">Domain Specific Languages (DSLs)</a></li>
+  <li><a href="/research/Energy-Management">Energy Management</a></li>
+  <li><a href="/research/Software-Architecture">MontiArc - Architectural Modeling</a></li>
+  <li><a href="/research/Robotics">Robotics Architectures and Tasks</a></li>
+  <li><a href="/research/Unified-Modeling-Language">Unified Modeling Language (UML)</a></li>
+</ul>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h4 id="further-links">Further links:</h4>
+
+<ul>
+  <li><a href="/publications">Publications</a></li>
+  <li><a href="/research">Topic sorted list of most interesting publications</a></li>
+  <li><a href="/books">Books</a></li>
+  <li><a href="/phdtheses">Aachener Informatik-Berichte, Software Engineering / Ph.D. Theses</a></li>
+  <li><a href="https://www.se-rwth.de">Website of the SE</a></li>
+</ul>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+      <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+let scrollButton = document.getElementById("btn-back-to-top");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
+  }
+}
+
+scrollButton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+    
+
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="sticky-bottom mt-5">
+  <div class="container">
+    <!-- &copy; Copyright 2025   . -->
+    
+    
+    <a href="https://www.se-rwth.de/impressum/">Impressum</a>.
+    
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="/assets/js/jquery.min.js" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/popper.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/mdb.min.js" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="/assets/js/masonry.pkgd.min.js"></script>
+<script defer src="/assets/js/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="/assets/js/medium-zoom.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+  
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer src="/assets/js/tex-mml-chtml.js" type="text/javascript" id="MathJax-script"></script>
+<script defer src="/assets/js/polyfill.min.js"></script>
+
+
+  <script src="/assets/js/toc.js" crossorigin="anonymous"></script>
+  <script async src="/assets/js/widgets.js" charset="utf-8"></script>
+
+</html>
