@@ -1,0 +1,4944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Cyber-Physical Systems (CPS) |
+
+
+
+  SE@RWTH
+
+</title>
+<meta name="description" content="Website of the Chair of Software Engineering at RWTH Aachen
+">
+
+<!-- Google Verification -->
+
+
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css" integrity="oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/mdb.min.css" integrity="Y3+zUQCTOSqaSbyEFKLA6oQi8oF3I2xzkIR+ywroD3fkLG3LF2DJq/mU03KQqSZv/nGQDC2Upf73IZYZYMX4GQ==" crossorigin="anonymous" type="text/css"/>
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="/assets/css/all.min.css" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css" integrity="pOZ6Cz1wopk9RluJMvHM1AEMkPCS+ihnGztyD0kI991jgZ8hj9YQ61k4ouvGNvLHE0z6Vifp3ytAmeeW8sbbZQ==" crossorigin="anonymous" type="text/css">
+
+<!-- Styles -->
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon.png">
+<link rel="stylesheet" href="/assets/css/main.css" type="text/css">
+<!--<link rel="canonical" href="https://www.se-rwth.de/research/Cyber-Physical-Systems/">-->
+
+
+
+
+
+
+    <!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['addDownloadExtensions', "bib"]);
+    _paq.push(['disableCookies']);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="https://stats.fh-aachen.de/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '34']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+<!-- End Matomo Code -->
+
+  </head>
+
+  <body class=" sticky-bottom-footer">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand title font-weight-lighter" href="/">
+        
+          <img src="/assets/img/icons/rwth_se_rgb.png" height="70px">
+        
+        
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <!-- <li class="nav-item ">
+            <a class="nav-link" href="/">
+              About
+              
+            </a>
+          </li> -->
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Essays
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essays/">Essay List</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Definition/">Digital Twin</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Companion/">Digital Companion</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Maturity-Model/">Digital Twin Maturity Model</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Explicit-versus-implicit-models/">Explicit versus Implicit Models</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Gesetze-DSL/">DSLs für Gesetze und Ordnungen (in D)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Research-Software-Engineering/">Research Software Engineering (RSE)</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Modeling-in-advanced-systems-engineering/">Modeling in Advanced Systems Engineering</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Model-Definitions/">Model-Based Definitions</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Low-Code/">Low Code</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Reference-Models/">Reference Models</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Research
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/">Research Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#foundations">MBSE Foundations</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#applications">Application Domains</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#tools">Software Tools</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Publications
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/publications/">All Publications</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/books/">Books</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/phdtheses/">Ph.D. Theses</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/assets/bibliography/all-software-engineering-rwth-references.bib">Bibtex</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Teaching
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/">Teaching</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/teaching-overview/">Teaching Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/#currentsem">Current Semester</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/archive/">Course archive (starting WS 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="https://www.se-rwth.de/teaching/indexArchiv.php">Course archive (until SoSe 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/theses/">BA/MA Theses</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/">Major project overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/22.09.MontiGem.Ford.Press.Release/">MontiGem Ford Press Release</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiCore/">MontiCore</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiGem/">MontiGem</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+          <li class="nav-item ">
+              <a class="nav-link" href="/jobs/">
+                Jobs
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About us
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/about/">About us</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/staff/">Staff</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/activities/">Activities</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teams/">Teams</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/contact/">Contact &amp; Arrival</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Cyber-Physical Systems (CPS)</h1>
+    <p class="post-description"></p>
+  </header>
+
+  <article>
+    
+
+    <div class="toc_content">
+      
+    </div>
+    <div class="clearfix">
+      <h2 id="summary-of-most-relevant-topic-papers">Summary of Most Relevant Topic Papers</h2>
+
+<p>CPS are software controlled, collaborating
+physical machines <a href="#Lee08a">[Lee08a]</a> <a href="#KRS12">[KRS12]</a> <a href="#BBR20">[BBR20]</a>.
+This term reflects 
+the increased ability of computers to sense their environment and to
+interact with their contexts in various ways. As consequence, CPS are
+usually designed as distributed networks of interacting nodes and
+physical devices (machines) that carry out certain tasks. Often some of
+these devices are mobile (robots or autonomous cars, but also
+smartphones, airplanes and drones) and interaction with humans is
+essential. CPS are therefore complex in several dimensions: they embody
+characteristics of physical, networked, computational-intensive, and of
+human-interactive systems. Furthermore, they typically cannot be
+developed as monolithic systems, but need to be developed as open,
+composable, evolving, and scalable architectures (see also
+<a href="/research/Software-Architecture">Modeling Software Architecture</a>).</p>
+
+<p>Nowadays, CPS are found in many domains, including aerospace,
+<a href="/research/Automotive">automotive</a>, <a href="/research/Energy-Management">energy</a>, 
+healthcare, manufacturing, and <a href="/research/Robotics">robotics</a>. Many
+distributed CPS use a virtual communication network mapped to the
+internet or telecommunication infrastructure <a href="#BBR20">[BBR20]</a>.</p>
+
+<p>At its heart, CPS engineering suffers from the problem that control theory, 
+built on integration and differentiation calculus used by almost any
+engineering discipline, and the digital theory of <a href="/research/State-Based-Modeling">state 
+machines</a>
+are not very well integrated and thus do 
+not allow us to describe CPS in an integrated way.
+Many attempts have been made, 
+but a good standard has yet to emerge.</p>
+
+<p>The <strong>complexity and heterogeneity</strong> of CPS introduces a wide conceptual gap
+between problem and solution domains. Model-driven engineering of such
+systems can decrease this gap by using models as abstractions and thus
+facilitate a more efficient development of robust CPS
+<a href="#RW18">[RW18]</a> <a href="#Wor21">[Wor21]</a>.</p>
+
+<h3 id="cps-application-domains">CPS Application Domains</h3>
+
+<p>For the aviation domain, we have developed a modeling
+language <a href="#ZPK+11">[ZPK+11]</a> that allows to specify flight conditions
+including trajectories, status of the airplanes and their devices,
+weather conditions, and pilot capabilities. This modeling language
+allows EuroControl to operationalize correct flight behavior as well as
+specify and detect <strong>interesting events</strong>.</p>
+
+<p>As long term interest, we
+intensively do research on how to improve the engineering for
+distributed automotive systems as well.
+For example <a href="#HRR12">[HRR12]</a> <a href="#KRRW17">[KRRW17]</a>,
+outline our proposal for an architecture centric development approach.</p>
+
+<p>The <a href="/research/Digital-Twins">Digital Twin</a>
+of a cyberphysical system is in our special interest and
+we have discussed among others, how to develop Digital 
+Twins efficiently. E.g. <a href="#BDH+20">[BDH+20]</a> describes an application
+for injection molding.</p>
+
+<h4 id="automotive">Automotive</h4>
+
+<p><strong>Automotive</strong> is a highly innovative CPS subdomain. We discuss
+in <a href="#GRJA12">[GRJA12]</a> what an OEMs need is to understand about costs arising
+from requirements complexities and from cross-platform dependencies in
+their automotive development projects. Transforming a set of individual
+projects with similar requirements and technology into a product line
+for a central part of an automotive system is discussed
+in <a href="#HRRW12">[HRRW12]</a>.
+Another important aspect are
+current and future processes and tools for
+development of <strong>autonomous driving cars</strong>.
+We discuss this in <a href="#BR12b">[BR12b]</a> based on our experiences in
+building such a car and using sophisticated simulation techniques for
+the context of autonomous robots (cars).
+<a href="#KKR19">[KKR19]</a> furthermore contains a discussion of how to model
+and simulate dynamic architectures of cooporative systems,
+such as cars in urban traffic or even
+temporary convois, which through their movement
+and distances dynamically
+adapt their communication topology.</p>
+
+<p>Moreover,
+fully automatic simulation of the cyber-physical contexts of cars
+and fully automatic checking of the robots’ behavior leads to an highly
+efficient development process with high quality results <a href="#BBR07">[BBR07]</a>.
+Optimized code-generators <a href="#KRS+18a">[KRS+18a]</a>
+and domain specific code
+generation <a href="#AHRW17b">[AHRW17b]</a> are key for CPS.
+Moreover, we have extended our work
+from individual CPS to <strong>product lines of CPS</strong>
+<a href="#RSW+15">[RSW+15]</a> <a href="#KRR+16">[KRR+16]</a> <a href="#RRS+16">[RRS+16]</a>.</p>
+
+<h4 id="robotics">Robotics</h4>
+
+<p><strong>Robotics</strong> is another highly innovative CPS subdomain. It is characterized
+by an inherent heterogeneity of involved domains, platforms, and
+increasing set of challenges. Engineering of robotics applications
+requires composition and interaction of complex, distributed systems as
+well. We developed a component and connector architecture description
+language suitable for the specific challenges in
+robotics <a href="#RRW13c">[RRW13c]</a> <a href="#Wor16">[Wor16]</a> as well as in <a href="#RRW14a">[RRW14a]</a>. This language
+serves from requirements modeling <a href="#RRW12">[RRW12]</a> to the complete
+development of CPS software <a href="#RRSW17">[RRSW17]</a>.
+In <a href="#RRW13">[RRW13]</a>, we describe a code generation framework for this language.</p>
+
+<h4 id="buildings">Buildings</h4>
+
+<p>Smart and energy efficient buildings embody large amounts of IT technology.
+There is a multitude of networked systems and sensors to continuously
+control the building’s <strong>behavior</strong>. We have built the Energy
+Navigator <a href="#KPR12">[KPR12]</a> <a href="#FPPR12">[FPPR12]</a> to be able to model the specifications of
+such buildings in order to control the measured actual data against the
+desired specification, e.g., to save energy. In <a href="#KLPR12">[KLPR12]</a> we discuss
+how such a specification approach improves development quality in the
+energy subdomain of CPS.</p>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h2 id="key-statements">Key Statements</h2>
+<ol>
+  <li>CPS faces two core challenges:
+    <ul>
+      <li>Lack of integration of calculus and automaton theory, and</li>
+      <li>Heterogeneous domains require the integration of heterogeneous modeling 
+  technologies as CPS requires cross-domain solutions and techniques.</li>
+    </ul>
+  </li>
+  <li>Furthermore, CPS tend to be complex in functionality and because of 
+distribution and quality needs.</li>
+  <li>CPS are typically not built from scratch, but evolve as new components 
+(services, devices, machines) are added.</li>
+  <li>We have developed architectural modeling techniques similar to the SysML 
+to describe CPS and among others we have 
+applied those to cars, robots, avionics and building infrastructures.</li>
+</ol>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h2 id="selected-topic-specific-publications">Selected Topic-Specific Publications</h2>
+
+<div class="publications">
+  <ol class="bibliography">
+<li>
+<div class="row">
+
+  <div id="Wor21" class="col-sm-11">
+    <!-- Entry bib key -->
+    [Wor21]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/phdtheses/Habil-Wortmann-Model-Driven-Architecture-and-Behavior-of-Cyber-Physical-Systems.pdf">Model-Driven Architecture and Behavior of Cyber-Physical 
+      Systems</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+        Aachener Informatik-Berichte, Software Engineering, Band 50,
+      
+      
+        ISBN 978-3-8440-8345-3,
+      
+      
+      
+        Shaker Verlag,
+      
+      
+      
+      
+        Oct.
+      
+      
+        2021.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="BBR20" class="col-sm-11">
+    <!-- Entry bib key -->
+    [BBR20]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Broy,
+        
+      
+        
+        
+          
+          
+            
+              W.
+            
+          
+        
+        
+           Böhm,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Advanced.Systems.Engineering.pdf">Advanced Systems Engineering - Die Systeme der Zukunft</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+
+      
+
+      
+        fortiss. Forschungsinstitut für softwareintensive 
+      Systeme,
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        Munich,
+      
+      
+        Jul.
+      
+      
+        2020.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row" style="background: #CFE2F3; padding: 6px 0; margin: 0;">
+
+  <div id="BDH+20" class="col-sm-11">
+    <!-- Entry bib key -->
+    [BDH+20]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              P.
+            
+          
+        
+        
+           Bibow,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Dalibor,
+        
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Hopmann,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Mainz,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              D.
+            
+          
+        
+        
+           Schmalzing,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Schmitz,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Model-Driven-Development-of-a-Digital-Twin-for-Injection-Molding.pdf">Model-Driven Development of a Digital Twin for Injection 
+      Molding</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: International Conference on Advanced Information Systems 
+      Engineering (CAiSE’20),
+        
+      
+
+      
+        
+          
+          
+            
+            
+              
+                S.
+              
+            
+          
+          
+             Dustdar,
+          
+        
+          
+          
+            
+            
+              
+                E.
+              
+            
+          
+          
+             Yu,
+          
+        
+          
+          
+            
+            
+              
+                C.
+              
+            
+          
+          
+             Salinesi,
+          
+        
+          
+          
+            
+            
+              
+                D.
+              
+            
+          
+          
+             Rieu,
+          
+        
+          
+          
+            
+            
+              
+                V.
+              
+            
+          
+          
+             Pant (Eds.),
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 12127,
+        
+      
+      
+      
+      
+        pp. 85-100,
+      
+      
+        Lecture Notes in Computer Science,
+      
+      
+      
+      
+        Springer International Publishing,
+      
+      
+      
+      
+        Jun.
+      
+      
+        2020.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="KKR19" class="col-sm-11">
+    <!-- Entry bib key -->
+    [KKR19]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              N.
+            
+          
+        
+        
+           Kaminski,
+        
+      
+        
+        
+          
+          
+            
+              E.
+            
+          
+        
+        
+           Kusmenko,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Modeling-Dynamic-Architectures-of-Self-Adaptive-Cooperative-Systems.pdf">Modeling Dynamic Architectures of Self-Adaptive Cooperative Systems</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+        
+          In: Journal of Object Technology (JOT),
+        
+      
+
+      
+
+      
+        
+          
+          
+            
+            
+              
+                B.
+              
+            
+          
+          
+             Combemale,
+          
+        
+          
+          
+            
+            
+              
+                S.
+              
+            
+          
+          
+             Ali (Eds.),
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 18(2),
+        
+      
+      
+      
+      
+        pp. 1-20,
+      
+      
+      
+      
+        DOI 10.5381/jot.2019.18.2.a2,
+      
+      
+        AITO - Association Internationale pour les Technologies Objets,
+      
+      
+      
+      
+        Jul.
+      
+      
+        2019.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="KRS+18a" class="col-sm-11">
+    <!-- Entry bib key -->
+    [KRS+18a]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              E.
+            
+          
+        
+        
+           Kusmenko,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Schneiders,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+          von Wenckstern:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Highly-Optimizing-and-Multi-Target-Compiler-for-Embedded-System-Models.pdf">Highly-Optimizing and Multi-Target Compiler for Embedded System Models: C++ Compiler Toolchain for the Component and Connector Language EmbeddedMontiArc</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Conference on Model Driven Engineering Languages and Systems (MODELS’18),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 447 - 457,
+      
+      
+      
+      
+      
+        ACM,
+      
+      
+      
+      
+        Oct.
+      
+      
+        2018.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="RW18" class="col-sm-11">
+    <!-- Entry bib key -->
+    [RW18]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Abstraction-and-Refinement-in-Hierarchically-Decomposable-and-Underspecified-CPS-Architectures.pdf">Abstraction and Refinement in Hierarchically Decomposable and Underspecified CPS-Architectures</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Principles of Modeling: Essays Dedicated to Edward A. Lee on the Occasion of His 60th Birthday,
+        
+      
+
+      
+        
+          
+          
+          
+             Lohstroh, Marten and Derler, Patricia  Sirjani, Marjan (Eds.),
+          
+        
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 383-406,
+      
+      
+        LNCS 10760,
+      
+      
+        ISBN 978-3-319-95246-8,
+      
+      
+      
+        Springer,
+      
+      
+      
+      
+      
+        2018.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="KRRW17" class="col-sm-11">
+    <!-- Entry bib key -->
+    [KRRW17]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              E.
+            
+          
+        
+        
+           Kusmenko,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Roth,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+          von Wenckstern:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Modeling-Architectures-of-Cyber-Physical-Systems.pdf">Modeling Architectures of Cyber-Physical Systems</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: European Conference on Modelling Foundations and Applications (ECMFA’17),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 34-50,
+      
+      
+        LNCS 10376,
+      
+      
+      
+      
+        Springer,
+      
+      
+      
+      
+        Jul.
+      
+      
+        2017.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="RRSW17" class="col-sm-11">
+    <!-- Entry bib key -->
+    [RRSW17]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+          
+          
+            
+              O.
+            
+          
+        
+        
+           Ringert,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Schulze,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Teaching-Agile-Model-Driven-Engineering-for-Cyber-Physical-Systems.pdf">Teaching Agile Model-Driven Engineering for Cyber-Physical Systems</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: International Conference on Software Engineering: Software Engineering and Education Track (ICSE’17),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 127-136,
+      
+      
+      
+      
+      
+        IEEE,
+      
+      
+      
+      
+        May
+      
+      
+        2017.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="AHRW17b" class="col-sm-11">
+    <!-- Entry bib key -->
+    [AHRW17b]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              K.
+            
+          
+        
+        
+           Adam,
+        
+      
+        
+        
+          
+          
+            
+              K.
+            
+          
+        
+        
+           Hölldobler,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://se-rwth.de/publications/Modeling-Robotics-Software-Architectures-with-Modular-Model-Transformations.pdf" target="_blank" rel="noopener noreferrer">Modeling Robotics Software Architectures with Modular Model Transformations</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+        
+          In: Journal of Software Engineering for Robotics (JOSER),
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 8(1),
+        
+      
+      
+      
+      
+        pp. 3-16,
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        2017.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="Wor16" class="col-sm-11">
+    <!-- Entry bib key -->
+    [Wor16]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/phdtheses/Diss-Wortmann-An-Extensible-Component-and-Connector-Architecture-Description-Infrastructure-for-Multi-Platform-Modeling.pdf">An Extensible Component &amp; Connector Architecture
+    Description Infrastructure for Multi-Platform Modeling</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+        Aachener Informatik-Berichte, Software Engineering, Band
+    25,
+      
+      
+      
+      
+        Shaker Verlag,
+      
+      
+      
+      
+        Nov.
+      
+      
+        2016.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="RRS+16" class="col-sm-11">
+    <!-- Entry bib key -->
+    [RRS+16]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Richenhagen,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Schloßer,
+        
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Schulze,
+        
+      
+        
+        
+          
+          
+            
+              K.
+            
+          
+        
+        
+           Thissen,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+          von Wenckstern:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Test-Driven-Semantical-Similarity-Analysis-for-Software-Product-Line-Extraction.pdf">Test-driven Semantical Similarity Analysis for Software
+    Product Line Extraction</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: International Systems and Software Product Line
+    Conference (SPLC ’16),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 174-183,
+      
+      
+      
+      
+      
+        ACM,
+      
+      
+      
+      
+        Sep.
+      
+      
+        2016.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="KRR+16" class="col-sm-11">
+    <!-- Entry bib key -->
+    [KRR+16]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              P.
+            
+          
+        
+        
+           Kehrbusch,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Richenhagen,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Schloßer,
+        
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Schulze:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Interface-based-Similarity-Analysis-of-Software-Components-for-the-Automotive-Industry.pdf">Interface-based Similarity Analysis of Software
+    Components for the Automotive Industry</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: International Systems and Software Product Line
+    Conference (SPLC ’16),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 99-108,
+      
+      
+      
+      
+      
+        ACM,
+      
+      
+      
+      
+        Sep.
+      
+      
+        2016.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="RSW+15" class="col-sm-11">
+    <!-- Entry bib key -->
+    [RSW+15]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Schulze,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+          
+          
+            
+              v.
+            
+          
+        
+        
+           Wenckstern,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+          
+          
+            
+              O.
+            
+          
+        
+        
+           Ringert,
+        
+      
+        
+        
+          
+          
+            
+              P.
+            
+          
+        
+        
+           Manhart:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Behavioral-Compatibility-of-Simulink-Models-for-Product-Line-Maintenance-and-Evolution.pdf">Behavioral Compatibility of Simulink Models for Product
+    Line Maintenance and Evolution</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Software Product Line Conference (SPLC’15),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 141-150,
+      
+      
+      
+      
+      
+        ACM,
+      
+      
+      
+      
+      
+        2015.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="RRW14a" class="col-sm-11">
+    <!-- Entry bib key -->
+    [RRW14a]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+          
+          
+            
+              O.
+            
+          
+        
+        
+           Ringert,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Architecture-and-Behavior-Modeling-of-Cyber-Physical-Systems-with-MontiArcAutomaton.pdf">Architecture and Behavior Modeling of Cyber-Physical
+    Systems with MontiArcAutomaton</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+        Aachener Informatik-Berichte, Software Engineering, Band
+    20,
+      
+      
+      
+      
+        Shaker Verlag,
+      
+      
+      
+      
+        Dec.
+      
+      
+        2014.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="RRW13c" class="col-sm-11">
+    <!-- Entry bib key -->
+    [RRW13c]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+          
+          
+            
+              O.
+            
+          
+        
+        
+           Ringert,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/MontiArcAutomaton-Modeling-Architecture-and-Behavior-of-Robotic-Systems.pdf">MontiArcAutomaton: Modeling Architecture and Behavior of
+    Robotic
+    Systems</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Conference on Robotics and Automation (ICRA’13),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 10-12,
+      
+      
+      
+      
+      
+        IEEE,
+      
+      
+      
+      
+      
+        2013.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="RRW13" class="col-sm-11">
+    <!-- Entry bib key -->
+    [RRW13]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+          
+          
+            
+              O.
+            
+          
+        
+        
+           Ringert,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/From-Software-Architecture-Structure-and-Behavior-Modeling-to-Implementations-of-Cyber-Physical-Systems.pdf">From Software Architecture Structure and Behavior
+    Modeling to Implementations
+    of Cyber-Physical Systems</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Software Engineering Workshopband (SE’13),
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 215,
+        
+      
+      
+      
+      
+        pp. 155-170,
+      
+      
+        LNI,
+      
+      
+      
+      
+      
+      
+      
+      
+        2013.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row" style="background: #CFE2F3; padding: 6px 0; margin: 0;">
+
+  <div id="KLPR12" class="col-sm-11">
+    <!-- Entry bib key -->
+    [KLPR12]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              T.
+            
+          
+        
+        
+           Kurpick,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Look,
+        
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Pinkernell,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/KLPR12.pdf">Modeling Cyber-Physical Systems: Model-Driven Specification
+    of Energy Efficient Buildings</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Modelling of the Physical World Workshop (MOTPW’12),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 2:1-2:6,
+      
+      
+      
+      
+      
+        ACM,
+      
+      
+      
+      
+        Oct.
+      
+      
+        2012.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="HRR12" class="col-sm-11">
+    <!-- Entry bib key -->
+    [HRR12]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Haber,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+          
+          
+            
+              O.
+            
+          
+        
+        
+           Ringert,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/MontiArc-Architectural-Modeling-of-Interactive-Distributed-and-Cyber-Physical-Systems.pdf">MontiArc - Architectural Modeling of Interactive
+    Distributed and
+    Cyber-Physical Systems</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+
+      
+
+      
+        RWTH Aachen University,
+      
+
+      
+        
+          AIB-2012-03,
+        
+      
+
+      
+        
+          Technical Report,
+        
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        Feb.
+      
+      
+        2012.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="KRS12" class="col-sm-11">
+    <!-- Entry bib key -->
+    [KRS12]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Kowalewski,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Stollenwerk:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Cyber-Physical-Systems-eine-Herausforderung-an-die-Automatisierungstechnik.pdf">Cyber-Physical Systems - eine Herausforderung für die
+    Automatisierungstechnik?</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Proceedings of Automation 2012, VDI Berichte 2012,
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 113-116,
+      
+      
+      
+      
+      
+        VDI Verlag,
+      
+      
+      
+      
+      
+        2012.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="RRW12" class="col-sm-11">
+    <!-- Entry bib key -->
+    [RRW12]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+          
+          
+            
+              O.
+            
+          
+        
+        
+           Ringert,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/A-Requirements-Modeling-Language-for-the-Component-Behavior-of-Cyber-Physical-Robotics-Systems.pdf">A Requirements Modeling Language for the Component
+    Behavior of Cyber Physical Robotics Systems</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Modelling and Quality in Requirements Engineering:
+    Essays Dedicated to Martin Glinz on the Occasion of His 60th
+    Birthday,
+        
+      
+
+      
+        
+          
+          
+          
+             Seyff, N. and Koziolek, A. (Eds.),
+          
+        
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 133-146,
+      
+      
+      
+        ISBN 978-3869917245,
+      
+      
+      
+        Monsenstein und Vannerdat,
+      
+      
+      
+        Münster,
+      
+      
+      
+        2012.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="BR12b" class="col-sm-11">
+    <!-- Entry bib key -->
+    [BR12b]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Berger,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Autonomous-Driving-5-Years-after-the-Urban-Challenge-The-Anticipatory-Vehicle-as-a-Cyber-Physical-System.pdf">Autonomous Driving - 5 Years after the Urban Challenge:
+    The Anticipatory
+    Vehicle as a Cyber-Physical System</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Automotive Software Engineering Workshop (ASE’12),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 789-798,
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        2012.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="FPPR12" class="col-sm-11">
+    <!-- Entry bib key -->
+    [FPPR12]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+          
+          
+            
+              N.
+            
+          
+        
+        
+           Fisch,
+        
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Pinkernell,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Plesser,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/The-Energy-Navigator-A-Web-Platform-for-Performance-Design-and-Management.pdf">The Energy Navigator - A Web-Platform for Performance
+    Design and Management</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Energy Efficiency in Commercial Buildings
+    Conference (IEECB’12),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        2012.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="GRJA12" class="col-sm-11">
+    <!-- Entry bib key -->
+    [GRJA12]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              T.
+            
+          
+        
+        
+           Gülke,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Jansen,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Axmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/High-Level-Requirements-Management-and-Complexity-Costs-in-Automotive-Development-Projects-A-Problem-Statement.pdf">High-Level Requirements Management and Complexity Costs
+    in Automotive
+    Development Projects: A Problem Statement</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Requirements Engineering: Foundation for Software
+    Quality (REFSQ’12),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        2012.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="HRRW12" class="col-sm-11">
+    <!-- Entry bib key -->
+    [HRRW12]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Hopp,
+        
+      
+        
+        
+          
+          
+            
+              H.
+            
+          
+        
+        
+           Rendel,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              F.
+            
+          
+        
+        
+           Wolf:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Einfuehrung-eines-Produktlinienansatzes-in-die-automotive-Softwareentwicklung-am-Beispiel-von-Steuergeraetesoftware.pdf">Einführung eines Produktlinienansatzes in die
+    automotive Softwareentwicklung
+    am Beispiel von Steuergerätesoftware</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Software Engineering Conference (SE’12),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 181-192,
+      
+      
+        LNI 198,
+      
+      
+      
+      
+      
+      
+      
+      
+        2012.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="KPR12" class="col-sm-11">
+    <!-- Entry bib key -->
+    [KPR12]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              T.
+            
+          
+        
+        
+           Kurpick,
+        
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Pinkernell,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Der-Energie-Navigator.pdf">Der Energie Navigator</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Entwicklung und Evolution von Forschungssoftware.
+    Tagungsband, Rolduc,
+    10.-11.11.2011,
+        
+      
+
+      
+        
+          
+          
+            
+            
+              
+                H.
+              
+            
+          
+          
+             Lichter,
+          
+        
+          
+          
+            
+            
+              
+                B.
+              
+            
+          
+          
+             Rumpe (Eds.),
+          
+        
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+        Aachener Informatik-Berichte, Software Engineering, Band
+    14,
+      
+      
+      
+      
+        Shaker Verlag,
+      
+      
+      
+        Aachen, Deutschland,
+      
+      
+      
+        2012.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="ZPK+11" class="col-sm-11">
+    <!-- Entry bib key -->
+    [ZPK+11]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Zanin,
+        
+      
+        
+        
+          
+          
+            
+              D.
+            
+          
+        
+        
+           Perez,
+        
+      
+        
+        
+          
+          
+            
+              D.
+            
+          
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Kolovos,
+        
+      
+        
+        
+          
+          
+            
+              R.
+            
+          
+        
+          
+          
+            
+              F.
+            
+          
+        
+        
+           Paige,
+        
+      
+        
+        
+          
+          
+            
+              K.
+            
+          
+        
+        
+           Chatterjee,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Horst,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/On_Demand_Data_Analysis_and_Filtering_for_Inaccurate_Flight_Trajectories.pdf">On Demand Data Analysis and Filtering for Inaccurate
+    Flight Trajectories</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Proceedings of the SESAR Innovation Days,
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        EUROCONTROL,
+      
+      
+      
+      
+      
+        2011.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="Lee08a" class="col-sm-11">
+    <!-- Entry bib key -->
+    [Lee08a]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              E.
+            
+          
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Lee:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="">Cyber Physical Systems: Design Challenges</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: 2008 11th IEEE International Symposium on Object and
+Component-Oriented Real-Time Distributed Computing (ISORC),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 363-369,
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        2008.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row" style="background: #CFE2F3; padding: 6px 0; margin: 0;">
+
+  <div id="BBR07" class="col-sm-11">
+    <!-- Entry bib key -->
+    [BBR07]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Basarke,
+        
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Berger,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/staff/rumpe/publications20042008/Software-and-Systems-Engineering-Process-and-Tools-for-the-Development-of-Autonomous-Driving-Intelligence.pdf">Software &amp; Systems Engineering Process and Tools for the
+    Development
+    of Autonomous Driving Intelligence</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+        
+          In: Journal of Aerospace Computing, Information, and
+    Communication (JACIC),
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 4(12),
+        
+      
+      
+      
+      
+        pp. 1158-1174,
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        2007.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+</ol>
+</div>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h2 id="related-topics">Related Topics</h2>
+<ul>
+  <li><a href="/research/Automotive">Automotive</a></li>
+  <li><a href="/research/Autonomic-Driving">Autonomous Driving &amp; Intelligent Driver 
+Assistance</a></li>
+  <li><a href="/research/Digital-Twins">Digital Twins and Digital Shadows in Engineering, Operation and Production</a></li>
+  <li><a href="/research/Domain-Specific-Languages">Domain Specific Languages (DSLs)</a></li>
+  <li><a href="/research/Energy-Management">Energy Management</a></li>
+  <li><a href="/research/Software-Architecture">MontiArc - Architectural Modeling</a></li>
+  <li><a href="/research/MontiThings">MontiThings - Modeling the IoT</a></li>
+  <li><a href="/research/Robotics">Robotics Architectures and Tasks</a></li>
+  <li><a href="/research/Unified-Modeling-Language">Unified Modeling Language (UML)</a></li>
+</ul>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h4 id="further-links">Further links:</h4>
+
+<ul>
+  <li><a href="/publications">Publications</a></li>
+  <li><a href="/research">Topic sorted list of most interesting publications</a></li>
+  <li><a href="/books">Books</a></li>
+  <li><a href="/phdtheses">Aachener Informatik-Berichte, Software Engineering / Ph.D. Theses</a></li>
+  <li><a href="https://www.se-rwth.de">Website of the SE</a></li>
+</ul>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+      <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+let scrollButton = document.getElementById("btn-back-to-top");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
+  }
+}
+
+scrollButton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+    
+
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="sticky-bottom mt-5">
+  <div class="container">
+    <!-- &copy; Copyright 2025   . -->
+    
+    
+    <a href="https://www.se-rwth.de/impressum/">Impressum</a>.
+    
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="/assets/js/jquery.min.js" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/popper.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/mdb.min.js" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="/assets/js/masonry.pkgd.min.js"></script>
+<script defer src="/assets/js/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="/assets/js/medium-zoom.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+  
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer src="/assets/js/tex-mml-chtml.js" type="text/javascript" id="MathJax-script"></script>
+<script defer src="/assets/js/polyfill.min.js"></script>
+
+
+  <script src="/assets/js/toc.js" crossorigin="anonymous"></script>
+  <script async src="/assets/js/widgets.js" charset="utf-8"></script>
+
+</html>

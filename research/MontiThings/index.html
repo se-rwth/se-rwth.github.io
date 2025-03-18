@@ -1,0 +1,2944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  MontiThings — Modeling the Internet of Things |
+
+
+
+  SE@RWTH
+
+</title>
+<meta name="description" content="Website of the Chair of Software Engineering at RWTH Aachen
+">
+
+<!-- Google Verification -->
+
+
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css" integrity="oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/mdb.min.css" integrity="Y3+zUQCTOSqaSbyEFKLA6oQi8oF3I2xzkIR+ywroD3fkLG3LF2DJq/mU03KQqSZv/nGQDC2Upf73IZYZYMX4GQ==" crossorigin="anonymous" type="text/css"/>
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="/assets/css/all.min.css" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css" integrity="pOZ6Cz1wopk9RluJMvHM1AEMkPCS+ihnGztyD0kI991jgZ8hj9YQ61k4ouvGNvLHE0z6Vifp3ytAmeeW8sbbZQ==" crossorigin="anonymous" type="text/css">
+
+<!-- Styles -->
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon.png">
+<link rel="stylesheet" href="/assets/css/main.css" type="text/css">
+<!--<link rel="canonical" href="https://www.se-rwth.de/research/MontiThings/">-->
+
+
+
+
+
+
+    <!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['addDownloadExtensions', "bib"]);
+    _paq.push(['disableCookies']);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="https://stats.fh-aachen.de/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '34']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+<!-- End Matomo Code -->
+
+  </head>
+
+  <body class=" sticky-bottom-footer">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand title font-weight-lighter" href="/">
+        
+          <img src="/assets/img/icons/rwth_se_rgb.png" height="70px">
+        
+        
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <!-- <li class="nav-item ">
+            <a class="nav-link" href="/">
+              About
+              
+            </a>
+          </li> -->
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Essays
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essays/">Essay List</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Definition/">Digital Twin</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Companion/">Digital Companion</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Maturity-Model/">Digital Twin Maturity Model</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Explicit-versus-implicit-models/">Explicit versus Implicit Models</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Gesetze-DSL/">DSLs für Gesetze und Ordnungen (in D)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Research-Software-Engineering/">Research Software Engineering (RSE)</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Modeling-in-advanced-systems-engineering/">Modeling in Advanced Systems Engineering</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Model-Definitions/">Model-Based Definitions</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Low-Code/">Low Code</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Reference-Models/">Reference Models</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Research
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/">Research Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#foundations">MBSE Foundations</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#applications">Application Domains</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#tools">Software Tools</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Publications
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/publications/">All Publications</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/books/">Books</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/phdtheses/">Ph.D. Theses</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/assets/bibliography/all-software-engineering-rwth-references.bib">Bibtex</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Teaching
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/">Teaching</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/teaching-overview/">Teaching Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/#currentsem">Current Semester</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/archive/">Course archive (starting WS 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="https://www.se-rwth.de/teaching/indexArchiv.php">Course archive (until SoSe 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/theses/">BA/MA Theses</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/">Major project overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/22.09.MontiGem.Ford.Press.Release/">MontiGem Ford Press Release</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiCore/">MontiCore</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiGem/">MontiGem</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+          <li class="nav-item ">
+              <a class="nav-link" href="/jobs/">
+                Jobs
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About us
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/about/">About us</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/staff/">Staff</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/activities/">Activities</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teams/">Teams</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/contact/">Contact &amp; Arrival</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">MontiThings — Modeling the Internet of Things</h1>
+    <p class="post-description"></p>
+  </header>
+
+  <article>
+    
+
+    <div class="toc_content">
+      
+    </div>
+    <div class="clearfix">
+      <div class="container block-main">
+  <div class="row align-items-center" style="text-align: center; margin: 0 0 40px 0;">
+    <div class="col-md-6">
+      <img class="img-fluid" src="/assets/img/research/montithings/MontiThingsBanner.gif" title="MontiThings Banner">
+    </div>
+
+    <div class="col-md-6">
+      <p> <br> <br> <br>
+      </p>
+<p style="text-align: justify;">
+
+      MontiThings <a href="#KRS+22">[KRS+22]</a>  
+      is an ecosystem for the model-driven development of 
+      IoT applications. It provides an end-to-end
+      solution to modeling <a href="#KRS+22">[KRS+22]</a>, 
+      deploying <a href="#KKR+22">[KKR+22]</a>, 
+      and analyzing <a href="#KMR21">[KMR21]</a>
+      failure-tolerant <a href="#KRS+22">[KRS+22]</a> 
+      IoT applications and connecting them to digital twins 
+      <a href="#KMR+20">[KMR+20]</a>. Further, MontiThings 
+      provides a model-driven app store concept to decouple 
+      hard- and software development <a href="#BKK+22">[BKK+22]</a>.</p>
+    </div>
+  </div>
+</div>
+
+<h2 id="montithings-iot-modelling-language">MontiThings IoT Modelling Language</h2>
+
+<div class="row" style="text-align: center; margin: 20px 0;">
+    <div class="col-sm mt-3 mt-md-0">
+        
+            <picture>
+                <img class="img-fluid rounded z-depth-1" style="width:  100%; 
+                 " src="/assets/img/research/montithings/MontiThingsExample.png">
+            </picture>
+        
+        
+    </div>
+</div>
+
+<p>The core of MontiThings is a domain-specific language for the 
+specification of IoT applications. 
+Like <a href="/research/Software-Architecture">MontiArc</a> <a href="#BKRW17a">[BKRW17a]</a> <a href="#HRR12">[HRR12]</a>, this underlying 
+language describes IoT applications as a component-and-connector 
+(C&amp;C) architecture. 
+Applications consist of components that can exchange data with 
+other components via (directed and typed) ports that are linked 
+by connectors.
+Via sensor/actuator ports (shown by black filling), ports can 
+also interact with the hardware of the IoT devices and, for 
+example, accept a sensor value.
+The behavior of components can be described in one of four ways:</p>
+
+<ul>
+  <li>using statecharts</li>
+  <li>using an IoT-focussed Java-like language</li>
+  <li>using handwritten C++ Code</li>
+  <li>by instantiating and connecting other components in hierarchical compositions</li>
+</ul>
+
+<h2 id="ecosystem-overview">Ecosystem Overview</h2>
+
+<div class="row" style="text-align: center; margin: 20px 0;">
+    <div class="col-sm mt-3 mt-md-0">
+        
+            <picture>
+                <img class="img-fluid rounded z-depth-1" style="width:  100%; 
+                 " src="/assets/img/research/montithings/MontiThingsOverview.png">
+            </picture>
+        
+        
+    </div>
+</div>
+
+<p>At design time, developers model several aspects of their IoT application:</p>
+<ul>
+  <li>MontiThings models describe the business logic, i.e., 
+  functionality and data flow</li>
+  <li>Class diagrams <a href="#Rum16">[Rum16]</a> describe the data structures used by components to 
+  exchange data</li>
+  <li>Handwritten code describes the behavior of components (C++) or the 
+  interaction with hardware (C++, Python)</li>
+  <li>Tagging <a href="#GLRR15">[GLRR15]</a> is used for various purposes, e.g., tagging components with 
+  hardware requirements or connecting IoT applications to digital 
+  twins <a href="#KMR+20">[KMR+20]</a>
+</li>
+</ul>
+
+<p>In addition to this, there can also be platform dependent artifacts 
+such as different libraries that are used to allow the generated code 
+to interact with specific platforms.
+The project’s artifacts are uploaded to an online repository such as 
+GitLab or GitHub. 
+There, a CI/CD pipline transforms the models (if necessary
+<a href="#KMR21">[KMR21]</a>), generates C++ code from the models, 
+(cross-)compiles the code, and finally packages the applications as Docker images. 
+If not specified otherwise by the developers, there is one 
+Docker image per component type.</p>
+
+<p>At runtime, IoT devices download these Docker images to execute 
+parts of the application and, together, execute the full IoT application. 
+The IoT devices may interact with numerous services that 
+provide, e.g., communication between the components, digital twins <a href="#KMR+20">[KMR+20]</a>, monitoring <a href="#KMR21">[KMR21]</a>, or deployment  <a href="#KKR+22">[KKR+22]</a> decisions.</p>
+
+<h2 id="adaptive-device-owner-controlled-deployment">Adaptive Device-Owner-Controlled Deployment</h2>
+
+<div class="row" style="text-align: center; margin: 20px 0;">
+    <div class="col-sm mt-3 mt-md-0">
+        
+            <picture>
+                <img class="img-fluid rounded z-depth-1" style="width:  100%; 
+                 " src="/assets/img/research/montithings/MontiThingsDeployment.png">
+            </picture>
+        
+        
+    </div>
+</div>
+
+<p>IoT applications can be very dynamic. 
+New devices may join the system at runtime and others may fail or otherwise
+leave the system.<br>
+Accordingly, deployment decisions must be made at runtime.
+Since IoT systems can also be very heterogeneous (both in terms of 
+single IoT devices and the set of a devices present in a system), 
+IoT applications should be developed as product lines that can adapt 
+to varying environments. 
+Therefore, MontiThings offers a deployment algorithm <a href="#KKR+22">[KKR+22]</a> 
+that can decide at runtime which device runs which functional components.</p>
+
+<p>For this purpose, the developers (which we call <em>global managers</em> 
+in this context) define the hardware requirements of the individual 
+components.
+On the one hand, the deployment algorithm takes into account the 
+technical requirements of the functional components and the technical 
+capabilities of the IoT devices so that software is only ever 
+run on compatible devices.
+On the other hand, the algorithm also considers the requirements 
+of the device owners (which we call <em>local managers</em>).
+Device owners can express their <em>local requirements</em> in the form of rules. 
+For example, you can prohibit recording software from running in 
+the bedroom or require that smoke detector componenets are executed in 
+each room.</p>
+
+<p>Unfortunately, not all requirements of the device owners can 
+always be met. 
+For example, if they request that smoke detector software be 
+run in every room, even though the necessary hardware is not 
+available in every room, the rule cannot be met. 
+In these cases, MontiThings automatically makes modification 
+proposals according to which either new hardware is purchased 
+(<em>“buy a new smoke detector for the living room”</em>) or rules 
+are weakened (<em>“run the smoke detector software in all rooms 
+except the living room”</em>).
+The device owners always have the final say on whether a 
+proposal is accepted.
+If a valid deployment could be found, the IoT devices are 
+automatically informed about which software they have to run.</p>
+
+<p>Technically, MontiThings’ deployment supports four different 
+ecosystems for deploying the Docker images to IoT devices:</p>
+<ul>
+  <li>Microsoft <a href="https://azure.microsoft.com/de-de/services/iot-edge/" target="_blank" rel="noopener noreferrer">Azure IoT 
+  Edge</a>
+</li>
+  <li>Docker Compose</li>
+  <li>Kubernetes</li>
+  <li><a href="https://gitlab.com/enact/GeneSIS" target="_blank" rel="noopener noreferrer">GeneSIS</a></li>
+</ul>
+
+<h2 id="failure-detection-analysis-and-recovery">Failure Detection, Analysis and Recovery</h2>
+
+<div class="row" style="text-align: center; margin: 20px 0;">
+    <div class="col-sm mt-3 mt-md-0">
+        
+            <picture>
+                <img class="img-fluid rounded z-depth-1" style="width:  100%; 
+                 " src="/assets/img/research/montithings/MontiThingsFailureExample.png">
+            </picture>
+        
+        
+    </div>
+</div>
+
+<p>Even if developers take great care in modeling their application, 
+unfortunately not all errors are always predictable. 
+Some errors are not visible due to the higher abstraction level 
+of the models. 
+In practice, it can therefore happen that an application does not 
+behave as expected, even if no error is visible in the model. 
+For example, the hardware on which the software is running may fail 
+due to harsh environmental conditions (vibrations, humidity, …) 
+or a network may not be available.</p>
+
+<p>MontiThings provides tools and methods to analyze such errors
+<a href="#KMR21">[KMR21]</a> as well as to fix them automatically (within 
+certain limits) <a href="#KRS+22">[KRS+22]</a>.
+At runtime, log messages of components can be traced within the 
+architecture similar to a “stack trace” to find the root cause of 
+their occurrence. 
+For this purpose, the messages exchanged by components are traced 
+back to find the component that first exhibited the unexpected behavior.
+Furthermore, Architectures can be observed at runtime and then 
+modified by model-to-model transformations to make their behavior 
+reproducible for developers retrospectively <a href="#KMR21">[KMR21]</a>.</p>
+
+<div class="row" style="text-align: center; margin: 20px 0;">
+    <div class="col-sm mt-3 mt-md-0">
+        
+            <picture>
+                <img class="img-fluid rounded z-depth-1" style="width:  100%; 
+                 " src="/assets/img/research/montithings/MontiThingsFailureRecovery.png">
+            </picture>
+        
+        
+    </div>
+</div>
+
+<p>If a component fails because the IoT device running it is no 
+longer functional, one possible automatic troubleshooting strategy 
+is for MontiThings to transfer the component to another suitable 
+device <a href="#KRS+22">[KRS+22]</a>. 
+This automatically restores the state of the failed component. 
+In order to put the replacement component in the state of the 
+failed component, the messages that the failed component processed 
+are played back to the replacement component. 
+The connectors of the replacement component are not yet connected 
+to other components, so that messages generated during this recovery 
+process do not affect the other components.
+The connectors are connected only after the recovery.
+To handle non-deterministic behavior and to reduce the complexity 
+of this procedure to O(1) (instead of O(n) if all messages have to 
+be restored, where n is the number of messages), components can 
+also serialize their state directly (usually after a constant number 
+of processed messages) and store it in a central system. 
+Thus, in the event of a failure, only a constant number of messages,
+namely the messages since the last state storage, need to be restored. 
+To bridge short-term downtimes, e.g., of a power saving mode, 
+without causing network overhead, components can also store their 
+serialized state locally.</p>
+
+<h2 id="app-store-concept">App Store Concept</h2>
+
+<div class="row" style="text-align: center; margin: 20px 0;">
+    <div class="col-sm mt-3 mt-md-0">
+        
+            <picture>
+                <img class="img-fluid rounded z-depth-1" style="width:  100%; 
+                 " src="/assets/img/research/montithings/MontiThingsAppStore.png">
+            </picture>
+        
+        
+    </div>
+</div>
+
+<p>MontiThings includes an app store concept <a href="#BKK+22">[BKK+22]</a> that separates 
+hardware and software development.
+In addition to the software itself, software developers specify the hardware 
+requirements of each component using OCL expressions. 
+These OCL expressions are written against a class diagram provided by the app 
+store. 
+This class diagram serves as a hardware ontology specifying which types of 
+hardware are covered by the app store. 
+For example, it could specify that IoT devices of the app store can provide a
+camera and that a camera has certain properties (such as a resolution given 
+in megapixels). 
+The hardware developers on the other hand develop the drivers necessary to 
+connect software components to their hardware. 
+Additionally, they specify the hardware of each device using an object diagram
+conforming to the same class diagram provided by the app store.
+Since both the OCL expressions (hardware requirements of software components) 
+and the object diagram (hardware specification) are conforming to the same 
+app store-provided class diagram (hardware ontology), MontiThings can match
+the software components to IoT devices fulfilling their requirements. 
+This is done by generating Prolog code from both the OCL expressions and the 
+object diagrams and integrating them in the Prolog-based deployment algorithm.</p>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h2 id="key-statements">Key Statements</h2>
+<ol>
+  <li>IoT software architectures can be modeled in hierarchically decomposed 
+ systems using message passing.</li>
+  <li>To achieve the flexibility required by future IoT app stores, 
+ the connection between high-level application software and 
+ low-level hardware drivers shall be established at runtime.</li>
+  <li>By generating Prolog code to compute the deployment, device owners 
+ can not only set rules for the deployment, but also be given 
+ modification proposals (such as buying new hardware) in the case 
+ of unfulfillable rules.</li>
+  <li>When IoT applications are developed using model-driven techniques 
+ (such as with C&amp;C architectures), the reliability of the application 
+ can be increased by providing error analysis and handling 
+ systematically by the code generator.</li>
+</ol>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h2 id="selected-topic-specific-publications">Selected Topic-Specific Publications</h2>
+
+<div class="publications">
+  <ol class="bibliography">
+<li>
+<div class="row">
+
+  <div id="BKK+22" class="col-sm-11">
+    <!-- Entry bib key -->
+    [BKK+22]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Butting,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Kirchhof,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Kleiss,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Michael,
+        
+      
+        
+        
+          
+          
+            
+              R.
+            
+          
+        
+        
+           Orlov,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Model-Driven-IoT-App-Stores-Deploying-Customizable-Software-Products-to-Heterogeneous-Devices.pdf">Model-Driven IoT App Stores: Deploying Customizable 
+      Software Products to Heterogeneous Devices</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Proceedings of the 21th ACM SIGPLAN International Conference on
+      Generative Programming: Concepts and Experiences (GPCE 22),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 108-121,
+      
+      
+      
+      
+      
+        ACM,
+      
+      
+      
+      
+        Dec.
+      
+      
+        2022.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="KKR+22" class="col-sm-11">
+    <!-- Entry bib key -->
+    [KKR+22]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Kirchhof,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Kleiss,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              D.
+            
+          
+        
+        
+           Schmalzing,
+        
+      
+        
+        
+          
+          
+            
+              P.
+            
+          
+        
+        
+           Schneider,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Model-driven-Self-adaptive-Deployment-of-Internet-of-Things-Applications-with-Automated-Modification-Proposals.pdf">Model-driven Self-adaptive Deployment of Internet of Things 
+      Applications with Automated Modification Proposals</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+        
+          In: Journal ACM Transactions on Internet of Things,
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 3,
+        
+      
+      
+      
+        Art. 30,
+      
+      
+        pp. 1-30,
+      
+      
+      
+      
+      
+        ACM,
+      
+      
+      
+      
+        Nov.
+      
+      
+        2022.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="KRS+22" class="col-sm-11">
+    <!-- Entry bib key -->
+    [KRS+22]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Kirchhof,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              D.
+            
+          
+        
+        
+           Schmalzing,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/MontiThings-Model-driven-Development-and-Deployment-of-Reliable-IoT-Applications.pdf">MontiThings: Model-driven Development and Deployment of Reliable 
+      IoT Applications</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+        
+          In: Journal of Systems and Software (JSS),
+        
+      
+
+      
+
+      
+        
+          
+          
+            
+            
+              
+                W.-
+              
+            
+              
+                K.
+              
+            
+          
+          
+             Chan (Eds.),
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 183,
+        
+      
+      
+      
+      
+        pp. 1-21,
+      
+      
+      
+      
+        DOI 10.1016/j.jss.2021.111087,
+      
+      
+        Elsevier,
+      
+      
+      
+      
+        Jan.
+      
+      
+        2022.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="KMR21" class="col-sm-11">
+    <!-- Entry bib key -->
+    [KMR21]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Kirchhof,
+        
+      
+        
+        
+          
+          
+            
+              L.
+            
+          
+        
+        
+           Malcher,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Understanding-and-Improving-Model-Driven-IoT-Systems-through-Accompanying-Digital-Twins.pdf">Understanding and Improving Model-Driven IoT Systems through 
+      Accompanying Digital Twins</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Proceedings of the 20th ACM SIGPLAN International Conference on
+      Generative Programming: Concepts and Experiences (GPCE 21),
+        
+      
+
+      
+        
+          
+          
+            
+            
+              
+                E.
+              
+            
+          
+          
+             Tilevich,
+          
+        
+          
+          
+            
+            
+              
+                C.
+              
+            
+          
+          
+             De Roover (Eds.),
+          
+        
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 197-209,
+      
+      
+      
+      
+      
+        ACM,
+      
+      
+      
+      
+        Oct.
+      
+      
+        2021.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row" style="background: #CFE2F3; padding: 6px 0; margin: 0;">
+
+  <div id="KMR+20" class="col-sm-11">
+    <!-- Entry bib key -->
+    [KMR+20]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Kirchhof,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Michael,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Varga,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Model-driven-Digital-Twin-Construction-Synthesizing-the-Integration-of-Cyber-Physical-Systems-with-Their-Information-Systems.pdf">Model-driven Digital Twin Construction: Synthesizing the 
+      Integration of Cyber-Physical Systems with Their Information Systems</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Proceedings of the 23rd ACM/IEEE International Conference on 
+      Model Driven Engineering Languages and Systems,
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 90-101,
+      
+      
+      
+      
+      
+        ACM,
+      
+      
+      
+      
+        Oct.
+      
+      
+        2020.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="BKRW17a" class="col-sm-11">
+    <!-- Entry bib key -->
+    [BKRW17a]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Butting,
+        
+      
+        
+        
+          
+          
+            
+              O.
+            
+          
+        
+        
+           Kautz,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="https://www.se-rwth.de/publications/Architectural-Programming-with-MontiArcAutomaton.pdf">Architectural Programming with MontiArcAutomaton</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: In 12th International Conference on Software Engineering Advances (ICSEA 2017),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 213-218,
+      
+      
+      
+      
+      
+        IARIA XPS Press,
+      
+      
+      
+      
+        May
+      
+      
+        2017.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="Rum16" class="col-sm-11">
+    <!-- Entry bib key -->
+    [Rum16]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="https://mbse.se-rwth.de/" target="_blank" rel="noopener noreferrer">Modeling with UML: Language, Concepts, Methods</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        Springer International,
+      
+      
+      
+      
+        Jul.
+      
+      
+        2016.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="GLRR15" class="col-sm-11">
+    <!-- Entry bib key -->
+    [GLRR15]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              T.
+            
+          
+        
+        
+           Greifenberg,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Look,
+        
+      
+        
+        
+          
+          
+            
+              S.
+            
+          
+        
+        
+           Roidl,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Engineering-Tagging-Languages-for-DSLs.pdf">Engineering Tagging Languages for DSLs</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Conference on Model Driven Engineering Languages and
+    Systems (MODELS’15),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 34-43,
+      
+      
+      
+      
+      
+        ACM/IEEE,
+      
+      
+      
+      
+      
+        2015.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="HRR12" class="col-sm-11">
+    <!-- Entry bib key -->
+    [HRR12]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Haber,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+          
+          
+            
+              O.
+            
+          
+        
+        
+           Ringert,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/MontiArc-Architectural-Modeling-of-Interactive-Distributed-and-Cyber-Physical-Systems.pdf">MontiArc - Architectural Modeling of Interactive
+    Distributed and
+    Cyber-Physical Systems</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+
+      
+
+      
+        RWTH Aachen University,
+      
+
+      
+        
+          AIB-2012-03,
+        
+      
+
+      
+        
+          Technical Report,
+        
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        Feb.
+      
+      
+        2012.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+</ol>
+</div>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h2 id="related-topics">Related Topics</h2>
+<ul>
+  <li><a href="/research/Agile-MBSE">Agile Model-Based Software Engineering</a></li>
+  <li><a href="/research/Cloud">Model-based Cloud Computing Applications</a></li>
+  <li><a href="/research/Cyber-Physical-Systems">Cyber-Physical Systems (CPS)</a></li>
+  <li><a href="/research/Model-Driven-Systems-Engineering">Model-Driven Systems Engineering</a></li>
+  <li><a href="/research/Generative-SE">Generative Software Engineering</a></li>
+  <li><a href="/research/Software-Architecture">Modeling Software Architecture</a></li>
+  <li><a href="/research/MontiCore">MontiCore - Language Workbench</a></li>
+  <li><a href="/research/Robotics">Robotics Architectures and Tasks</a></li>
+  <li><a href="/research/State-Based-Modeling">State-Based Modeling (Automata)</a></li>
+</ul>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h4 id="further-links">Further links:</h4>
+
+<ul>
+  <li><a href="/publications">Publications</a></li>
+  <li><a href="/research">Topic sorted list of most interesting publications</a></li>
+  <li><a href="/books">Books</a></li>
+  <li><a href="/phdtheses">Aachener Informatik-Berichte, Software Engineering / Ph.D. Theses</a></li>
+  <li><a href="https://www.se-rwth.de">Website of the SE</a></li>
+</ul>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+      <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+let scrollButton = document.getElementById("btn-back-to-top");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
+  }
+}
+
+scrollButton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+    
+
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="sticky-bottom mt-5">
+  <div class="container">
+    <!-- &copy; Copyright 2025   . -->
+    
+    
+    <a href="https://www.se-rwth.de/impressum/">Impressum</a>.
+    
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="/assets/js/jquery.min.js" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/popper.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/mdb.min.js" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="/assets/js/masonry.pkgd.min.js"></script>
+<script defer src="/assets/js/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="/assets/js/medium-zoom.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+  
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer src="/assets/js/tex-mml-chtml.js" type="text/javascript" id="MathJax-script"></script>
+<script defer src="/assets/js/polyfill.min.js"></script>
+
+
+  <script src="/assets/js/toc.js" crossorigin="anonymous"></script>
+  <script async src="/assets/js/widgets.js" charset="utf-8"></script>
+
+</html>

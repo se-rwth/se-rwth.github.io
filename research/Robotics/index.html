@@ -1,0 +1,3707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Modeling Robotics Architectures and Tasks |
+
+
+
+  SE@RWTH
+
+</title>
+<meta name="description" content="Website of the Chair of Software Engineering at RWTH Aachen
+">
+
+<!-- Google Verification -->
+
+
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css" integrity="oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/mdb.min.css" integrity="Y3+zUQCTOSqaSbyEFKLA6oQi8oF3I2xzkIR+ywroD3fkLG3LF2DJq/mU03KQqSZv/nGQDC2Upf73IZYZYMX4GQ==" crossorigin="anonymous" type="text/css"/>
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="/assets/css/all.min.css" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css" integrity="pOZ6Cz1wopk9RluJMvHM1AEMkPCS+ihnGztyD0kI991jgZ8hj9YQ61k4ouvGNvLHE0z6Vifp3ytAmeeW8sbbZQ==" crossorigin="anonymous" type="text/css">
+
+<!-- Styles -->
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon.png">
+<link rel="stylesheet" href="/assets/css/main.css" type="text/css">
+<!--<link rel="canonical" href="https://www.se-rwth.de/research/Robotics/">-->
+
+
+
+
+
+
+    <!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['addDownloadExtensions', "bib"]);
+    _paq.push(['disableCookies']);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="https://stats.fh-aachen.de/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '34']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+<!-- End Matomo Code -->
+
+  </head>
+
+  <body class=" sticky-bottom-footer">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand title font-weight-lighter" href="/">
+        
+          <img src="/assets/img/icons/rwth_se_rgb.png" height="70px">
+        
+        
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <!-- <li class="nav-item ">
+            <a class="nav-link" href="/">
+              About
+              
+            </a>
+          </li> -->
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Essays
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essays/">Essay List</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Definition/">Digital Twin</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Companion/">Digital Companion</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Maturity-Model/">Digital Twin Maturity Model</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Explicit-versus-implicit-models/">Explicit versus Implicit Models</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Gesetze-DSL/">DSLs für Gesetze und Ordnungen (in D)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Research-Software-Engineering/">Research Software Engineering (RSE)</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Modeling-in-advanced-systems-engineering/">Modeling in Advanced Systems Engineering</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Model-Definitions/">Model-Based Definitions</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Low-Code/">Low Code</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Reference-Models/">Reference Models</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Research
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/">Research Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#foundations">MBSE Foundations</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#applications">Application Domains</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#tools">Software Tools</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Publications
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/publications/">All Publications</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/books/">Books</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/phdtheses/">Ph.D. Theses</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/assets/bibliography/all-software-engineering-rwth-references.bib">Bibtex</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Teaching
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/">Teaching</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/teaching-overview/">Teaching Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/#currentsem">Current Semester</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/archive/">Course archive (starting WS 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="https://www.se-rwth.de/teaching/indexArchiv.php">Course archive (until SoSe 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/theses/">BA/MA Theses</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/">Major project overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/22.09.MontiGem.Ford.Press.Release/">MontiGem Ford Press Release</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiCore/">MontiCore</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiGem/">MontiGem</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+          <li class="nav-item ">
+              <a class="nav-link" href="/jobs/">
+                Jobs
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About us
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/about/">About us</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/staff/">Staff</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/activities/">Activities</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teams/">Teams</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/contact/">Contact &amp; Arrival</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Modeling Robotics Architectures and Tasks</h1>
+    <p class="post-description"></p>
+  </header>
+
+  <article>
+    
+
+    <div class="toc_content">
+      
+    </div>
+    <div class="clearfix">
+      
+<h2 id="summary-of-most-relevant-topic-papers">Summary of Most Relevant Topic Papers</h2>
+
+<p>Robotics can be considered a special field of <a href="/research/Cyber-Physical-Systems">Cyber-Physical 
+Systems</a>
+that is defined by an inherent heterogeneity of involved domains,
+relevant platforms, and challenges. Engineering robotics applications
+requires composition and interaction of diverse distributed software
+modules. This usually leads to complex monolithic software solutions
+hardly reusable, maintainable, and comprehensible, which hampers broad
+propagation of robotics applications.</p>
+
+<p>Our research in model-driven software engineering for robotics on one hand
+focuses on <a href="/research/Software-Architecture">Modeling Software Architecture</a> 
+to structure reusable units of behavior.
+On the other hand, we concentrate on 
+<a href="/research/Domain-Specific-Languages">Domain-Specific Languages (DSLs)</a>
+for
+robotic product assembly tasks in industrial contexts as well as planned and
+unplanned logistic tasks. We apply this to indoor robots interacting with
+humans as well as to industrial robots and to autonomous cars.</p>
+
+<div id="youtube-video">
+    
+    <div id="ytvideo" data-video="https://www.youtube-nocookie.com/embed/videoseries?list=PLuHxQfNRwKzMgVPGSQG8sf7baFHfRSn_L&amp;autoplay=1" style="background-image: url('/assets/img/videos-data/Model-Driven Robotics.png');">
+        <div class="row playbutton">
+            <div class="col-2">
+                <i class="fa-solid fa-play"></i>
+            </div>
+            <div class="col-10">
+                <p>Agree to play <span style="font-style: italic; font-weight: 600; padding-right: 2px; color: #fff;">YouTube</span> video
+                <span style="display: block; color: #fff;">"Model-Driven Robotics"</span></p>
+
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+<script src="/assets/js/click_privacy.js" crossorigin="anonymous"></script>
+
+<h2 id="modeling-robotic-application-architectures-and-behavior">Modeling Robotic Application Architectures and Behavior</h2>
+
+<div class="row" style="text-align: center; margin: 20px 0;">
+    <div class="col-sm mt-3 mt-md-0">
+        
+            <picture>
+                <img class="img-fluid rounded z-depth-1" style="width:  40%; 
+                 " src="/assets/img/research/robotics/robots.jpg">
+            </picture>
+        
+        
+    </div>
+</div>
+
+<p>Describing both, a robot’s software architecture and its behavior in integrated
+models, yields many advantages to cope with complexity: the models are
+platform independent, can be decomposed to be developed independently by
+experts of the respective fields, are highly reusable and may be subjected
+to formal analysis.</p>
+
+<p>In <a href="#RRW12">[RRW12]</a> <a href="#RRW14a">[RRW14a]</a>
+we have introduced the architecture and behavior modeling
+language and framework MontiArcAutomaton which provides an integrated,
+platform independent structure and behavior modeling language family with an
+extensible code generation framework. MontiArcAutomaton’s central concept is
+encapsulation and decomposition known from component &amp; connector
+architecture description languages (ADLs). This concept applied to the
+modeling language, the code generation process and the target runtime to
+bridge the gap of platform specific and independent implementations along
+well designed interfaces. This facilitates the reuse of robot applications
+and makes their development more efficient.</p>
+
+<p>MontiArcAutomaton extends the ADL <a href="/research/Software-Architecture">MontiArc</a>
+and integrates various component behavior
+modeling languages implemented using <a href="http://www.monticore.de/" target="_blank" rel="noopener noreferrer">MontiCore</a> 
+as well as code generation
+for the ROS robot operating system <a href="#QGC+09">[QGC+09]</a>.
+The integration of automata and tables to model component behavior are described
+in <a href="#RRW13c">[RRW13c]</a>.
+The integration capabilities of MontiArc have been extended and
+generalized in <a href="#RRRW15b">[RRRW15b]</a> <a href="#AHRW17">[AHRW17]</a>
+<a href="#AHRW17b">[AHRW17b]</a>. For interested readers, the
+<a href="https://github.com/MontiCore/montiarc" target="_blank" rel="noopener noreferrer">MontiArcAutomaton</a>
+provides further information on the MontiArcAutomaton framework.</p>
+
+<div id="youtube-video">
+    
+    <div id="ytvideo" data-video="https://www.youtube-nocookie.com/embed/xvlYN-6awfk?autoplay=1" style="background-image: url('/assets/img/videos-data/Model-Driven Coffee Service.png');">
+        <div class="row playbutton">
+            <div class="col-2">
+                <i class="fa-solid fa-play"></i>
+            </div>
+            <div class="col-10">
+                <p>Agree to play <span style="font-style: italic; font-weight: 600; padding-right: 2px; color: #fff;">YouTube</span> video
+                <span style="display: block; color: #fff;">"Model-Driven Coffee Service"</span></p>
+
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+<script src="/assets/js/click_privacy.js" crossorigin="anonymous"></script>
+
+<p>In several projects, we modeled logistics services with Festo Robotino Robots, 
+ROS, and Python.</p>
+
+<div id="youtube-video">
+    
+    <div id="ytvideo" data-video="https://www.youtube-nocookie.com/embed/u6LF8KjvDgM?autoplay=1" style="background-image: url('/assets/img/videos-data/A Model-Driven Robotics Logistics Application.png');">
+        <div class="row playbutton">
+            <div class="col-2">
+                <i class="fa-solid fa-play"></i>
+            </div>
+            <div class="col-10">
+                <p>Agree to play <span style="font-style: italic; font-weight: 600; padding-right: 2px; color: #fff;">YouTube</span> video
+                <span style="display: block; color: #fff;">"A Model-Driven Robotics Logistics Application"</span></p>
+
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+<script src="/assets/js/click_privacy.js" crossorigin="anonymous"></script>
+
+<h2 id="capability-based-robotics-architectures">Capability-Based Robotics Architectures</h2>
+
+<p>Although, the costs for robotics hardware and software decrease,
+deploying a successful robotics application still requires tremendous
+effort. While various challenging issues for service robotics have been
+solved to a degree where their deployment is possible, integration of
+the corresponding hardware components and software components requires
+intensive collaboration of domain experts, robotics experts, and
+software experts. Model-driven software engineering can facilitate
+development and integration of robotics software components while
+retaining a proper separation between domain expert concerns and
+software expert concerns.</p>
+
+<p>To foster the separation of concerns in engineering service robotics
+applications, we conceived the iserveU modeling framework to describe
+domains, actors, goals, and tasks of service robotics
+applications <a href="#ABH+16">[ABH+16]</a>. From these declarative modeling
+languages <a href="#ABH+17">[ABH+17]</a>, we generate parts of a MontiArcAutomaton
+architecture including component structure and behavior. In this
+architecture, goals and tasks are translated into models of the planning
+domain definition language (PDDL) <a href="#MGH+98">[MGH+98]</a> and solved online using
+the Metric-FF <a href="#Hof03">[Hof03]</a> planner <a href="#ABK+17">[ABK+17]</a>.
+Through our work, domain
+experts can focus on describing the domain and its properties and
+robotics experts can focus on implementing actors with their properties
+and actions.</p>
+
+<h2 id="lightrocks-modeling-robotic-assembly-tasks">LightRocks: Modeling Robotic Assembly Tasks</h2>
+
+<p>The importance of flexible automated manufacturing grows continuously as
+products become increasingly individualized. Flexible assembly processes
+with compliant robot arms are still hard to be developed due to many
+uncertainties caused - among others - by object tolerances, position
+uncertainties and tolerances from external and internal sensors. Thus, only
+domain experts are able to program such compliant robot arms. The
+reusability of these programs depends on each individual expert and tools
+allowing to reuse and the composed models at different levels of detail are
+missing.</p>
+
+<p>In cooperation with the DLR Institute on Robotics and Mechatronics we have
+introduced the LightRocks (Lightweight Robot Coding for Skills) framework
+in <a href="#THR+13">[THR+13]</a> <a href="#BRS+15">[BRS+15]</a> which allows robotics experts and laymen to model
+robotic assembly tasks on different levels of abstraction, namely: assembly
+tasks, skills, and elemental actions. Robotics experts provide a domain
+model of the assembly environment and elemental actions which reference this
+model.
+Factory floor workers combine these to skills and task to implement assembly
+processes provided by experts. This allows a separation of concerns,
+increases reuse and enables flexible production.</p>
+
+<h2 id="autonomous-driving">Autonomous Driving</h2>
+
+<p>Many of the concepts we learnt in engineering autonomic robotics come from 
+automotive software engineering and especially our successful participation in 
+the DARPA Urban Challenge. In <a href="#BBR07">[BBR07]</a>
+we describe the well-engineered model-driven toolchain, which is heavily based 
+on automatic simulation of a cars context (actually streets, obstacles, other 
+cars of an entire city) and automatic testing for correct a driving behavior. We 
+discussed in <a href="#BR12b">[BR12b]</a> 
+that this a main enabler for intensive regression testing and thus agile 
+development and has now become the primary technique for virtually driving 
+millions of miles for safety validation in the car domain.</p>
+
+<div class="row" style="text-align: center; margin: 20px 0;">
+    <div class="col-sm mt-3 mt-md-0">
+        
+            <picture>
+                <img class="img-fluid rounded z-depth-1" style="width:  60%; 
+                 " src="/assets/img/research/robotics/Caroline-Finish.jpg">
+            </picture>
+        
+        
+    </div>
+</div>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h2 id="key-statements">Key Statements</h2>
+<ol>
+  <li>Development of robotics applications is highly complex and requires 
+abstraction, e.g. using appropriate abstract modeling techniques.</li>
+  <li>Domain specific modeling languages (DSLs) apply perfect to model tasks of 
+robots, the surrounding world, test scenarios etc.</li>
+  <li>Abstraction through DSLs leads to better standardization and allows improve 
+quick development of robotic application as well a agile adaptation of robot 
+tasks by users.</li>
+  <li>Autonomously driving cars exhibit lots of robotic characteristics and many 
+techniques used there for function validation can be carried over.</li>
+</ol>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h2 id="selected-topic-specific-publications">Selected Topic-Specific Publications</h2>
+
+<div class="publications">
+  <ol class="bibliography">
+<li>
+<div class="row">
+
+  <div id="ABH+17" class="col-sm-11">
+    <!-- Entry bib key -->
+    [ABH+17]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              K.
+            
+          
+        
+        
+           Adam,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Butting,
+        
+      
+        
+        
+          
+          
+            
+              R.
+            
+          
+        
+        
+           Heim,
+        
+      
+        
+        
+          
+          
+            
+              O.
+            
+          
+        
+        
+           Kautz,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Pfeiffer,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Modeling-Robotics-Tasks-for-Better-Separation-of-Concerns-Platform-Independence-and-Reuse.pdf">Modeling Robotics Tasks for Better Separation of Concerns, Platform-Independence, and Reuse</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+        Aachener Informatik-Berichte, Software Engineering, Band 28,
+      
+      
+        ISBN 978-3-8440-5319-7,
+      
+      
+      
+        Shaker Verlag,
+      
+      
+      
+      
+        Dec.
+      
+      
+        2017.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="ABK+17" class="col-sm-11">
+    <!-- Entry bib key -->
+    [ABK+17]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              K.
+            
+          
+        
+        
+           Adam,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Butting,
+        
+      
+        
+        
+          
+          
+            
+              O.
+            
+          
+        
+        
+           Kautz,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Executing-Robot-Task-Models-in-Dynamic-Environments.pdf">Executing Robot Task Models in Dynamic Environments</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Proceedings of MODELS 2017. Workshop EXE,
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+        CEUR 2019,
+      
+      
+      
+      
+      
+      
+      
+        Sep.
+      
+      
+        2017.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="AHRW17" class="col-sm-11">
+    <!-- Entry bib key -->
+    [AHRW17]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              K.
+            
+          
+        
+        
+           Adam,
+        
+      
+        
+        
+          
+          
+            
+              K.
+            
+          
+        
+        
+           Hölldobler,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Engineering-Robotics-Software-Architectures-with-Exchangeable-Model-Transformations.pdf">Engineering Robotics Software Architectures with Exchangeable Model Transformations</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: International Conference on Robotic Computing (IRC’17),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 172-179,
+      
+      
+      
+      
+      
+        IEEE,
+      
+      
+      
+      
+        Apr.
+      
+      
+        2017.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="AHRW17b" class="col-sm-11">
+    <!-- Entry bib key -->
+    [AHRW17b]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              K.
+            
+          
+        
+        
+           Adam,
+        
+      
+        
+        
+          
+          
+            
+              K.
+            
+          
+        
+        
+           Hölldobler,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://se-rwth.de/publications/Modeling-Robotics-Software-Architectures-with-Modular-Model-Transformations.pdf" target="_blank" rel="noopener noreferrer">Modeling Robotics Software Architectures with Modular Model Transformations</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+        
+          In: Journal of Software Engineering for Robotics (JOSER),
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 8(1),
+        
+      
+      
+      
+      
+        pp. 3-16,
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        2017.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="ABH+16" class="col-sm-11">
+    <!-- Entry bib key -->
+    [ABH+16]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              K.
+            
+          
+        
+        
+           Adam,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Butting,
+        
+      
+        
+        
+          
+          
+            
+              R.
+            
+          
+        
+        
+           Heim,
+        
+      
+        
+        
+          
+          
+            
+              O.
+            
+          
+        
+        
+           Kautz,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Model-Driven-Separation-of-Concerns-for-Service-Robotics.pdf">Model-Driven Separation of Concerns for Service
+    Robotics</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: International Workshop on Domain-Specific Modeling
+    (DSM’16),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 22-27,
+      
+      
+      
+      
+      
+        ACM,
+      
+      
+      
+      
+        Oct.
+      
+      
+        2016.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="BRS+15" class="col-sm-11">
+    <!-- Entry bib key -->
+    [BRS+15]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Butting,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Schulze,
+        
+      
+        
+        
+          
+          
+            
+              U.
+            
+          
+        
+        
+           Thomas,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Modeling-Reusable-Platform-Independent-Robot-Assembly-Processes.pdf">Modeling Reusable, Platform-Independent Robot Assembly
+    Processes</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: International Workshop on Domain-Specific Languages
+    and Models for Robotic Systems (DSLRob 2015),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        2015.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row" style="background: #CFE2F3; padding: 6px 0; margin: 0;">
+
+  <div id="RRRW15b" class="col-sm-11">
+    <!-- Entry bib key -->
+    [RRRW15b]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+          
+          
+            
+              O.
+            
+          
+        
+        
+           Ringert,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Roth,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Language-and-Code-Generator-Composition-for-Model-Driven-Engineering-of-Robotics-Component-and-Connector-Systems.pdf">Language and Code Generator Composition for Model-Driven
+    Engineering of Robotics Component &amp; Connector Systems</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+        
+          In: Journal of Software Engineering for Robotics (JOSER),
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 6(1),
+        
+      
+      
+      
+      
+        pp. 33-57,
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        2015.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="RRW14a" class="col-sm-11">
+    <!-- Entry bib key -->
+    [RRW14a]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+          
+          
+            
+              O.
+            
+          
+        
+        
+           Ringert,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Architecture-and-Behavior-Modeling-of-Cyber-Physical-Systems-with-MontiArcAutomaton.pdf">Architecture and Behavior Modeling of Cyber-Physical
+    Systems with MontiArcAutomaton</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+      
+        Aachener Informatik-Berichte, Software Engineering, Band
+    20,
+      
+      
+      
+      
+        Shaker Verlag,
+      
+      
+      
+      
+        Dec.
+      
+      
+        2014.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="RRW13c" class="col-sm-11">
+    <!-- Entry bib key -->
+    [RRW13c]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+          
+          
+            
+              O.
+            
+          
+        
+        
+           Ringert,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/MontiArcAutomaton-Modeling-Architecture-and-Behavior-of-Robotic-Systems.pdf">MontiArcAutomaton: Modeling Architecture and Behavior of
+    Robotic
+    Systems</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Conference on Robotics and Automation (ICRA’13),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 10-12,
+      
+      
+      
+      
+      
+        IEEE,
+      
+      
+      
+      
+      
+        2013.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="THR+13" class="col-sm-11">
+    <!-- Entry bib key -->
+    [THR+13]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              U.
+            
+          
+        
+        
+           Thomas,
+        
+      
+        
+        
+          
+          
+            
+              G.
+            
+          
+        
+        
+           Hirzinger,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Schulze,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/A-New-Skill-Based-Robot-Programming-Language-Using-UML-P-Statecharts.pdf">A New Skill Based Robot Programming Language Using UML/P
+    Statecharts</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Conference on Robotics and Automation (ICRA’13),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 461-466,
+      
+      
+      
+      
+      
+        IEEE,
+      
+      
+      
+      
+      
+        2013.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="RRW12" class="col-sm-11">
+    <!-- Entry bib key -->
+    [RRW12]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+          
+          
+            
+              O.
+            
+          
+        
+        
+           Ringert,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Wortmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/A-Requirements-Modeling-Language-for-the-Component-Behavior-of-Cyber-Physical-Robotics-Systems.pdf">A Requirements Modeling Language for the Component
+    Behavior of Cyber Physical Robotics Systems</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Modelling and Quality in Requirements Engineering:
+    Essays Dedicated to Martin Glinz on the Occasion of His 60th
+    Birthday,
+        
+      
+
+      
+        
+          
+          
+          
+             Seyff, N. and Koziolek, A. (Eds.),
+          
+        
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 133-146,
+      
+      
+      
+        ISBN 978-3869917245,
+      
+      
+      
+        Monsenstein und Vannerdat,
+      
+      
+      
+        Münster,
+      
+      
+      
+        2012.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="BR12b" class="col-sm-11">
+    <!-- Entry bib key -->
+    [BR12b]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Berger,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/publications/Autonomous-Driving-5-Years-after-the-Urban-Challenge-The-Anticipatory-Vehicle-as-a-Cyber-Physical-System.pdf">Autonomous Driving - 5 Years after the Urban Challenge:
+    The Anticipatory
+    Vehicle as a Cyber-Physical System</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: Automotive Software Engineering Workshop (ASE’12),
+        
+      
+
+      
+
+      
+
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+      
+        pp. 789-798,
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        2012.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="QGC+09" class="col-sm-11">
+    <!-- Entry bib key -->
+    [QGC+09]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Quigley,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Gerkey,
+        
+      
+        
+        
+          
+          
+            
+              K.
+            
+          
+        
+        
+           Conley,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Faust,
+        
+      
+        
+        
+          
+          
+            
+              T.
+            
+          
+        
+        
+           Foote,
+        
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Leibs,
+        
+      
+        
+        
+          
+          
+            
+              E.
+            
+          
+        
+        
+           Berger,
+        
+      
+        
+        
+          
+          
+            
+              R.
+            
+          
+        
+        
+           Wheeler,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+          
+          
+            
+              Y.
+            
+          
+        
+        
+           Ng:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="">ROS: an open-source Robot Operating System</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+        
+          In: ICRA workshop on open source software,
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 3,
+        
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        Kobe, Japan,
+      
+      
+        May
+      
+      
+        2009.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row" style="background: #CFE2F3; padding: 6px 0; margin: 0;">
+
+  <div id="BBR07" class="col-sm-11">
+    <!-- Entry bib key -->
+    [BBR07]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Basarke,
+        
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Berger,
+        
+      
+        
+        
+          
+          
+            
+              B.
+            
+          
+        
+        
+           Rumpe:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="http://www.se-rwth.de/staff/rumpe/publications20042008/Software-and-Systems-Engineering-Process-and-Tools-for-the-Development-of-Autonomous-Driving-Intelligence.pdf">Software &amp; Systems Engineering Process and Tools for the
+    Development
+    of Autonomous Driving Intelligence</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+        
+          In: Journal of Aerospace Computing, Information, and
+    Communication (JACIC),
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 4(12),
+        
+      
+      
+      
+      
+        pp. 1158-1174,
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        2007.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="Hof03" class="col-sm-11">
+    <!-- Entry bib key -->
+    [Hof03]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              J.
+            
+          
+        
+        
+           Hoffmann:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="">The Metric-FF Planning System: Translating “Ignoring Delete Lists” to Numeric State Variables</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+        
+          In: Journal of Artificial Intelligence Research,
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      
+        
+          Volume 20,
+        
+      
+      
+      
+      
+        pp. 291-341,
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        2003.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+<li>
+<div class="row">
+
+  <div id="MGH+98" class="col-sm-11">
+    <!-- Entry bib key -->
+    [MGH+98]
+    <!-- Author -->
+    <div class="author" style="display: inline">
+      
+        
+        
+          
+          
+            
+              D.
+            
+          
+        
+        
+           McDermott,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Ghallab,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Howe,
+        
+      
+        
+        
+          
+          
+            
+              C.
+            
+          
+        
+        
+           Knoblock,
+        
+      
+        
+        
+          
+          
+            
+              A.
+            
+          
+        
+        
+           Ram,
+        
+      
+        
+        
+          
+          
+            
+              M.
+            
+          
+        
+        
+           Veloso,
+        
+      
+        
+        
+          
+          
+            
+              D.
+            
+          
+        
+        
+           Weld,
+        
+      
+        
+        
+          
+          
+            
+              D.
+            
+          
+        
+        
+           Wilkins:
+        
+      
+
+      
+    </div>
+
+    <!-- Title -->
+    <div class="title">
+<a href="">PDDL - the planning domain definition language</a>.</div>
+
+    <div class="periodical" style="display: inline">
+      
+
+      
+
+      
+
+      
+        Yale Center for Computational Vision and Control,
+      
+
+      
+        
+      
+
+      
+        
+          Technical Report,
+        
+      
+
+      
+      
+      
+      
+      
+      
+        CVC TR-98-003/DCS TR-1165,
+      
+      
+      
+      
+      
+      
+      
+        Oct.
+      
+      
+        1998.
+      
+      
+    </div>
+
+  </div>
+</div>
+</li>
+</ol>
+</div>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h2 id="related-topics">Related Topics</h2>
+<ul>
+  <li><a href="/research/Agile-MBSE">Agile Model-Based Software Engineering</a></li>
+  <li><a href="/research/Domain-Specific-Languages">Domain-Specific Languages (DSLs)</a></li>
+  <li><a href="/research/Generative-SE">Generative Software Engineering</a></li>
+  <li><a href="/research/Software-Architecture">Modeling Software Architecture</a></li>
+  <li><a href="/research/MontiCore">MontiCore - Language Workbench</a></li>
+  <li><a href="/research/Semantics">Semantics of Modeling Languages</a></li>
+  <li><a href="/research/State-Based-Modeling">State Based Modeling (Automata)</a></li>
+  <li><a href="/research/MontiThings">MontiThings - Modeling the IoT</a></li>
+</ul>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h4 id="further-links">Further links:</h4>
+
+<ul>
+  <li><a href="/publications">Publications</a></li>
+  <li><a href="/research">Topic sorted list of most interesting publications</a></li>
+  <li><a href="/books">Books</a></li>
+  <li><a href="/phdtheses">Aachener Informatik-Berichte, Software Engineering / Ph.D. Theses</a></li>
+  <li><a href="https://www.se-rwth.de">Website of the SE</a></li>
+</ul>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+      <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+let scrollButton = document.getElementById("btn-back-to-top");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
+  }
+}
+
+scrollButton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+    
+
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="sticky-bottom mt-5">
+  <div class="container">
+    <!-- &copy; Copyright 2025   . -->
+    
+    
+    <a href="https://www.se-rwth.de/impressum/">Impressum</a>.
+    
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="/assets/js/jquery.min.js" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/popper.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/mdb.min.js" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="/assets/js/masonry.pkgd.min.js"></script>
+<script defer src="/assets/js/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="/assets/js/medium-zoom.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+  
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer src="/assets/js/tex-mml-chtml.js" type="text/javascript" id="MathJax-script"></script>
+<script defer src="/assets/js/polyfill.min.js"></script>
+
+
+  <script src="/assets/js/toc.js" crossorigin="anonymous"></script>
+  <script async src="/assets/js/widgets.js" charset="utf-8"></script>
+
+</html>
