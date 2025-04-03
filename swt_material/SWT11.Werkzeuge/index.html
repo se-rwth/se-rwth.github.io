@@ -1,0 +1,2531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Softwaretechnik, 11. Werkzeuge |
+
+
+
+  SE@RWTH
+
+</title>
+<meta name="description" content="Website of the Chair of Software Engineering at RWTH Aachen
+">
+
+<!-- Google Verification -->
+
+
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css" integrity="oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/mdb.min.css" integrity="Y3+zUQCTOSqaSbyEFKLA6oQi8oF3I2xzkIR+ywroD3fkLG3LF2DJq/mU03KQqSZv/nGQDC2Upf73IZYZYMX4GQ==" crossorigin="anonymous" type="text/css"/>
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="/assets/css/all.min.css" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css" integrity="pOZ6Cz1wopk9RluJMvHM1AEMkPCS+ihnGztyD0kI991jgZ8hj9YQ61k4ouvGNvLHE0z6Vifp3ytAmeeW8sbbZQ==" crossorigin="anonymous" type="text/css">
+
+<!-- Styles -->
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon.png">
+<link rel="stylesheet" href="/assets/css/main.css" type="text/css">
+<!--<link rel="canonical" href="https://www.se-rwth.de/swt_material/SWT11.Werkzeuge/">-->
+
+
+
+
+
+
+    <!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['addDownloadExtensions', "bib"]);
+    _paq.push(['disableCookies']);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="https://stats.fh-aachen.de/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '34']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+<!-- End Matomo Code -->
+
+  </head>
+
+  <body class=" sticky-bottom-footer">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand title font-weight-lighter" href="/">
+        
+          <img src="/assets/img/icons/rwth_se_rgb.png" height="70px">
+        
+        
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <!-- <li class="nav-item ">
+            <a class="nav-link" href="/">
+              About
+              
+            </a>
+          </li> -->
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Essays
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essays/">Essay List</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Definition/">Digital Twin</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Companion/">Digital Companion</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Maturity-Model/">Digital Twin Maturity Model</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Explicit-versus-implicit-models/">Explicit versus Implicit Models</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Gesetze-DSL/">DSLs für Gesetze und Ordnungen (in D)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Research-Software-Engineering/">Research Software Engineering (RSE)</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Modeling-in-advanced-systems-engineering/">Modeling in Advanced Systems Engineering</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Model-Definitions/">Model-Based Definitions</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Low-Code/">Low Code</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Reference-Models/">Reference Models</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Research
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/">Research Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#foundations">MBSE Foundations</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#applications">Application Domains</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#tools">Software Tools</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Publications
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/publications/">All Publications</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/books/">Books</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/phdtheses/">Ph.D. Theses</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/assets/bibliography/all-software-engineering-rwth-references.bib">Bibtex</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Teaching
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/">Teaching</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/teaching-overview/">Teaching Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/#currentsem">Current Semester</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/archive/">Course archive (starting WS 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="https://www.se-rwth.de/teaching/indexArchiv.php">Course archive (until SoSe 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/theses/">BA/MA Theses</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/">Major project overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/22.09.MontiGem.Ford.Press.Release/">MontiGem Ford Press Release</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiCore/">MontiCore</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiGem/">MontiGem</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+          <li class="nav-item ">
+              <a class="nav-link" href="/jobs/">
+                Jobs
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About us
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/about/">About us</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/staff/">Staff</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/activities/">Activities</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teams/">Teams</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/contact/">Contact &amp; Arrival</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Softwaretechnik, 11. Werkzeuge</h1>
+    <p class="post-description">Material für die Softwaretechnik Vorlesung, Mathias Pfeiffer und Bernhard Rumpe</p>
+  </header>
+
+  <article>
+    
+
+    <div class="toc_content">
+      
+    </div>
+    <div class="clearfix">
+      <h2 id="werkzeuge-für-die-softwareentwicklung">Werkzeuge für die Softwareentwicklung</h2>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/Vorlesung_Softwaretechnik-.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<!-- Auskommentiert, weil ungenutzt: ******************************* -->
+
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/Warum-_was-_wie_und_wozu-_Tools_-_Werkzeuge.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/Werkzeuge_fuer_Software.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Software ist ein immaterieller Werkstoff.</li>
+  <li>Zur Erstellung, Weiterentwicklung, 
+Bearbeitung, Verwaltung, Absicherung, etc. von Software benötigen 
+wir verschiedenste Werkzeuge.</li>
+  <li>Manche dieser Werkzeuge sind interaktiv, wie zum Beispiel Editoren.
+Andere unterstützen die Automatisierung stetig sich wiederholender
+Aktivitäten. Wieder andere arbeiten voll automatisch im Hintergrund,
+um zum Beispiel die kontinuierliche Integration, das Testen 
+und die Messung von Fortschritt und Qualität vorzunehmen.</li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/Warum_Werkzeuge-.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/Werkzeuge_fuer_welche_Zwecke-.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/Weiteres_Lernmaterial_--.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/Softwaretechnik-.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/Versionsverwaltung.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Version: in einem evolutionären, linear fortschreitenden Projekt werden 
+regelmäßig (quasi permanent) neue Versionen erzeugt.</li>
+  <li>Variante: sollte das Produkt in mehreren Varianten ausgeliefert werden,
+so sind diese Varianten gleichzeitig und parallel zu bearbeiten und 
+gegebenenfalls weiterzuentwickeln.</li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/Versionsverwaltungsserver.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Subversion (svn) ist ein hochwertiges Werkzeug zur Verwaltung
+von Software. Git setzt sich jedoch immer mehr durch. Grund ist u.A.
+steigender Komfort bei darauf aufbauender Funktionalität, wie zB. den
+Plattformen Github und GitLab.</li>
+  <li>Die RWTH bietet für ihre Angestellten und Studierenden kostenlos:
+    <ul>
+      <li><a href="https://git.rwth-aachen.de/" target="_blank" rel="noopener noreferrer">https://git.rwth-aachen.de/</a></li>
+      <li><a href="https://git-ce.rwth-aachen.de/" target="_blank" rel="noopener noreferrer">https://git-ce.rwth-aachen.de/</a></li>
+    </ul>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/git.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/Ablageorte_bei_Git.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<p>Git zeichnet sich besonders durch seine dezentrale Natur aus:</p>
+<ul>
+  <li>Jeder Entwickler besitzt eine vollständige Kopie des Repositories</li>
+  <li>Dies erlaubt die Gemeinsame gVerwaltung aber auch lokale Revisionen des Repositories</li>
+</ul>
+
+<p>Das “Remote” Repository ist dabei auch nur ein “normales” Repository, dass
+typischerweise auf einem entfernten Server liegt. Wir
+schauen uns diesen Umstand im <strong><a href="https://moodle.rwth-aachen.de/course/view.php?id=24730" target="_blank" rel="noopener noreferrer">Selbstlernkurs</a></strong> genauer an.</p>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/git-_Status_von_Dateien_-Zustandsmodell-.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Neu angelegte Dateien werden nicht automatisch
+von Git verwaltet, nicht “getracked”. Erst 
+nach explizitem hinzufügen, “add”, stehen sie unter der Kontrolle von Git. Wird
+eine Datei verändert, gilt sie als modifiziert. Erst wenn diese Änderungen 
+sozusagen in den Mittelpunkt gerückt werden, “gestaged werden”, werden sie in 
+der nächsten Version berücksichtigt.</li>
+  <li>Git unterscheidet also lokal die vier gezeigten Zustände für einzelne 
+Dateien</li>
+  <li>Und bietet Befehle diese Zustände zu verändern.</li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/git-_Aenderungen_nach_remote_ueberspielen.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<p>Je nach verwendeten Werkzeug im Frontend, können die genannten Befehle 
+direkt per Kommandozeile, grafisch per Menü, oder aus einer 
+Entwicklungsumgebung heraus gestartet werden.</p>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/git-_von_remote_aktualisieren.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/Git_Workflows.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/Git_zum_Selbststudium.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Eine etwas ausführlichere Übersicht und eine reale Nachstellung der Befehle 
+finden Sie auch im <a href="https://moodle.rwth-aachen.de/course/view.php?id=24730" target="_blank" rel="noopener noreferrer">Selbstlernkurs</a>.</p>
+  </li>
+  <li>
+    <p>Der <a href="https://moodle.rwth-aachen.de/course/view.php?id=24730" target="_blank" rel="noopener noreferrer">Selbstlernkurs</a> ist Teil des 
+abfragbaren Basiswissens für die Klausur.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/Regeln_fuer_die_Nutzung_einer_Versionsverwaltung_am_Beispiel_von_Git.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/Parallele_Bearbeitung_von_Quellcode_im_Team-.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>In dem dargestellten Sequenzdiagram arbeiten Anna und Bert parallel 
+und weil Anna zunächst eincheckt, muss Bert seine lokale Version 14 
+(rot) mit Annas Version 15 mergen.</p>
+  </li>
+  <li>
+    <p>Das geht überraschend häufig automatisch, wie die nachfolgenden 
+Folien zeigen. Probleme entstehen allerdings regelmäßig wenn 
+nicht-ASCII/UTF-Files bearbeitet werden.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/git-_Automatisches_Merge.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Merge klappt, weil zwar dieselbe Datei aber verschiedene Stellen 
+bearbeitet werden.</li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/git-_Konflikte-_wenn_im_selben_File_an_selber_Stelle.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<p>Eine gemeinsame Verwaltung führt früher oder später zu Konflikten, weil 
+parallel dieselbe Stelle bearbeitet wurde oder sehr viele Änderungen 
+gleichzeitig vorgenommen wurden. Mechanismen zu deren Vermeidung und 
+Behebung finden Sie im <a href="https://moodle.rwth-aachen.de/course/view.php?id=24730" target="_blank" rel="noopener noreferrer">Selbstlernkurs</a>.</p>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/Merge_und_Konfliktbehebung.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/Repository_Management_Workflows_-_Schreibrechte_auf_Branches-Master.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/git-_Weitere_Dokumentation.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/Softwaretechnik-nr2.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/Build-Automatisierung.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/Alternativen-_Make-_-Ant-_Maven--_Gradle.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/Make.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Make liefert inkrementelle Kochrezepte. Eine kurze Übersicht der wesentlichen
+Bestandteile eines Make-Scripts finden Sie im <a href="https://moodle.rwth-aachen.de/course/view.php?id=24730" target="_blank" rel="noopener noreferrer">Selbstlernkurs</a>.</p>
+  </li>
+  <li>
+    <p>Kernbestandteil bei make ist der Aufbau des Abhängigkeitsgraphen für 
+die Generierung von Dateien (links zu sehen). Daraus wird dann ein 
+Bauplan realisiert, der die Dateien und zuletzt das 
+Gesamtprogramm in adäquater Reihenfolge erzeugt.</p>
+  </li>
+  <li>
+    <p>Vorteil 1: make ist inkrementell, es wird also nur neu erzeugt, wenn 
+die zu erzeugende Datei noch fehlt oder veraltet ist</p>
+  </li>
+  <li>
+    <p>Vorteil 2: make kann die Abhängigkeiten beliebig tief schachteln und 
+breit verzweigen, erkennt zirkuläre Abhängigkeiten, und arbeitet mit 
+vielen Betriebssystemen, Programmiersprachen und Generatoren zusammen.</p>
+  </li>
+  <li>
+    <p>Abhängigkeiten zu fremden Projekten kann make aber nicht von alleine 
+lösen.</p>
+  </li>
+  <li>
+    <p>Größtes Problem von make ist allerdings, dass es mit dem teilweise in 
+den Java Compiler integrierten Abhängigkeitsmanagement in Konflikt 
+steht. Dieses problem existiert für die C/C++ Welt nicht, wo make
+hauptsächlich eingesetzt wird.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/Makenr2.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/Maven.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Maven behauptet von sich dasselbe zu tun wie Make, ist aber in Bezug 
+auf Effizienz und Flexibilität ein dramatischer Rückschritt.</p>
+  </li>
+  <li>
+    <p>Einziger Vorteil: das Aktualisieren und Laden von vorgefertigten 
+Bibliotheken, sowie (transitive) Aktualisierung von Nachbar-Projekten.</p>
+  </li>
+  <li>
+    <p>Statt einem intelligenten, bedarfsorientiert inkrementellen 
+übersetzen nutzt Maven einen sturen 12 Phasenplan der immer von links 
+bis zum jeweils angegebenen Ziel (z.B. “install”) durchgeführt wird.</p>
+    <ul>
+      <li>Idealerweise sollte Maven nicht zum Einsatz kommen, Gradle oder Make
+sind deutlich besser.</li>
+    </ul>
+  </li>
+</ul>
+
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/Mavennr2.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/Mavennr3.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/Gradle.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Gradle baut inkrementell</p>
+  </li>
+  <li>
+    <p>Gradle bietet sehr ausgefeilte Mechanismen um den Abhängigkeitsgraph 
+selbst zu erstellen</p>
+    <ul>
+      <li>dazu wird in der ersten Phase das gradle Script ausgeführt und dadurch
+der Abhängigkeitskraft zwischen Artefakten so erzeugt, dass zu jedem 
+neu zu erstellenden Artefakt bzw. ein Artefakt mit geänderten Quellen
+die jeweils notwendige Task aufgerufen werden kann.</li>
+    </ul>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/Gradlenr2.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/Gradle-s_Java_Plugin_Tasks.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Für Java wird beispielsweise mit dem Java-Plugin oben zu sehender 
+Task-Graph aufgebaut. (Hier ohne Artefakte, die allerdings als 
+Grundlage für den Task-Graph dienen können und damit analog zu make 
+inkrementelles Bauen ermöglichen.)</p>
+  </li>
+  <li>
+    <p>Im <a href="https://moodle.rwth-aachen.de/course/view.php?id=24730" target="_blank" rel="noopener noreferrer">Moodle-Lernraum für akuelle Grundlagen der Werkzeuge für die 
+Softwareentwicklung</a> 
+wird das Thema anhand eines Beispiel-Projektes greifbar gemacht.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/Vergleich_Gradle-_Maven_-_Make.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/Continuous_Integration_-CI-.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/Gitlab_CI-_Uebersicht.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Automatisierung benötigt über das Build- und Dependency-Management hinaus 
+Werkzeuge, die regelmäßig eine Integration und Bereitstellung (Deployment)
+ausführen. Diese bieten:
+    <ul>
+      <li>Build-Stabilität</li>
+      <li>Modul-Integration</li>
+      <li>Automatisiertes Testen -&gt; kurze Test-Zyklen</li>
+      <li>Qualitäts-Analysen: Code-Smells, Commit-Historie</li>
+      <li>Reporting – Benachrichtigung im Fehlerfall</li>
+      <li>Automatisierte Verteilung auf Testsysteme</li>
+    </ul>
+  </li>
+  <li>
+    <p><a href="https://github.com/features/actions" target="_blank" rel="noopener noreferrer">GitHub Actions</a> oder <a href="https://docs.gitlab.com/ee/ci/" target="_blank" rel="noopener noreferrer">GitLab 
+CI/CD</a> bieten dafür allerlei 
+Funktionalitäten an, die man zum großen Teil direkt über das 
+Web-Interface konfigurieren kann.</p>
+  </li>
+  <li>Zur Erstellung einer eigenen CI/CD-Pipeline finden Sie weiterführende Inhalte im
+<a href="https://moodle.rwth-aachen.de/course/view.php?id=24730" target="_blank" rel="noopener noreferrer">Selbstlernkurs</a>.</li>
+</ul>
+
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/Softwaretechnik-nr3.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/Qualitaetsmanagement.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/Sonar.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/Sonar-_Dashboard.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/Sonar-_Qualitaetsprofile.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/Sonar-_Qualitaetsverstoesse.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/Sonar-_Paket_Abhaengigkeiten.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/Softwaretechnik-nr4.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/GitLab-_the_DevOps_platform.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/GitLab-_Verwalten_von_Projekten_und_Entwicklerteams.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Zahlreiche verschiedene Ansichten erlauben diverse Blicke sowohl für 
+das Projektmanagement, als auch einzelne Entwickler und Entwicklerinnen.</p>
+  </li>
+  <li>
+    <p>Im Bild zu sehen ist ein Screenshot der Gruppe MontiCore – zu der 
+sie übrigens herzlich eingeladen werden, wenn Sie bei uns am Lehrstuhl 
+Software Engineering, der RWTH Aachen im Bereich einer studentischen 
+Arbeit oder einer Promotion an <code class="language-plaintext highlighter-rouge">MontiCore</code> selbst, oder eines seiner 
+Teilprojekte zur Werkzeugentwicklung, mitarbeiten möchten.</p>
+    <ul>
+      <li>MontiCore besitzt einige Untergruppen und Projekte.</li>
+    </ul>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/GitLab-_Verwalten_von_Projekten.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Dies ist ein Screenshot des MontiCore Projekts, bei dem man unter 
+anderem sieht das aktuell 23 Branches verwaltet werden, insgesamt 7206 
+Commits (seit Umzug) gesetzt wurden und die Historie von MontiCore 
+mittlerweile 28 GB Speicherplatz verbraucht. Außerdem zu sehen ist, dass 
+die interne CI-Pipeline zur Übersetzung und Qualitätssicherung mithilfe 
+von Tests aktuell auf Grün steht, während die Coverage noch nicht 
+aktiviert war.</li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/GitLab-_Issues_-Ticket_Management-.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>GitLab Issues: Ein unverzichtbares Werkzeug um offene Punkte, 
+Fehlermeldungen, etc. zu verwalten und nicht zu vergessen.</p>
+  </li>
+  <li>
+    <p>GitLab Issues bietet die Möglichkeiten Ablaufdaten zu setzen, Labels, 
+Meilensteine, Zuordnungen zu Iterationen, Gewichtung (Kritikalität) und 
+vor allem auch einen Status zu verwalten.</p>
+  </li>
+  <li>
+    <p>GitLab Issues ist ein hilfreiches Mittel für alle Arten von 
+Planungen, weshalb mittlerweile aufgrund der effizienten Nutzbarkeit 
+und der kooperativen Umgangsformen auch ganz andere Projekte von 
+Umzügen bis hin zu Parties (und übrigens auch Forschungsprojekte, 
+Bachelor-, Master- und Doktorarbeiten) damit geplant werden.</p>
+  </li>
+  <li>
+    <p>In Kombination mit dem früher diskutierten automatisierten Merge 
+lassen sich so auch hervorragend wissenschaftliche Papiere in LaTeX 
+erstellen.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/GitLab-_Labels_fuer_Issues_-_Uebersichten.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/GitLab-_Activity_Reports.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/GitLab-_Milestones.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Es ist für Softwareentwicklerinnen und Softwareentwickler ein 
+befriedigendes Gefühl, wenn man dem BurnDown-Chart ansieht, dass Issues 
+erledigt werden und die Arbeit vorwärts geht.</li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT11.Werkzeuge/GitLab_-_RWTH.png" title="SWT Chapter 11">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Probieren Sie GitLab selbst <strong>kostenlos</strong> aus unter 
+<a href="https://git.rwth-aachen.de/" target="_blank" rel="noopener noreferrer">https://git.rwth-aachen.de/</a>
+</li>
+</ul>
+
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/Softwaretechnik-nr5.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/Large_Language_Models_-LLM-_in_der_Programmierung.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/Interaktion_mit_LLM_in_der_Programmierung.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/LLM-_Beispiel_TicTacToe_fuer_Android.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/LLM-_Beispiel_TicTacToe_fuer_Androidnr2.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/LLM-_Beispiel_TicTacToe_fuer_Androidnr3.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/LLM-_Beispiel_TicTacToe_fuer_Androidnr4.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/LLM-_Beispiele_fuer_Einsatzmoeglichkeiten.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/LLM-_Umgang_mit_Fallstricken.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/LLM-_Umgang_mit_Fallstrickennr2.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/Was_tut_dieses_Java-Programm-.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/LLM-_explain_the_following_Java_program-_-1-.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/LLM-_explain_the_following_Java_program-_-2-_--_with_some_correct_and_false-positive_Errors.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/Model-Driven_Architecture_-MDA-.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/LLM_im_Software_Engineering.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+
+<!-- <center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT11.Werkzeuge/Was_haben_wir_gelernt-.png"
+            
+            title="SWT Chapter 11" />
+			</picture>
+        </div>
+    </div>
+</center> -->
+
+<p>Wir hoffen Ihnen hier sowohl einen Überblick über die breitere Landschaft der
+Softwareentwicklungstools gegeben zu haben, als auch weiterführendes Material
+für die aktuellen Grundlagen der Werkzeuge, die besonders relevant sind.</p>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<p>Join our <a href="https://lists.rwth-aachen.de/postorius/lists/se-teaching.lists.rwth-aachen.de/?email-button=Subscribe%21" target="_blank" rel="noopener noreferrer">mailing list</a>
+for updates regarding courses and theses:</p>
+
+<div class="subscribe">Subscribe to se-teaching:</div>
+<p><a href="https://lists.rwth-aachen.de/postorius/lists/se-teaching.lists.rwth-aachen.de/?email-button=Subscribe%21" target="_blank" rel="noopener noreferrer">
+<button class="mailinglist">
+  Subscribe!
+</button>
+</a></p>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h4 id="further-links">Further links:</h4>
+
+<ul>
+  <li><a href="https://moodle.rwth-aachen.de/course/view.php?id=24730" target="_blank" rel="noopener noreferrer">Moodle-Lernraum für akuelle Grundlagen der Werkzeuge für die 
+Softwareentwicklung</a></li>
+  <li><a href="/theses/#bachelor-theses">SE Bachelor Theses / Bachelorarbeiten</a></li>
+  <li><a href="/swt_material">SWT Vorlesung</a></li>
+  <li><a href="/teaching">Teaching</a></li>
+  <li><a href="https://www.se-rwth.de">Website of the SE</a></li>
+</ul>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+      <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+let scrollButton = document.getElementById("btn-back-to-top");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
+  }
+}
+
+scrollButton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+    
+
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="sticky-bottom mt-5">
+  <div class="container">
+    <!-- &copy; Copyright 2025   . -->
+    
+    
+    <a href="https://www.se-rwth.de/impressum/">Impressum</a>.
+    
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="/assets/js/jquery.min.js" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/popper.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/mdb.min.js" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="/assets/js/masonry.pkgd.min.js"></script>
+<script defer src="/assets/js/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="/assets/js/medium-zoom.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+  
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer src="/assets/js/tex-mml-chtml.js" type="text/javascript" id="MathJax-script"></script>
+<script defer src="/assets/js/polyfill.min.js"></script>
+
+
+  <script src="/assets/js/toc.js" crossorigin="anonymous"></script>
+  <script async src="/assets/js/widgets.js" charset="utf-8"></script>
+
+</html>

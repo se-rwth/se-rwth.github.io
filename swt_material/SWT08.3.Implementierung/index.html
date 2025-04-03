@@ -1,0 +1,2779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Softwaretechnik, 8.3. Implementierung |
+
+
+
+  SE@RWTH
+
+</title>
+<meta name="description" content="Website of the Chair of Software Engineering at RWTH Aachen
+">
+
+<!-- Google Verification -->
+
+
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css" integrity="oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/mdb.min.css" integrity="Y3+zUQCTOSqaSbyEFKLA6oQi8oF3I2xzkIR+ywroD3fkLG3LF2DJq/mU03KQqSZv/nGQDC2Upf73IZYZYMX4GQ==" crossorigin="anonymous" type="text/css"/>
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="/assets/css/all.min.css" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css" integrity="pOZ6Cz1wopk9RluJMvHM1AEMkPCS+ihnGztyD0kI991jgZ8hj9YQ61k4ouvGNvLHE0z6Vifp3ytAmeeW8sbbZQ==" crossorigin="anonymous" type="text/css">
+
+<!-- Styles -->
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon.png">
+<link rel="stylesheet" href="/assets/css/main.css" type="text/css">
+<!--<link rel="canonical" href="https://www.se-rwth.de/swt_material/SWT08.3.Implementierung/">-->
+
+
+
+
+
+
+    <!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['addDownloadExtensions', "bib"]);
+    _paq.push(['disableCookies']);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="https://stats.fh-aachen.de/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '34']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+<!-- End Matomo Code -->
+
+  </head>
+
+  <body class=" sticky-bottom-footer">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand title font-weight-lighter" href="/">
+        
+          <img src="/assets/img/icons/rwth_se_rgb.png" height="70px">
+        
+        
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <!-- <li class="nav-item ">
+            <a class="nav-link" href="/">
+              About
+              
+            </a>
+          </li> -->
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Essays
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essays/">Essay List</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Definition/">Digital Twin</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Companion/">Digital Companion</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Maturity-Model/">Digital Twin Maturity Model</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Explicit-versus-implicit-models/">Explicit versus Implicit Models</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Gesetze-DSL/">DSLs für Gesetze und Ordnungen (in D)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Research-Software-Engineering/">Research Software Engineering (RSE)</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Modeling-in-advanced-systems-engineering/">Modeling in Advanced Systems Engineering</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Model-Definitions/">Model-Based Definitions</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Low-Code/">Low Code</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Reference-Models/">Reference Models</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Research
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/">Research Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#foundations">MBSE Foundations</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#applications">Application Domains</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#tools">Software Tools</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Publications
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/publications/">All Publications</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/books/">Books</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/phdtheses/">Ph.D. Theses</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/assets/bibliography/all-software-engineering-rwth-references.bib">Bibtex</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Teaching
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/">Teaching</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/teaching-overview/">Teaching Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/#currentsem">Current Semester</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/archive/">Course archive (starting WS 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="https://www.se-rwth.de/teaching/indexArchiv.php">Course archive (until SoSe 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/theses/">BA/MA Theses</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/">Major project overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/22.09.MontiGem.Ford.Press.Release/">MontiGem Ford Press Release</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiCore/">MontiCore</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiGem/">MontiGem</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+          <li class="nav-item ">
+              <a class="nav-link" href="/jobs/">
+                Jobs
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About us
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/about/">About us</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/staff/">Staff</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/activities/">Activities</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teams/">Teams</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/contact/">Contact &amp; Arrival</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Softwaretechnik, 8.3. Implementierung</h1>
+    <p class="post-description">Material für die Softwaretechnik Vorlesung, Bernhard Rumpe</p>
+  </header>
+
+  <article>
+    
+
+    <div class="toc_content">
+      
+    </div>
+    <div class="clearfix">
+      <h2 id="abschnitt-83-codingstandards-stilfragen-der-codierung">Abschnitt 8.3. Codingstandards: Stilfragen der Codierung</h2>
+
+<!-- Auskommentiert, weil ungenutzt: *************************************
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Vorlesung_Softwaretechnik-.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Warum-_was-_wie_und_wozu_betrachten_wir_die_Implementierung.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Definition-_Implementierung.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Einige_Zahlen_zum_Thema_Implementierung.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Coole_Sprache_ey-.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/emptyTitle.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Softwaretechnik-.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Objektorientierte_Programmierung.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Prozedurale_Programmiersprachen.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Funktionale_Programmiersprachen.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Flavor_of_Haskell.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Paradigma_der_Funktionsmodellierung.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Funktionale_Programmierung_-FP-.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Funktionen_Hoeherer_Ordnung-_Lambdas.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Lambda-Ausdruecke_in_Java.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Skriptsprachen.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Spezialsprachen.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Kategorisierung_fuer_Programmiersprachen.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Verbreitungsgrad_von_Programmiersprachen.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Verbreitungsgrad_von_Programmiersprachen-_GitHub-Ranking-2020.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Fragen_fuer_Ihre_Zukunft.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Weitere_Auswahlkriterien_fuer_Sprachen.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Weitere_Beobachtungen_zu_Sprachen.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Was_haben_wir_gelernt-.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Softwaretechnik-nr2.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Programmiersprachen_in_der_Informatik_der_RWTH.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Programmiersprachen_in_der_Informatik_der_RWTHnr2.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Programmiersprachen_in_der_Informatik_der_RWTH-Abstrakt-_Logisch-_Funktional.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Programmiersprachen_in_der_Informatik_der_RWTH-Unternehmen-_Web-_Informationssysteme.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Programmiersprachen_in_der_Informatik_der_RWTH-Eingebettet-_Hardwarenah.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Programmiersprachen_in_der_Informatik_der_RWTH_-Numbers-_Eingebettet.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Programmiersprachen_in_der_Informatik_der_RWTH_--Data-_KI.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+
+**************************************************************************
+-->
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Softwaretechnik-nr3.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Waren Sie auch schon mal unglücklich über die
+    <ul>
+      <li>schlechte Einrückung von Programmen,</li>
+      <li>hyperkomplexe Ausdrücke oder Statements,</li>
+      <li>unverständliche Funktionsnamen oder</li>
+      <li>irreführende oder fehlende Kommentare
+ihrer Kollegen oder Kolleginnen und haben erstmal alles 
+reformatiert und umbenannt?</li>
+    </ul>
+  </li>
+  <li>
+    <p>Dies ist kein untypisches Phänomen, wenn Entwickler:innen das erste 
+Mal zusammenarbeiten und sich dabei erst kennen lernen müssen.</p>
+  </li>
+  <li>
+    <p>Neben dem korrekten und optimalen Programm ist es für die gemeinsame 
+Arbeit im Team, aber auch für die spätere Wiederverwendung von Code im 
+eigenen Projekt wichtig, einen gemeinsamen Stil für die Entwicklung des 
+Programms zu nutzen. Codierungsrichtlinien gibt es einige, die jeweils 
+spezifische vor und Nachteile besitzen. Je nach Unternehmen,
+Sprache und Projektkultur kommen unterschiedliche Vorstellungen und 
+Regeln zum Einsatz.</p>
+  </li>
+  <li>
+    <p><strong>Wichtig ist: es gibt solche Richtlinien im Projekt und alle halten 
+sich daran!</strong></p>
+  </li>
+  <li>In den nachfolgenden Folien wird ein für Java üblicher Satz an Regeln 
+vorgestellt, der in den genannten Literaturstellen noch deutlich 
+verfeinert wird. Diesen Regelsatz dürfte man in der Praxis relativ 
+häufig antreffen. Er ist nicht der Einzige, aber er wird auch von 
+einschlägigen IDEs und Editoren mit automatisierten Layout-Funktionen 
+unterstützt.</li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Programmierstil.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Was_tut_dieses_Java-Programm-.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Wenn Sie noch eher selten versucht haben fremden Programmcode zu 
+verstehen: Nehmen Sie sich die Zeit und versuchen Sie rauszufinden was 
+dieses Programm tut.</p>
+  </li>
+  <li>
+    <p>Überlegen Sie vor allem: welche Verbesserungen würden Sie den 
+Entwicklern vorschlagen? Also: Was würden Sie anders machen?</p>
+  </li>
+  <li>
+    <p>Liebe Studierende: Wenn Sie Schwierigkeiten haben das Programm zu 
+verstehen (und das wäre nicht untypisch, denn ich hatte es auch), dann 
+verstehen Sie vielleicht warum wir bei der Erarbeitung von 
+studentischen Lösungen nicht nur auf die Funktionsfähigkeit, sondern 
+insbesondere auch auf die Verstehbarkeit des Codes Wert legen. Die 
+Ausarbeitung hat ihren Anteil diesen Zugang um Code zu finden, aber der 
+lesbare Code selbst gehört auch zum Ergebnis.</p>
+  </li>
+  <li>
+    <p>Ein Programm, das nur geschrieben wird um einmal zu laufen ist eher 
+selten und von wenig Wert. Praktisch alle Programme werden permanent 
+weiterentwickelt, an neue Inputs und Umgebungen angepasst, neue 
+Funktionalitäten hinzugefügt, etc.</p>
+  </li>
+  <li>
+    <p>Lesbarkeit ist ein hohes Gut für ein Programm.</p>
+  </li>
+  <li>
+    <p>Programme werden wesentlich öfter gelesen als geschrieben. “<strong>Aus der 
+Sicht der Leser:innen schreiben</strong>” gilt daher nicht nur für Romane, 
+Essays und Kurzgeschichten, sondern auch für Programme.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Formatierungs-Richtlinien-.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Diese Form der Verbesserung bekommt eine IDE automatisch hin, denn 
+hier wurde nur Layout angepasst.</p>
+  </li>
+  <li>
+    <p>Den Sinn des Programms kann die IDE leider nicht erfassen, weshalb 
+die Variablennamen weiterhin nicht sprechend oder hilfreich sind.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Hinweise_zur_Formatierung_-a-.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Hinweise_zur_Formatierung_-b-.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Einrueckung.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Einrückungstiefe zwei hat sich als hilfreich erwiesen:
+    <ul>
+      <li>Zwei Spaces sind schnell gedrückt</li>
+      <li>4 Spaces: da muss man schon zählen und das lenkt vom Inhalt ab</li>
+      <li>Nur ein Space je Einrückung wirkt etwas unübersichtlich bei 
+etwas länglicheren Code-Stücken</li>
+      <li>Den Tabulator kann man zum Einrücken verwenden, aber der Editor
+sollte die Zeichen expandieren, denn nicht alle
+(eventuell auch in der Zukunft verwendeten) Editoren verwenden 
+dieselbe Tabulator-Einrückung. Das führt zu unleserlichem Code,
+besonders falls sowohl Tabs als auch Spaces verwendet werden.</li>
+    </ul>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/emptyTitlenr2.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Können Sie den Code von vor einem Jahr noch gut verstehen?
+Sie schreiben ihn eventuell ja auch für sich selbst.</li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Weitere_Folien_--.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Beispiele_zur_Einrueckung.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Das menschliche Auge kann Text am schnellsten erfassen, wenn er in 
+Spalten mit 72 Zeichen Breite umgebrochen wird. Zeitungen zum Beispiel 
+sind so gebrochen.</p>
+  </li>
+  <li>
+    <p>In Analogie sollten überlange Methodenköpfe eher frühzeitig 
+umgebrochen werden.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Beispiele_zur_Einrueckungnr2.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Beispiele_zu_Klammern_und_Separatoren.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Wer hat nicht schon mal in Zeile 03 ein weiteres Statement 
+hinzugefügt, das von der Bedingung aus Zeile 01 abhängig 
+ausgeführt werden sollte, jedoch immer ausgeführt wurde.</p>
+  </li>
+  <li>
+    <p>Besonders sicherheitskritische Codierungsrichtlinien erfordern sogar, 
+dass immer geschweifte Klammern definieren werden.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Wahl_von_Bezeichnern.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Die Mathematik und auch die Physik hat gerne einbuchstabige Variablen 
+verwendet, weil nach Konvention Buchstaben immer einen bestimmten Typ 
+hatten. Beispiel <code class="language-plaintext highlighter-rouge">x</code> steht für die x-Koordinate, <code class="language-plaintext highlighter-rouge">n</code> für eine 
+natürliche Zahl, <code class="language-plaintext highlighter-rouge">l</code> für eine Länge.</p>
+  </li>
+  <li>
+    <p>Wir in der Informatik verwenden viel zu viele Variablen und 
+Funktionen und müssen daher mit anderen Konventionen arbeiten. Außerdem 
+hilft uns natürlich die Autovervollständigung der Editoren um lästige 
+Tipparbeit zu reduzieren. Andererseits gilt: aus der Sicht des Lesers 
+schreiben, ihr Editor hat zwar Hover-Funktionen, aber gilt dies auch
+für den Editor des Lesers oder den Papierausdruck?</p>
+  </li>
+  <li>
+    <p>Bei uns gilt: <em>Langer Name: langer Scope; kurzer Name: kurzer Scope</em>. 
+Sonst sucht man zu lange nach der Definitions- und Erklärungsstelle für 
+die Namen.</p>
+  </li>
+  <li>
+    <p>Zu den Beispielen (nicht alle sind schlecht):</p>
+    <ul>
+      <li>
+<code class="language-plaintext highlighter-rouge">CustomerName</code> klingt wie eine Klasse,</li>
+      <li>
+<code class="language-plaintext highlighter-rouge">customerName</code> wie ein Attributname.</li>
+      <li>Großbuchstaben in der Mitte des Wortes, wie in <code class="language-plaintext highlighter-rouge">customerName</code>, heißen 
+<em>Camel Case</em> und dienen tatsächlich der Lesbarkeit. 
+Man gewöhnt sich daran.</li>
+      <li>Methodennamen beinhalten meist ein Verb, z.B. <code class="language-plaintext highlighter-rouge">openAccount()</code> oder
+<code class="language-plaintext highlighter-rouge">isAccountOpen()</code>
+</li>
+      <li>Konstante werden gerne komplett in Großbuchstaben geschrieben.</li>
+    </ul>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Beispiele_fuer_Namenskonventionen_-a-.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Beispiele_fuer_Namenskonventionen_-b-.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Lesbarkeit_durch_Bezeichnerwahl.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Aenderungsfreundlicher_Code_-1-.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Die fachliche Aufgabe einer Variable in ihrem Namen darzustellen 
+macht den Code viel lesbarer. Man muss auch nicht dieselbe Variable für 
+verschiedene Zwecke wiederverwenden, Speicherplatzoptimierung macht 
+heute der Compiler. Der Typ einer Variable wird auch aus dem fachlichen 
+Zweck klar und eine starke Typisierung einer (guten) Programmierprache 
+sichert die Verwendung auch ab.</p>
+  </li>
+  <li>
+    <p>Wenn der Code zu kompliziert oder lang wird: es gibt immer die 
+Möglichkeit Teile in eigene Methoden auszulagern. das verbessert 
+übrigens auch die Testfähigkeit enorm.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Aenderungsfreundlicher_Code_-2-.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Aenderungsfreundlicher_Code_-2-nr2.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Stilistisch_weiter_verbessertes_Programm.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Kommentare.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Je besser der Code lesbar ist, umso weniger ergänzende Kommentare 
+sind notwendig. Dann muss auch nicht jede Methode dokumentiert werden.</p>
+  </li>
+  <li>
+    <p>Wenn das wirklich empfehlenswerte <code class="language-plaintext highlighter-rouge">javadoc</code> zum Einsatz kommt, dann 
+wird aus den Kommentaren entsprechende Dokumentation generiert, was 
+noch mal eigene Richtlinien zur Dokumentation mit sich bringt.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Typischer_Einsatz_von_Kommentaren.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Hinweise_zum_Verfassen_von_Kommentaren.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Professionell_kommentierter_Code_-_JavaDoc.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Das ist ein typischer Header für eine Klasse aus der primären 
+Bibliothek für Java, <code class="language-plaintext highlighter-rouge">java.util.*</code>.  Das kann man so machen. Es liest 
+sich auf jeden Fall verständlich und ist <code class="language-plaintext highlighter-rouge">javadoc</code> geeignet.</li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Einsatz_von_Entwurfsmustern.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Entwurfsmuster sind eins der wesentlichen Hilfsmittel um gute 
+Software in wiederverwendbarer Form zu erstellen. Ein Entwurfsmuster in 
+wiedererkennbarer Form einzusetzen bedeutet, das dem Leser viel 
+Leseaufwand erspart bleibt.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">Factory</code> und die in der Vorlesung diskutierte Variante des 
+<code class="language-plaintext highlighter-rouge">Singleton</code> helfen um das Problem mit den statisch fixierten Aufrufen 
+loszuwerden und damit Tests besser zu definieren. Die <code class="language-plaintext highlighter-rouge">Factory</code> kann 
+beim Testen eben auch Dummies erzeugen, der Konstruktor-Aufruf nicht.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Testfaelle.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Unbedingt!</li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Testfaelle_-_Beispiel.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Guidelines_zur_Projekt-Infrastruktur_und_Archivierung.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Es gibt noch einiges zu besprechen, aber manchmal reicht es auch sich 
+zu einigen, wenn man die Ungereimtheiten und Probleme im Team bemerkt.</p>
+  </li>
+  <li>
+    <p>Die Nutzung eines Versionssystems wie <code class="language-plaintext highlighter-rouge">subversion</code> (<code class="language-plaintext highlighter-rouge">svn</code>) oder <code class="language-plaintext highlighter-rouge">git</code> 
+ist mittlerweile eh klar, oder?</p>
+  </li>
+  <li>
+    <p>Ein Ticketsystem und ein Tracking aller offenen Punkte sowie 
+gemeldeten Bug’s ist aber heutzutage Standard und deshalb am besten 
+gleich von Anfang an zu nutzen.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT08.Implementierung/Was_haben_wir_gelernt-nr2.png" title="SWT Chapter 8">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Wir hoffen, die Richtlinien helfen Ihnen und Ihre Team-Mitglieder 
+halten sich an gemeinsam beschlossene Richtlinien.</li>
+</ul>
+
+<!-- Auskommentiert, weil ungenutzt: *************************************
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Softwaretechnik-nr4.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Bedeutung_von_Datenstrukturen.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Abstrakter_und_konkreter_Datentyp.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Vorgehensweise_beim_Datenstruktur-Entwurf.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Suche_nach_vorgefertigten_Loesungen.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Collections_und_Maps.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Java_Collections_Framework.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Java_Klassenbibliothek.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Java_API_Dokumentation-_e-g-_http---download-oracle-com-javase-6-docs-api-.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Java_Klassenbibliothek_-_Beispiele.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Plattform-_Klassenbibliothek_und_Collection_API.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Java_Collections_Frameworknr2.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Java_Collections_Frameworknr3.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Java_Collections_Frameworknr4.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Interface_Collection.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Listen.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Listennr2.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Listen_Implementierungen.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Mengen.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Mengennr2.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Queue_--Schlangen--.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Queue.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Assoziative_Speicher_-Maps-.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Assoziative_Speicher_-Map-K-V--.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Interface_des_Abstrakten_Datentyps_Map-K-V-_-_1.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Interface_des_Abstrakten_Datentyps_Map-K-V-_-_2.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Interface_SortedMap-K-V-.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Klasse_Collections.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT08.Implementierung/Was_haben_wir_gelernt-nr3.png"
+            
+            title="SWT Chapter 8" />
+			</picture>
+        </div>
+    </div>
+</center>
+
+**************************************************************************
+-->
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<p>Join our <a href="https://lists.rwth-aachen.de/postorius/lists/se-teaching.lists.rwth-aachen.de/?email-button=Subscribe%21" target="_blank" rel="noopener noreferrer">mailing list</a>
+for updates regarding courses and theses:</p>
+
+<div class="subscribe">Subscribe to se-teaching:</div>
+<p><a href="https://lists.rwth-aachen.de/postorius/lists/se-teaching.lists.rwth-aachen.de/?email-button=Subscribe%21" target="_blank" rel="noopener noreferrer">
+<button class="mailinglist">
+  Subscribe!
+</button>
+</a></p>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h4 id="further-links">Further links:</h4>
+
+<ul>
+  <li><a href="/theses/#bachelor-theses">SE Bachelor Theses / Bachelorarbeiten</a></li>
+  <li><a href="/swt_material">SWT Vorlesung</a></li>
+  <li><a href="/teaching">Teaching</a></li>
+  <li><a href="https://www.se-rwth.de">Website of the SE</a></li>
+</ul>
+
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+      <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+let scrollButton = document.getElementById("btn-back-to-top");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
+  }
+}
+
+scrollButton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+    
+
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="sticky-bottom mt-5">
+  <div class="container">
+    <!-- &copy; Copyright 2025   . -->
+    
+    
+    <a href="https://www.se-rwth.de/impressum/">Impressum</a>.
+    
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="/assets/js/jquery.min.js" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/popper.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/mdb.min.js" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="/assets/js/masonry.pkgd.min.js"></script>
+<script defer src="/assets/js/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="/assets/js/medium-zoom.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+  
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer src="/assets/js/tex-mml-chtml.js" type="text/javascript" id="MathJax-script"></script>
+<script defer src="/assets/js/polyfill.min.js"></script>
+
+
+  <script src="/assets/js/toc.js" crossorigin="anonymous"></script>
+  <script async src="/assets/js/widgets.js" charset="utf-8"></script>
+
+</html>

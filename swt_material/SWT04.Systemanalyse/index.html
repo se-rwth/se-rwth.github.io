@@ -1,0 +1,3313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Softwaretechnik, 04. UML Klassendiagramme in der Systemanalyse |
+
+
+
+  SE@RWTH
+
+</title>
+<meta name="description" content="Website of the Chair of Software Engineering at RWTH Aachen
+">
+
+<!-- Google Verification -->
+
+
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css" integrity="oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/mdb.min.css" integrity="Y3+zUQCTOSqaSbyEFKLA6oQi8oF3I2xzkIR+ywroD3fkLG3LF2DJq/mU03KQqSZv/nGQDC2Upf73IZYZYMX4GQ==" crossorigin="anonymous" type="text/css"/>
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="/assets/css/all.min.css" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css" integrity="pOZ6Cz1wopk9RluJMvHM1AEMkPCS+ihnGztyD0kI991jgZ8hj9YQ61k4ouvGNvLHE0z6Vifp3ytAmeeW8sbbZQ==" crossorigin="anonymous" type="text/css">
+
+<!-- Styles -->
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon.png">
+<link rel="stylesheet" href="/assets/css/main.css" type="text/css">
+<!--<link rel="canonical" href="https://www.se-rwth.de/swt_material/SWT04.Systemanalyse/">-->
+
+
+
+
+
+
+    <!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['addDownloadExtensions', "bib"]);
+    _paq.push(['disableCookies']);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="https://stats.fh-aachen.de/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '34']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+<!-- End Matomo Code -->
+
+  </head>
+
+  <body class=" sticky-bottom-footer">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand title font-weight-lighter" href="/">
+        
+          <img src="/assets/img/icons/rwth_se_rgb.png" height="70px">
+        
+        
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <!-- <li class="nav-item ">
+            <a class="nav-link" href="/">
+              About
+              
+            </a>
+          </li> -->
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Essays
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essays/">Essay List</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Definition/">Digital Twin</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Companion/">Digital Companion</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Maturity-Model/">Digital Twin Maturity Model</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Explicit-versus-implicit-models/">Explicit versus Implicit Models</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Gesetze-DSL/">DSLs für Gesetze und Ordnungen (in D)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Research-Software-Engineering/">Research Software Engineering (RSE)</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Modeling-in-advanced-systems-engineering/">Modeling in Advanced Systems Engineering</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Model-Definitions/">Model-Based Definitions</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Low-Code/">Low Code</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Reference-Models/">Reference Models</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Research
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/">Research Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#foundations">MBSE Foundations</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#applications">Application Domains</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#tools">Software Tools</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Publications
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/publications/">All Publications</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/books/">Books</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/phdtheses/">Ph.D. Theses</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/assets/bibliography/all-software-engineering-rwth-references.bib">Bibtex</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Teaching
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/">Teaching</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/teaching-overview/">Teaching Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/#currentsem">Current Semester</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/archive/">Course archive (starting WS 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="https://www.se-rwth.de/teaching/indexArchiv.php">Course archive (until SoSe 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/theses/">BA/MA Theses</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/">Major project overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/22.09.MontiGem.Ford.Press.Release/">MontiGem Ford Press Release</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiCore/">MontiCore</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiGem/">MontiGem</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+          <li class="nav-item ">
+              <a class="nav-link" href="/jobs/">
+                Jobs
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About us
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/about/">About us</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/staff/">Staff</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/activities/">Activities</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teams/">Teams</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/contact/">Contact &amp; Arrival</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Softwaretechnik, 04. UML Klassendiagramme in der Systemanalyse</h1>
+    <p class="post-description">Material für die Softwaretechnik Vorlesung, Bernhard Rumpe</p>
+  </header>
+
+  <article>
+    
+
+    <div class="toc_content">
+      
+    </div>
+    <div class="clearfix">
+      <h2 id="uml-klassendiagramme-in-der-systemanalyse-und-zur-generierung">UML Klassendiagramme in der Systemanalyse und zur Generierung</h2>
+
+<p>Diese Erklärung ist gedacht für Studierende als Einführung in die Vorlesung 
+Softwaretechnik, die</p>
+
+<ol>
+  <li>verstehen wollen welche Grundkonzepte die UML 
+Klassendiagramme zur Verfügung stellen, und</li>
+  <li>wie Klassendiagramme intellektueller Notation dargestellt werden 
+können, um dann als Eingabe für das <code class="language-plaintext highlighter-rouge">MontiGem</code> Tooling 
+genutzt zu werden, das daraus einen ersten Prototypen für
+ein Business Informationssystem erstellt.</li>
+</ol>
+
+<p>Diese Erklärung beinhaltet einige aber nicht alle Abschnitte des 
+Kapitel 4 der Softwaretechnik Vorlesung. Eine vertiefende und 
+vollständigere Einführung zu UML Klassendiagrammen findet sich in <a href="https://mbse.se-rwth.de/" target="_blank" rel="noopener noreferrer">den 
+UML-Büchern</a>, speziell Buch 1, Kapitel 2.</p>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<!-- Auskommentiert, weil ungenutzt: *******************************
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Vorlesung_Softwaretechnik-.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Warum-_was-_wie_und_wozu-_Systemanalyse_und_-modellierung.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Systemmodellierung.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Systemmodellierungnr2.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Objektorientierte_Analyse_-OOA-.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Modellierung_mit_UML-_Strukturen-.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Modellierung_mit_UML-_Verhalten-.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+
+Ende... Auskommentiert, weil ungenutzt ******************************* -->
+
+<!-- Abschnitt 4.1  -->
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Softwaretechnik-.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Warum-_was-_wie_und_wozu-_Klassendiagramme.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>… und viele weitere Anwendungsmöglichkeiten, zum Beispiel als 
+Referenzmodelle, als Architekturbeschreibungen, als Datenmodelle oder 
+als Konzeptmodelle zur Beschreibung der relevanten Konzepte eines zu 
+implementierenden Systems.</li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Grundkonzepte_der_Objektorientierung.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Konzepte_der_Objektorientierung.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Die wesentlichen Merkmale der Objektorientierung: Klassen, Objekte als
+deren Instanzen, Vererbung, Polymorphie.</li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Klasse_mit_Attributen_und_Methoden.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Ein Klassendiagramm visualisiert eine Sammlung von Klassen, sowie 
+einige später gezeigte Konzepte, wie die Vererbung und Assoziationen 
+zwischen den Klassen.</p>
+  </li>
+  <li>
+    <p>Ein Klassendiagramm zeigt damit sowohl die Beziehungen zwischen 
+Klassen, als auch wie hier zu sehen die Interna einzelner Klassen, hier 
+eine Klasse mit vier Attributen und fünf Methoden, deren Typisierung 
+und Sichtbarkeit.</p>
+  </li>
+</ul>
+
+<!-- 
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Vererbung-_Schnittstellen-Implementierung.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+-->
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Vererbung-_Schnittstellen-Implementierungnr2.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Abstrakte Klassen, Interfaces und instantiierbare (normale) Klassen 
+sowie hier nicht gezeigte Enum-Klassen gibt es ganz analog zu Java.</li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Abstrakte_Klassen.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Vererbung_-Generalisierung-Spezialisierung-.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Anders als in Java ist Mehrfachvererbung (siehe <code class="language-plaintext highlighter-rouge">HiWi</code>) möglich. 
+Sollte diese zum Einsatz kommen, so ist in einer späteren Phase zu 
+überlegen, wie diese in einer Programmiersprache ohne Mehrfachvererbung 
+zu realisieren ist. Sollten Sie eine HiWi-Stelle suchen: Melden Sie 
+sich bei uns: <a href="https://www.se-rwth.de">Website of the SE</a></p>
+  </li>
+  <li>
+    <p>Bemerkung: Dafür gibt es Standardstrategien, denn es gibt<br>
+immer Strategien ein in der Modellierung verwendetes aber in einer 
+Implementierung fehlendes Konstrukt adäquat zu repräsentieren. Die 
+einzige Implementierungsbarriere ist fehlende Ausführbarkeit.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Interface_Implementierung.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Enumeration-Klasse.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<!-- 
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Assoziationen.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+-->
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Assoziationennr2.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Assoziationen lassen sich in einem Klassendiagramm sehr gut 
+verwenden, um die Beziehungen zwischen den Objekten einer Klasse 
+einzusetzen.</p>
+  </li>
+  <li>
+    <p>In objektorientierter Programmierung ist das Konzept “Assoziation” 
+ebenfalls nicht direkt vorhanden und deshalb müssen Assoziationen durch 
+(später diskutierte) ggf. komplexere Konstrukte ersetzt werden.</p>
+  </li>
+  <li>
+    <p>Es gibt normale Assoziationen und Komposition sowie qualifizierte 
+Assoziationen (siehe unten).</p>
+  </li>
+  <li>
+    <p>Assoziationen können unter anderem Assoziationsnamen sowie auf beiden 
+Seiten Rollennamen, Kardinalitäten und einen Pfeil tragen.</p>
+  </li>
+  <li>
+    <p>Der Pfeil klärt, ob in diese Richtung navigiert werden kann (zum 
+Beispiel kennt die Person ihre Messages).</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Assoziationennr3.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Assoziationen_und_Links.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Eine Assoziation beschreibt grundsätzlich und immer die Beziehung 
+zwischen Objekten der Klassen auf beiden Seiten. Die Objekte sind dann 
+durch entsprechende Links miteinander verbunden, die durch die 
+Kardinalität begrenzt werden.</p>
+  </li>
+  <li>
+    <p>Assoziationen und Vererbung haben eine grundlegend unterschiedliche 
+Aufgabe: Vererbung verbindet Klassen, Assoziationen verbinden ihre 
+Objekte durch Links. Eine Subklasse wird deshalb einzeln instantiiert 
+(ein Objekt), eine Assoziation bzw. ihr Link verbindet zwei Objekte.</p>
+  </li>
+  <li>
+    <p>Eine Assoziation kann zweimal dieselbe Klasse verbinden, was eine 
+rekursive Datenstruktur erlaubt, und zum Beispiel Listen, Bäume, oder 
+allgemeine Graphen darzustellen erlaubt. Siehe auch Entwurfsmuster 
+Composite.</p>
+  </li>
+  <li>
+    <p>Komplexere Formen von Assoziationen, die zum Beispiel drei 
+verschiedene Klassen beinhalten sind in der UML möglich, aber wegen der 
+hohen Komplexität eher zu vermeiden und hier auch nicht weiter 
+diskutiert.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Aggregation.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Wir empfehlen die Aggregation nicht zu nutzen, weil die Semantik 
+nicht einheitlich geregelt bzw. im Detail dann unklar ist.</li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Komposition.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Komposition tätigt eine scharfe und deshalb auch meist hilfreiche 
+aber nicht überall einsetzbare Aussage über den kombinierten 
+Lebenszyklus der komponierten Objekte. Wenn <code class="language-plaintext highlighter-rouge">Reifen</code> am <code class="language-plaintext highlighter-rouge">Auto</code> 
+ausgetauscht werden können, dann ist es keine dauerhafte Komposition.</li>
+</ul>
+
+<!-- 
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Qualifizierte_Assoziation.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+-->
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Qualifizierte_Assoziationnr2.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Für eine effiziente Navigation, gerade bei unbegrenzter Kardinalität 
+(<code class="language-plaintext highlighter-rouge">*</code>) und gegebenenfalls großen Mengen an Objekten auf der anderen 
+Seite ist ein Qualifikator sehr hilfreich.</p>
+  </li>
+  <li>
+    <p>Ein Qualifikator wird auf einer Seite eine Assoziation angegeben und 
+kann dann genutzt werden um direkt das richtige Objekt zu 
+identifizieren.</p>
+  </li>
+  <li>
+    <p>Wird ein Datentyp, etwa <code class="language-plaintext highlighter-rouge">String</code> oder <code class="language-plaintext highlighter-rouge">int</code> eingesetzt, oder ein 
+Attributname der gegenüberliegenden Klasse (<code class="language-plaintext highlighter-rouge">auctionIdent</code>), so werden 
+Werte dieses Typs als Identifikatoren verwendet. Wer hier an eine 
+Realisierung mit einer HashMap denkt liegt meist richtig.</p>
+  </li>
+  <li>
+    <p>Ist <code class="language-plaintext highlighter-rouge">{ordered}</code> angegeben, so kann eine Implementierung als Liste 
+ziemlich sicher angenommen werden. In diesem Fall ist das ganze 
+Interval von <code class="language-plaintext highlighter-rouge">1</code> bis zur Länge der Liste als Index verwendbar.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Qualifizierte_Assoziation_und_Links.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Qualifizierte_Assoziationnr3.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Beispiel-_Qualifizierte_Assoziation_und_Links_mit_Attribut_als_Qualifier.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Ist der Qualifikator ein Attribut der gegenüberliegenden Klasse, so 
+ist eine Besonderheit zu beachten: da das identifizierte Objekt seinen 
+Identifikator (also seinen eigenen Attributwert) kennt, ist bei allen 
+Links der Qualifikator-Wert identisch. Beispiel: Alle öffentliche 
+Telefonbücher haben <code class="language-plaintext highlighter-rouge">"Gerd Müller"</code> mit derselben Nummer.</li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Beispiel-_Qualifizierte_Assoziation_und_Links_mit_Typ_als_Qualifier.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Demgegenüber ist in einem privaten Telefonbuch <code class="language-plaintext highlighter-rouge">"Gerd Müller"</code> 
+durchaus unter verschiedenen Namen eintragbar - und kennt die dort 
+eingetragenen Namen nicht.</li>
+</ul>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<!-- Abschnitt 4.2  -->
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Softwaretechnik-nr2.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Was machen wir nun mit Klassendiagrammen, wenn wir sie in der Analyse 
+entwickelt, im Systementwurf präzisiert und für Software 
+zugeschnitten haben? Entweder händisch oder durch Werkzeuge unterstützt 
+Code daraus ableiten. Am aller sinnvollsten ist die vollautomatische 
+Codegenerierung, die in diesen Abschnitt adressiert wird.</li>
+</ul>
+
+<!--
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Code_aus_einer_Klasse_synthetisieren-.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+-->
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Code_aus_einer_Klasse_synthetisieren-nr2.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Dieses Bild zeigt die klassische Übersetzung einer Klasse aus dem 
+Klassendiagramm in <code class="language-plaintext highlighter-rouge">Java</code>-Code sowie auch in <code class="language-plaintext highlighter-rouge">C++</code>-Code. Wenn man 
+beides benötigt hat man schon einen gewissen Vorteil, weil dadurch nur 
+noch eine redundanzfreie Informationsquelle für die Klasse <code class="language-plaintext highlighter-rouge">Auction</code> 
+existiert. Und wir wissen ja: Redundanz ist immer schwierig, wenn man 
+revolutionäre Software anpasst, weil es zu Inkonsistenz führt und 
+dadurch viel unangenehme Prüfungsaufgaben mit sich bringt.</li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Alternative_Code-Synthesen-.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Richtig hilfreich ist ein Generator, wenn man weitere Generierungen 
+damit vornimmt. Und dafür gibt es sehr viele Optionen:</p>
+  </li>
+  <li>
+    <p>Zum Beispiel Serialisierungsfunktionalität: der Transport eines Objekts von 
+einem zum nächsten Prozess, zwischen Server und Client ist oft mit 
+sehr viel Code verbunden.</p>
+  </li>
+  <li>
+    <p>Zum Beispiel die Persistierung in einer Datenbank, das Wiederfinden, 
+etc. lässt sich generieren.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Beispiel-_Code-Generierung_mit_get-set-Methoden.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Ein noch überschaubares Beispiel verbesserter Codegenerierung. Das 
+sind aber dennoch bereits Einsparungen.</li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Beispiel-_Code-Generierung_mit_get-set-Methodennr2.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Code_fuer_Qualifizierte_Assoziation_und_Links.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Spannend wird es auch bei Assoziationen, die im Klassendiagramm, aber 
+nicht in <code class="language-plaintext highlighter-rouge">Java</code> oder <code class="language-plaintext highlighter-rouge">C++</code> zur Verfügung stehen. Im Beispiel wird eine 
+qualifizierte Assoziation durch eine <code class="language-plaintext highlighter-rouge">Map</code> realisiert und gleichzeitig 
+eine größere Anzahl an darauf operierenden Funktionen zur Verfügung 
+gestellt.</p>
+  </li>
+  <li>
+    <p>Dieses Verfahren ist übrigens besonders hilfreich, wenn eine 
+Assoziation in beide Richtungen navigiertwerden kann und aus 
+Effizienzgründen eine redundante Realisierung auf beiden Seiten der 
+Objekte gewünscht ist. Da kann die Konsistenzsicherung gleich mit rein 
+generiert werden, indem man wie hier das benutzte Attribut <code class="language-plaintext highlighter-rouge">privat</code> 
+macht und die generierten Funktionen entsprechende Konsistenzsicherung 
+vornehmen. Unser unten besprochener Generator <code class="language-plaintext highlighter-rouge">MontiGem</code> macht dies.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Generative_Software_Engineering.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Vermeidung lästiger Programmieraufgaben ist einer der wesentlichen 
+Gründe einen Codegenerator einzusetzen: er hilft uns schneller, 
+effizienter und qualitativ besser zu sein, aber insbesondere 
+langweilige Tätigkeiten beim Programmieren zu vermeiden.</li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Code_Synthesis_of_Complete-_Running_Information_Systems-.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Natürlich kann mit einer Strukturdefinition, wie sie ein 
+Klassendiagramm bietet kein komplettes System generiert werden, aber 
+ein lauffähiges System mit Grundfunktionalität schon. Und wenn die 
+Generierung so geschickt gemacht ist, wie die des <code class="language-plaintext highlighter-rouge">MontiGem</code> 
+Generators, dann lässt sich der generierte Code auf vielfältige Weise 
+durch handgeschriebene Teile oder wie später diskutiert auch durch 
+Anpassung des Generators selbst systematisch ergänzen.</p>
+  </li>
+  <li>
+    <p>Wir diskutieren die Grundprinzipien der Generierung in Kapitel 9, 
+stellen aber für die Übungen schon mal den <code class="language-plaintext highlighter-rouge">MontiGem</code> Generator zur 
+Verfügung.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Model-Driven_Software_Engineering_of_Information_Systems.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Der Generator bringt uns in drei Schritten vom Klassendiagramm zum 
+laufenden System. Und wir ignorieren in dieser Vorlesung, dass auch 
+handgeschriebener Code, GUI Modelle, Verhaltensbeschreibungen und 
+ähnliches mehr noch möglich sind.</p>
+  </li>
+  <li>
+    <p>Mehr Details über die konkrete Nutzung im Übungsbetrieb.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Example_-Social_Network-.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Wollen Sie ihr eigenes Facebook aufbauen? Anbei ein Referenzmodell 
+dazu. Mit dem <code class="language-plaintext highlighter-rouge">MontiGem</code> Generator ist Facebook light schon fast 
+fertig.</li>
+</ul>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<!-- Abschnitt 4.2 : Textuelle Notation, MontiGem -->
+
+<!-- Dieser Abschnitt wurde komplett aus SLE01.3.CD4Analysis.md kopiert
+     und übernommen. Änderungen sollten nicht notwendig sein? -->
+
+<p>And now let us switch to English for a while.</p>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/We_Use_a_Textual_Notation_for_CDs.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>The textual CD4A language is designed in the spirit of Java, using
+similar keywords, types, delimiters for statements “;” and blocks “{“,
+“}”.</p>
+  </li>
+  <li>
+    <p>The body of a class diagram consists of a list of classes,
+interfaces, enumerations, associations, and compositions. The order is
+irrelevant; it is especially allowed to reference later classes early
+on. We suggest to either put all classes at the top and the
+associations later or to group a class and related associations into
+topical sections.</p>
+  </li>
+  <li>
+    <p>Please note that CD4A starts with the keyword <code class="language-plaintext highlighter-rouge">classdiagram</code>,
+while some tools also accept keyword <code class="language-plaintext highlighter-rouge">umlp</code> as the starting point.</p>
+  </li>
+  <li>
+    <p>The
+<a href="https://github.com/MontiCore/cd4analysis/blob/develop/cdlang/src/test/resources/de/monticore/cd4analysis/examples/SocNet.cd" target="_blank" rel="noopener noreferrer">SocNet.cd</a>
+example used here can also be directly examined.</p>
+  </li>
+  <li>
+    <p>More examples can be found in the
+<a href="https://github.com/MontiCore/cd4analysis" target="_blank" rel="noopener noreferrer">CD4Analysis</a> project.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Classes_and_Interfaces.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>To repeat, the bodies of classes are very similar to the classes in
+the Java language, because the syntax is inspired by Java. The lines
+5–8 could directly come from a Java class, also no method or constructor
+is defined.</p>
+  </li>
+  <li>
+    <p>Neither classes nor interfaces require bodies, e.g., when you don’t
+know anything about them yet. An empty body can be denoted using a <code class="language-plaintext highlighter-rouge">;</code>.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Associations_-I-.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Associations are not present in Java, yet exhibit a complex set
+of information.</p>
+  </li>
+  <li>
+    <p>The text form reads from left to right almost identical to the
+graphical depiction above: Only the name of the association was moved
+to the left, and the middle contains the iconic forms of the arrow <code class="language-plaintext highlighter-rouge">&lt;-&gt;</code>,
+<code class="language-plaintext highlighter-rouge">-&gt;</code>, etc.</p>
+  </li>
+  <li>
+    <p>Note that we use <strong>underspecification</strong> as a significant construct
+within modeling languages, meaning that if certain information is
+not given, nothing is said. I.e. many pieces of information can be
+refined, for example <code class="language-plaintext highlighter-rouge">--</code> just tells us that we don’t know in which
+directions navigation might be available.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Associations_-II-.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Role names like <code class="language-plaintext highlighter-rouge">(organizer)</code> can also be attached on both sides.</p>
+  </li>
+  <li>
+    <p>Qualifiers like <code class="language-plaintext highlighter-rouge">[[profileName]]</code> resemble the box that they are
+embedded in. CD4A allows two kinds of qualifiers, either the name of an
+attribute of the other side (in this case class <code class="language-plaintext highlighter-rouge">Person</code>) or a data
+type resembling the key values of the qualified association. Semantics
+is defined in <a href="https://mbse.se-rwth.de/" target="_blank" rel="noopener noreferrer">UML/P books by Bernhard
+Rumpe</a>.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Composition.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Compositions follow the same syntax as associations, just with
+the keyword <code class="language-plaintext highlighter-rouge">composition</code> to indicate their compositional semantics.</li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Enumerations.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>Enumerations are defined with a set of constants as their body.</p>
+  </li>
+  <li>
+    <p>Enumeration constants are visible inside the enumeration and can be
+used outside only through qualified names (like <code class="language-plaintext highlighter-rouge">RelationType.FRIEND</code>)
+or an explicit import statement.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Importing_Types_and_Classes.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<p>An <code class="language-plaintext highlighter-rouge">import</code> statement similar to Java’s import is available. It allows
+to import foreign types, e.g. defined as Java classes, like <code class="language-plaintext highlighter-rouge">Date</code> or
+<code class="language-plaintext highlighter-rouge">Account</code>, but also allows to refer to other kinds of models that
+define datatypes, such as other class diagrams.</p>
+
+<ul>
+  <li>
+    <p>This is a core feature of allowing to compose class diagrams that
+build on each other but are independently developed by different teams
+of a project or taken from a library.</p>
+  </li>
+  <li>
+    <p>Please note this restriction: when generating from a bidirectional
+ association, the class on the opposite side must be generatable or
+ similarly genrated too. (I.e. <code class="language-plaintext highlighter-rouge">association Person &lt;-&gt; Date</code>
+ will not work, because of the external class <code class="language-plaintext highlighter-rouge">Date</code>.)</p>
+  </li>
+  <li>
+    <p>The mechanism to make other models and libraries known to the
+compiler is described in the tool calling (see e.g. <code class="language-plaintext highlighter-rouge">--path</code>).</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/Generic_Types_and_Classes.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<p>CD4A generally follows the requirements engineering guideline, which
+states that during the requirements elicitation process generic classes
+are not really needed and not also not introduced. However, it is
+sometimes convenient to rely on the most relevant basic generics
+directly, which are the four <code class="language-plaintext highlighter-rouge">Optional&lt; . &gt;</code>,  <code class="language-plaintext highlighter-rouge">Set&lt; . &gt;</code>, <code class="language-plaintext highlighter-rouge">List&lt; . &gt;</code>,
+and <code class="language-plaintext highlighter-rouge">Map&lt; . , . &gt;</code>. But please note that these four directly correspond
+to associations that can describe the very same properties, but
+the CD4A generator for
+associations also produce lots of access and manipulation methods
+with integrated data consistency checking and
+can be used bidirectionally.</p>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/The_full_CD_SocNet_in_textual_form_-I-.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>CD4A allows derived attributes (and associations), marked by <code class="language-plaintext highlighter-rouge">/</code>. It
+is notable that this indicates a dependency of this attribute from
+other attributes, which, however, there is not made explicit in the model
+itself.</p>
+  </li>
+  <li>
+    <p>The package name first of all describes in which directory the model
+of the class diagram can be found, but by default also carries over to the
+packages where the modeled (and finally generated) classes reside. Please note:
+an explicit statement, which is not shown here, can attach individual
+packages to each class.</p>
+  </li>
+  <li>
+    <p>Like in Java, the <code class="language-plaintext highlighter-rouge">import</code> statement is required when external
+datatypes, classes, etc. are used. Such an <code class="language-plaintext highlighter-rouge">import</code> may refer to
+another model or in this case to an already existing Java class.
+A context condition checks whether the used classes actually exist
+in the local model or in the imports.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/The_full_CD_SocNet_in_textual_form_-II-.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/CD4A_Context_Conditions_-_1.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>
+    <p>It is a convention to name enums in UPPERCASE, in CamelCase for
+classes, interfaces, and enumeration types, and to use uncapped names
+for attributes.</p>
+  </li>
+  <li>
+    <p>In fact, CD4A applies the same restrictions and capabilities for names
+as does Java, which means that numbers and the dollar sign <code class="language-plaintext highlighter-rouge">$</code> are
+allowed within a name and underscore <code class="language-plaintext highlighter-rouge">_</code> in any position.</p>
+  </li>
+  <li>
+    <p>More (sometimes subtle) context conditions apply to give a
+well-formed model. However, the resulting error message should be
+detailed enough to explain the problem.</p>
+  </li>
+  <li>
+    <p>As a general guideline, CD4A uses similar naming and visibility
+conventions as Java does, i.e., enum constants and attributes are
+visible locally and can be used from outside using their qualification
+– as described above.</p>
+  </li>
+</ul>
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1" src="/assets/swt/SWT04.Systemanalyse/CD4A_Context_Conditions_-_2.png" title="SWT Chapter 04">
+			</picture>
+        </div>
+    </div>
+</center>
+
+<ul>
+  <li>Note that this description does not infer how the CD4A model is 
+actually used. During a requirement elicitation activity, such a model 
+is basically used as a communication vehicle to understand the 
+underlying data structure. However, appropriate tools (including the 
+<code class="language-plaintext highlighter-rouge">CD4A</code> and <code class="language-plaintext highlighter-rouge">MontiGem</code> generators) are able to produce a lot of 
+infrastructure for such a class diagram. This can be used both for 
+prototyping and actual use later on. As indicated, this may include 
+data structures, access functions, transport, communication and 
+storage, and potentially also web representation.</li>
+</ul>
+
+<!-- Auskommentiert, weil ungenutzt: *******************************
+
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Softwaretechnik-nr3.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Beispiel-Klassendiagramm_aus_der_Seminarverwaltung.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Kritik_zum_Klassendiagramm_aus_der_Seminarverwaltung.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Beispiel-_Campus-Management.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Kritik_zum_Klassendiagramm_Campus-Management.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Beispiel-_Kalender.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Kritik_zum_Klassendiagramm_Kalender.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Eigeninitiative-_Klassendiagramm_fuer_---.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Was_haben_wir_gelernt-.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Softwaretechnik-nr4.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Methodik_der_Objektorientierten_Analyse.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Klassen_in_der_Analyse.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Pakete-_Beispiel.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Pakete_finden.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Methode-_Entkopplung_von_Paketen.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Methode-_Zuordnung_von_Operationen.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Zusammenfassung_-_Objektorientierte_Analyse.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Softwaretechnik-nr5.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Warum-_was-_wie_und_wozu-_Objektdiagramme.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Objektdiagramme.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Beispiel-_Einzelnes_Objekt.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Beispiel-_Einzelnes_Objektnr2.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Beispiel-_Linkstruktur.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Beispiel-_Linkstrukturnr2.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Objektstruktur_mit_Einbettung-_um_Komposition_zwischen_Objekten_darzustellen.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Was_haben_wir_gelernt-nr2.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Softwaretechnik-nr6.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Warum-_was-_wie_und_wozu-_Sequenzdiagramme.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Methodik_der_Objektorientierten_Analysenr2.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Szenarien.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Einfaches_Sequenzdiagramm.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Grundlegende_SD_Elemente.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Pfeilarten.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Aktivierungsbalken_-Aktivierung-.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Returns.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Objekterzeugung_und_-loeschung.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Beispiel-_Autovermietung.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Beispiel-_Autovermietungnr2.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Beispiel-_Auktionssystem.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Eigeninitiative-_Sequenzdiagramm_fuer_-.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Was_haben_wir_gelernt-nr3.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Softwaretechnik-nr7.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Warum-_was-_wie_und_wozu-_Statecharts.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Methodik_der_Objektorientierten_Analysenr3.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Beispiel-_Zustandsmodell_einer_Tuer.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Statecharts.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Beispiel-Statechart.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Semantik_eines_Zustandsmodells.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Arten_von_Ereignissen.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Bedingungen.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Aktionen.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Verwendung_von_UML-Zustandsmodellen.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Beispiel-_Zustandsmodell_zur_Steuerung_-1-.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Beispiel-_Zustandsmodell_fuer_den_Gesamtautomat_-2-.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Beispiel-_Zustandsmodell_fuer_den_Gesamtautomat_-2-nr2.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Beispiel_Seminarplanung-_Zustaende_eines_Seminars.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Objektlebenszyklus_der_Klasse_-Teambesprechung-.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+<center>
+    <div class="row" style="width: 80%; max-width: 950px; margin: 20px 0;">
+        <div class="col-sm mt-3 mt-md-0">
+            <picture>
+            <img class="img-fluid rounded z-depth-1"
+            src="/assets/swt/SWT04.Systemanalyse/Was_haben_wir_gelernt-nr4.png"
+            
+            title="SWT Chapter 04" />
+			</picture>
+        </div>
+    </div>
+</center>
+
+Ende... Auskommentiert, weil ungenutzt ******************************* -->
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h2 id="montigem">MontiGem</h2>
+
+<p>MontiGem ist ein Generator für Informationssysteme, welches auf der 
+<a href="https://mbse.se-rwth.de/" target="_blank" rel="noopener noreferrer">UML/P</a> basiert, einer Teilmenge der 
+Modellierungssprache <em>UML</em> mit dem Fokus auf die Programmieranwendung. 
+MontiGem wird eingesetzt, um 
+datenzentrierte Anwendungen bzw. deren wesentliche Kernkomponenten und 
+Infrastruktur auf der Basis von Klassendiagrammen (sowie weiteren 
+Modellierungstechniken) zu erzeugen. Ein Beispiel-Modell sieht z.B. 
+so aus:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>umlp Verwaltung {
+  class Person {
+    int age;
+  }
+
+  class Paper {
+    List&lt;String&gt; lines;
+  }
+
+  association [1] Person -&gt; (owns) Paper [*];
+}
+</code></pre></div></div>
+
+<p>MontiGem nutzt eine textuelle Variante der UML/P Klassendiagramme
+und erlaubt im Vergleich zur oben beschriebenen Form als initiales 
+Keyword <code class="language-plaintext highlighter-rouge">umlp</code> (wie im Beispiel gezeigt) synonym zu <code class="language-plaintext highlighter-rouge">classdiagram</code>.
+Analog dazu haben Modellartefakte die Endung <code class="language-plaintext highlighter-rouge">.umlp</code>.
+Weiterhin erlauben <code class="language-plaintext highlighter-rouge">import</code>-Statements spezielle Datentypen/
+Klassen in das aktuelle Diagramm einzubinden und dort nutzbar zu
+machen.</p>
+
+<p>Wir werden MontiGem für die Übungsaufgaben benutzen, um damit 
+direktes Feedback für die qualitativ hochwertige Modellierung von 
+Strukturen zu gewinnen. Das Tool kann aus UML/P Klassendiagrammen 
+lauffähige 
+Applikationen generieren, die Sie dann auf Nützlichkeit ihrer Modelle 
+überprüfen können. Konkret haben wir das Tool in Kombination mit dem 
+Gruppen-orientierten Abgabemechanismus über gitlab so eingerichtet, 
+dass eine interaktive Website generiert wird. Wir stellen diese Website 
+für Sie unter passender URL und Zugangsdaten bereit. Bitte bedenken 
+Sie, dass die Website u.A. durch Gitlab CI/CD Pipelines und unsere 
+Server bereitgestellt werden muss. Es kann deswegen zu leichten 
+Verzögerungen bis zum Sichtbarwerden geben.</p>
+
+<p>Die oben genannte Web-Applikation wurde aus der Datei <code class="language-plaintext highlighter-rouge">Verwaltung.umlp</code> 
+generiert. Um Änderungen am generierten System vorzunehmen, pushen Sie 
+Änderungen des Modells auf den Default-Branch Ihres Git-Repositories. 
+Die letzte erfolgreiche Pipeline veröffentlicht Ihr generiertes System 
+automatisch.</p>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<p>Wir hoffen hier einen guten Zugang zu den wichtigsten Konzepten der 
+Klassendiagramme als Teil der UML Modellierungssprache gegeben zu 
+haben. Wir haben
+gezeigt, wie eine textuelle Fassung der Klassendiagramme definiert 
+werden kann, die dann von unserem Werkzeug MontiGem in einen 
+Prototypen eines laufenden Softwarsystems übersetzt wird.</p>
+
+<p>Eine solche Übersetzung liefert eine gute Grundstruktur auf der sich 
+dann ein komplettes System aufbauen lässt. Allerdings ist hier 
+natürlich noch viel zu tun, denn es ist weder das Rechte/Rollen-Konzept 
+festgelegt, noch Algorithmen zur Verarbeitung und Visualisierung der 
+Daten, sowie meist gewünschte spezielle Anzeigeformen definiert. Es 
+gibt allerdings einen Datenbank-basierten Speichermechanismus, 
+grundlegende Anzeige- und Editier-Webseiten, einen kollaborativen 
+Kommunikationsmechanismus und insbesondere für Entwickler interessant: 
+die Möglichkeiten den generierten Code wie ein Framework zu  behandeln 
+und applikationsspezifisch anzupassen.</p>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<p>Join our <a href="https://lists.rwth-aachen.de/postorius/lists/se-teaching.lists.rwth-aachen.de/?email-button=Subscribe%21" target="_blank" rel="noopener noreferrer">mailing list</a>
+for updates regarding courses and theses:</p>
+
+<div class="subscribe">Subscribe to se-teaching:</div>
+<p><a href="https://lists.rwth-aachen.de/postorius/lists/se-teaching.lists.rwth-aachen.de/?email-button=Subscribe%21" target="_blank" rel="noopener noreferrer">
+<button class="mailinglist">
+  Subscribe!
+</button>
+</a></p>
+
+<p>
+  <img src="/assets/img/icons/balken.jpeg" width="100%" alt="" title="Trennlinie" class="trennlinie">
+</p>
+
+<h4 id="further-links">Further links:</h4>
+
+<ul>
+  <li><a href="/theses/#bachelor-theses">SE Bachelor Theses / Bachelorarbeiten</a></li>
+  <li><a href="/swt_material">SWT Vorlesung</a></li>
+  <li><a href="/teaching">Teaching</a></li>
+  <li><a href="https://www.se-rwth.de">Website of the SE</a></li>
+</ul>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+      <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+let scrollButton = document.getElementById("btn-back-to-top");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
+  }
+}
+
+scrollButton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+    
+
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="sticky-bottom mt-5">
+  <div class="container">
+    <!-- &copy; Copyright 2025   . -->
+    
+    
+    <a href="https://www.se-rwth.de/impressum/">Impressum</a>.
+    
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="/assets/js/jquery.min.js" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/popper.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/mdb.min.js" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="/assets/js/masonry.pkgd.min.js"></script>
+<script defer src="/assets/js/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="/assets/js/medium-zoom.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+  
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer src="/assets/js/tex-mml-chtml.js" type="text/javascript" id="MathJax-script"></script>
+<script defer src="/assets/js/polyfill.min.js"></script>
+
+
+  <script src="/assets/js/toc.js" crossorigin="anonymous"></script>
+  <script async src="/assets/js/widgets.js" charset="utf-8"></script>
+
+</html>
