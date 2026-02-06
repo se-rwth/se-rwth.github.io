@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  UMLP Object Diagrams |
+
+
+
+  SE@RWTH
+
+</title>
+<meta name="description" content="Website of the Chair of Software Engineering at RWTH Aachen
+">
+
+<!-- Google Verification -->
+
+
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css" integrity="oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/mdb.min.css" integrity="Y3+zUQCTOSqaSbyEFKLA6oQi8oF3I2xzkIR+ywroD3fkLG3LF2DJq/mU03KQqSZv/nGQDC2Upf73IZYZYMX4GQ==" crossorigin="anonymous" type="text/css"/>
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="/assets/css/all.min.css" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css" integrity="pOZ6Cz1wopk9RluJMvHM1AEMkPCS+ihnGztyD0kI991jgZ8hj9YQ61k4ouvGNvLHE0z6Vifp3ytAmeeW8sbbZQ==" crossorigin="anonymous" type="text/css">
+
+<!-- Site icon -->
+
+<link rel="shortcut icon" href="/assets/img/icons/favicon.png">
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon.png">
+<link rel="apple-touch-icon" href="/assets/img/icons/rwth_se_quadratisch_rgb.png">
+
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/assets/img/icons/rwth_se_quadratisch_rgb.png">
+<meta name="theme-color" content="#FFFFFF">
+
+<!-- Styles -->
+<link rel="stylesheet" href="/assets/css/main.css" type="text/css">
+<!--<link rel="canonical" href="https://www.se-rwth.de/sle_material/umlp-object-diagrams/">-->
+
+
+
+
+
+
+    <!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['addDownloadExtensions', "bib"]);
+    _paq.push(['disableCookies']);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="https://stats.fh-aachen.de/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '34']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+<!-- End Matomo Code -->
+
+  </head>
+
+  <body class=" sticky-bottom-footer">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand title font-weight-lighter" href="/">
+        
+          <img src="/assets/img/icons/rwth_se_rgb.png" height="70px">
+        
+        
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <!-- <li class="nav-item ">
+            <a class="nav-link" href="/">
+              About
+              
+            </a>
+          </li> -->
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Essays
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essays/">Essay List</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Definition/">Digital Twin</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Companion/">Digital Companion</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Maturity-Model/">Digital Twin Maturity Model</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Explicit-versus-implicit-models/">Explicit versus Implicit Models</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Gesetze-DSL/">DSLs für Gesetze und Ordnungen (in D)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Research-Software-Engineering/">Research Software Engineering (RSE)</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Modeling-in-advanced-systems-engineering/">Modeling in Advanced Systems Engineering</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Model-Definitions/">Model-Based Definitions</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Low-Code/">Low Code</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Reference-Models/">Reference Models</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Research
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/">Research Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#foundations">MBSE Foundations</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#applications">Application Domains</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/#tools">Software Tools</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Publications
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/publications/">All Publications</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/books/">Books</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/phdtheses/">Ph.D. Theses</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/assets/bibliography/all-software-engineering-rwth-references.bib">Bibtex</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Teaching
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/">Teaching</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/teaching-overview/">Teaching Overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/#currentsem">Current Semester</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/archive/">Course archive (starting WS 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="https://www.se-rwth.de/teaching/indexArchiv.php">Course archive (until SoSe 2022)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/theses/">BA/MA Theses</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/">Major project overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/22.09.MontiGem.Ford.Press.Release/">MontiGem Ford Press Release</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiCore/">MontiCore</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiGem/">MontiGem</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/demos/">Project PoCs (Demos)</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+          <li class="nav-item ">
+              <a class="nav-link" href="/jobs/">
+                Jobs
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About us
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/about/">About us</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/staff/">Staff</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/activities/">Activities</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teams/">Teams</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/contact/">Contact &amp; Arrival</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">UMLP Object Diagrams</h1>
+    <p class="post-description">Material for the Software Language Engineering and Model-based Software Engineering lecture, Bernhard Rumpe</p>
+  </header>
+
+
+  <article>
+    
+
+    <div class="toc_content">
+      
+    </div>
+    <div class="clearfix">
+      <h1 id="montigem-object-diagrams">MontiGem Object Diagrams</h1>
+
+<p>This document presents the textual object diagram language as used by MontiGem.
+We will use the auction system from the lecture as an example. The graphic shows
+the class diagram (CD) and the corresponding object diagram (OD). MontiGem
+generates Java classes from the CD and an initial object structure from the OD.</p>
+
+<div class="row" style="text-align: center; margin: 20px 0;">
+    <div class="col-sm mt-3 mt-md-0">
+        
+            <picture>
+                <img class="img-fluid rounded z-depth-1" style="width:  100%; 
+                 " src="/assets/img/teaching/cd-od.svg">
+            </picture>
+        
+        
+    </div>
+</div>
+
+<p>The textual representation of the visualized OD as required by MontiGem:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import AuctionSystem.*;
+
+objectdiagram AuctionSystem {
+  sys:AuctionSystem { };
+  
+  copper:Auction {
+    String title = "Copper";
+    Status status = Status.ACTIVE;
+  };
+  
+  gold:Auction {
+    title = "Golder";
+    status = Status.DONE;
+  };
+  
+  composition sys -&gt; (auction) copper;
+  composition sys -&gt; (auction) gold;
+  
+  theo:Person {
+    String name = "Theo";
+    int number = "124";
+  };
+  
+  link copper -&gt; (person) theo;
+}
+</code></pre></div></div>
+
+<hr>
+
+<h2 id="object-diagrams">Object Diagrams</h2>
+
+<p>ODs are stored in the <code class="language-plaintext highlighter-rouge">models</code> folder as <code class="language-plaintext highlighter-rouge">.od</code> files. They begin with the
+keyword <code class="language-plaintext highlighter-rouge">objectdiagram</code>, followed by the name. The OD name must match the name
+of the file. The objects and links are defined in the curly brackets.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>objectdiagram AuctionSystem {
+  
+}
+</code></pre></div></div>
+
+<h2 id="comments">Comments</h2>
+
+<p>Textual ODs allow Java-like single-line and multi-line comments before and after
+each language element. In this documentation, we use the comment <code class="language-plaintext highlighter-rouge">/*...*/</code> to
+indicate the omission of necessary language elements.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/**
+ * This is a multi-line comment
+ */
+
+/* ... */
+ 
+objectdiagram AuctionSystem {
+  
+  // This is a single-line comment 
+
+}
+/* This is another comment */
+</code></pre></div></div>
+
+<h2 id="packages--imports">Packages &amp; Imports</h2>
+
+<p>ODs can be organized into packages.</p>
+
+<p>The OD must import the corresponding CD <code class="language-plaintext highlighter-rouge">AuctionSystem</code> as well as the classes
+and associations defined therein <code class="language-plaintext highlighter-rouge">AuctionSystem.*</code>. MontiGem uses this to derive
+further infrastructure for instantiating the objects. The OD must match the
+structure of the CD. For example, no additional attributes may be defined.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>package auctionsystem;
+
+// import the AuctionSystem CD
+imports AuctionSystem.*;
+
+objectdiagram AuctionSystem {
+  
+}
+</code></pre></div></div>
+
+<h2 id="objects">Objects</h2>
+
+<p>Objects are defined using the syntax <code class="language-plaintext highlighter-rouge">&lt;objectname&gt;:&lt;classname&gt; { };</code>. The object
+name must be unique within an OD. The class must be imported using an import
+statement.</p>
+
+<p>Anonymous objects <code class="language-plaintext highlighter-rouge">:Auction { };</code> or objects without types <code class="language-plaintext highlighter-rouge">copper { };</code> are not
+supported.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>imports AuctionSystem.*;
+
+objectdiagram AuctionSystem {
+  copper:Auction {
+    
+  };
+}
+</code></pre></div></div>
+
+<h2 id="attributes">Attributes</h2>
+
+<p>Attributes of an object are defined using the syntax
+<code class="language-plaintext highlighter-rouge">&lt;type&gt; &lt;name&gt; = &lt;expression&gt;;</code>. Since the type is already uniquely specified by
+the CD, it can also be omitted <code class="language-plaintext highlighter-rouge">&lt;name&gt; = &lt;expression&gt;;</code>.</p>
+
+<p>The attributes must be specified by the class, i.e., you may not add attributes
+that are not defined in the class. Furthermore, you must assign all class
+attributes an expression that evaluates to the attribute’s value. The type of
+this expression must be compatible with the specified attribute type.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>imports AuctionSystem.*;
+
+objectdiagram AuctionSystem {
+  copper:Auction {
+    String title = "Copper";
+  };
+  
+  gold:Auction {
+    // the attribute can be omited
+    title = "Gold";
+  };
+}
+</code></pre></div></div>
+
+<p>The expressions can contain almost any Java code, as long as it evaluates to a
+compatible value:</p>
+
+<h3 id="literals">Literals</h3>
+
+<ul>
+  <li>
+<code class="language-plaintext highlighter-rouge">boolean</code>: <code class="language-plaintext highlighter-rouge">true</code>, <code class="language-plaintext highlighter-rouge">false</code>
+</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">int</code>: …, <code class="language-plaintext highlighter-rouge">-1</code>, <code class="language-plaintext highlighter-rouge">0</code>, <code class="language-plaintext highlighter-rouge">1</code>, …</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">float</code>: <code class="language-plaintext highlighter-rouge">42.0f</code>
+</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">double</code>: <code class="language-plaintext highlighter-rouge">42.0d</code>
+</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">String</code>: <code class="language-plaintext highlighter-rouge">"Lorem Ipsum"</code>
+</li>
+</ul>
+
+<h3 id="operations">Operations</h3>
+
+<ul>
+  <li>
+<code class="language-plaintext highlighter-rouge">boolean</code>: <code class="language-plaintext highlighter-rouge">!</code>, <code class="language-plaintext highlighter-rouge">&lt;=</code>, <code class="language-plaintext highlighter-rouge">&lt;</code>, <code class="language-plaintext highlighter-rouge">==</code>, <code class="language-plaintext highlighter-rouge">&gt;</code>, <code class="language-plaintext highlighter-rouge">&gt;=</code>
+</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">int</code>, <code class="language-plaintext highlighter-rouge">float</code>, <code class="language-plaintext highlighter-rouge">double</code>: <code class="language-plaintext highlighter-rouge">+</code>, <code class="language-plaintext highlighter-rouge">-</code>, <code class="language-plaintext highlighter-rouge">*</code>, <code class="language-plaintext highlighter-rouge">/</code>
+</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">String</code>: <code class="language-plaintext highlighter-rouge">+</code>
+</li>
+</ul>
+
+<h3 id="casting">Casting</h3>
+
+<ul>
+  <li>
+<code class="language-plaintext highlighter-rouge">int</code>: <code class="language-plaintext highlighter-rouge">(int) Integer.valueOf("42")</code>
+</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">double</code>: <code class="language-plaintext highlighter-rouge">(double) 42.0f</code>
+</li>
+</ul>
+
+<h3 id="enum-constants">Enum Constants</h3>
+
+<ul>
+  <li>
+<code class="language-plaintext highlighter-rouge">SomeEnumClass</code>: <code class="language-plaintext highlighter-rouge">SomeEnumClass.someConstant</code>
+</li>
+</ul>
+
+<p>Enum constants referenced in CDs by association are included as attributes in
+ODs.</p>
+
+<h3 id="java-methods">Java Methods</h3>
+
+<ul>
+  <li>
+<strong>Object Methods</strong>
+    <ul>
+      <li>
+<code class="language-plaintext highlighter-rouge">String</code>: <code class="language-plaintext highlighter-rouge">"SOME TEXT".toLowerCase()</code>
+</li>
+    </ul>
+  </li>
+  <li>
+<strong>Factory Methods</strong>
+    <ul>
+      <li>
+<code class="language-plaintext highlighter-rouge">String</code>: <code class="language-plaintext highlighter-rouge">String.valueOf(42)</code>
+</li>
+      <li>
+<code class="language-plaintext highlighter-rouge">Integer</code>: <code class="language-plaintext highlighter-rouge">Integer.valueOf(10)</code>
+</li>
+      <li>
+<code class="language-plaintext highlighter-rouge">LocalDate</code>: <code class="language-plaintext highlighter-rouge">LocalDate.parse("2025-12-11")</code>
+</li>
+      <li>
+<code class="language-plaintext highlighter-rouge">List&lt;String&gt;</code>: <code class="language-plaintext highlighter-rouge">List.of("A", "B", "C")</code>
+</li>
+      <li>
+<code class="language-plaintext highlighter-rouge">Set&lt;Integer&gt;</code>: <code class="language-plaintext highlighter-rouge">Set.of(1, 2, 3)</code>
+</li>
+      <li>
+<code class="language-plaintext highlighter-rouge">Map&lt;String, Integer&gt;</code>: <code class="language-plaintext highlighter-rouge">Map.of("x", 1, "y", 2)</code>
+</li>
+      <li>
+<code class="language-plaintext highlighter-rouge">Optional&lt;String&gt;</code>: <code class="language-plaintext highlighter-rouge">Optional.of("value")</code>
+</li>
+    </ul>
+  </li>
+  <li>
+<strong>Instantiation</strong>
+    <ul>
+      <li>
+<code class="language-plaintext highlighter-rouge">String</code>: <code class="language-plaintext highlighter-rouge">new StringBuilder().append("SomeString").toString()</code>
+</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Note that objects defined in the OD itself are still being finalized during
+initialization in Java and therefore cannot be accessed. The following example
+may therefore cause problems:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>imports AuctionSystem.*;
+
+objectdiagram AuctionSystem {
+  copper1:Auction {
+    String title = "Copper";
+  };
+  
+  copper2:Auction {
+    title = copper1.getTitle();
+  };
+}
+</code></pre></div></div>
+
+<p>Furthermore, the types of the expressions must be imported. To use the
+expression <code class="language-plaintext highlighter-rouge">LocalDate.parse("2025-12-11")</code>, the type <code class="language-plaintext highlighter-rouge">LocalDateTime</code> must be
+imported into the CD: <code class="language-plaintext highlighter-rouge">import java.time.LocalDateTime;</code>. Primitive data types
+and classes from <code class="language-plaintext highlighter-rouge">java.lang</code> (String, Math, Integer, Double, Boolean, Character,
+etc.) do not need to be imported.</p>
+
+<h2 id="derived-attributes">Derived Attributes</h2>
+
+<p>Derived attributes are not defined in the OD, but are calculated at runtime.
+MontiGem generates an abstract method in the respective Java class from the CDs
+for a derived attribute. The Java class also becomes abstract, which means that
+no objects can be instantiated from it. These methods have the same return types
+as the attribute. Their name has the format <code class="language-plaintext highlighter-rouge">get&lt;attribute-name&gt;</code>. For example,
+MontiGem generates the following Java class for the derived attribute <code class="language-plaintext highlighter-rouge">bidders</code>
+of the class <code class="language-plaintext highlighter-rouge">Auction</code>:</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="nn">auctionsystem</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Auction</span> <span class="o">{</span>
+
+   <span class="nd">@Override</span>
+   <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">int</span> <span class="nf">getBidders</span><span class="o">();</span>
+
+   <span class="cm">/* ... */</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>In order to still be able to create objects of the abstract class at runtime, it
+must be extended by a handwritten class. This handwritten class must be created
+in the path <code class="language-plaintext highlighter-rouge">backend/src/main/java/&lt;project-name&gt;/&lt;class-name&gt;.java</code>. In this
+case, the project name is <code class="language-plaintext highlighter-rouge">auctionsystem</code> and the class name is <code class="language-plaintext highlighter-rouge">Auction</code>.</p>
+
+<p>MontiGem employs the TOP mechanism to allow you to extend the generated
+artifacts with handwritten code. The TOP mechanism checks for each class file
+that needs to be generated if a file with the same name and package exists in
+the handwritten source set. If this is the case, it appends the <code class="language-plaintext highlighter-rouge">TOP</code> suffix to
+the generated file name. The handwritten class has to provide the same interface
+as the generated one. This is typically achieved by extending the TOP class. By
+this, the handwritten class may override the behavior of already generated
+methods, add additional ones, or even new attributes. Since the generated and
+handwritten source code is split into distinct files, regenerating code does not
+override the handwritten one.</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="nn">auctionsystem</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Auction</span> <span class="kd">extends</span> <span class="nc">AuctionTOP</span> <span class="o">{</span>
+
+   <span class="nd">@Override</span>
+   <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getBidders</span><span class="o">()</span> <span class="o">{</span>
+      <span class="k">return</span> <span class="nf">getParticipants</span><span class="o">().</span><span class="na">size</span><span class="o">();</span>
+   <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">Auction</code> class extends the <code class="language-plaintext highlighter-rouge">AuctionTOP</code> class, which is only generated once
+the handwritten class is available. The methods of the handwritten class can
+access every functionality of the standard Java library, imported libraries, and
+generated code. For derived attributes, the accessor methods of the attributes
+are particularly relevant. They have the same format as the methods of the
+derived attributes <code class="language-plaintext highlighter-rouge">get&lt;attribute-name&gt;</code>.</p>
+
+<h2 id="links">Links</h2>
+
+<p>Links model associations and compositions of CDs at the instance level. Links
+model associations and compositions of CDs at the instance level. A link begins
+with the keyword <code class="language-plaintext highlighter-rouge">link</code> or <code class="language-plaintext highlighter-rouge">composition</code>. Keywords can be used regardless of
+whether an association or a composition is defined in the CD. This is followed
+by the name of the left object <code class="language-plaintext highlighter-rouge">sys</code>, the association arrow <code class="language-plaintext highlighter-rouge">-&gt;</code>, the type of
+the right object as role name <code class="language-plaintext highlighter-rouge">(auction)</code>, and the name of the right object
+<code class="language-plaintext highlighter-rouge">copper</code>. The right-hand type is converted to the role name by lowercasing the
+first character; all other characters remain unchanged. For example, the type
+<code class="language-plaintext highlighter-rouge">OFFER</code> would be converted to the role name <code class="language-plaintext highlighter-rouge">(oFFER)</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>imports AuctionSystem.*;
+
+objectdiagram AuctionSystem {
+  sys:ActionSystem { };
+  
+  copper:Auction { /* ... */ };
+  
+  composition sys -&gt; (auction) copper;
+}
+</code></pre></div></div>
+
+<p>The links must not create cycles in the object structure. The object structure
+therefore forms a tree. Objects that reference other objects must be on the
+left-hand side, and the referenced objects on the right-hand side. For example,
+the mirrored composition <code class="language-plaintext highlighter-rouge">composition copper (auction) &lt;- sys;</code> would not be
+valid. The associations support cardinality <code class="language-plaintext highlighter-rouge">[0..1]</code> and <code class="language-plaintext highlighter-rouge">[*]</code>, but not
+cardinality <code class="language-plaintext highlighter-rouge">[1..*]</code>. Role names that deviate from the type of the right
+association are also not supported. Named associations are allowed, but have no
+effect on the generated code. Qualifiers are not supported.</p>
+
+<h4 id="further-links-on-the-tooling">Further links on the tooling:</h4>
+
+<ul>
+  <li>
+<a href="https://monticore.de/" target="_blank" rel="noopener noreferrer">MontiCore Language Workbench</a>,</li>
+  <li>
+<a href="https://www.se-rwth.de/projects/#MontiGem">MontiGem</a>,</li>
+  <li>
+<a href="https://monticore.github.io/monticore/docs/Languages/" target="_blank" rel="noopener noreferrer">MontiCore List of Language</a>,</li>
+  <li>
+<a href="https://github.com/MontiCore/cd4analysis/blob/develop/README.md" target="_blank" rel="noopener noreferrer">CD4Analysis Tool Readme</a>,</li>
+  <li>
+<a href="https://github.com/MontiCore/cd4analysis" target="_blank" rel="noopener noreferrer">CD4Analysis Tool</a>.</li>
+</ul>
+
+<hr>
+
+<p>Join our <a href="https://lists.rwth-aachen.de/postorius/lists/se-teaching.lists.rwth-aachen.de/?email-button=Subscribe%21" target="_blank" rel="noopener noreferrer">mailing list</a>
+for updates regarding courses and theses:</p>
+
+<div class="subscribe">Subscribe to se-teaching:</div>
+<p><a href="https://lists.rwth-aachen.de/postorius/lists/se-teaching.lists.rwth-aachen.de/?email-button=Subscribe%21" target="_blank" rel="noopener noreferrer">
+<button class="mailinglist">
+  Subscribe!
+</button>
+</a></p>
+
+<hr>
+
+<h4 id="further-links">Further links:</h4>
+
+<ul>
+  <li><a href="/theses/#bachelor-theses">SE Bachelor Theses / Bachelorarbeiten</a></li>
+  <li><a href="/sle_material">SLE Lecture</a></li>
+  <li><a href="/teaching">Teaching</a></li>
+  <li><a href="https://www.se-rwth.de">Website of the SE</a></li>
+</ul>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+      <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+let scrollButton = document.getElementById("btn-back-to-top");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
+  }
+}
+
+scrollButton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+    
+
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="sticky-bottom mt-5">
+  <div class="container">
+    <!-- &copy; Copyright 2026   . -->
+    
+    
+    <a href="https://www.se-rwth.de/impressum/">Impressum</a>.
+    
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="/assets/js/jquery.min.js" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/popper.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/mdb.min.js" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="/assets/js/masonry.pkgd.min.js"></script>
+<script defer src="/assets/js/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="/assets/js/medium-zoom.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+  
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer src="/assets/js/tex-mml-chtml.js" type="text/javascript" id="MathJax-script"></script>
+<script defer src="/assets/js/polyfill.min.js"></script>
+
+
+  <script src="/assets/js/toc.js" crossorigin="anonymous"></script>
+  <script async src="/assets/js/widgets.js" charset="utf-8"></script>
+
+</html>
