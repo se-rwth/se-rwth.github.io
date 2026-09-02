@@ -1,0 +1,1734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Bachelor's/Master's Thesis: Documentation and Architecture Support for Research Software |
+
+
+
+  SE@RWTH
+
+</title>
+<meta name="description" content="Website of the Chair of Software Engineering at RWTH Aachen
+">
+
+<!-- Google Verification -->
+
+
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css" integrity="oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/mdb.min.css" integrity="Y3+zUQCTOSqaSbyEFKLA6oQi8oF3I2xzkIR+ywroD3fkLG3LF2DJq/mU03KQqSZv/nGQDC2Upf73IZYZYMX4GQ==" crossorigin="anonymous" type="text/css"/>
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="/assets/css/all.min.css" crossorigin="anonymous" type="text/css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css" integrity="pOZ6Cz1wopk9RluJMvHM1AEMkPCS+ihnGztyD0kI991jgZ8hj9YQ61k4ouvGNvLHE0z6Vifp3ytAmeeW8sbbZQ==" crossorigin="anonymous" type="text/css">
+
+<!-- Site icon -->
+
+<link rel="shortcut icon" href="/assets/img/icons/favicon.png">
+<link rel="icon" type="image/png" href="/assets/img/icons/favicon.png">
+<link rel="apple-touch-icon" href="/assets/img/icons/rwth_se_quadratisch_rgb.png">
+
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="/assets/img/icons/rwth_se_quadratisch_rgb.png">
+<meta name="theme-color" content="#FFFFFF">
+
+<!-- Styles -->
+<link rel="stylesheet" href="/assets/css/main.css" type="text/css">
+<!--<link rel="canonical" href="https://www.se-rwth.de/theses/rse-documentation-architecture/">-->
+
+
+
+
+
+
+    <!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['addDownloadExtensions', "bib"]);
+    _paq.push(['disableCookies']);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="https://stats.fh-aachen.de/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '34']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+<!-- End Matomo Code -->
+
+  </head>
+
+  <body class=" sticky-bottom-footer">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand title font-weight-lighter" href="/">
+        
+          <img src="/assets/img/icons/rwth_se_rgb.png" height="70px">
+        
+        
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <!-- <li class="nav-item ">
+            <a class="nav-link" href="/">
+              About
+              
+            </a>
+          </li> -->
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Essays
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essays/">Essay List</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Definition/">Digital Twin</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Companion/">Digital Companion</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Digital-Twin-Maturity-Model/">Digital Twin Maturity Model</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Explicit-versus-implicit-models/">Explicit versus Implicit Models</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Gesetze-DSL/">DSLs für Gesetze und Ordnungen (in D)</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Research-Software-Engineering/">Research Software Engineering (RSE)</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/sosym/Modeling-in-advanced-systems-engineering/">Modeling in Advanced Systems Engineering</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Model-Definitions/">Model-Based Definitions</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Low-Code/">Low Code</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/essay/Reference-Models/">Reference Models</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+          <li class="nav-item ">
+              <a class="nav-link" href="/research/">
+                Research
+                
+              </a>
+          </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Publications
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/publications/">All Publications</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/books/">Books</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/phdtheses/">Ph.D. Theses</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/assets/bibliography/all-software-engineering-rwth-references.bib">Bibtex</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Teaching
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/">Teaching</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teaching/oral-exams">Oral exams</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/theses/">BA/MA Theses</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/">Major project overview</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/ai.lab.C2T/">Das ai.lab für die Bau- und Energiebranche</a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/projects/22.09.MontiGem.Ford.Press.Release/">MontiGem Ford Press Release</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiCore/">MontiCore</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/research/MontiGem/">MontiGem</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/demos/">Project PoCs (Demos)</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+            
+          <li class="nav-item ">
+              <a class="nav-link" href="/jobs/">
+                Jobs
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+            
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About us
+                    
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/about/">About us</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/staff/">Staff</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/activities/">Activities</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/teams/">Teams</a>
+                    
+                    
+                    
+                    
+                    <div class="dropdown-divider"></div>
+                    
+                    
+                    
+                    
+                    <a class="dropdown-item" href="/contact/">Contact &amp; Arrival</a>
+                    
+                    
+                    
+                </div>
+            </li>
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">Bachelor's/Master's Thesis: Documentation and Architecture Support for Research Software</h1>
+    <p class="post-description"></p>
+  </header>
+
+
+  <article>
+    
+
+    <div class="toc_content">
+      
+    </div>
+    <div class="clearfix">
+      <p><a href="/essay/Research-Software-Engineering/">Research Software Engineering (RSE)</a> plays a crucial role in modern scientific research, particularly in highly technical domains.
+However, research software is often developed under conditions that differ substantially from industrial software development.
+Projects may start as small scripts or prototypes, be planned as short-lived or disposable software, and later evolve into larger and more widely used systems.
+As these systems grow, the requirements regarding quality, maintainability, understandability, documentation, and architecture become increasingly important.</p>
+
+<p>At the same time, documentation and architecture planning are often underrepresented in research software projects.
+Source code changes frequently, researchers developing the software usually have limited time, and software engineering activities compete with scientific priorities.
+In addition, researchers often come from domain-specific backgrounds and may have little experience with architecture modeling, for example using class diagrams.
+As a result, long-term usability and maintainability of research software can suffer, even if the software is scientifically valuable.</p>
+
+<p>This thesis addresses this challenge by further developing, integrating, deploying, and evaluating two existing systems for supporting documentation and architecture understanding in research software projects.
+The first system derives documentation for source code using Large Language Model (LLM) calls and takes into account the terminology of the respective scientific domain.
+The second system deterministically derives class diagrams from Python and Java source code.
+The goal of this thesis is to combine these systems into a practical tool-supported workflow for research software documentation and architecture understanding.</p>
+
+<p>For example, exported documentation could be extended such that a class diagram is shown together with adjacent classes for a documented class or module.
+This would help researchers understand not only the local source code but also its architectural context.</p>
+
+<p>This thesis is related to the thesis topic <a href="/theses/rse-recommendations">Implementing Recommendations for Research Software Development</a>.
+Selective collaboration between the theses is likely and will be coordinated by the thesis supervisor.</p>
+
+<hr>
+
+<h2 id="previous-work">Previous Work</h2>
+
+<p>As part of previous work, two complementary systems have been developed to support documentation and architecture understanding in research software projects.</p>
+
+<p>The first system uses LLM-based approaches to generate or support source code documentation.
+A key aspect of this system is that it considers terminology from the respective application domain.
+This is particularly relevant in research software, where code, concepts, and documentation are often closely connected to scientific terminology, models, experiments, or domain-specific workflows.</p>
+
+<p>The second system deterministically extracts class diagrams from Python and Java source code.
+Such diagrams can support architecture understanding by making classes, relationships, and dependencies more explicit.
+This is especially useful in research contexts where developers may not have extensive experience with manual architecture modeling or UML-based documentation.</p>
+
+<p>Together, these systems provide a strong foundation for improving documentation and architecture support in research software.
+However, they still need to be further developed, integrated into a coherent workflow, deployed in realistic settings, and evaluated with respect to usefulness, usability, correctness, and practical impact.</p>
+
+<hr>
+
+<h2 id="topic-and-approach">Topic and Approach</h2>
+
+<p>The goal of this thesis is to improve the long-term understandability, maintainability, and usability of research software by integrating automated documentation support with architecture visualization.</p>
+
+<p>The thesis will focus on the further development and integration of the two existing systems.
+A central objective is to make the generated documentation more useful for researchers by combining textual explanations with architectural context.
+For example, when documentation for a class is exported, the documentation could also include a class diagram showing the class itself and adjacent classes, such as related base classes, subclasses, dependencies, or associated classes.</p>
+
+<p>The exact technical focus can be adapted depending on whether the thesis is conducted as a Bachelor’s or Master’s thesis and according to the interests of the student.</p>
+
+<p>The thesis will comprise the following main tasks:</p>
+
+<ol>
+  <li>
+    <p><strong>Familiarization with the RSE context and previous systems</strong><br>
+Review the Research Software Engineering context, the existing LLM-based documentation system, and the deterministic class diagram extraction system for Python and Java.</p>
+  </li>
+  <li>
+    <p><strong>Analysis of documentation and architecture needs in research software</strong><br>
+Identify relevant documentation and architecture understanding challenges in research software projects.
+This may include reviewing related work, existing documentation practices, and concrete needs of researchers.</p>
+  </li>
+  <li>
+<strong>Requirements analysis for system integration</strong><br>
+Analyze how the two existing systems can be integrated into a coherent workflow.
+Relevant questions include:
+    <ul>
+      <li>Which information should be exchanged between the systems?</li>
+      <li>How should diagrams be linked to generated documentation?</li>
+      <li>Which export formats are required?</li>
+      <li>How can the workflow remain lightweight enough for researchers with limited time?</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Design of an integrated architecture</strong><br>
+Design a suitable architecture for the integrated system.
+The design should consider extensibility, maintainability, robustness, and practical deployability in research software projects.</p>
+  </li>
+  <li>
+    <p><strong>Integration of documentation and class diagrams</strong><br>
+Implement the integration between generated documentation and extracted class diagrams.
+For example, exported documentation may include diagrams that show the documented class together with adjacent classes and relevant relationships.</p>
+  </li>
+  <li>
+    <p><strong>Deployment in a realistic research software context</strong><br>
+Prepare the integrated system for practical use.
+This may include packaging, configuration, documentation, examples, CI integration, or deployment in one or more existing research software projects.</p>
+  </li>
+  <li>
+<strong>Evaluation of usefulness and quality</strong><br>
+Evaluate the integrated system with respect to selected criteria such as:
+    <ul>
+      <li>usefulness for understanding research software,</li>
+      <li>quality and correctness of generated documentation,</li>
+      <li>correctness and readability of class diagrams,</li>
+      <li>usability of the workflow,</li>
+      <li>effort required for adoption,</li>
+      <li>perceived value for researchers.</li>
+    </ul>
+
+    <p>The evaluation may include case studies, artifact analysis, comparison with existing documentation, structured feedback from researchers, or small user studies.</p>
+  </li>
+  <li>
+    <p><strong>Reflection and derivation of lessons learned</strong><br>
+Reflect on the benefits, limitations, and transferability of automated documentation and architecture support in RSE contexts.
+Particular attention should be paid to the tension between frequently changing source code, limited researcher time, and increasing quality requirements as projects grow.</p>
+  </li>
+  <li>
+<strong>Documentation and presentation of results</strong><br>
+Document the system design, implementation, deployment process, evaluation results, and lessons learned in the thesis and present the results.</li>
+</ol>
+
+<p>Depending on the scope, the topic can be adapted for either a Bachelor’s or Master’s thesis.</p>
+
+<hr>
+
+<h2 id="possible-research-questions">Possible Research Questions</h2>
+
+<p>Depending on the final thesis scope, the work may address questions such as:</p>
+
+<ul>
+  <li>How can LLM-generated source code documentation and deterministic architecture extraction be integrated in a lightweight workflow for research software?</li>
+  <li>How can class diagrams be selected and presented so that they support understanding without overwhelming researchers?</li>
+  <li>To what extent does the combination of textual documentation and architecture visualization improve the understandability of research software?</li>
+  <li>How can domain terminology be incorporated into generated documentation in a way that is useful for researchers?</li>
+  <li>What are practical barriers to adopting automated documentation and architecture support in research software projects?</li>
+  <li>How can automated documentation remain useful when source code changes frequently?</li>
+</ul>
+
+<hr>
+
+<h2 id="our-offer">Our Offer</h2>
+
+<ul>
+  <li>Two existing prototype systems as a strong technical starting point</li>
+  <li>A relevant and practice-oriented thesis topic in the area of Research Software Engineering</li>
+  <li>The opportunity to work on the integration of LLM-based documentation generation and deterministic architecture extraction</li>
+  <li>A topic with direct relevance for the sustainability, maintainability, and understandability of research software</li>
+  <li>Flexibility to shape the thesis according to your interests, for example toward implementation, tool integration, visualization, deployment, or evaluation</li>
+  <li>Access to realistic research software contexts and examples</li>
+  <li>Clear supervision and methodological guidance</li>
+  <li>Weekly meetings, either in person or remotely</li>
+  <li>Coordinated collaboration with related thesis projects at selected points</li>
+  <li>Insight into real-world research software development in cutting-edge scientific domains</li>
+</ul>
+
+<hr>
+
+<h2 id="your-profile">Your Profile</h2>
+
+<ul>
+  <li>You are pursuing a Bachelor’s or Master’s degree in Computer Science, Software Systems Engineering, or a related field</li>
+  <li>You are interested in Research Software Engineering, software documentation, software architecture, and maintainability</li>
+  <li>You enjoy practical software engineering work and want to create tools that support real users</li>
+  <li>You have programming experience, ideally in Python and/or Java</li>
+  <li>You are interested in documentation generation, static code analysis, architecture visualization, or LLM-based software engineering tools</li>
+  <li>You are able to work independently and structure an open-ended technical topic</li>
+  <li>You are willing to understand the needs of researchers and adapt tooling to practical constraints</li>
+  <li>You are interested in evaluating software engineering tools in realistic contexts</li>
+  <li>Experience with UML, class diagrams, static analysis, documentation generators, or LLM APIs is helpful but not strictly required</li>
+  <li>You are available for onboarding sessions at the beginning of the thesis</li>
+</ul>
+
+<hr>
+
+<h2 id="contact">Contact</h2>
+
+<p>For more information, please send a short description of your background and an overview of your grades to <a href="/staff/Marc.Schmidt/">Marc Schmidt</a> at <a href="mailto:schmidt@se-rwth.de">schmidt@se-rwth.de</a>.</p>
+
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+      <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+let scrollButton = document.getElementById("btn-back-to-top");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    scrollButton.style.display = "block";
+  } else {
+    scrollButton.style.display = "none";
+  }
+}
+
+scrollButton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+    
+
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="sticky-bottom mt-5">
+  <div class="container">
+    <!-- &copy; Copyright 2026   . -->
+    
+    
+    <a href="https://www.se-rwth.de/impressum/">Impressum</a>.
+    
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- jQuery -->
+<script src="/assets/js/jquery.min.js" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/popper.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/mdb.min.js" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="/assets/js/masonry.pkgd.min.js"></script>
+<script defer src="/assets/js/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="/assets/js/medium-zoom.min.js" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+  
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer src="/assets/js/tex-mml-chtml.js" type="text/javascript" id="MathJax-script"></script>
+<script defer src="/assets/js/polyfill.min.js"></script>
+
+
+  <script src="/assets/js/toc.js" crossorigin="anonymous"></script>
+  <script async src="/assets/js/widgets.js" charset="utf-8"></script>
+
+</html>
