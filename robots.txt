@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://se-rwth.github.io/sitemap.xml
