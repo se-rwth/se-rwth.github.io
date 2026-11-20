@@ -1,0 +1,139 @@
+#!/bin/bash
+# .
+# Programmauswahlunterstuetzung:
+# eine Liste von Kommandos sind durch Auswahl ausfuerhbar
+# Interaktive Eingabe erolgt mit
+#  Auswahlkuerzel weitere Argumente <Return>
+#  Ende mit <return>
+# Vor der Abfrage werden die Zeilen ausgegeben, die
+# die Zeichen "#" und ":" direkt aufenanderfolgend enthalten
+
+
+current=`pwd -P`
+protdatum=`date +%y.%m.%d-%H.%M.%S`
+
+argcommand=$1
+shift
+args=$*
+
+file=$0
+if test "$argcommand" = "" ; then
+  echo -e -n "\e[38;5;54m"
+  grep "#\:" $file | sed "s/#\://g"
+  echo -e -n "\e[0m\n";
+fi
+
+# Annahme quickcom liegt im root des gitverzeichnises:
+gitverzeichnis=`dirname $file`
+
+#--------------------------------------------------
+# berechnet die Dauer einer Action (aus $start und $command)
+function duration() {
+    end=`date +%s`;
+    sec=`echo $end - $start | bc` 
+    echo "Command" $command $args "dauerte" `date -u -d @$sec +%X` "sek.  um" `date +%R` "Uhr"
+}
+
+start=`date +%s`
+
+#:------------------------------------------
+#:Shortcuts fuer wichtige Kommandos:
+#: 
+
+while true; do
+  if test "$argcommand" = "" ; then
+    p=`pwd`
+    read -p "=WEB==> " command args
+  else
+    command=$argcommand
+  fi
+  start=`date +%s`
+
+#  echo command: $command
+#  echo args: $args
+
+  case $command in
+#--------------------------------------------------
+
+!) #:shell escape
+    $args ;;
+
+o)  #: observe pipeline states (once)
+    observePipelineStates -o
+    ;;
+
+ow)  #: observe pipeline states in window on its own
+    observePipelineStates 
+    ;;
+
+gu)  #: update: (git fetch && git pull)
+    ( git fetch && git pull --no-rebase; ) 2>&1 | highlighterrors
+    ;;
+
+gc)  #: commit: (git commit -am "from quickcom" && git push)
+    ( git commit -am "from quickcom" && \
+      git push ; ) 2>&1 | highlighterrors
+    ;;
+
+#:------------------------------------------
+
+e)  #: Which essays are not yet in the Essay-list?
+    cd $gitverzeichnis/shared_pages/
+    for i in essay/*md ; do
+      icore=/`dirname $i`/`basename $i .md`/
+      ### echo ------------ $icore
+      ### grep $icore essays.md
+      ### echo ..........
+
+      # 2 mal ist gut, (permalink + liste)
+      occurrences="`grep $icore essays.md | wc -l`"
+      if test "$occurrences" -eq 2; then
+        echo "ok     " $icore
+      elif test "$occurrences" -eq 1; then
+        echo "ERROR(1 ONLY)" $icore
+      else
+        echo "missing" $icore
+      fi
+    done
+    echo
+    cd $current
+    ;;
+
+t)  #: TODO, todo, FIXME, fixme
+    echo ------- TODO und FIXME
+    cd $gitverzeichnis/
+    for t in TODO todo ToDo Todo FixMe Fixme FIXME fixme ; do
+      # echo ---- $t
+      grep -s --directories=recurse "$t" . | grep -v `basename $0` | grep -v assets/css/  \
+      | grep -v assets/js/ | grep -v assets/fonts/
+    done
+    echo
+    cd $current
+    ;;
+
+
+#--------------------------------------------------
+
+#:x) oder "")    Ende der Bearbeitung
+x|"") echo thanks
+    exit ;;
+
+# Hilfe nochmal ausgeben
+*)  echo "Kommando nicht erkannt."
+    echo -e -n "\e[38;5;54m"
+    grep "#\:" $file | sed "s/#\://g"
+    echo -e -n "\e[0m\n";
+    ;;
+
+#--------------------------------------------------
+  esac
+  duration 
+  # Stop if batchmode:
+  if test "$argcommand" != "" ; then
+    exit;
+  fi
+done
+
+#--------------------------------------------------
+
+
